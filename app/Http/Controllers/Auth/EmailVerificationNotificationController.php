@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Notifications\VerifyEmailNotification;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 
@@ -21,6 +22,7 @@ class EmailVerificationNotificationController extends Controller
         }
 
         $request->user()->sendEmailVerificationNotification();
+        //$request->user()->notify(new VerifyEmailNotification);
 
         return back()->with('status', 'verification-link-sent');
     }
