@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class OrderdetailsTableSeeder extends Seeder
 {
@@ -14,12 +15,12 @@ class OrderdetailsTableSeeder extends Seeder
      */
     public function run()
     {
-        
 
-        \DB::table('orderdetails')->delete();
-        
-        \DB::table('orderdetails')->insert(array (
-            0 => 
+
+        ///DB::table('orderdetails')->delete();
+
+        $data_pertama = array (
+            0 =>
             array (
                 'orderNumber' => 10100,
                 'productCode' => 'S18_1749',
@@ -27,7 +28,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '136.00',
                 'orderLineNumber' => 3,
             ),
-            1 => 
+            1 =>
             array (
                 'orderNumber' => 10100,
                 'productCode' => 'S18_2248',
@@ -35,7 +36,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.09',
                 'orderLineNumber' => 2,
             ),
-            2 => 
+            2 =>
             array (
                 'orderNumber' => 10100,
                 'productCode' => 'S18_4409',
@@ -43,7 +44,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.46',
                 'orderLineNumber' => 4,
             ),
-            3 => 
+            3 =>
             array (
                 'orderNumber' => 10100,
                 'productCode' => 'S24_3969',
@@ -51,7 +52,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.29',
                 'orderLineNumber' => 1,
             ),
-            4 => 
+            4 =>
             array (
                 'orderNumber' => 10101,
                 'productCode' => 'S18_2325',
@@ -59,7 +60,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '108.06',
                 'orderLineNumber' => 4,
             ),
-            5 => 
+            5 =>
             array (
                 'orderNumber' => 10101,
                 'productCode' => 'S18_2795',
@@ -67,7 +68,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '167.06',
                 'orderLineNumber' => 1,
             ),
-            6 => 
+            6 =>
             array (
                 'orderNumber' => 10101,
                 'productCode' => 'S24_1937',
@@ -75,7 +76,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.53',
                 'orderLineNumber' => 3,
             ),
-            7 => 
+            7 =>
             array (
                 'orderNumber' => 10101,
                 'productCode' => 'S24_2022',
@@ -83,7 +84,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.35',
                 'orderLineNumber' => 2,
             ),
-            8 => 
+            8 =>
             array (
                 'orderNumber' => 10102,
                 'productCode' => 'S18_1342',
@@ -91,7 +92,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.55',
                 'orderLineNumber' => 2,
             ),
-            9 => 
+            9 =>
             array (
                 'orderNumber' => 10102,
                 'productCode' => 'S18_1367',
@@ -99,7 +100,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.13',
                 'orderLineNumber' => 1,
             ),
-            10 => 
+            10 =>
             array (
                 'orderNumber' => 10103,
                 'productCode' => 'S10_1949',
@@ -107,7 +108,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '214.30',
                 'orderLineNumber' => 11,
             ),
-            11 => 
+            11 =>
             array (
                 'orderNumber' => 10103,
                 'productCode' => 'S10_4962',
@@ -115,7 +116,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.67',
                 'orderLineNumber' => 4,
             ),
-            12 => 
+            12 =>
             array (
                 'orderNumber' => 10103,
                 'productCode' => 'S12_1666',
@@ -123,7 +124,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '121.64',
                 'orderLineNumber' => 8,
             ),
-            13 => 
+            13 =>
             array (
                 'orderNumber' => 10103,
                 'productCode' => 'S18_1097',
@@ -131,7 +132,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.50',
                 'orderLineNumber' => 10,
             ),
-            14 => 
+            14 =>
             array (
                 'orderNumber' => 10103,
                 'productCode' => 'S18_2432',
@@ -139,7 +140,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.34',
                 'orderLineNumber' => 2,
             ),
-            15 => 
+            15 =>
             array (
                 'orderNumber' => 10103,
                 'productCode' => 'S18_2949',
@@ -147,7 +148,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.19',
                 'orderLineNumber' => 12,
             ),
-            16 => 
+            16 =>
             array (
                 'orderNumber' => 10103,
                 'productCode' => 'S18_2957',
@@ -155,7 +156,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.84',
                 'orderLineNumber' => 14,
             ),
-            17 => 
+            17 =>
             array (
                 'orderNumber' => 10103,
                 'productCode' => 'S18_3136',
@@ -163,7 +164,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.92',
                 'orderLineNumber' => 13,
             ),
-            18 => 
+            18 =>
             array (
                 'orderNumber' => 10103,
                 'productCode' => 'S18_3320',
@@ -171,7 +172,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.31',
                 'orderLineNumber' => 16,
             ),
-            19 => 
+            19 =>
             array (
                 'orderNumber' => 10103,
                 'productCode' => 'S18_4600',
@@ -179,7 +180,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.07',
                 'orderLineNumber' => 5,
             ),
-            20 => 
+            20 =>
             array (
                 'orderNumber' => 10103,
                 'productCode' => 'S18_4668',
@@ -187,7 +188,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '40.75',
                 'orderLineNumber' => 9,
             ),
-            21 => 
+            21 =>
             array (
                 'orderNumber' => 10103,
                 'productCode' => 'S24_2300',
@@ -195,7 +196,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.34',
                 'orderLineNumber' => 1,
             ),
-            22 => 
+            22 =>
             array (
                 'orderNumber' => 10103,
                 'productCode' => 'S24_4258',
@@ -203,7 +204,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.62',
                 'orderLineNumber' => 15,
             ),
-            23 => 
+            23 =>
             array (
                 'orderNumber' => 10103,
                 'productCode' => 'S32_1268',
@@ -211,7 +212,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.46',
                 'orderLineNumber' => 3,
             ),
-            24 => 
+            24 =>
             array (
                 'orderNumber' => 10103,
                 'productCode' => 'S32_3522',
@@ -219,7 +220,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.35',
                 'orderLineNumber' => 7,
             ),
-            25 => 
+            25 =>
             array (
                 'orderNumber' => 10103,
                 'productCode' => 'S700_2824',
@@ -227,7 +228,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.07',
                 'orderLineNumber' => 6,
             ),
-            26 => 
+            26 =>
             array (
                 'orderNumber' => 10104,
                 'productCode' => 'S12_3148',
@@ -235,7 +236,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '131.44',
                 'orderLineNumber' => 1,
             ),
-            27 => 
+            27 =>
             array (
                 'orderNumber' => 10104,
                 'productCode' => 'S12_4473',
@@ -243,7 +244,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.39',
                 'orderLineNumber' => 9,
             ),
-            28 => 
+            28 =>
             array (
                 'orderNumber' => 10104,
                 'productCode' => 'S18_2238',
@@ -251,7 +252,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.90',
                 'orderLineNumber' => 8,
             ),
-            29 => 
+            29 =>
             array (
                 'orderNumber' => 10104,
                 'productCode' => 'S18_2319',
@@ -259,7 +260,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.73',
                 'orderLineNumber' => 12,
             ),
-            30 => 
+            30 =>
             array (
                 'orderNumber' => 10104,
                 'productCode' => 'S18_3232',
@@ -267,7 +268,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '165.95',
                 'orderLineNumber' => 13,
             ),
-            31 => 
+            31 =>
             array (
                 'orderNumber' => 10104,
                 'productCode' => 'S18_4027',
@@ -275,7 +276,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.20',
                 'orderLineNumber' => 3,
             ),
-            32 => 
+            32 =>
             array (
                 'orderNumber' => 10104,
                 'productCode' => 'S24_1444',
@@ -283,7 +284,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.02',
                 'orderLineNumber' => 6,
             ),
-            33 => 
+            33 =>
             array (
                 'orderNumber' => 10104,
                 'productCode' => 'S24_2840',
@@ -291,7 +292,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '30.41',
                 'orderLineNumber' => 10,
             ),
-            34 => 
+            34 =>
             array (
                 'orderNumber' => 10104,
                 'productCode' => 'S24_4048',
@@ -299,7 +300,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '106.45',
                 'orderLineNumber' => 5,
             ),
-            35 => 
+            35 =>
             array (
                 'orderNumber' => 10104,
                 'productCode' => 'S32_2509',
@@ -307,7 +308,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.95',
                 'orderLineNumber' => 11,
             ),
-            36 => 
+            36 =>
             array (
                 'orderNumber' => 10104,
                 'productCode' => 'S32_3207',
@@ -315,7 +316,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.55',
                 'orderLineNumber' => 4,
             ),
-            37 => 
+            37 =>
             array (
                 'orderNumber' => 10104,
                 'productCode' => 'S50_1392',
@@ -323,7 +324,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.59',
                 'orderLineNumber' => 7,
             ),
-            38 => 
+            38 =>
             array (
                 'orderNumber' => 10104,
                 'productCode' => 'S50_1514',
@@ -331,7 +332,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.31',
                 'orderLineNumber' => 2,
             ),
-            39 => 
+            39 =>
             array (
                 'orderNumber' => 10105,
                 'productCode' => 'S10_4757',
@@ -339,7 +340,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '127.84',
                 'orderLineNumber' => 2,
             ),
-            40 => 
+            40 =>
             array (
                 'orderNumber' => 10105,
                 'productCode' => 'S12_1108',
@@ -347,7 +348,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '205.72',
                 'orderLineNumber' => 15,
             ),
-            41 => 
+            41 =>
             array (
                 'orderNumber' => 10105,
                 'productCode' => 'S12_3891',
@@ -355,7 +356,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '141.88',
                 'orderLineNumber' => 14,
             ),
-            42 => 
+            42 =>
             array (
                 'orderNumber' => 10105,
                 'productCode' => 'S18_3140',
@@ -363,7 +364,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '136.59',
                 'orderLineNumber' => 11,
             ),
-            43 => 
+            43 =>
             array (
                 'orderNumber' => 10105,
                 'productCode' => 'S18_3259',
@@ -371,7 +372,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.73',
                 'orderLineNumber' => 13,
             ),
-            44 => 
+            44 =>
             array (
                 'orderNumber' => 10105,
                 'productCode' => 'S18_4522',
@@ -379,7 +380,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.48',
                 'orderLineNumber' => 10,
             ),
-            45 => 
+            45 =>
             array (
                 'orderNumber' => 10105,
                 'productCode' => 'S24_2011',
@@ -387,7 +388,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.97',
                 'orderLineNumber' => 9,
             ),
-            46 => 
+            46 =>
             array (
                 'orderNumber' => 10105,
                 'productCode' => 'S24_3151',
@@ -395,7 +396,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.46',
                 'orderLineNumber' => 4,
             ),
-            47 => 
+            47 =>
             array (
                 'orderNumber' => 10105,
                 'productCode' => 'S24_3816',
@@ -403,7 +404,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.47',
                 'orderLineNumber' => 1,
             ),
-            48 => 
+            48 =>
             array (
                 'orderNumber' => 10105,
                 'productCode' => 'S700_1138',
@@ -411,7 +412,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.00',
                 'orderLineNumber' => 5,
             ),
-            49 => 
+            49 =>
             array (
                 'orderNumber' => 10105,
                 'productCode' => 'S700_1938',
@@ -419,7 +420,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.61',
                 'orderLineNumber' => 12,
             ),
-            50 => 
+            50 =>
             array (
                 'orderNumber' => 10105,
                 'productCode' => 'S700_2610',
@@ -427,7 +428,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.72',
                 'orderLineNumber' => 3,
             ),
-            51 => 
+            51 =>
             array (
                 'orderNumber' => 10105,
                 'productCode' => 'S700_3505',
@@ -435,7 +436,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.16',
                 'orderLineNumber' => 6,
             ),
-            52 => 
+            52 =>
             array (
                 'orderNumber' => 10105,
                 'productCode' => 'S700_3962',
@@ -443,7 +444,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.31',
                 'orderLineNumber' => 7,
             ),
-            53 => 
+            53 =>
             array (
                 'orderNumber' => 10105,
                 'productCode' => 'S72_3212',
@@ -451,7 +452,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.77',
                 'orderLineNumber' => 8,
             ),
-            54 => 
+            54 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S18_1662',
@@ -459,7 +460,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '134.04',
                 'orderLineNumber' => 12,
             ),
-            55 => 
+            55 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S18_2581',
@@ -467,7 +468,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.10',
                 'orderLineNumber' => 2,
             ),
-            56 => 
+            56 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S18_3029',
@@ -475,7 +476,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.86',
                 'orderLineNumber' => 18,
             ),
-            57 => 
+            57 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S18_3856',
@@ -483,7 +484,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.22',
                 'orderLineNumber' => 17,
             ),
-            58 => 
+            58 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S24_1785',
@@ -491,7 +492,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.23',
                 'orderLineNumber' => 4,
             ),
-            59 => 
+            59 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S24_2841',
@@ -499,7 +500,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.77',
                 'orderLineNumber' => 13,
             ),
-            60 => 
+            60 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S24_3420',
@@ -507,7 +508,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.89',
                 'orderLineNumber' => 14,
             ),
-            61 => 
+            61 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S24_3949',
@@ -515,7 +516,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.96',
                 'orderLineNumber' => 11,
             ),
-            62 => 
+            62 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S24_4278',
@@ -523,7 +524,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.00',
                 'orderLineNumber' => 3,
             ),
-            63 => 
+            63 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S32_4289',
@@ -531,7 +532,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.35',
                 'orderLineNumber' => 5,
             ),
-            64 => 
+            64 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S50_1341',
@@ -539,7 +540,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.78',
                 'orderLineNumber' => 6,
             ),
-            65 => 
+            65 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S700_1691',
@@ -547,7 +548,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.34',
                 'orderLineNumber' => 7,
             ),
-            66 => 
+            66 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S700_2047',
@@ -555,7 +556,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.09',
                 'orderLineNumber' => 16,
             ),
-            67 => 
+            67 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S700_2466',
@@ -563,7 +564,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.72',
                 'orderLineNumber' => 9,
             ),
-            68 => 
+            68 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S700_2834',
@@ -571,7 +572,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.90',
                 'orderLineNumber' => 1,
             ),
-            69 => 
+            69 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S700_3167',
@@ -579,7 +580,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.00',
                 'orderLineNumber' => 8,
             ),
-            70 => 
+            70 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S700_4002',
@@ -587,7 +588,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.33',
                 'orderLineNumber' => 10,
             ),
-            71 => 
+            71 =>
             array (
                 'orderNumber' => 10106,
                 'productCode' => 'S72_1253',
@@ -595,7 +596,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.70',
                 'orderLineNumber' => 15,
             ),
-            72 => 
+            72 =>
             array (
                 'orderNumber' => 10107,
                 'productCode' => 'S10_1678',
@@ -603,7 +604,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.35',
                 'orderLineNumber' => 2,
             ),
-            73 => 
+            73 =>
             array (
                 'orderNumber' => 10107,
                 'productCode' => 'S10_2016',
@@ -611,7 +612,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.86',
                 'orderLineNumber' => 5,
             ),
-            74 => 
+            74 =>
             array (
                 'orderNumber' => 10107,
                 'productCode' => 'S10_4698',
@@ -619,7 +620,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '172.36',
                 'orderLineNumber' => 4,
             ),
-            75 => 
+            75 =>
             array (
                 'orderNumber' => 10107,
                 'productCode' => 'S12_2823',
@@ -627,7 +628,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.00',
                 'orderLineNumber' => 1,
             ),
-            76 => 
+            76 =>
             array (
                 'orderNumber' => 10107,
                 'productCode' => 'S18_2625',
@@ -635,7 +636,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.70',
                 'orderLineNumber' => 6,
             ),
-            77 => 
+            77 =>
             array (
                 'orderNumber' => 10107,
                 'productCode' => 'S24_1578',
@@ -643,7 +644,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.92',
                 'orderLineNumber' => 3,
             ),
-            78 => 
+            78 =>
             array (
                 'orderNumber' => 10107,
                 'productCode' => 'S24_2000',
@@ -651,7 +652,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.12',
                 'orderLineNumber' => 7,
             ),
-            79 => 
+            79 =>
             array (
                 'orderNumber' => 10107,
                 'productCode' => 'S32_1374',
@@ -659,7 +660,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.90',
                 'orderLineNumber' => 8,
             ),
-            80 => 
+            80 =>
             array (
                 'orderNumber' => 10108,
                 'productCode' => 'S12_1099',
@@ -667,7 +668,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '165.38',
                 'orderLineNumber' => 6,
             ),
-            81 => 
+            81 =>
             array (
                 'orderNumber' => 10108,
                 'productCode' => 'S12_3380',
@@ -675,7 +676,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.30',
                 'orderLineNumber' => 4,
             ),
-            82 => 
+            82 =>
             array (
                 'orderNumber' => 10108,
                 'productCode' => 'S12_3990',
@@ -683,7 +684,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.81',
                 'orderLineNumber' => 7,
             ),
-            83 => 
+            83 =>
             array (
                 'orderNumber' => 10108,
                 'productCode' => 'S12_4675',
@@ -691,7 +692,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.10',
                 'orderLineNumber' => 3,
             ),
-            84 => 
+            84 =>
             array (
                 'orderNumber' => 10108,
                 'productCode' => 'S18_1889',
@@ -699,7 +700,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.76',
                 'orderLineNumber' => 2,
             ),
-            85 => 
+            85 =>
             array (
                 'orderNumber' => 10108,
                 'productCode' => 'S18_3278',
@@ -707,7 +708,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.17',
                 'orderLineNumber' => 9,
             ),
-            86 => 
+            86 =>
             array (
                 'orderNumber' => 10108,
                 'productCode' => 'S18_3482',
@@ -715,7 +716,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '132.29',
                 'orderLineNumber' => 8,
             ),
-            87 => 
+            87 =>
             array (
                 'orderNumber' => 10108,
                 'productCode' => 'S18_3782',
@@ -723,7 +724,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.84',
                 'orderLineNumber' => 12,
             ),
-            88 => 
+            88 =>
             array (
                 'orderNumber' => 10108,
                 'productCode' => 'S18_4721',
@@ -731,7 +732,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '139.87',
                 'orderLineNumber' => 11,
             ),
-            89 => 
+            89 =>
             array (
                 'orderNumber' => 10108,
                 'productCode' => 'S24_2360',
@@ -739,7 +740,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.41',
                 'orderLineNumber' => 15,
             ),
-            90 => 
+            90 =>
             array (
                 'orderNumber' => 10108,
                 'productCode' => 'S24_3371',
@@ -747,7 +748,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.01',
                 'orderLineNumber' => 5,
             ),
-            91 => 
+            91 =>
             array (
                 'orderNumber' => 10108,
                 'productCode' => 'S24_3856',
@@ -755,7 +756,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '132.00',
                 'orderLineNumber' => 1,
             ),
-            92 => 
+            92 =>
             array (
                 'orderNumber' => 10108,
                 'productCode' => 'S24_4620',
@@ -763,7 +764,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.10',
                 'orderLineNumber' => 10,
             ),
-            93 => 
+            93 =>
             array (
                 'orderNumber' => 10108,
                 'productCode' => 'S32_2206',
@@ -771,7 +772,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '36.21',
                 'orderLineNumber' => 13,
             ),
-            94 => 
+            94 =>
             array (
                 'orderNumber' => 10108,
                 'productCode' => 'S32_4485',
@@ -779,7 +780,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.76',
                 'orderLineNumber' => 16,
             ),
-            95 => 
+            95 =>
             array (
                 'orderNumber' => 10108,
                 'productCode' => 'S50_4713',
@@ -787,7 +788,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.85',
                 'orderLineNumber' => 14,
             ),
-            96 => 
+            96 =>
             array (
                 'orderNumber' => 10109,
                 'productCode' => 'S18_1129',
@@ -795,7 +796,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.48',
                 'orderLineNumber' => 4,
             ),
-            97 => 
+            97 =>
             array (
                 'orderNumber' => 10109,
                 'productCode' => 'S18_1984',
@@ -803,7 +804,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.98',
                 'orderLineNumber' => 3,
             ),
-            98 => 
+            98 =>
             array (
                 'orderNumber' => 10109,
                 'productCode' => 'S18_2870',
@@ -811,7 +812,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.72',
                 'orderLineNumber' => 1,
             ),
-            99 => 
+            99 =>
             array (
                 'orderNumber' => 10109,
                 'productCode' => 'S18_3232',
@@ -819,7 +820,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '160.87',
                 'orderLineNumber' => 5,
             ),
-            100 => 
+            100 =>
             array (
                 'orderNumber' => 10109,
                 'productCode' => 'S18_3685',
@@ -827,7 +828,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '125.74',
                 'orderLineNumber' => 2,
             ),
-            101 => 
+            101 =>
             array (
                 'orderNumber' => 10109,
                 'productCode' => 'S24_2972',
@@ -835,7 +836,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.10',
                 'orderLineNumber' => 6,
             ),
-            102 => 
+            102 =>
             array (
                 'orderNumber' => 10110,
                 'productCode' => 'S18_1589',
@@ -843,7 +844,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.22',
                 'orderLineNumber' => 16,
             ),
-            103 => 
+            103 =>
             array (
                 'orderNumber' => 10110,
                 'productCode' => 'S18_1749',
@@ -851,7 +852,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '153.00',
                 'orderLineNumber' => 7,
             ),
-            104 => 
+            104 =>
             array (
                 'orderNumber' => 10110,
                 'productCode' => 'S18_2248',
@@ -859,7 +860,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.46',
                 'orderLineNumber' => 6,
             ),
-            105 => 
+            105 =>
             array (
                 'orderNumber' => 10110,
                 'productCode' => 'S18_2325',
@@ -867,7 +868,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.69',
                 'orderLineNumber' => 4,
             ),
-            106 => 
+            106 =>
             array (
                 'orderNumber' => 10110,
                 'productCode' => 'S18_2795',
@@ -875,7 +876,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '163.69',
                 'orderLineNumber' => 1,
             ),
-            107 => 
+            107 =>
             array (
                 'orderNumber' => 10110,
                 'productCode' => 'S18_4409',
@@ -883,7 +884,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.91',
                 'orderLineNumber' => 8,
             ),
-            108 => 
+            108 =>
             array (
                 'orderNumber' => 10110,
                 'productCode' => 'S18_4933',
@@ -891,7 +892,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.00',
                 'orderLineNumber' => 9,
             ),
-            109 => 
+            109 =>
             array (
                 'orderNumber' => 10110,
                 'productCode' => 'S24_1046',
@@ -899,7 +900,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.02',
                 'orderLineNumber' => 13,
             ),
-            110 => 
+            110 =>
             array (
                 'orderNumber' => 10110,
                 'productCode' => 'S24_1628',
@@ -907,7 +908,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.27',
                 'orderLineNumber' => 15,
             ),
-            111 => 
+            111 =>
             array (
                 'orderNumber' => 10110,
                 'productCode' => 'S24_1937',
@@ -915,7 +916,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '28.88',
                 'orderLineNumber' => 3,
             ),
-            112 => 
+            112 =>
             array (
                 'orderNumber' => 10110,
                 'productCode' => 'S24_2022',
@@ -923,7 +924,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '40.77',
                 'orderLineNumber' => 2,
             ),
-            113 => 
+            113 =>
             array (
                 'orderNumber' => 10110,
                 'productCode' => 'S24_2766',
@@ -931,7 +932,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.69',
                 'orderLineNumber' => 11,
             ),
-            114 => 
+            114 =>
             array (
                 'orderNumber' => 10110,
                 'productCode' => 'S24_2887',
@@ -939,7 +940,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.74',
                 'orderLineNumber' => 10,
             ),
-            115 => 
+            115 =>
             array (
                 'orderNumber' => 10110,
                 'productCode' => 'S24_3191',
@@ -947,7 +948,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.47',
                 'orderLineNumber' => 12,
             ),
-            116 => 
+            116 =>
             array (
                 'orderNumber' => 10110,
                 'productCode' => 'S24_3432',
@@ -955,7 +956,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.37',
                 'orderLineNumber' => 14,
             ),
-            117 => 
+            117 =>
             array (
                 'orderNumber' => 10110,
                 'productCode' => 'S24_3969',
@@ -963,7 +964,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.29',
                 'orderLineNumber' => 5,
             ),
-            118 => 
+            118 =>
             array (
                 'orderNumber' => 10111,
                 'productCode' => 'S18_1342',
@@ -971,7 +972,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.33',
                 'orderLineNumber' => 6,
             ),
-            119 => 
+            119 =>
             array (
                 'orderNumber' => 10111,
                 'productCode' => 'S18_1367',
@@ -979,7 +980,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.52',
                 'orderLineNumber' => 5,
             ),
-            120 => 
+            120 =>
             array (
                 'orderNumber' => 10111,
                 'productCode' => 'S18_2957',
@@ -987,7 +988,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.09',
                 'orderLineNumber' => 2,
             ),
-            121 => 
+            121 =>
             array (
                 'orderNumber' => 10111,
                 'productCode' => 'S18_3136',
@@ -995,7 +996,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.25',
                 'orderLineNumber' => 1,
             ),
-            122 => 
+            122 =>
             array (
                 'orderNumber' => 10111,
                 'productCode' => 'S18_3320',
@@ -1003,7 +1004,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.27',
                 'orderLineNumber' => 4,
             ),
-            123 => 
+            123 =>
             array (
                 'orderNumber' => 10111,
                 'productCode' => 'S24_4258',
@@ -1011,7 +1012,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.70',
                 'orderLineNumber' => 3,
             ),
-            124 => 
+            124 =>
             array (
                 'orderNumber' => 10112,
                 'productCode' => 'S10_1949',
@@ -1019,7 +1020,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '197.16',
                 'orderLineNumber' => 1,
             ),
-            125 => 
+            125 =>
             array (
                 'orderNumber' => 10112,
                 'productCode' => 'S18_2949',
@@ -1027,7 +1028,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.10',
                 'orderLineNumber' => 2,
             ),
-            126 => 
+            126 =>
             array (
                 'orderNumber' => 10113,
                 'productCode' => 'S12_1666',
@@ -1035,7 +1036,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '121.64',
                 'orderLineNumber' => 2,
             ),
-            127 => 
+            127 =>
             array (
                 'orderNumber' => 10113,
                 'productCode' => 'S18_1097',
@@ -1043,7 +1044,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.50',
                 'orderLineNumber' => 4,
             ),
-            128 => 
+            128 =>
             array (
                 'orderNumber' => 10113,
                 'productCode' => 'S18_4668',
@@ -1051,7 +1052,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.27',
                 'orderLineNumber' => 3,
             ),
-            129 => 
+            129 =>
             array (
                 'orderNumber' => 10113,
                 'productCode' => 'S32_3522',
@@ -1059,7 +1060,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.82',
                 'orderLineNumber' => 1,
             ),
-            130 => 
+            130 =>
             array (
                 'orderNumber' => 10114,
                 'productCode' => 'S10_4962',
@@ -1067,7 +1068,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '128.53',
                 'orderLineNumber' => 8,
             ),
-            131 => 
+            131 =>
             array (
                 'orderNumber' => 10114,
                 'productCode' => 'S18_2319',
@@ -1075,7 +1076,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '106.78',
                 'orderLineNumber' => 3,
             ),
-            132 => 
+            132 =>
             array (
                 'orderNumber' => 10114,
                 'productCode' => 'S18_2432',
@@ -1083,7 +1084,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.48',
                 'orderLineNumber' => 6,
             ),
-            133 => 
+            133 =>
             array (
                 'orderNumber' => 10114,
                 'productCode' => 'S18_3232',
@@ -1091,7 +1092,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '169.34',
                 'orderLineNumber' => 4,
             ),
-            134 => 
+            134 =>
             array (
                 'orderNumber' => 10114,
                 'productCode' => 'S18_4600',
@@ -1099,7 +1100,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.34',
                 'orderLineNumber' => 9,
             ),
-            135 => 
+            135 =>
             array (
                 'orderNumber' => 10114,
                 'productCode' => 'S24_2300',
@@ -1107,7 +1108,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.23',
                 'orderLineNumber' => 5,
             ),
-            136 => 
+            136 =>
             array (
                 'orderNumber' => 10114,
                 'productCode' => 'S24_2840',
@@ -1115,7 +1116,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '28.64',
                 'orderLineNumber' => 1,
             ),
-            137 => 
+            137 =>
             array (
                 'orderNumber' => 10114,
                 'productCode' => 'S32_1268',
@@ -1123,7 +1124,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.61',
                 'orderLineNumber' => 7,
             ),
-            138 => 
+            138 =>
             array (
                 'orderNumber' => 10114,
                 'productCode' => 'S32_2509',
@@ -1131,7 +1132,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.83',
                 'orderLineNumber' => 2,
             ),
-            139 => 
+            139 =>
             array (
                 'orderNumber' => 10114,
                 'productCode' => 'S700_2824',
@@ -1139,7 +1140,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.94',
                 'orderLineNumber' => 10,
             ),
-            140 => 
+            140 =>
             array (
                 'orderNumber' => 10115,
                 'productCode' => 'S12_4473',
@@ -1147,7 +1148,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.39',
                 'orderLineNumber' => 5,
             ),
-            141 => 
+            141 =>
             array (
                 'orderNumber' => 10115,
                 'productCode' => 'S18_2238',
@@ -1155,7 +1156,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.81',
                 'orderLineNumber' => 4,
             ),
-            142 => 
+            142 =>
             array (
                 'orderNumber' => 10115,
                 'productCode' => 'S24_1444',
@@ -1163,7 +1164,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.64',
                 'orderLineNumber' => 2,
             ),
-            143 => 
+            143 =>
             array (
                 'orderNumber' => 10115,
                 'productCode' => 'S24_4048',
@@ -1171,7 +1172,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '106.45',
                 'orderLineNumber' => 1,
             ),
-            144 => 
+            144 =>
             array (
                 'orderNumber' => 10115,
                 'productCode' => 'S50_1392',
@@ -1179,7 +1180,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.70',
                 'orderLineNumber' => 3,
             ),
-            145 => 
+            145 =>
             array (
                 'orderNumber' => 10116,
                 'productCode' => 'S32_3207',
@@ -1187,7 +1188,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.28',
                 'orderLineNumber' => 1,
             ),
-            146 => 
+            146 =>
             array (
                 'orderNumber' => 10117,
                 'productCode' => 'S12_1108',
@@ -1195,7 +1196,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '195.33',
                 'orderLineNumber' => 9,
             ),
-            147 => 
+            147 =>
             array (
                 'orderNumber' => 10117,
                 'productCode' => 'S12_3148',
@@ -1203,7 +1204,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '148.06',
                 'orderLineNumber' => 10,
             ),
-            148 => 
+            148 =>
             array (
                 'orderNumber' => 10117,
                 'productCode' => 'S12_3891',
@@ -1211,7 +1212,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '173.02',
                 'orderLineNumber' => 8,
             ),
-            149 => 
+            149 =>
             array (
                 'orderNumber' => 10117,
                 'productCode' => 'S18_3140',
@@ -1219,7 +1220,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '121.57',
                 'orderLineNumber' => 5,
             ),
-            150 => 
+            150 =>
             array (
                 'orderNumber' => 10117,
                 'productCode' => 'S18_3259',
@@ -1227,7 +1228,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.68',
                 'orderLineNumber' => 7,
             ),
-            151 => 
+            151 =>
             array (
                 'orderNumber' => 10117,
                 'productCode' => 'S18_4027',
@@ -1235,7 +1236,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.08',
                 'orderLineNumber' => 12,
             ),
-            152 => 
+            152 =>
             array (
                 'orderNumber' => 10117,
                 'productCode' => 'S18_4522',
@@ -1243,7 +1244,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.73',
                 'orderLineNumber' => 4,
             ),
-            153 => 
+            153 =>
             array (
                 'orderNumber' => 10117,
                 'productCode' => 'S24_2011',
@@ -1251,7 +1252,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.20',
                 'orderLineNumber' => 3,
             ),
-            154 => 
+            154 =>
             array (
                 'orderNumber' => 10117,
                 'productCode' => 'S50_1514',
@@ -1259,7 +1260,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.65',
                 'orderLineNumber' => 11,
             ),
-            155 => 
+            155 =>
             array (
                 'orderNumber' => 10117,
                 'productCode' => 'S700_1938',
@@ -1267,7 +1268,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.35',
                 'orderLineNumber' => 6,
             ),
-            156 => 
+            156 =>
             array (
                 'orderNumber' => 10117,
                 'productCode' => 'S700_3962',
@@ -1275,7 +1276,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.38',
                 'orderLineNumber' => 1,
             ),
-            157 => 
+            157 =>
             array (
                 'orderNumber' => 10117,
                 'productCode' => 'S72_3212',
@@ -1283,7 +1284,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.42',
                 'orderLineNumber' => 2,
             ),
-            158 => 
+            158 =>
             array (
                 'orderNumber' => 10118,
                 'productCode' => 'S700_3505',
@@ -1291,7 +1292,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.15',
                 'orderLineNumber' => 1,
             ),
-            159 => 
+            159 =>
             array (
                 'orderNumber' => 10119,
                 'productCode' => 'S10_4757',
@@ -1299,7 +1300,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.88',
                 'orderLineNumber' => 11,
             ),
-            160 => 
+            160 =>
             array (
                 'orderNumber' => 10119,
                 'productCode' => 'S18_1662',
@@ -1307,7 +1308,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '151.38',
                 'orderLineNumber' => 3,
             ),
-            161 => 
+            161 =>
             array (
                 'orderNumber' => 10119,
                 'productCode' => 'S18_3029',
@@ -1315,7 +1316,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.84',
                 'orderLineNumber' => 9,
             ),
-            162 => 
+            162 =>
             array (
                 'orderNumber' => 10119,
                 'productCode' => 'S18_3856',
@@ -1323,7 +1324,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.28',
                 'orderLineNumber' => 8,
             ),
-            163 => 
+            163 =>
             array (
                 'orderNumber' => 10119,
                 'productCode' => 'S24_2841',
@@ -1331,7 +1332,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.40',
                 'orderLineNumber' => 4,
             ),
-            164 => 
+            164 =>
             array (
                 'orderNumber' => 10119,
                 'productCode' => 'S24_3151',
@@ -1339,7 +1340,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.58',
                 'orderLineNumber' => 13,
             ),
-            165 => 
+            165 =>
             array (
                 'orderNumber' => 10119,
                 'productCode' => 'S24_3420',
@@ -1347,7 +1348,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.12',
                 'orderLineNumber' => 5,
             ),
-            166 => 
+            166 =>
             array (
                 'orderNumber' => 10119,
                 'productCode' => 'S24_3816',
@@ -1355,7 +1356,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.18',
                 'orderLineNumber' => 10,
             ),
-            167 => 
+            167 =>
             array (
                 'orderNumber' => 10119,
                 'productCode' => 'S24_3949',
@@ -1363,7 +1364,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.10',
                 'orderLineNumber' => 2,
             ),
-            168 => 
+            168 =>
             array (
                 'orderNumber' => 10119,
                 'productCode' => 'S700_1138',
@@ -1371,7 +1372,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.34',
                 'orderLineNumber' => 14,
             ),
-            169 => 
+            169 =>
             array (
                 'orderNumber' => 10119,
                 'productCode' => 'S700_2047',
@@ -1379,7 +1380,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.23',
                 'orderLineNumber' => 7,
             ),
-            170 => 
+            170 =>
             array (
                 'orderNumber' => 10119,
                 'productCode' => 'S700_2610',
@@ -1387,7 +1388,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.22',
                 'orderLineNumber' => 12,
             ),
-            171 => 
+            171 =>
             array (
                 'orderNumber' => 10119,
                 'productCode' => 'S700_4002',
@@ -1395,7 +1396,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.67',
                 'orderLineNumber' => 1,
             ),
-            172 => 
+            172 =>
             array (
                 'orderNumber' => 10119,
                 'productCode' => 'S72_1253',
@@ -1403,7 +1404,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '40.22',
                 'orderLineNumber' => 6,
             ),
-            173 => 
+            173 =>
             array (
                 'orderNumber' => 10120,
                 'productCode' => 'S10_2016',
@@ -1411,7 +1412,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.94',
                 'orderLineNumber' => 3,
             ),
-            174 => 
+            174 =>
             array (
                 'orderNumber' => 10120,
                 'productCode' => 'S10_4698',
@@ -1419,7 +1420,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '158.80',
                 'orderLineNumber' => 2,
             ),
-            175 => 
+            175 =>
             array (
                 'orderNumber' => 10120,
                 'productCode' => 'S18_2581',
@@ -1427,7 +1428,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.79',
                 'orderLineNumber' => 8,
             ),
-            176 => 
+            176 =>
             array (
                 'orderNumber' => 10120,
                 'productCode' => 'S18_2625',
@@ -1435,7 +1436,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.54',
                 'orderLineNumber' => 4,
             ),
-            177 => 
+            177 =>
             array (
                 'orderNumber' => 10120,
                 'productCode' => 'S24_1578',
@@ -1443,7 +1444,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.45',
                 'orderLineNumber' => 1,
             ),
-            178 => 
+            178 =>
             array (
                 'orderNumber' => 10120,
                 'productCode' => 'S24_1785',
@@ -1451,7 +1452,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.01',
                 'orderLineNumber' => 10,
             ),
-            179 => 
+            179 =>
             array (
                 'orderNumber' => 10120,
                 'productCode' => 'S24_2000',
@@ -1459,7 +1460,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.36',
                 'orderLineNumber' => 5,
             ),
-            180 => 
+            180 =>
             array (
                 'orderNumber' => 10120,
                 'productCode' => 'S24_4278',
@@ -1467,7 +1468,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.73',
                 'orderLineNumber' => 9,
             ),
-            181 => 
+            181 =>
             array (
                 'orderNumber' => 10120,
                 'productCode' => 'S32_1374',
@@ -1475,7 +1476,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.90',
                 'orderLineNumber' => 6,
             ),
-            182 => 
+            182 =>
             array (
                 'orderNumber' => 10120,
                 'productCode' => 'S32_4289',
@@ -1483,7 +1484,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.79',
                 'orderLineNumber' => 11,
             ),
-            183 => 
+            183 =>
             array (
                 'orderNumber' => 10120,
                 'productCode' => 'S50_1341',
@@ -1491,7 +1492,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '41.46',
                 'orderLineNumber' => 12,
             ),
-            184 => 
+            184 =>
             array (
                 'orderNumber' => 10120,
                 'productCode' => 'S700_1691',
@@ -1499,7 +1500,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.34',
                 'orderLineNumber' => 13,
             ),
-            185 => 
+            185 =>
             array (
                 'orderNumber' => 10120,
                 'productCode' => 'S700_2466',
@@ -1507,7 +1508,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.77',
                 'orderLineNumber' => 15,
             ),
-            186 => 
+            186 =>
             array (
                 'orderNumber' => 10120,
                 'productCode' => 'S700_2834',
@@ -1515,7 +1516,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '106.79',
                 'orderLineNumber' => 7,
             ),
-            187 => 
+            187 =>
             array (
                 'orderNumber' => 10120,
                 'productCode' => 'S700_3167',
@@ -1523,7 +1524,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.00',
                 'orderLineNumber' => 14,
             ),
-            188 => 
+            188 =>
             array (
                 'orderNumber' => 10121,
                 'productCode' => 'S10_1678',
@@ -1531,7 +1532,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.13',
                 'orderLineNumber' => 5,
             ),
-            189 => 
+            189 =>
             array (
                 'orderNumber' => 10121,
                 'productCode' => 'S12_2823',
@@ -1539,7 +1540,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.52',
                 'orderLineNumber' => 4,
             ),
-            190 => 
+            190 =>
             array (
                 'orderNumber' => 10121,
                 'productCode' => 'S24_2360',
@@ -1547,7 +1548,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.18',
                 'orderLineNumber' => 2,
             ),
-            191 => 
+            191 =>
             array (
                 'orderNumber' => 10121,
                 'productCode' => 'S32_4485',
@@ -1555,7 +1556,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.93',
                 'orderLineNumber' => 3,
             ),
-            192 => 
+            192 =>
             array (
                 'orderNumber' => 10121,
                 'productCode' => 'S50_4713',
@@ -1563,7 +1564,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.41',
                 'orderLineNumber' => 1,
             ),
-            193 => 
+            193 =>
             array (
                 'orderNumber' => 10122,
                 'productCode' => 'S12_1099',
@@ -1571,7 +1572,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '155.66',
                 'orderLineNumber' => 10,
             ),
-            194 => 
+            194 =>
             array (
                 'orderNumber' => 10122,
                 'productCode' => 'S12_3380',
@@ -1579,7 +1580,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.92',
                 'orderLineNumber' => 8,
             ),
-            195 => 
+            195 =>
             array (
                 'orderNumber' => 10122,
                 'productCode' => 'S12_3990',
@@ -1587,7 +1588,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.44',
                 'orderLineNumber' => 11,
             ),
-            196 => 
+            196 =>
             array (
                 'orderNumber' => 10122,
                 'productCode' => 'S12_4675',
@@ -1595,7 +1596,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.80',
                 'orderLineNumber' => 7,
             ),
-            197 => 
+            197 =>
             array (
                 'orderNumber' => 10122,
                 'productCode' => 'S18_1129',
@@ -1603,7 +1604,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.65',
                 'orderLineNumber' => 2,
             ),
-            198 => 
+            198 =>
             array (
                 'orderNumber' => 10122,
                 'productCode' => 'S18_1889',
@@ -1611,7 +1612,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.37',
                 'orderLineNumber' => 6,
             ),
-            199 => 
+            199 =>
             array (
                 'orderNumber' => 10122,
                 'productCode' => 'S18_1984',
@@ -1619,7 +1620,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.80',
                 'orderLineNumber' => 1,
             ),
-            200 => 
+            200 =>
             array (
                 'orderNumber' => 10122,
                 'productCode' => 'S18_3232',
@@ -1627,7 +1628,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.17',
                 'orderLineNumber' => 3,
             ),
-            201 => 
+            201 =>
             array (
                 'orderNumber' => 10122,
                 'productCode' => 'S18_3278',
@@ -1635,7 +1636,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.15',
                 'orderLineNumber' => 13,
             ),
-            202 => 
+            202 =>
             array (
                 'orderNumber' => 10122,
                 'productCode' => 'S18_3482',
@@ -1643,7 +1644,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '133.76',
                 'orderLineNumber' => 12,
             ),
-            203 => 
+            203 =>
             array (
                 'orderNumber' => 10122,
                 'productCode' => 'S18_3782',
@@ -1651,7 +1652,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.06',
                 'orderLineNumber' => 16,
             ),
-            204 => 
+            204 =>
             array (
                 'orderNumber' => 10122,
                 'productCode' => 'S18_4721',
@@ -1659,7 +1660,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '145.82',
                 'orderLineNumber' => 15,
             ),
-            205 => 
+            205 =>
             array (
                 'orderNumber' => 10122,
                 'productCode' => 'S24_2972',
@@ -1667,7 +1668,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '34.74',
                 'orderLineNumber' => 4,
             ),
-            206 => 
+            206 =>
             array (
                 'orderNumber' => 10122,
                 'productCode' => 'S24_3371',
@@ -1675,7 +1676,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.82',
                 'orderLineNumber' => 9,
             ),
-            207 => 
+            207 =>
             array (
                 'orderNumber' => 10122,
                 'productCode' => 'S24_3856',
@@ -1683,7 +1684,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '136.22',
                 'orderLineNumber' => 5,
             ),
-            208 => 
+            208 =>
             array (
                 'orderNumber' => 10122,
                 'productCode' => 'S24_4620',
@@ -1691,7 +1692,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.10',
                 'orderLineNumber' => 14,
             ),
-            209 => 
+            209 =>
             array (
                 'orderNumber' => 10122,
                 'productCode' => 'S32_2206',
@@ -1699,7 +1700,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '33.79',
                 'orderLineNumber' => 17,
             ),
-            210 => 
+            210 =>
             array (
                 'orderNumber' => 10123,
                 'productCode' => 'S18_1589',
@@ -1707,7 +1708,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.71',
                 'orderLineNumber' => 2,
             ),
-            211 => 
+            211 =>
             array (
                 'orderNumber' => 10123,
                 'productCode' => 'S18_2870',
@@ -1715,7 +1716,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.84',
                 'orderLineNumber' => 3,
             ),
-            212 => 
+            212 =>
             array (
                 'orderNumber' => 10123,
                 'productCode' => 'S18_3685',
@@ -1723,7 +1724,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.26',
                 'orderLineNumber' => 4,
             ),
-            213 => 
+            213 =>
             array (
                 'orderNumber' => 10123,
                 'productCode' => 'S24_1628',
@@ -1731,7 +1732,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.27',
                 'orderLineNumber' => 1,
             ),
-            214 => 
+            214 =>
             array (
                 'orderNumber' => 10124,
                 'productCode' => 'S18_1749',
@@ -1739,7 +1740,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '153.00',
                 'orderLineNumber' => 6,
             ),
-            215 => 
+            215 =>
             array (
                 'orderNumber' => 10124,
                 'productCode' => 'S18_2248',
@@ -1747,7 +1748,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.12',
                 'orderLineNumber' => 5,
             ),
-            216 => 
+            216 =>
             array (
                 'orderNumber' => 10124,
                 'productCode' => 'S18_2325',
@@ -1755,7 +1756,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.87',
                 'orderLineNumber' => 3,
             ),
-            217 => 
+            217 =>
             array (
                 'orderNumber' => 10124,
                 'productCode' => 'S18_4409',
@@ -1763,7 +1764,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.46',
                 'orderLineNumber' => 7,
             ),
-            218 => 
+            218 =>
             array (
                 'orderNumber' => 10124,
                 'productCode' => 'S18_4933',
@@ -1771,7 +1772,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.28',
                 'orderLineNumber' => 8,
             ),
-            219 => 
+            219 =>
             array (
                 'orderNumber' => 10124,
                 'productCode' => 'S24_1046',
@@ -1779,7 +1780,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.47',
                 'orderLineNumber' => 12,
             ),
-            220 => 
+            220 =>
             array (
                 'orderNumber' => 10124,
                 'productCode' => 'S24_1937',
@@ -1787,7 +1788,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '30.53',
                 'orderLineNumber' => 2,
             ),
-            221 => 
+            221 =>
             array (
                 'orderNumber' => 10124,
                 'productCode' => 'S24_2022',
@@ -1795,7 +1796,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '36.29',
                 'orderLineNumber' => 1,
             ),
-            222 => 
+            222 =>
             array (
                 'orderNumber' => 10124,
                 'productCode' => 'S24_2766',
@@ -1803,7 +1804,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.51',
                 'orderLineNumber' => 10,
             ),
-            223 => 
+            223 =>
             array (
                 'orderNumber' => 10124,
                 'productCode' => 'S24_2887',
@@ -1811,7 +1812,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.95',
                 'orderLineNumber' => 9,
             ),
-            224 => 
+            224 =>
             array (
                 'orderNumber' => 10124,
                 'productCode' => 'S24_3191',
@@ -1819,7 +1820,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.19',
                 'orderLineNumber' => 11,
             ),
-            225 => 
+            225 =>
             array (
                 'orderNumber' => 10124,
                 'productCode' => 'S24_3432',
@@ -1827,7 +1828,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.73',
                 'orderLineNumber' => 13,
             ),
-            226 => 
+            226 =>
             array (
                 'orderNumber' => 10124,
                 'productCode' => 'S24_3969',
@@ -1835,7 +1836,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '36.11',
                 'orderLineNumber' => 4,
             ),
-            227 => 
+            227 =>
             array (
                 'orderNumber' => 10125,
                 'productCode' => 'S18_1342',
@@ -1843,7 +1844,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.38',
                 'orderLineNumber' => 1,
             ),
-            228 => 
+            228 =>
             array (
                 'orderNumber' => 10125,
                 'productCode' => 'S18_2795',
@@ -1851,7 +1852,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '138.38',
                 'orderLineNumber' => 2,
             ),
-            229 => 
+            229 =>
             array (
                 'orderNumber' => 10126,
                 'productCode' => 'S10_1949',
@@ -1859,7 +1860,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '205.73',
                 'orderLineNumber' => 11,
             ),
-            230 => 
+            230 =>
             array (
                 'orderNumber' => 10126,
                 'productCode' => 'S10_4962',
@@ -1867,7 +1868,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.62',
                 'orderLineNumber' => 4,
             ),
-            231 => 
+            231 =>
             array (
                 'orderNumber' => 10126,
                 'productCode' => 'S12_1666',
@@ -1875,7 +1876,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.30',
                 'orderLineNumber' => 8,
             ),
-            232 => 
+            232 =>
             array (
                 'orderNumber' => 10126,
                 'productCode' => 'S18_1097',
@@ -1883,7 +1884,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '116.67',
                 'orderLineNumber' => 10,
             ),
-            233 => 
+            233 =>
             array (
                 'orderNumber' => 10126,
                 'productCode' => 'S18_1367',
@@ -1891,7 +1892,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.21',
                 'orderLineNumber' => 17,
             ),
-            234 => 
+            234 =>
             array (
                 'orderNumber' => 10126,
                 'productCode' => 'S18_2432',
@@ -1899,7 +1900,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.05',
                 'orderLineNumber' => 2,
             ),
-            235 => 
+            235 =>
             array (
                 'orderNumber' => 10126,
                 'productCode' => 'S18_2949',
@@ -1907,7 +1908,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.21',
                 'orderLineNumber' => 12,
             ),
-            236 => 
+            236 =>
             array (
                 'orderNumber' => 10126,
                 'productCode' => 'S18_2957',
@@ -1915,7 +1916,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.84',
                 'orderLineNumber' => 14,
             ),
-            237 => 
+            237 =>
             array (
                 'orderNumber' => 10126,
                 'productCode' => 'S18_3136',
@@ -1923,7 +1924,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.20',
                 'orderLineNumber' => 13,
             ),
-            238 => 
+            238 =>
             array (
                 'orderNumber' => 10126,
                 'productCode' => 'S18_3320',
@@ -1931,7 +1932,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.25',
                 'orderLineNumber' => 16,
             ),
-            239 => 
+            239 =>
             array (
                 'orderNumber' => 10126,
                 'productCode' => 'S18_4600',
@@ -1939,7 +1940,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.92',
                 'orderLineNumber' => 5,
             ),
-            240 => 
+            240 =>
             array (
                 'orderNumber' => 10126,
                 'productCode' => 'S18_4668',
@@ -1947,7 +1948,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.29',
                 'orderLineNumber' => 9,
             ),
-            241 => 
+            241 =>
             array (
                 'orderNumber' => 10126,
                 'productCode' => 'S24_2300',
@@ -1955,7 +1956,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.68',
                 'orderLineNumber' => 1,
             ),
-            242 => 
+            242 =>
             array (
                 'orderNumber' => 10126,
                 'productCode' => 'S24_4258',
@@ -1963,7 +1964,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.76',
                 'orderLineNumber' => 15,
             ),
-            243 => 
+            243 =>
             array (
                 'orderNumber' => 10126,
                 'productCode' => 'S32_1268',
@@ -1971,7 +1972,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.83',
                 'orderLineNumber' => 3,
             ),
-            244 => 
+            244 =>
             array (
                 'orderNumber' => 10126,
                 'productCode' => 'S32_3522',
@@ -1979,7 +1980,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.05',
                 'orderLineNumber' => 7,
             ),
-            245 => 
+            245 =>
             array (
                 'orderNumber' => 10126,
                 'productCode' => 'S700_2824',
@@ -1987,7 +1988,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '97.10',
                 'orderLineNumber' => 6,
             ),
-            246 => 
+            246 =>
             array (
                 'orderNumber' => 10127,
                 'productCode' => 'S12_1108',
@@ -1995,7 +1996,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '193.25',
                 'orderLineNumber' => 2,
             ),
-            247 => 
+            247 =>
             array (
                 'orderNumber' => 10127,
                 'productCode' => 'S12_3148',
@@ -2003,7 +2004,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.50',
                 'orderLineNumber' => 3,
             ),
-            248 => 
+            248 =>
             array (
                 'orderNumber' => 10127,
                 'productCode' => 'S12_3891',
@@ -2011,7 +2012,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '169.56',
                 'orderLineNumber' => 1,
             ),
-            249 => 
+            249 =>
             array (
                 'orderNumber' => 10127,
                 'productCode' => 'S12_4473',
@@ -2019,7 +2020,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.73',
                 'orderLineNumber' => 11,
             ),
-            250 => 
+            250 =>
             array (
                 'orderNumber' => 10127,
                 'productCode' => 'S18_2238',
@@ -2027,7 +2028,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.81',
                 'orderLineNumber' => 10,
             ),
-            251 => 
+            251 =>
             array (
                 'orderNumber' => 10127,
                 'productCode' => 'S18_2319',
@@ -2035,7 +2036,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.14',
                 'orderLineNumber' => 14,
             ),
-            252 => 
+            252 =>
             array (
                 'orderNumber' => 10127,
                 'productCode' => 'S18_3232',
@@ -2043,7 +2044,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '149.02',
                 'orderLineNumber' => 15,
             ),
-            253 => 
+            253 =>
             array (
                 'orderNumber' => 10127,
                 'productCode' => 'S18_4027',
@@ -2051,7 +2052,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.39',
                 'orderLineNumber' => 5,
             ),
-            254 => 
+            254 =>
             array (
                 'orderNumber' => 10127,
                 'productCode' => 'S24_1444',
@@ -2059,7 +2060,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.86',
                 'orderLineNumber' => 8,
             ),
-            255 => 
+            255 =>
             array (
                 'orderNumber' => 10127,
                 'productCode' => 'S24_2840',
@@ -2067,7 +2068,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '34.30',
                 'orderLineNumber' => 12,
             ),
-            256 => 
+            256 =>
             array (
                 'orderNumber' => 10127,
                 'productCode' => 'S24_4048',
@@ -2075,7 +2076,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.63',
                 'orderLineNumber' => 7,
             ),
-            257 => 
+            257 =>
             array (
                 'orderNumber' => 10127,
                 'productCode' => 'S32_2509',
@@ -2083,7 +2084,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '46.53',
                 'orderLineNumber' => 13,
             ),
-            258 => 
+            258 =>
             array (
                 'orderNumber' => 10127,
                 'productCode' => 'S32_3207',
@@ -2091,7 +2092,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.90',
                 'orderLineNumber' => 6,
             ),
-            259 => 
+            259 =>
             array (
                 'orderNumber' => 10127,
                 'productCode' => 'S50_1392',
@@ -2099,7 +2100,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.12',
                 'orderLineNumber' => 9,
             ),
-            260 => 
+            260 =>
             array (
                 'orderNumber' => 10127,
                 'productCode' => 'S50_1514',
@@ -2107,7 +2108,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.65',
                 'orderLineNumber' => 4,
             ),
-            261 => 
+            261 =>
             array (
                 'orderNumber' => 10128,
                 'productCode' => 'S18_3140',
@@ -2115,7 +2116,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.20',
                 'orderLineNumber' => 2,
             ),
-            262 => 
+            262 =>
             array (
                 'orderNumber' => 10128,
                 'productCode' => 'S18_3259',
@@ -2123,7 +2124,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.67',
                 'orderLineNumber' => 4,
             ),
-            263 => 
+            263 =>
             array (
                 'orderNumber' => 10128,
                 'productCode' => 'S18_4522',
@@ -2131,7 +2132,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.24',
                 'orderLineNumber' => 1,
             ),
-            264 => 
+            264 =>
             array (
                 'orderNumber' => 10128,
                 'productCode' => 'S700_1938',
@@ -2139,7 +2140,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.75',
                 'orderLineNumber' => 3,
             ),
-            265 => 
+            265 =>
             array (
                 'orderNumber' => 10129,
                 'productCode' => 'S10_4757',
@@ -2147,7 +2148,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '123.76',
                 'orderLineNumber' => 2,
             ),
-            266 => 
+            266 =>
             array (
                 'orderNumber' => 10129,
                 'productCode' => 'S24_2011',
@@ -2155,7 +2156,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.06',
                 'orderLineNumber' => 9,
             ),
-            267 => 
+            267 =>
             array (
                 'orderNumber' => 10129,
                 'productCode' => 'S24_3151',
@@ -2163,7 +2164,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.43',
                 'orderLineNumber' => 4,
             ),
-            268 => 
+            268 =>
             array (
                 'orderNumber' => 10129,
                 'productCode' => 'S24_3816',
@@ -2171,7 +2172,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.31',
                 'orderLineNumber' => 1,
             ),
-            269 => 
+            269 =>
             array (
                 'orderNumber' => 10129,
                 'productCode' => 'S700_1138',
@@ -2179,7 +2180,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.67',
                 'orderLineNumber' => 5,
             ),
-            270 => 
+            270 =>
             array (
                 'orderNumber' => 10129,
                 'productCode' => 'S700_2610',
@@ -2187,7 +2188,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.28',
                 'orderLineNumber' => 3,
             ),
-            271 => 
+            271 =>
             array (
                 'orderNumber' => 10129,
                 'productCode' => 'S700_3505',
@@ -2195,7 +2196,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.15',
                 'orderLineNumber' => 6,
             ),
-            272 => 
+            272 =>
             array (
                 'orderNumber' => 10129,
                 'productCode' => 'S700_3962',
@@ -2203,7 +2204,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.34',
                 'orderLineNumber' => 7,
             ),
-            273 => 
+            273 =>
             array (
                 'orderNumber' => 10129,
                 'productCode' => 'S72_3212',
@@ -2211,7 +2212,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.23',
                 'orderLineNumber' => 8,
             ),
-            274 => 
+            274 =>
             array (
                 'orderNumber' => 10130,
                 'productCode' => 'S18_3029',
@@ -2219,7 +2220,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.82',
                 'orderLineNumber' => 2,
             ),
-            275 => 
+            275 =>
             array (
                 'orderNumber' => 10130,
                 'productCode' => 'S18_3856',
@@ -2227,7 +2228,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.52',
                 'orderLineNumber' => 1,
             ),
-            276 => 
+            276 =>
             array (
                 'orderNumber' => 10131,
                 'productCode' => 'S18_1662',
@@ -2235,7 +2236,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '141.92',
                 'orderLineNumber' => 4,
             ),
-            277 => 
+            277 =>
             array (
                 'orderNumber' => 10131,
                 'productCode' => 'S24_2841',
@@ -2243,7 +2244,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.97',
                 'orderLineNumber' => 5,
             ),
-            278 => 
+            278 =>
             array (
                 'orderNumber' => 10131,
                 'productCode' => 'S24_3420',
@@ -2251,7 +2252,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.60',
                 'orderLineNumber' => 6,
             ),
-            279 => 
+            279 =>
             array (
                 'orderNumber' => 10131,
                 'productCode' => 'S24_3949',
@@ -2259,7 +2260,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.59',
                 'orderLineNumber' => 3,
             ),
-            280 => 
+            280 =>
             array (
                 'orderNumber' => 10131,
                 'productCode' => 'S700_2047',
@@ -2267,7 +2268,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.94',
                 'orderLineNumber' => 8,
             ),
-            281 => 
+            281 =>
             array (
                 'orderNumber' => 10131,
                 'productCode' => 'S700_2466',
@@ -2275,7 +2276,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.76',
                 'orderLineNumber' => 1,
             ),
-            282 => 
+            282 =>
             array (
                 'orderNumber' => 10131,
                 'productCode' => 'S700_4002',
@@ -2283,7 +2284,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.67',
                 'orderLineNumber' => 2,
             ),
-            283 => 
+            283 =>
             array (
                 'orderNumber' => 10131,
                 'productCode' => 'S72_1253',
@@ -2291,7 +2292,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '40.22',
                 'orderLineNumber' => 7,
             ),
-            284 => 
+            284 =>
             array (
                 'orderNumber' => 10132,
                 'productCode' => 'S700_3167',
@@ -2299,7 +2300,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.00',
                 'orderLineNumber' => 1,
             ),
-            285 => 
+            285 =>
             array (
                 'orderNumber' => 10133,
                 'productCode' => 'S18_2581',
@@ -2307,7 +2308,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.26',
                 'orderLineNumber' => 3,
             ),
-            286 => 
+            286 =>
             array (
                 'orderNumber' => 10133,
                 'productCode' => 'S24_1785',
@@ -2315,7 +2316,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.42',
                 'orderLineNumber' => 5,
             ),
-            287 => 
+            287 =>
             array (
                 'orderNumber' => 10133,
                 'productCode' => 'S24_4278',
@@ -2323,7 +2324,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.58',
                 'orderLineNumber' => 4,
             ),
-            288 => 
+            288 =>
             array (
                 'orderNumber' => 10133,
                 'productCode' => 'S32_1374',
@@ -2331,7 +2332,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.91',
                 'orderLineNumber' => 1,
             ),
-            289 => 
+            289 =>
             array (
                 'orderNumber' => 10133,
                 'productCode' => 'S32_4289',
@@ -2339,7 +2340,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.41',
                 'orderLineNumber' => 6,
             ),
-            290 => 
+            290 =>
             array (
                 'orderNumber' => 10133,
                 'productCode' => 'S50_1341',
@@ -2347,7 +2348,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '37.09',
                 'orderLineNumber' => 7,
             ),
-            291 => 
+            291 =>
             array (
                 'orderNumber' => 10133,
                 'productCode' => 'S700_1691',
@@ -2355,7 +2356,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.73',
                 'orderLineNumber' => 8,
             ),
-            292 => 
+            292 =>
             array (
                 'orderNumber' => 10133,
                 'productCode' => 'S700_2834',
@@ -2363,7 +2364,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.09',
                 'orderLineNumber' => 2,
             ),
-            293 => 
+            293 =>
             array (
                 'orderNumber' => 10134,
                 'productCode' => 'S10_1678',
@@ -2371,7 +2372,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.92',
                 'orderLineNumber' => 2,
             ),
-            294 => 
+            294 =>
             array (
                 'orderNumber' => 10134,
                 'productCode' => 'S10_2016',
@@ -2379,7 +2380,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '116.56',
                 'orderLineNumber' => 5,
             ),
-            295 => 
+            295 =>
             array (
                 'orderNumber' => 10134,
                 'productCode' => 'S10_4698',
@@ -2387,7 +2388,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '187.85',
                 'orderLineNumber' => 4,
             ),
-            296 => 
+            296 =>
             array (
                 'orderNumber' => 10134,
                 'productCode' => 'S12_2823',
@@ -2395,7 +2396,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '131.04',
                 'orderLineNumber' => 1,
             ),
-            297 => 
+            297 =>
             array (
                 'orderNumber' => 10134,
                 'productCode' => 'S18_2625',
@@ -2403,7 +2404,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.48',
                 'orderLineNumber' => 6,
             ),
-            298 => 
+            298 =>
             array (
                 'orderNumber' => 10134,
                 'productCode' => 'S24_1578',
@@ -2411,7 +2412,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.67',
                 'orderLineNumber' => 3,
             ),
-            299 => 
+            299 =>
             array (
                 'orderNumber' => 10134,
                 'productCode' => 'S24_2000',
@@ -2419,7 +2420,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.41',
                 'orderLineNumber' => 7,
             ),
-            300 => 
+            300 =>
             array (
                 'orderNumber' => 10135,
                 'productCode' => 'S12_1099',
@@ -2427,7 +2428,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '173.17',
                 'orderLineNumber' => 7,
             ),
-            301 => 
+            301 =>
             array (
                 'orderNumber' => 10135,
                 'productCode' => 'S12_3380',
@@ -2435,7 +2436,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.39',
                 'orderLineNumber' => 5,
             ),
-            302 => 
+            302 =>
             array (
                 'orderNumber' => 10135,
                 'productCode' => 'S12_3990',
@@ -2443,7 +2444,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.62',
                 'orderLineNumber' => 8,
             ),
-            303 => 
+            303 =>
             array (
                 'orderNumber' => 10135,
                 'productCode' => 'S12_4675',
@@ -2451,7 +2452,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '103.64',
                 'orderLineNumber' => 4,
             ),
-            304 => 
+            304 =>
             array (
                 'orderNumber' => 10135,
                 'productCode' => 'S18_1889',
@@ -2459,7 +2460,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.99',
                 'orderLineNumber' => 3,
             ),
-            305 => 
+            305 =>
             array (
                 'orderNumber' => 10135,
                 'productCode' => 'S18_3278',
@@ -2467,7 +2468,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.94',
                 'orderLineNumber' => 10,
             ),
-            306 => 
+            306 =>
             array (
                 'orderNumber' => 10135,
                 'productCode' => 'S18_3482',
@@ -2475,7 +2476,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '139.64',
                 'orderLineNumber' => 9,
             ),
-            307 => 
+            307 =>
             array (
                 'orderNumber' => 10135,
                 'productCode' => 'S18_3782',
@@ -2483,7 +2484,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.74',
                 'orderLineNumber' => 13,
             ),
-            308 => 
+            308 =>
             array (
                 'orderNumber' => 10135,
                 'productCode' => 'S18_4721',
@@ -2491,7 +2492,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '133.92',
                 'orderLineNumber' => 12,
             ),
-            309 => 
+            309 =>
             array (
                 'orderNumber' => 10135,
                 'productCode' => 'S24_2360',
@@ -2499,7 +2500,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.18',
                 'orderLineNumber' => 16,
             ),
-            310 => 
+            310 =>
             array (
                 'orderNumber' => 10135,
                 'productCode' => 'S24_2972',
@@ -2507,7 +2508,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '34.36',
                 'orderLineNumber' => 1,
             ),
-            311 => 
+            311 =>
             array (
                 'orderNumber' => 10135,
                 'productCode' => 'S24_3371',
@@ -2515,7 +2516,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.05',
                 'orderLineNumber' => 6,
             ),
-            312 => 
+            312 =>
             array (
                 'orderNumber' => 10135,
                 'productCode' => 'S24_3856',
@@ -2523,7 +2524,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '139.03',
                 'orderLineNumber' => 2,
             ),
-            313 => 
+            313 =>
             array (
                 'orderNumber' => 10135,
                 'productCode' => 'S24_4620',
@@ -2531,7 +2532,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.80',
                 'orderLineNumber' => 11,
             ),
-            314 => 
+            314 =>
             array (
                 'orderNumber' => 10135,
                 'productCode' => 'S32_2206',
@@ -2539,7 +2540,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '38.62',
                 'orderLineNumber' => 14,
             ),
-            315 => 
+            315 =>
             array (
                 'orderNumber' => 10135,
                 'productCode' => 'S32_4485',
@@ -2547,7 +2548,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.85',
                 'orderLineNumber' => 17,
             ),
-            316 => 
+            316 =>
             array (
                 'orderNumber' => 10135,
                 'productCode' => 'S50_4713',
@@ -2555,7 +2556,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.92',
                 'orderLineNumber' => 15,
             ),
-            317 => 
+            317 =>
             array (
                 'orderNumber' => 10136,
                 'productCode' => 'S18_1129',
@@ -2563,7 +2564,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.48',
                 'orderLineNumber' => 2,
             ),
-            318 => 
+            318 =>
             array (
                 'orderNumber' => 10136,
                 'productCode' => 'S18_1984',
@@ -2571,7 +2572,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.91',
                 'orderLineNumber' => 1,
             ),
-            319 => 
+            319 =>
             array (
                 'orderNumber' => 10136,
                 'productCode' => 'S18_3232',
@@ -2579,7 +2580,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '169.34',
                 'orderLineNumber' => 3,
             ),
-            320 => 
+            320 =>
             array (
                 'orderNumber' => 10137,
                 'productCode' => 'S18_1589',
@@ -2587,7 +2588,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.73',
                 'orderLineNumber' => 2,
             ),
-            321 => 
+            321 =>
             array (
                 'orderNumber' => 10137,
                 'productCode' => 'S18_2870',
@@ -2595,7 +2596,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.88',
                 'orderLineNumber' => 3,
             ),
-            322 => 
+            322 =>
             array (
                 'orderNumber' => 10137,
                 'productCode' => 'S18_3685',
@@ -2603,7 +2604,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.68',
                 'orderLineNumber' => 4,
             ),
-            323 => 
+            323 =>
             array (
                 'orderNumber' => 10137,
                 'productCode' => 'S24_1628',
@@ -2611,7 +2612,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '40.25',
                 'orderLineNumber' => 1,
             ),
-            324 => 
+            324 =>
             array (
                 'orderNumber' => 10138,
                 'productCode' => 'S18_1749',
@@ -2619,7 +2620,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '149.60',
                 'orderLineNumber' => 6,
             ),
-            325 => 
+            325 =>
             array (
                 'orderNumber' => 10138,
                 'productCode' => 'S18_2248',
@@ -2627,7 +2628,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.46',
                 'orderLineNumber' => 5,
             ),
-            326 => 
+            326 =>
             array (
                 'orderNumber' => 10138,
                 'productCode' => 'S18_2325',
@@ -2635,7 +2636,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.42',
                 'orderLineNumber' => 3,
             ),
-            327 => 
+            327 =>
             array (
                 'orderNumber' => 10138,
                 'productCode' => 'S18_4409',
@@ -2643,7 +2644,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.15',
                 'orderLineNumber' => 7,
             ),
-            328 => 
+            328 =>
             array (
                 'orderNumber' => 10138,
                 'productCode' => 'S18_4933',
@@ -2651,7 +2652,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.86',
                 'orderLineNumber' => 8,
             ),
-            329 => 
+            329 =>
             array (
                 'orderNumber' => 10138,
                 'productCode' => 'S24_1046',
@@ -2659,7 +2660,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.53',
                 'orderLineNumber' => 12,
             ),
-            330 => 
+            330 =>
             array (
                 'orderNumber' => 10138,
                 'productCode' => 'S24_1937',
@@ -2667,7 +2668,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '33.19',
                 'orderLineNumber' => 2,
             ),
-            331 => 
+            331 =>
             array (
                 'orderNumber' => 10138,
                 'productCode' => 'S24_2022',
@@ -2675,7 +2676,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '38.53',
                 'orderLineNumber' => 1,
             ),
-            332 => 
+            332 =>
             array (
                 'orderNumber' => 10138,
                 'productCode' => 'S24_2766',
@@ -2683,7 +2684,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.60',
                 'orderLineNumber' => 10,
             ),
-            333 => 
+            333 =>
             array (
                 'orderNumber' => 10138,
                 'productCode' => 'S24_2887',
@@ -2691,7 +2692,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.30',
                 'orderLineNumber' => 9,
             ),
-            334 => 
+            334 =>
             array (
                 'orderNumber' => 10138,
                 'productCode' => 'S24_3191',
@@ -2699,7 +2700,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.05',
                 'orderLineNumber' => 11,
             ),
-            335 => 
+            335 =>
             array (
                 'orderNumber' => 10138,
                 'productCode' => 'S24_3432',
@@ -2707,7 +2708,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.58',
                 'orderLineNumber' => 13,
             ),
-            336 => 
+            336 =>
             array (
                 'orderNumber' => 10138,
                 'productCode' => 'S24_3969',
@@ -2715,7 +2716,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.82',
                 'orderLineNumber' => 4,
             ),
-            337 => 
+            337 =>
             array (
                 'orderNumber' => 10139,
                 'productCode' => 'S18_1342',
@@ -2723,7 +2724,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.38',
                 'orderLineNumber' => 7,
             ),
-            338 => 
+            338 =>
             array (
                 'orderNumber' => 10139,
                 'productCode' => 'S18_1367',
@@ -2731,7 +2732,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.83',
                 'orderLineNumber' => 6,
             ),
-            339 => 
+            339 =>
             array (
                 'orderNumber' => 10139,
                 'productCode' => 'S18_2795',
@@ -2739,7 +2740,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '151.88',
                 'orderLineNumber' => 8,
             ),
-            340 => 
+            340 =>
             array (
                 'orderNumber' => 10139,
                 'productCode' => 'S18_2949',
@@ -2747,7 +2748,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.18',
                 'orderLineNumber' => 1,
             ),
-            341 => 
+            341 =>
             array (
                 'orderNumber' => 10139,
                 'productCode' => 'S18_2957',
@@ -2755,7 +2756,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.47',
                 'orderLineNumber' => 3,
             ),
-            342 => 
+            342 =>
             array (
                 'orderNumber' => 10139,
                 'productCode' => 'S18_3136',
@@ -2763,7 +2764,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.58',
                 'orderLineNumber' => 2,
             ),
-            343 => 
+            343 =>
             array (
                 'orderNumber' => 10139,
                 'productCode' => 'S18_3320',
@@ -2771,7 +2772,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.35',
                 'orderLineNumber' => 5,
             ),
-            344 => 
+            344 =>
             array (
                 'orderNumber' => 10139,
                 'productCode' => 'S24_4258',
@@ -2779,7 +2780,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.49',
                 'orderLineNumber' => 4,
             ),
-            345 => 
+            345 =>
             array (
                 'orderNumber' => 10140,
                 'productCode' => 'S10_1949',
@@ -2787,7 +2788,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '186.44',
                 'orderLineNumber' => 11,
             ),
-            346 => 
+            346 =>
             array (
                 'orderNumber' => 10140,
                 'productCode' => 'S10_4962',
@@ -2795,7 +2796,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '131.49',
                 'orderLineNumber' => 4,
             ),
-            347 => 
+            347 =>
             array (
                 'orderNumber' => 10140,
                 'productCode' => 'S12_1666',
@@ -2803,7 +2804,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.90',
                 'orderLineNumber' => 8,
             ),
-            348 => 
+            348 =>
             array (
                 'orderNumber' => 10140,
                 'productCode' => 'S18_1097',
@@ -2811,7 +2812,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.67',
                 'orderLineNumber' => 10,
             ),
-            349 => 
+            349 =>
             array (
                 'orderNumber' => 10140,
                 'productCode' => 'S18_2432',
@@ -2819,7 +2820,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.05',
                 'orderLineNumber' => 2,
             ),
-            350 => 
+            350 =>
             array (
                 'orderNumber' => 10140,
                 'productCode' => 'S18_4600',
@@ -2827,7 +2828,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.50',
                 'orderLineNumber' => 5,
             ),
-            351 => 
+            351 =>
             array (
                 'orderNumber' => 10140,
                 'productCode' => 'S18_4668',
@@ -2835,7 +2836,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '40.25',
                 'orderLineNumber' => 9,
             ),
-            352 => 
+            352 =>
             array (
                 'orderNumber' => 10140,
                 'productCode' => 'S24_2300',
@@ -2843,7 +2844,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.84',
                 'orderLineNumber' => 1,
             ),
-            353 => 
+            353 =>
             array (
                 'orderNumber' => 10140,
                 'productCode' => 'S32_1268',
@@ -2851,7 +2852,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.64',
                 'orderLineNumber' => 3,
             ),
-            354 => 
+            354 =>
             array (
                 'orderNumber' => 10140,
                 'productCode' => 'S32_3522',
@@ -2859,7 +2860,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.05',
                 'orderLineNumber' => 7,
             ),
-            355 => 
+            355 =>
             array (
                 'orderNumber' => 10140,
                 'productCode' => 'S700_2824',
@@ -2867,7 +2868,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.15',
                 'orderLineNumber' => 6,
             ),
-            356 => 
+            356 =>
             array (
                 'orderNumber' => 10141,
                 'productCode' => 'S12_4473',
@@ -2875,7 +2876,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.95',
                 'orderLineNumber' => 5,
             ),
-            357 => 
+            357 =>
             array (
                 'orderNumber' => 10141,
                 'productCode' => 'S18_2238',
@@ -2883,7 +2884,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '160.46',
                 'orderLineNumber' => 4,
             ),
-            358 => 
+            358 =>
             array (
                 'orderNumber' => 10141,
                 'productCode' => 'S18_2319',
@@ -2891,7 +2892,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '103.09',
                 'orderLineNumber' => 8,
             ),
-            359 => 
+            359 =>
             array (
                 'orderNumber' => 10141,
                 'productCode' => 'S18_3232',
@@ -2899,7 +2900,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '143.94',
                 'orderLineNumber' => 9,
             ),
-            360 => 
+            360 =>
             array (
                 'orderNumber' => 10141,
                 'productCode' => 'S24_1444',
@@ -2907,7 +2908,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.86',
                 'orderLineNumber' => 2,
             ),
-            361 => 
+            361 =>
             array (
                 'orderNumber' => 10141,
                 'productCode' => 'S24_2840',
@@ -2915,7 +2916,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.18',
                 'orderLineNumber' => 6,
             ),
-            362 => 
+            362 =>
             array (
                 'orderNumber' => 10141,
                 'productCode' => 'S24_4048',
@@ -2923,7 +2924,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.09',
                 'orderLineNumber' => 1,
             ),
-            363 => 
+            363 =>
             array (
                 'orderNumber' => 10141,
                 'productCode' => 'S32_2509',
@@ -2931,7 +2932,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.03',
                 'orderLineNumber' => 7,
             ),
-            364 => 
+            364 =>
             array (
                 'orderNumber' => 10141,
                 'productCode' => 'S50_1392',
@@ -2939,7 +2940,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.92',
                 'orderLineNumber' => 3,
             ),
-            365 => 
+            365 =>
             array (
                 'orderNumber' => 10142,
                 'productCode' => 'S12_1108',
@@ -2947,7 +2948,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '166.24',
                 'orderLineNumber' => 12,
             ),
-            366 => 
+            366 =>
             array (
                 'orderNumber' => 10142,
                 'productCode' => 'S12_3148',
@@ -2955,7 +2956,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.50',
                 'orderLineNumber' => 13,
             ),
-            367 => 
+            367 =>
             array (
                 'orderNumber' => 10142,
                 'productCode' => 'S12_3891',
@@ -2963,7 +2964,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '167.83',
                 'orderLineNumber' => 11,
             ),
-            368 => 
+            368 =>
             array (
                 'orderNumber' => 10142,
                 'productCode' => 'S18_3140',
@@ -2971,7 +2972,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.76',
                 'orderLineNumber' => 8,
             ),
-            369 => 
+            369 =>
             array (
                 'orderNumber' => 10142,
                 'productCode' => 'S18_3259',
@@ -2979,7 +2980,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.80',
                 'orderLineNumber' => 10,
             ),
-            370 => 
+            370 =>
             array (
                 'orderNumber' => 10142,
                 'productCode' => 'S18_4027',
@@ -2987,7 +2988,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.08',
                 'orderLineNumber' => 15,
             ),
-            371 => 
+            371 =>
             array (
                 'orderNumber' => 10142,
                 'productCode' => 'S18_4522',
@@ -2995,7 +2996,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.87',
                 'orderLineNumber' => 7,
             ),
-            372 => 
+            372 =>
             array (
                 'orderNumber' => 10142,
                 'productCode' => 'S24_2011',
@@ -3003,7 +3004,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.29',
                 'orderLineNumber' => 6,
             ),
-            373 => 
+            373 =>
             array (
                 'orderNumber' => 10142,
                 'productCode' => 'S24_3151',
@@ -3011,7 +3012,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.35',
                 'orderLineNumber' => 1,
             ),
-            374 => 
+            374 =>
             array (
                 'orderNumber' => 10142,
                 'productCode' => 'S32_3207',
@@ -3019,7 +3020,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.90',
                 'orderLineNumber' => 16,
             ),
-            375 => 
+            375 =>
             array (
                 'orderNumber' => 10142,
                 'productCode' => 'S50_1514',
@@ -3027,7 +3028,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.24',
                 'orderLineNumber' => 14,
             ),
-            376 => 
+            376 =>
             array (
                 'orderNumber' => 10142,
                 'productCode' => 'S700_1138',
@@ -3035,7 +3036,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.34',
                 'orderLineNumber' => 2,
             ),
-            377 => 
+            377 =>
             array (
                 'orderNumber' => 10142,
                 'productCode' => 'S700_1938',
@@ -3043,7 +3044,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.08',
                 'orderLineNumber' => 9,
             ),
-            378 => 
+            378 =>
             array (
                 'orderNumber' => 10142,
                 'productCode' => 'S700_3505',
@@ -3051,7 +3052,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.16',
                 'orderLineNumber' => 3,
             ),
-            379 => 
+            379 =>
             array (
                 'orderNumber' => 10142,
                 'productCode' => 'S700_3962',
@@ -3059,7 +3060,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.37',
                 'orderLineNumber' => 4,
             ),
-            380 => 
+            380 =>
             array (
                 'orderNumber' => 10142,
                 'productCode' => 'S72_3212',
@@ -3067,7 +3068,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '46.96',
                 'orderLineNumber' => 5,
             ),
-            381 => 
+            381 =>
             array (
                 'orderNumber' => 10143,
                 'productCode' => 'S10_4757',
@@ -3075,7 +3076,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '133.28',
                 'orderLineNumber' => 15,
             ),
-            382 => 
+            382 =>
             array (
                 'orderNumber' => 10143,
                 'productCode' => 'S18_1662',
@@ -3083,7 +3084,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.15',
                 'orderLineNumber' => 7,
             ),
-            383 => 
+            383 =>
             array (
                 'orderNumber' => 10143,
                 'productCode' => 'S18_3029',
@@ -3091,7 +3092,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.54',
                 'orderLineNumber' => 13,
             ),
-            384 => 
+            384 =>
             array (
                 'orderNumber' => 10143,
                 'productCode' => 'S18_3856',
@@ -3099,7 +3100,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.52',
                 'orderLineNumber' => 12,
             ),
-            385 => 
+            385 =>
             array (
                 'orderNumber' => 10143,
                 'productCode' => 'S24_2841',
@@ -3107,7 +3108,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.71',
                 'orderLineNumber' => 8,
             ),
-            386 => 
+            386 =>
             array (
                 'orderNumber' => 10143,
                 'productCode' => 'S24_3420',
@@ -3115,7 +3116,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.83',
                 'orderLineNumber' => 9,
             ),
-            387 => 
+            387 =>
             array (
                 'orderNumber' => 10143,
                 'productCode' => 'S24_3816',
@@ -3123,7 +3124,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.64',
                 'orderLineNumber' => 14,
             ),
-            388 => 
+            388 =>
             array (
                 'orderNumber' => 10143,
                 'productCode' => 'S24_3949',
@@ -3131,7 +3132,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.96',
                 'orderLineNumber' => 6,
             ),
-            389 => 
+            389 =>
             array (
                 'orderNumber' => 10143,
                 'productCode' => 'S50_1341',
@@ -3139,7 +3140,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '34.91',
                 'orderLineNumber' => 1,
             ),
-            390 => 
+            390 =>
             array (
                 'orderNumber' => 10143,
                 'productCode' => 'S700_1691',
@@ -3147,7 +3148,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.77',
                 'orderLineNumber' => 2,
             ),
-            391 => 
+            391 =>
             array (
                 'orderNumber' => 10143,
                 'productCode' => 'S700_2047',
@@ -3155,7 +3156,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.80',
                 'orderLineNumber' => 11,
             ),
-            392 => 
+            392 =>
             array (
                 'orderNumber' => 10143,
                 'productCode' => 'S700_2466',
@@ -3163,7 +3164,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.78',
                 'orderLineNumber' => 4,
             ),
-            393 => 
+            393 =>
             array (
                 'orderNumber' => 10143,
                 'productCode' => 'S700_2610',
@@ -3171,7 +3172,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.39',
                 'orderLineNumber' => 16,
             ),
-            394 => 
+            394 =>
             array (
                 'orderNumber' => 10143,
                 'productCode' => 'S700_3167',
@@ -3179,7 +3180,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.40',
                 'orderLineNumber' => 3,
             ),
-            395 => 
+            395 =>
             array (
                 'orderNumber' => 10143,
                 'productCode' => 'S700_4002',
@@ -3187,7 +3188,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.15',
                 'orderLineNumber' => 5,
             ),
-            396 => 
+            396 =>
             array (
                 'orderNumber' => 10143,
                 'productCode' => 'S72_1253',
@@ -3195,7 +3196,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.66',
                 'orderLineNumber' => 10,
             ),
-            397 => 
+            397 =>
             array (
                 'orderNumber' => 10144,
                 'productCode' => 'S32_4289',
@@ -3203,7 +3204,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.41',
                 'orderLineNumber' => 1,
             ),
-            398 => 
+            398 =>
             array (
                 'orderNumber' => 10145,
                 'productCode' => 'S10_1678',
@@ -3211,7 +3212,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.56',
                 'orderLineNumber' => 6,
             ),
-            399 => 
+            399 =>
             array (
                 'orderNumber' => 10145,
                 'productCode' => 'S10_2016',
@@ -3219,7 +3220,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.67',
                 'orderLineNumber' => 9,
             ),
-            400 => 
+            400 =>
             array (
                 'orderNumber' => 10145,
                 'productCode' => 'S10_4698',
@@ -3227,7 +3228,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '154.93',
                 'orderLineNumber' => 8,
             ),
-            401 => 
+            401 =>
             array (
                 'orderNumber' => 10145,
                 'productCode' => 'S12_2823',
@@ -3235,7 +3236,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '146.10',
                 'orderLineNumber' => 5,
             ),
-            402 => 
+            402 =>
             array (
                 'orderNumber' => 10145,
                 'productCode' => 'S18_2581',
@@ -3243,7 +3244,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.81',
                 'orderLineNumber' => 14,
             ),
-            403 => 
+            403 =>
             array (
                 'orderNumber' => 10145,
                 'productCode' => 'S18_2625',
@@ -3251,7 +3252,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.70',
                 'orderLineNumber' => 10,
             ),
-            404 => 
+            404 =>
             array (
                 'orderNumber' => 10145,
                 'productCode' => 'S24_1578',
@@ -3259,7 +3260,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '103.68',
                 'orderLineNumber' => 7,
             ),
-            405 => 
+            405 =>
             array (
                 'orderNumber' => 10145,
                 'productCode' => 'S24_1785',
@@ -3267,7 +3268,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.54',
                 'orderLineNumber' => 16,
             ),
-            406 => 
+            406 =>
             array (
                 'orderNumber' => 10145,
                 'productCode' => 'S24_2000',
@@ -3275,7 +3276,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.98',
                 'orderLineNumber' => 11,
             ),
-            407 => 
+            407 =>
             array (
                 'orderNumber' => 10145,
                 'productCode' => 'S24_2360',
@@ -3283,7 +3284,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.10',
                 'orderLineNumber' => 3,
             ),
-            408 => 
+            408 =>
             array (
                 'orderNumber' => 10145,
                 'productCode' => 'S24_4278',
@@ -3291,7 +3292,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.73',
                 'orderLineNumber' => 15,
             ),
-            409 => 
+            409 =>
             array (
                 'orderNumber' => 10145,
                 'productCode' => 'S32_1374',
@@ -3299,7 +3300,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.89',
                 'orderLineNumber' => 12,
             ),
-            410 => 
+            410 =>
             array (
                 'orderNumber' => 10145,
                 'productCode' => 'S32_2206',
@@ -3307,7 +3308,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '39.43',
                 'orderLineNumber' => 1,
             ),
-            411 => 
+            411 =>
             array (
                 'orderNumber' => 10145,
                 'productCode' => 'S32_4485',
@@ -3315,7 +3316,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.93',
                 'orderLineNumber' => 4,
             ),
-            412 => 
+            412 =>
             array (
                 'orderNumber' => 10145,
                 'productCode' => 'S50_4713',
@@ -3323,7 +3324,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.22',
                 'orderLineNumber' => 2,
             ),
-            413 => 
+            413 =>
             array (
                 'orderNumber' => 10145,
                 'productCode' => 'S700_2834',
@@ -3331,7 +3332,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.90',
                 'orderLineNumber' => 13,
             ),
-            414 => 
+            414 =>
             array (
                 'orderNumber' => 10146,
                 'productCode' => 'S18_3782',
@@ -3339,7 +3340,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.30',
                 'orderLineNumber' => 2,
             ),
-            415 => 
+            415 =>
             array (
                 'orderNumber' => 10146,
                 'productCode' => 'S18_4721',
@@ -3347,7 +3348,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '130.94',
                 'orderLineNumber' => 1,
             ),
-            416 => 
+            416 =>
             array (
                 'orderNumber' => 10147,
                 'productCode' => 'S12_1099',
@@ -3355,7 +3356,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '161.49',
                 'orderLineNumber' => 7,
             ),
-            417 => 
+            417 =>
             array (
                 'orderNumber' => 10147,
                 'productCode' => 'S12_3380',
@@ -3363,7 +3364,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.39',
                 'orderLineNumber' => 5,
             ),
-            418 => 
+            418 =>
             array (
                 'orderNumber' => 10147,
                 'productCode' => 'S12_3990',
@@ -3371,7 +3372,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.21',
                 'orderLineNumber' => 8,
             ),
-            419 => 
+            419 =>
             array (
                 'orderNumber' => 10147,
                 'productCode' => 'S12_4675',
@@ -3379,7 +3380,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '97.89',
                 'orderLineNumber' => 4,
             ),
-            420 => 
+            420 =>
             array (
                 'orderNumber' => 10147,
                 'productCode' => 'S18_1889',
@@ -3387,7 +3388,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.84',
                 'orderLineNumber' => 3,
             ),
-            421 => 
+            421 =>
             array (
                 'orderNumber' => 10147,
                 'productCode' => 'S18_3278',
@@ -3395,7 +3396,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.78',
                 'orderLineNumber' => 10,
             ),
-            422 => 
+            422 =>
             array (
                 'orderNumber' => 10147,
                 'productCode' => 'S18_3482',
@@ -3403,7 +3404,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.35',
                 'orderLineNumber' => 9,
             ),
-            423 => 
+            423 =>
             array (
                 'orderNumber' => 10147,
                 'productCode' => 'S24_2972',
@@ -3411,7 +3412,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '33.23',
                 'orderLineNumber' => 1,
             ),
-            424 => 
+            424 =>
             array (
                 'orderNumber' => 10147,
                 'productCode' => 'S24_3371',
@@ -3419,7 +3420,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.98',
                 'orderLineNumber' => 6,
             ),
-            425 => 
+            425 =>
             array (
                 'orderNumber' => 10147,
                 'productCode' => 'S24_3856',
@@ -3427,7 +3428,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '123.58',
                 'orderLineNumber' => 2,
             ),
-            426 => 
+            426 =>
             array (
                 'orderNumber' => 10147,
                 'productCode' => 'S24_4620',
@@ -3435,7 +3436,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.76',
                 'orderLineNumber' => 11,
             ),
-            427 => 
+            427 =>
             array (
                 'orderNumber' => 10148,
                 'productCode' => 'S18_1129',
@@ -3443,7 +3444,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.65',
                 'orderLineNumber' => 13,
             ),
-            428 => 
+            428 =>
             array (
                 'orderNumber' => 10148,
                 'productCode' => 'S18_1589',
@@ -3451,7 +3452,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '108.26',
                 'orderLineNumber' => 9,
             ),
-            429 => 
+            429 =>
             array (
                 'orderNumber' => 10148,
                 'productCode' => 'S18_1984',
@@ -3459,7 +3460,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '136.56',
                 'orderLineNumber' => 12,
             ),
-            430 => 
+            430 =>
             array (
                 'orderNumber' => 10148,
                 'productCode' => 'S18_2870',
@@ -3467,7 +3468,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.52',
                 'orderLineNumber' => 10,
             ),
-            431 => 
+            431 =>
             array (
                 'orderNumber' => 10148,
                 'productCode' => 'S18_3232',
@@ -3475,7 +3476,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '143.94',
                 'orderLineNumber' => 14,
             ),
-            432 => 
+            432 =>
             array (
                 'orderNumber' => 10148,
                 'productCode' => 'S18_3685',
@@ -3483,7 +3484,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.63',
                 'orderLineNumber' => 11,
             ),
-            433 => 
+            433 =>
             array (
                 'orderNumber' => 10148,
                 'productCode' => 'S18_4409',
@@ -3491,7 +3492,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.75',
                 'orderLineNumber' => 1,
             ),
-            434 => 
+            434 =>
             array (
                 'orderNumber' => 10148,
                 'productCode' => 'S18_4933',
@@ -3499,7 +3500,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.28',
                 'orderLineNumber' => 2,
             ),
-            435 => 
+            435 =>
             array (
                 'orderNumber' => 10148,
                 'productCode' => 'S24_1046',
@@ -3507,7 +3508,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.41',
                 'orderLineNumber' => 6,
             ),
-            436 => 
+            436 =>
             array (
                 'orderNumber' => 10148,
                 'productCode' => 'S24_1628',
@@ -3515,7 +3516,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '46.29',
                 'orderLineNumber' => 8,
             ),
-            437 => 
+            437 =>
             array (
                 'orderNumber' => 10148,
                 'productCode' => 'S24_2766',
@@ -3523,7 +3524,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.24',
                 'orderLineNumber' => 4,
             ),
-            438 => 
+            438 =>
             array (
                 'orderNumber' => 10148,
                 'productCode' => 'S24_2887',
@@ -3531,7 +3532,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.09',
                 'orderLineNumber' => 3,
             ),
-            439 => 
+            439 =>
             array (
                 'orderNumber' => 10148,
                 'productCode' => 'S24_3191',
@@ -3539,7 +3540,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.91',
                 'orderLineNumber' => 5,
             ),
-            440 => 
+            440 =>
             array (
                 'orderNumber' => 10148,
                 'productCode' => 'S24_3432',
@@ -3547,7 +3548,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.37',
                 'orderLineNumber' => 7,
             ),
-            441 => 
+            441 =>
             array (
                 'orderNumber' => 10149,
                 'productCode' => 'S18_1342',
@@ -3555,7 +3556,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.33',
                 'orderLineNumber' => 4,
             ),
-            442 => 
+            442 =>
             array (
                 'orderNumber' => 10149,
                 'productCode' => 'S18_1367',
@@ -3563,7 +3564,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.52',
                 'orderLineNumber' => 3,
             ),
-            443 => 
+            443 =>
             array (
                 'orderNumber' => 10149,
                 'productCode' => 'S18_1749',
@@ -3571,7 +3572,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '156.40',
                 'orderLineNumber' => 11,
             ),
-            444 => 
+            444 =>
             array (
                 'orderNumber' => 10149,
                 'productCode' => 'S18_2248',
@@ -3579,7 +3580,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.85',
                 'orderLineNumber' => 10,
             ),
-            445 => 
+            445 =>
             array (
                 'orderNumber' => 10149,
                 'productCode' => 'S18_2325',
@@ -3587,7 +3588,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '125.86',
                 'orderLineNumber' => 8,
             ),
-            446 => 
+            446 =>
             array (
                 'orderNumber' => 10149,
                 'productCode' => 'S18_2795',
@@ -3595,7 +3596,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '167.06',
                 'orderLineNumber' => 5,
             ),
-            447 => 
+            447 =>
             array (
                 'orderNumber' => 10149,
                 'productCode' => 'S18_3320',
@@ -3603,7 +3604,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.29',
                 'orderLineNumber' => 2,
             ),
-            448 => 
+            448 =>
             array (
                 'orderNumber' => 10149,
                 'productCode' => 'S24_1937',
@@ -3611,7 +3612,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '31.20',
                 'orderLineNumber' => 7,
             ),
-            449 => 
+            449 =>
             array (
                 'orderNumber' => 10149,
                 'productCode' => 'S24_2022',
@@ -3619,7 +3620,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '39.87',
                 'orderLineNumber' => 6,
             ),
-            450 => 
+            450 =>
             array (
                 'orderNumber' => 10149,
                 'productCode' => 'S24_3969',
@@ -3627,7 +3628,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '38.57',
                 'orderLineNumber' => 9,
             ),
-            451 => 
+            451 =>
             array (
                 'orderNumber' => 10149,
                 'productCode' => 'S24_4258',
@@ -3635,7 +3636,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.57',
                 'orderLineNumber' => 1,
             ),
-            452 => 
+            452 =>
             array (
                 'orderNumber' => 10150,
                 'productCode' => 'S10_1949',
@@ -3643,7 +3644,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '182.16',
                 'orderLineNumber' => 8,
             ),
-            453 => 
+            453 =>
             array (
                 'orderNumber' => 10150,
                 'productCode' => 'S10_4962',
@@ -3651,7 +3652,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '121.15',
                 'orderLineNumber' => 1,
             ),
-            454 => 
+            454 =>
             array (
                 'orderNumber' => 10150,
                 'productCode' => 'S12_1666',
@@ -3659,7 +3660,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.30',
                 'orderLineNumber' => 5,
             ),
-            455 => 
+            455 =>
             array (
                 'orderNumber' => 10150,
                 'productCode' => 'S18_1097',
@@ -3667,7 +3668,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.67',
                 'orderLineNumber' => 7,
             ),
-            456 => 
+            456 =>
             array (
                 'orderNumber' => 10150,
                 'productCode' => 'S18_2949',
@@ -3675,7 +3676,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.21',
                 'orderLineNumber' => 9,
             ),
-            457 => 
+            457 =>
             array (
                 'orderNumber' => 10150,
                 'productCode' => 'S18_2957',
@@ -3683,7 +3684,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.21',
                 'orderLineNumber' => 11,
             ),
-            458 => 
+            458 =>
             array (
                 'orderNumber' => 10150,
                 'productCode' => 'S18_3136',
@@ -3691,7 +3692,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '97.39',
                 'orderLineNumber' => 10,
             ),
-            459 => 
+            459 =>
             array (
                 'orderNumber' => 10150,
                 'productCode' => 'S18_4600',
@@ -3699,7 +3700,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.39',
                 'orderLineNumber' => 2,
             ),
-            460 => 
+            460 =>
             array (
                 'orderNumber' => 10150,
                 'productCode' => 'S18_4668',
@@ -3707,7 +3708,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.29',
                 'orderLineNumber' => 6,
             ),
-            461 => 
+            461 =>
             array (
                 'orderNumber' => 10150,
                 'productCode' => 'S32_3522',
@@ -3715,7 +3716,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.05',
                 'orderLineNumber' => 4,
             ),
-            462 => 
+            462 =>
             array (
                 'orderNumber' => 10150,
                 'productCode' => 'S700_2824',
@@ -3723,7 +3724,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.08',
                 'orderLineNumber' => 3,
             ),
-            463 => 
+            463 =>
             array (
                 'orderNumber' => 10151,
                 'productCode' => 'S12_4473',
@@ -3731,7 +3732,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.95',
                 'orderLineNumber' => 3,
             ),
-            464 => 
+            464 =>
             array (
                 'orderNumber' => 10151,
                 'productCode' => 'S18_2238',
@@ -3739,7 +3740,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '152.27',
                 'orderLineNumber' => 2,
             ),
-            465 => 
+            465 =>
             array (
                 'orderNumber' => 10151,
                 'productCode' => 'S18_2319',
@@ -3747,7 +3748,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '106.78',
                 'orderLineNumber' => 6,
             ),
-            466 => 
+            466 =>
             array (
                 'orderNumber' => 10151,
                 'productCode' => 'S18_2432',
@@ -3755,7 +3756,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.34',
                 'orderLineNumber' => 9,
             ),
-            467 => 
+            467 =>
             array (
                 'orderNumber' => 10151,
                 'productCode' => 'S18_3232',
@@ -3763,7 +3764,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '167.65',
                 'orderLineNumber' => 7,
             ),
-            468 => 
+            468 =>
             array (
                 'orderNumber' => 10151,
                 'productCode' => 'S24_2300',
@@ -3771,7 +3772,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.90',
                 'orderLineNumber' => 8,
             ),
-            469 => 
+            469 =>
             array (
                 'orderNumber' => 10151,
                 'productCode' => 'S24_2840',
@@ -3779,7 +3780,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '29.35',
                 'orderLineNumber' => 4,
             ),
-            470 => 
+            470 =>
             array (
                 'orderNumber' => 10151,
                 'productCode' => 'S32_1268',
@@ -3787,7 +3788,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.75',
                 'orderLineNumber' => 10,
             ),
-            471 => 
+            471 =>
             array (
                 'orderNumber' => 10151,
                 'productCode' => 'S32_2509',
@@ -3795,7 +3796,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.29',
                 'orderLineNumber' => 5,
             ),
-            472 => 
+            472 =>
             array (
                 'orderNumber' => 10151,
                 'productCode' => 'S50_1392',
@@ -3803,7 +3804,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '108.81',
                 'orderLineNumber' => 1,
             ),
-            473 => 
+            473 =>
             array (
                 'orderNumber' => 10152,
                 'productCode' => 'S18_4027',
@@ -3811,7 +3812,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.77',
                 'orderLineNumber' => 1,
             ),
-            474 => 
+            474 =>
             array (
                 'orderNumber' => 10152,
                 'productCode' => 'S24_1444',
@@ -3819,7 +3820,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.13',
                 'orderLineNumber' => 4,
             ),
-            475 => 
+            475 =>
             array (
                 'orderNumber' => 10152,
                 'productCode' => 'S24_4048',
@@ -3827,7 +3828,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.37',
                 'orderLineNumber' => 3,
             ),
-            476 => 
+            476 =>
             array (
                 'orderNumber' => 10152,
                 'productCode' => 'S32_3207',
@@ -3835,7 +3836,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.17',
                 'orderLineNumber' => 2,
             ),
-            477 => 
+            477 =>
             array (
                 'orderNumber' => 10153,
                 'productCode' => 'S12_1108',
@@ -3843,7 +3844,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '201.57',
                 'orderLineNumber' => 11,
             ),
-            478 => 
+            478 =>
             array (
                 'orderNumber' => 10153,
                 'productCode' => 'S12_3148',
@@ -3851,7 +3852,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '128.42',
                 'orderLineNumber' => 12,
             ),
-            479 => 
+            479 =>
             array (
                 'orderNumber' => 10153,
                 'productCode' => 'S12_3891',
@@ -3859,7 +3860,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '155.72',
                 'orderLineNumber' => 10,
             ),
-            480 => 
+            480 =>
             array (
                 'orderNumber' => 10153,
                 'productCode' => 'S18_3140',
@@ -3867,7 +3868,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '125.66',
                 'orderLineNumber' => 7,
             ),
-            481 => 
+            481 =>
             array (
                 'orderNumber' => 10153,
                 'productCode' => 'S18_3259',
@@ -3875,7 +3876,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.69',
                 'orderLineNumber' => 9,
             ),
-            482 => 
+            482 =>
             array (
                 'orderNumber' => 10153,
                 'productCode' => 'S18_4522',
@@ -3883,7 +3884,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.50',
                 'orderLineNumber' => 6,
             ),
-            483 => 
+            483 =>
             array (
                 'orderNumber' => 10153,
                 'productCode' => 'S24_2011',
@@ -3891,7 +3892,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.83',
                 'orderLineNumber' => 5,
             ),
-            484 => 
+            484 =>
             array (
                 'orderNumber' => 10153,
                 'productCode' => 'S50_1514',
@@ -3899,7 +3900,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.31',
                 'orderLineNumber' => 13,
             ),
-            485 => 
+            485 =>
             array (
                 'orderNumber' => 10153,
                 'productCode' => 'S700_1138',
@@ -3907,7 +3908,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.00',
                 'orderLineNumber' => 1,
             ),
-            486 => 
+            486 =>
             array (
                 'orderNumber' => 10153,
                 'productCode' => 'S700_1938',
@@ -3915,7 +3916,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.55',
                 'orderLineNumber' => 8,
             ),
-            487 => 
+            487 =>
             array (
                 'orderNumber' => 10153,
                 'productCode' => 'S700_3505',
@@ -3923,7 +3924,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.15',
                 'orderLineNumber' => 2,
             ),
-            488 => 
+            488 =>
             array (
                 'orderNumber' => 10153,
                 'productCode' => 'S700_3962',
@@ -3931,7 +3932,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.41',
                 'orderLineNumber' => 3,
             ),
-            489 => 
+            489 =>
             array (
                 'orderNumber' => 10153,
                 'productCode' => 'S72_3212',
@@ -3939,7 +3940,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.87',
                 'orderLineNumber' => 4,
             ),
-            490 => 
+            490 =>
             array (
                 'orderNumber' => 10154,
                 'productCode' => 'S24_3151',
@@ -3947,7 +3948,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.23',
                 'orderLineNumber' => 2,
             ),
-            491 => 
+            491 =>
             array (
                 'orderNumber' => 10154,
                 'productCode' => 'S700_2610',
@@ -3955,7 +3956,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.27',
                 'orderLineNumber' => 1,
             ),
-            492 => 
+            492 =>
             array (
                 'orderNumber' => 10155,
                 'productCode' => 'S10_4757',
@@ -3963,7 +3964,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.20',
                 'orderLineNumber' => 13,
             ),
-            493 => 
+            493 =>
             array (
                 'orderNumber' => 10155,
                 'productCode' => 'S18_1662',
@@ -3971,7 +3972,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '138.77',
                 'orderLineNumber' => 5,
             ),
-            494 => 
+            494 =>
             array (
                 'orderNumber' => 10155,
                 'productCode' => 'S18_3029',
@@ -3979,7 +3980,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.44',
                 'orderLineNumber' => 11,
             ),
-            495 => 
+            495 =>
             array (
                 'orderNumber' => 10155,
                 'productCode' => 'S18_3856',
@@ -3987,7 +3988,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.87',
                 'orderLineNumber' => 10,
             ),
-            496 => 
+            496 =>
             array (
                 'orderNumber' => 10155,
                 'productCode' => 'S24_2841',
@@ -3995,7 +3996,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.34',
                 'orderLineNumber' => 6,
             ),
-            497 => 
+            497 =>
             array (
                 'orderNumber' => 10155,
                 'productCode' => 'S24_3420',
@@ -4003,7 +4004,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.55',
                 'orderLineNumber' => 7,
             ),
-            498 => 
+            498 =>
             array (
                 'orderNumber' => 10155,
                 'productCode' => 'S24_3816',
@@ -4011,7 +4012,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.31',
                 'orderLineNumber' => 12,
             ),
-            499 => 
+            499 =>
             array (
                 'orderNumber' => 10155,
                 'productCode' => 'S24_3949',
@@ -4019,9 +4020,9 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.69',
                 'orderLineNumber' => 4,
             ),
-        ));
-        \DB::table('orderdetails')->insert(array (
-            0 => 
+        );
+        $data_kedua = array (
+            0 =>
             array (
                 'orderNumber' => 10155,
                 'productCode' => 'S700_2047',
@@ -4029,7 +4030,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.61',
                 'orderLineNumber' => 9,
             ),
-            1 => 
+            1 =>
             array (
                 'orderNumber' => 10155,
                 'productCode' => 'S700_2466',
@@ -4037,7 +4038,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.75',
                 'orderLineNumber' => 2,
             ),
-            2 => 
+            2 =>
             array (
                 'orderNumber' => 10155,
                 'productCode' => 'S700_3167',
@@ -4045,7 +4046,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.80',
                 'orderLineNumber' => 1,
             ),
-            3 => 
+            3 =>
             array (
                 'orderNumber' => 10155,
                 'productCode' => 'S700_4002',
@@ -4053,7 +4054,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.33',
                 'orderLineNumber' => 3,
             ),
-            4 => 
+            4 =>
             array (
                 'orderNumber' => 10155,
                 'productCode' => 'S72_1253',
@@ -4061,7 +4062,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.16',
                 'orderLineNumber' => 8,
             ),
-            5 => 
+            5 =>
             array (
                 'orderNumber' => 10156,
                 'productCode' => 'S50_1341',
@@ -4069,7 +4070,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.64',
                 'orderLineNumber' => 1,
             ),
-            6 => 
+            6 =>
             array (
                 'orderNumber' => 10156,
                 'productCode' => 'S700_1691',
@@ -4077,7 +4078,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.64',
                 'orderLineNumber' => 2,
             ),
-            7 => 
+            7 =>
             array (
                 'orderNumber' => 10157,
                 'productCode' => 'S18_2581',
@@ -4085,7 +4086,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.27',
                 'orderLineNumber' => 3,
             ),
-            8 => 
+            8 =>
             array (
                 'orderNumber' => 10157,
                 'productCode' => 'S24_1785',
@@ -4093,7 +4094,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.72',
                 'orderLineNumber' => 5,
             ),
-            9 => 
+            9 =>
             array (
                 'orderNumber' => 10157,
                 'productCode' => 'S24_4278',
@@ -4101,7 +4102,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.65',
                 'orderLineNumber' => 4,
             ),
-            10 => 
+            10 =>
             array (
                 'orderNumber' => 10157,
                 'productCode' => 'S32_1374',
@@ -4109,7 +4110,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.91',
                 'orderLineNumber' => 1,
             ),
-            11 => 
+            11 =>
             array (
                 'orderNumber' => 10157,
                 'productCode' => 'S32_4289',
@@ -4117,7 +4118,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.41',
                 'orderLineNumber' => 6,
             ),
-            12 => 
+            12 =>
             array (
                 'orderNumber' => 10157,
                 'productCode' => 'S700_2834',
@@ -4125,7 +4126,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.16',
                 'orderLineNumber' => 2,
             ),
-            13 => 
+            13 =>
             array (
                 'orderNumber' => 10158,
                 'productCode' => 'S24_2000',
@@ -4133,7 +4134,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.79',
                 'orderLineNumber' => 1,
             ),
-            14 => 
+            14 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S10_1678',
@@ -4141,7 +4142,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.35',
                 'orderLineNumber' => 14,
             ),
-            15 => 
+            15 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S10_2016',
@@ -4149,7 +4150,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.10',
                 'orderLineNumber' => 17,
             ),
-            16 => 
+            16 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S10_4698',
@@ -4157,7 +4158,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '170.42',
                 'orderLineNumber' => 16,
             ),
-            17 => 
+            17 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S12_1099',
@@ -4165,7 +4166,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '188.73',
                 'orderLineNumber' => 2,
             ),
-            18 => 
+            18 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S12_2823',
@@ -4173,7 +4174,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '131.04',
                 'orderLineNumber' => 13,
             ),
-            19 => 
+            19 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S12_3990',
@@ -4181,7 +4182,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.03',
                 'orderLineNumber' => 3,
             ),
-            20 => 
+            20 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S18_2625',
@@ -4189,7 +4190,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.48',
                 'orderLineNumber' => 18,
             ),
-            21 => 
+            21 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S18_3278',
@@ -4197,7 +4198,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.74',
                 'orderLineNumber' => 5,
             ),
-            22 => 
+            22 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S18_3482',
@@ -4205,7 +4206,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.35',
                 'orderLineNumber' => 4,
             ),
-            23 => 
+            23 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S18_3782',
@@ -4213,7 +4214,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.71',
                 'orderLineNumber' => 8,
             ),
-            24 => 
+            24 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S18_4721',
@@ -4221,7 +4222,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '142.85',
                 'orderLineNumber' => 7,
             ),
-            25 => 
+            25 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S24_1578',
@@ -4229,7 +4230,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.30',
                 'orderLineNumber' => 15,
             ),
-            26 => 
+            26 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S24_2360',
@@ -4237,7 +4238,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.18',
                 'orderLineNumber' => 11,
             ),
-            27 => 
+            27 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S24_3371',
@@ -4245,7 +4246,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.60',
                 'orderLineNumber' => 1,
             ),
-            28 => 
+            28 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S24_4620',
@@ -4253,7 +4254,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.84',
                 'orderLineNumber' => 6,
             ),
-            29 => 
+            29 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S32_2206',
@@ -4261,7 +4262,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '39.43',
                 'orderLineNumber' => 9,
             ),
-            30 => 
+            30 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S32_4485',
@@ -4269,7 +4270,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.74',
                 'orderLineNumber' => 12,
             ),
-            31 => 
+            31 =>
             array (
                 'orderNumber' => 10159,
                 'productCode' => 'S50_4713',
@@ -4277,7 +4278,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.11',
                 'orderLineNumber' => 10,
             ),
-            32 => 
+            32 =>
             array (
                 'orderNumber' => 10160,
                 'productCode' => 'S12_3380',
@@ -4285,7 +4286,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.30',
                 'orderLineNumber' => 6,
             ),
-            33 => 
+            33 =>
             array (
                 'orderNumber' => 10160,
                 'productCode' => 'S12_4675',
@@ -4293,7 +4294,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.28',
                 'orderLineNumber' => 5,
             ),
-            34 => 
+            34 =>
             array (
                 'orderNumber' => 10160,
                 'productCode' => 'S18_1889',
@@ -4301,7 +4302,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.84',
                 'orderLineNumber' => 4,
             ),
-            35 => 
+            35 =>
             array (
                 'orderNumber' => 10160,
                 'productCode' => 'S18_3232',
@@ -4309,7 +4310,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.55',
                 'orderLineNumber' => 1,
             ),
-            36 => 
+            36 =>
             array (
                 'orderNumber' => 10160,
                 'productCode' => 'S24_2972',
@@ -4317,7 +4318,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '30.59',
                 'orderLineNumber' => 2,
             ),
-            37 => 
+            37 =>
             array (
                 'orderNumber' => 10160,
                 'productCode' => 'S24_3856',
@@ -4325,7 +4326,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '130.60',
                 'orderLineNumber' => 3,
             ),
-            38 => 
+            38 =>
             array (
                 'orderNumber' => 10161,
                 'productCode' => 'S18_1129',
@@ -4333,7 +4334,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '121.72',
                 'orderLineNumber' => 12,
             ),
-            39 => 
+            39 =>
             array (
                 'orderNumber' => 10161,
                 'productCode' => 'S18_1589',
@@ -4341,7 +4342,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.04',
                 'orderLineNumber' => 8,
             ),
-            40 => 
+            40 =>
             array (
                 'orderNumber' => 10161,
                 'productCode' => 'S18_1984',
@@ -4349,7 +4350,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '139.41',
                 'orderLineNumber' => 11,
             ),
-            41 => 
+            41 =>
             array (
                 'orderNumber' => 10161,
                 'productCode' => 'S18_2870',
@@ -4357,7 +4358,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '125.40',
                 'orderLineNumber' => 9,
             ),
-            42 => 
+            42 =>
             array (
                 'orderNumber' => 10161,
                 'productCode' => 'S18_3685',
@@ -4365,7 +4366,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '132.80',
                 'orderLineNumber' => 10,
             ),
-            43 => 
+            43 =>
             array (
                 'orderNumber' => 10161,
                 'productCode' => 'S18_4933',
@@ -4373,7 +4374,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.72',
                 'orderLineNumber' => 1,
             ),
-            44 => 
+            44 =>
             array (
                 'orderNumber' => 10161,
                 'productCode' => 'S24_1046',
@@ -4381,7 +4382,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.49',
                 'orderLineNumber' => 5,
             ),
-            45 => 
+            45 =>
             array (
                 'orderNumber' => 10161,
                 'productCode' => 'S24_1628',
@@ -4389,7 +4390,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.29',
                 'orderLineNumber' => 7,
             ),
-            46 => 
+            46 =>
             array (
                 'orderNumber' => 10161,
                 'productCode' => 'S24_2766',
@@ -4397,7 +4398,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.69',
                 'orderLineNumber' => 3,
             ),
-            47 => 
+            47 =>
             array (
                 'orderNumber' => 10161,
                 'productCode' => 'S24_2887',
@@ -4405,7 +4406,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '108.04',
                 'orderLineNumber' => 2,
             ),
-            48 => 
+            48 =>
             array (
                 'orderNumber' => 10161,
                 'productCode' => 'S24_3191',
@@ -4413,7 +4414,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.77',
                 'orderLineNumber' => 4,
             ),
-            49 => 
+            49 =>
             array (
                 'orderNumber' => 10161,
                 'productCode' => 'S24_3432',
@@ -4421,7 +4422,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.23',
                 'orderLineNumber' => 6,
             ),
-            50 => 
+            50 =>
             array (
                 'orderNumber' => 10162,
                 'productCode' => 'S18_1342',
@@ -4429,7 +4430,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.33',
                 'orderLineNumber' => 2,
             ),
-            51 => 
+            51 =>
             array (
                 'orderNumber' => 10162,
                 'productCode' => 'S18_1367',
@@ -4437,7 +4438,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '45.28',
                 'orderLineNumber' => 1,
             ),
-            52 => 
+            52 =>
             array (
                 'orderNumber' => 10162,
                 'productCode' => 'S18_1749',
@@ -4445,7 +4446,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '141.10',
                 'orderLineNumber' => 9,
             ),
-            53 => 
+            53 =>
             array (
                 'orderNumber' => 10162,
                 'productCode' => 'S18_2248',
@@ -4453,7 +4454,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.28',
                 'orderLineNumber' => 8,
             ),
-            54 => 
+            54 =>
             array (
                 'orderNumber' => 10162,
                 'productCode' => 'S18_2325',
@@ -4461,7 +4462,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.15',
                 'orderLineNumber' => 6,
             ),
-            55 => 
+            55 =>
             array (
                 'orderNumber' => 10162,
                 'productCode' => 'S18_2795',
@@ -4469,7 +4470,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '156.94',
                 'orderLineNumber' => 3,
             ),
-            56 => 
+            56 =>
             array (
                 'orderNumber' => 10162,
                 'productCode' => 'S18_4409',
@@ -4477,7 +4478,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.51',
                 'orderLineNumber' => 10,
             ),
-            57 => 
+            57 =>
             array (
                 'orderNumber' => 10162,
                 'productCode' => 'S24_1937',
@@ -4485,7 +4486,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '27.55',
                 'orderLineNumber' => 5,
             ),
-            58 => 
+            58 =>
             array (
                 'orderNumber' => 10162,
                 'productCode' => 'S24_2022',
@@ -4493,7 +4494,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '38.98',
                 'orderLineNumber' => 4,
             ),
-            59 => 
+            59 =>
             array (
                 'orderNumber' => 10162,
                 'productCode' => 'S24_3969',
@@ -4501,7 +4502,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.82',
                 'orderLineNumber' => 7,
             ),
-            60 => 
+            60 =>
             array (
                 'orderNumber' => 10163,
                 'productCode' => 'S10_1949',
@@ -4509,7 +4510,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '212.16',
                 'orderLineNumber' => 1,
             ),
-            61 => 
+            61 =>
             array (
                 'orderNumber' => 10163,
                 'productCode' => 'S18_2949',
@@ -4517,7 +4518,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.31',
                 'orderLineNumber' => 2,
             ),
-            62 => 
+            62 =>
             array (
                 'orderNumber' => 10163,
                 'productCode' => 'S18_2957',
@@ -4525,7 +4526,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.96',
                 'orderLineNumber' => 4,
             ),
-            63 => 
+            63 =>
             array (
                 'orderNumber' => 10163,
                 'productCode' => 'S18_3136',
@@ -4533,7 +4534,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.58',
                 'orderLineNumber' => 3,
             ),
-            64 => 
+            64 =>
             array (
                 'orderNumber' => 10163,
                 'productCode' => 'S18_3320',
@@ -4541,7 +4542,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.36',
                 'orderLineNumber' => 6,
             ),
-            65 => 
+            65 =>
             array (
                 'orderNumber' => 10163,
                 'productCode' => 'S24_4258',
@@ -4549,7 +4550,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.42',
                 'orderLineNumber' => 5,
             ),
-            66 => 
+            66 =>
             array (
                 'orderNumber' => 10164,
                 'productCode' => 'S10_4962',
@@ -4557,7 +4558,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '143.31',
                 'orderLineNumber' => 2,
             ),
-            67 => 
+            67 =>
             array (
                 'orderNumber' => 10164,
                 'productCode' => 'S12_1666',
@@ -4565,7 +4566,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '121.64',
                 'orderLineNumber' => 6,
             ),
-            68 => 
+            68 =>
             array (
                 'orderNumber' => 10164,
                 'productCode' => 'S18_1097',
@@ -4573,7 +4574,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '103.84',
                 'orderLineNumber' => 8,
             ),
-            69 => 
+            69 =>
             array (
                 'orderNumber' => 10164,
                 'productCode' => 'S18_4600',
@@ -4581,7 +4582,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.76',
                 'orderLineNumber' => 3,
             ),
-            70 => 
+            70 =>
             array (
                 'orderNumber' => 10164,
                 'productCode' => 'S18_4668',
@@ -4589,7 +4590,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '46.29',
                 'orderLineNumber' => 7,
             ),
-            71 => 
+            71 =>
             array (
                 'orderNumber' => 10164,
                 'productCode' => 'S32_1268',
@@ -4597,7 +4598,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.49',
                 'orderLineNumber' => 1,
             ),
-            72 => 
+            72 =>
             array (
                 'orderNumber' => 10164,
                 'productCode' => 'S32_3522',
@@ -4605,7 +4606,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.53',
                 'orderLineNumber' => 5,
             ),
-            73 => 
+            73 =>
             array (
                 'orderNumber' => 10164,
                 'productCode' => 'S700_2824',
@@ -4613,7 +4614,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.99',
                 'orderLineNumber' => 4,
             ),
-            74 => 
+            74 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S12_1108',
@@ -4621,7 +4622,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '168.32',
                 'orderLineNumber' => 3,
             ),
-            75 => 
+            75 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S12_3148',
@@ -4629,7 +4630,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '123.89',
                 'orderLineNumber' => 4,
             ),
-            76 => 
+            76 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S12_3891',
@@ -4637,7 +4638,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '152.26',
                 'orderLineNumber' => 2,
             ),
-            77 => 
+            77 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S12_4473',
@@ -4645,7 +4646,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.02',
                 'orderLineNumber' => 12,
             ),
-            78 => 
+            78 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S18_2238',
@@ -4653,7 +4654,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '134.26',
                 'orderLineNumber' => 11,
             ),
-            79 => 
+            79 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S18_2319',
@@ -4661,7 +4662,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.28',
                 'orderLineNumber' => 15,
             ),
-            80 => 
+            80 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S18_2432',
@@ -4669,7 +4670,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.77',
                 'orderLineNumber' => 18,
             ),
-            81 => 
+            81 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S18_3232',
@@ -4677,7 +4678,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '154.10',
                 'orderLineNumber' => 16,
             ),
-            82 => 
+            82 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S18_3259',
@@ -4685,7 +4686,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.71',
                 'orderLineNumber' => 1,
             ),
-            83 => 
+            83 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S18_4027',
@@ -4693,7 +4694,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '123.51',
                 'orderLineNumber' => 6,
             ),
-            84 => 
+            84 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S24_1444',
@@ -4701,7 +4702,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '46.82',
                 'orderLineNumber' => 9,
             ),
-            85 => 
+            85 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S24_2300',
@@ -4709,7 +4710,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.57',
                 'orderLineNumber' => 17,
             ),
-            86 => 
+            86 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S24_2840',
@@ -4717,7 +4718,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '31.12',
                 'orderLineNumber' => 13,
             ),
-            87 => 
+            87 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S24_4048',
@@ -4725,7 +4726,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '106.45',
                 'orderLineNumber' => 8,
             ),
-            88 => 
+            88 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S32_2509',
@@ -4733,7 +4734,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.86',
                 'orderLineNumber' => 14,
             ),
-            89 => 
+            89 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S32_3207',
@@ -4741,7 +4742,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.30',
                 'orderLineNumber' => 7,
             ),
-            90 => 
+            90 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S50_1392',
@@ -4749,7 +4750,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '106.49',
                 'orderLineNumber' => 10,
             ),
-            91 => 
+            91 =>
             array (
                 'orderNumber' => 10165,
                 'productCode' => 'S50_1514',
@@ -4757,7 +4758,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.21',
                 'orderLineNumber' => 5,
             ),
-            92 => 
+            92 =>
             array (
                 'orderNumber' => 10166,
                 'productCode' => 'S18_3140',
@@ -4765,7 +4766,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '136.59',
                 'orderLineNumber' => 2,
             ),
-            93 => 
+            93 =>
             array (
                 'orderNumber' => 10166,
                 'productCode' => 'S18_4522',
@@ -4773,7 +4774,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.85',
                 'orderLineNumber' => 1,
             ),
-            94 => 
+            94 =>
             array (
                 'orderNumber' => 10166,
                 'productCode' => 'S700_1938',
@@ -4781,7 +4782,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.22',
                 'orderLineNumber' => 3,
             ),
-            95 => 
+            95 =>
             array (
                 'orderNumber' => 10167,
                 'productCode' => 'S10_4757',
@@ -4789,7 +4790,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '123.76',
                 'orderLineNumber' => 9,
             ),
-            96 => 
+            96 =>
             array (
                 'orderNumber' => 10167,
                 'productCode' => 'S18_1662',
@@ -4797,7 +4798,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '141.92',
                 'orderLineNumber' => 1,
             ),
-            97 => 
+            97 =>
             array (
                 'orderNumber' => 10167,
                 'productCode' => 'S18_3029',
@@ -4805,7 +4806,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.68',
                 'orderLineNumber' => 7,
             ),
-            98 => 
+            98 =>
             array (
                 'orderNumber' => 10167,
                 'productCode' => 'S18_3856',
@@ -4813,7 +4814,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.70',
                 'orderLineNumber' => 6,
             ),
-            99 => 
+            99 =>
             array (
                 'orderNumber' => 10167,
                 'productCode' => 'S24_2011',
@@ -4821,7 +4822,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.60',
                 'orderLineNumber' => 16,
             ),
-            100 => 
+            100 =>
             array (
                 'orderNumber' => 10167,
                 'productCode' => 'S24_2841',
@@ -4829,7 +4830,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.81',
                 'orderLineNumber' => 2,
             ),
-            101 => 
+            101 =>
             array (
                 'orderNumber' => 10167,
                 'productCode' => 'S24_3151',
@@ -4837,7 +4838,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.00',
                 'orderLineNumber' => 11,
             ),
-            102 => 
+            102 =>
             array (
                 'orderNumber' => 10167,
                 'productCode' => 'S24_3420',
@@ -4845,7 +4846,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.44',
                 'orderLineNumber' => 3,
             ),
-            103 => 
+            103 =>
             array (
                 'orderNumber' => 10167,
                 'productCode' => 'S24_3816',
@@ -4853,7 +4854,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.80',
                 'orderLineNumber' => 8,
             ),
-            104 => 
+            104 =>
             array (
                 'orderNumber' => 10167,
                 'productCode' => 'S700_1138',
@@ -4861,7 +4862,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.00',
                 'orderLineNumber' => 12,
             ),
-            105 => 
+            105 =>
             array (
                 'orderNumber' => 10167,
                 'productCode' => 'S700_2047',
@@ -4869,7 +4870,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.80',
                 'orderLineNumber' => 5,
             ),
-            106 => 
+            106 =>
             array (
                 'orderNumber' => 10167,
                 'productCode' => 'S700_2610',
@@ -4877,7 +4878,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.16',
                 'orderLineNumber' => 10,
             ),
-            107 => 
+            107 =>
             array (
                 'orderNumber' => 10167,
                 'productCode' => 'S700_3505',
@@ -4885,7 +4886,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.14',
                 'orderLineNumber' => 13,
             ),
-            108 => 
+            108 =>
             array (
                 'orderNumber' => 10167,
                 'productCode' => 'S700_3962',
@@ -4893,7 +4894,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.42',
                 'orderLineNumber' => 14,
             ),
-            109 => 
+            109 =>
             array (
                 'orderNumber' => 10167,
                 'productCode' => 'S72_1253',
@@ -4901,7 +4902,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '42.71',
                 'orderLineNumber' => 4,
             ),
-            110 => 
+            110 =>
             array (
                 'orderNumber' => 10167,
                 'productCode' => 'S72_3212',
@@ -4909,7 +4910,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.68',
                 'orderLineNumber' => 15,
             ),
-            111 => 
+            111 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S10_1678',
@@ -4917,7 +4918,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.74',
                 'orderLineNumber' => 1,
             ),
-            112 => 
+            112 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S10_2016',
@@ -4925,7 +4926,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '97.53',
                 'orderLineNumber' => 4,
             ),
-            113 => 
+            113 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S10_4698',
@@ -4933,7 +4934,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '160.74',
                 'orderLineNumber' => 3,
             ),
-            114 => 
+            114 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S18_2581',
@@ -4941,7 +4942,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.19',
                 'orderLineNumber' => 9,
             ),
-            115 => 
+            115 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S18_2625',
@@ -4949,7 +4950,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.06',
                 'orderLineNumber' => 5,
             ),
-            116 => 
+            116 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S24_1578',
@@ -4957,7 +4958,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '103.68',
                 'orderLineNumber' => 2,
             ),
-            117 => 
+            117 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S24_1785',
@@ -4965,7 +4966,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.01',
                 'orderLineNumber' => 11,
             ),
-            118 => 
+            118 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S24_2000',
@@ -4973,7 +4974,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.36',
                 'orderLineNumber' => 6,
             ),
-            119 => 
+            119 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S24_3949',
@@ -4981,7 +4982,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.32',
                 'orderLineNumber' => 18,
             ),
-            120 => 
+            120 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S24_4278',
@@ -4989,7 +4990,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.10',
                 'orderLineNumber' => 10,
             ),
-            121 => 
+            121 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S32_1374',
@@ -4997,7 +4998,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.90',
                 'orderLineNumber' => 7,
             ),
-            122 => 
+            122 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S32_4289',
@@ -5005,7 +5006,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.78',
                 'orderLineNumber' => 12,
             ),
-            123 => 
+            123 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S50_1341',
@@ -5013,7 +5014,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '39.71',
                 'orderLineNumber' => 13,
             ),
-            124 => 
+            124 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S700_1691',
@@ -5021,7 +5022,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.34',
                 'orderLineNumber' => 14,
             ),
-            125 => 
+            125 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S700_2466',
@@ -5029,7 +5030,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.75',
                 'orderLineNumber' => 16,
             ),
-            126 => 
+            126 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S700_2834',
@@ -5037,7 +5038,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.92',
                 'orderLineNumber' => 8,
             ),
-            127 => 
+            127 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S700_3167',
@@ -5045,7 +5046,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.00',
                 'orderLineNumber' => 15,
             ),
-            128 => 
+            128 =>
             array (
                 'orderNumber' => 10168,
                 'productCode' => 'S700_4002',
@@ -5053,7 +5054,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.37',
                 'orderLineNumber' => 17,
             ),
-            129 => 
+            129 =>
             array (
                 'orderNumber' => 10169,
                 'productCode' => 'S12_1099',
@@ -5061,7 +5062,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '163.44',
                 'orderLineNumber' => 2,
             ),
-            130 => 
+            130 =>
             array (
                 'orderNumber' => 10169,
                 'productCode' => 'S12_2823',
@@ -5069,7 +5070,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.52',
                 'orderLineNumber' => 13,
             ),
-            131 => 
+            131 =>
             array (
                 'orderNumber' => 10169,
                 'productCode' => 'S12_3990',
@@ -5077,7 +5078,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.82',
                 'orderLineNumber' => 3,
             ),
-            132 => 
+            132 =>
             array (
                 'orderNumber' => 10169,
                 'productCode' => 'S18_3278',
@@ -5085,7 +5086,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.13',
                 'orderLineNumber' => 5,
             ),
-            133 => 
+            133 =>
             array (
                 'orderNumber' => 10169,
                 'productCode' => 'S18_3482',
@@ -5093,7 +5094,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '136.70',
                 'orderLineNumber' => 4,
             ),
-            134 => 
+            134 =>
             array (
                 'orderNumber' => 10169,
                 'productCode' => 'S18_3782',
@@ -5101,7 +5102,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.84',
                 'orderLineNumber' => 8,
             ),
-            135 => 
+            135 =>
             array (
                 'orderNumber' => 10169,
                 'productCode' => 'S18_4721',
@@ -5109,7 +5110,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.53',
                 'orderLineNumber' => 7,
             ),
-            136 => 
+            136 =>
             array (
                 'orderNumber' => 10169,
                 'productCode' => 'S24_2360',
@@ -5117,7 +5118,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.49',
                 'orderLineNumber' => 11,
             ),
-            137 => 
+            137 =>
             array (
                 'orderNumber' => 10169,
                 'productCode' => 'S24_3371',
@@ -5125,7 +5126,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.27',
                 'orderLineNumber' => 1,
             ),
-            138 => 
+            138 =>
             array (
                 'orderNumber' => 10169,
                 'productCode' => 'S24_4620',
@@ -5133,7 +5134,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.61',
                 'orderLineNumber' => 6,
             ),
-            139 => 
+            139 =>
             array (
                 'orderNumber' => 10169,
                 'productCode' => 'S32_2206',
@@ -5141,7 +5142,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '37.01',
                 'orderLineNumber' => 9,
             ),
-            140 => 
+            140 =>
             array (
                 'orderNumber' => 10169,
                 'productCode' => 'S32_4485',
@@ -5149,7 +5150,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.68',
                 'orderLineNumber' => 12,
             ),
-            141 => 
+            141 =>
             array (
                 'orderNumber' => 10169,
                 'productCode' => 'S50_4713',
@@ -5157,7 +5158,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.66',
                 'orderLineNumber' => 10,
             ),
-            142 => 
+            142 =>
             array (
                 'orderNumber' => 10170,
                 'productCode' => 'S12_3380',
@@ -5165,7 +5166,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '116.27',
                 'orderLineNumber' => 4,
             ),
-            143 => 
+            143 =>
             array (
                 'orderNumber' => 10170,
                 'productCode' => 'S12_4675',
@@ -5173,7 +5174,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.28',
                 'orderLineNumber' => 3,
             ),
-            144 => 
+            144 =>
             array (
                 'orderNumber' => 10170,
                 'productCode' => 'S18_1889',
@@ -5181,7 +5182,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.07',
                 'orderLineNumber' => 2,
             ),
-            145 => 
+            145 =>
             array (
                 'orderNumber' => 10170,
                 'productCode' => 'S24_3856',
@@ -5189,7 +5190,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '130.60',
                 'orderLineNumber' => 1,
             ),
-            146 => 
+            146 =>
             array (
                 'orderNumber' => 10171,
                 'productCode' => 'S18_1129',
@@ -5197,7 +5198,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '134.46',
                 'orderLineNumber' => 2,
             ),
-            147 => 
+            147 =>
             array (
                 'orderNumber' => 10171,
                 'productCode' => 'S18_1984',
@@ -5205,7 +5206,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '128.03',
                 'orderLineNumber' => 1,
             ),
-            148 => 
+            148 =>
             array (
                 'orderNumber' => 10171,
                 'productCode' => 'S18_3232',
@@ -5213,7 +5214,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '165.95',
                 'orderLineNumber' => 3,
             ),
-            149 => 
+            149 =>
             array (
                 'orderNumber' => 10171,
                 'productCode' => 'S24_2972',
@@ -5221,7 +5222,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '34.74',
                 'orderLineNumber' => 4,
             ),
-            150 => 
+            150 =>
             array (
                 'orderNumber' => 10172,
                 'productCode' => 'S18_1589',
@@ -5229,7 +5230,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.51',
                 'orderLineNumber' => 6,
             ),
-            151 => 
+            151 =>
             array (
                 'orderNumber' => 10172,
                 'productCode' => 'S18_2870',
@@ -5237,7 +5238,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.48',
                 'orderLineNumber' => 7,
             ),
-            152 => 
+            152 =>
             array (
                 'orderNumber' => 10172,
                 'productCode' => 'S18_3685',
@@ -5245,7 +5246,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '139.87',
                 'orderLineNumber' => 8,
             ),
-            153 => 
+            153 =>
             array (
                 'orderNumber' => 10172,
                 'productCode' => 'S24_1046',
@@ -5253,7 +5254,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.00',
                 'orderLineNumber' => 3,
             ),
-            154 => 
+            154 =>
             array (
                 'orderNumber' => 10172,
                 'productCode' => 'S24_1628',
@@ -5261,7 +5262,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.27',
                 'orderLineNumber' => 5,
             ),
-            155 => 
+            155 =>
             array (
                 'orderNumber' => 10172,
                 'productCode' => 'S24_2766',
@@ -5269,7 +5270,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.97',
                 'orderLineNumber' => 1,
             ),
-            156 => 
+            156 =>
             array (
                 'orderNumber' => 10172,
                 'productCode' => 'S24_3191',
@@ -5277,7 +5278,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.91',
                 'orderLineNumber' => 2,
             ),
-            157 => 
+            157 =>
             array (
                 'orderNumber' => 10172,
                 'productCode' => 'S24_3432',
@@ -5285,7 +5286,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.81',
                 'orderLineNumber' => 4,
             ),
-            158 => 
+            158 =>
             array (
                 'orderNumber' => 10173,
                 'productCode' => 'S18_1342',
@@ -5293,7 +5294,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.71',
                 'orderLineNumber' => 6,
             ),
-            159 => 
+            159 =>
             array (
                 'orderNumber' => 10173,
                 'productCode' => 'S18_1367',
@@ -5301,7 +5302,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.75',
                 'orderLineNumber' => 5,
             ),
-            160 => 
+            160 =>
             array (
                 'orderNumber' => 10173,
                 'productCode' => 'S18_1749',
@@ -5309,7 +5310,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '168.30',
                 'orderLineNumber' => 13,
             ),
-            161 => 
+            161 =>
             array (
                 'orderNumber' => 10173,
                 'productCode' => 'S18_2248',
@@ -5317,7 +5318,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.09',
                 'orderLineNumber' => 12,
             ),
-            162 => 
+            162 =>
             array (
                 'orderNumber' => 10173,
                 'productCode' => 'S18_2325',
@@ -5325,7 +5326,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '127.13',
                 'orderLineNumber' => 10,
             ),
-            163 => 
+            163 =>
             array (
                 'orderNumber' => 10173,
                 'productCode' => 'S18_2795',
@@ -5333,7 +5334,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.06',
                 'orderLineNumber' => 7,
             ),
-            164 => 
+            164 =>
             array (
                 'orderNumber' => 10173,
                 'productCode' => 'S18_2957',
@@ -5341,7 +5342,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.84',
                 'orderLineNumber' => 2,
             ),
-            165 => 
+            165 =>
             array (
                 'orderNumber' => 10173,
                 'productCode' => 'S18_3136',
@@ -5349,7 +5350,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.92',
                 'orderLineNumber' => 1,
             ),
-            166 => 
+            166 =>
             array (
                 'orderNumber' => 10173,
                 'productCode' => 'S18_3320',
@@ -5357,7 +5358,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.28',
                 'orderLineNumber' => 4,
             ),
-            167 => 
+            167 =>
             array (
                 'orderNumber' => 10173,
                 'productCode' => 'S18_4409',
@@ -5365,7 +5366,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.31',
                 'orderLineNumber' => 14,
             ),
-            168 => 
+            168 =>
             array (
                 'orderNumber' => 10173,
                 'productCode' => 'S18_4933',
@@ -5373,7 +5374,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.44',
                 'orderLineNumber' => 15,
             ),
-            169 => 
+            169 =>
             array (
                 'orderNumber' => 10173,
                 'productCode' => 'S24_1937',
@@ -5381,7 +5382,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '29.87',
                 'orderLineNumber' => 9,
             ),
-            170 => 
+            170 =>
             array (
                 'orderNumber' => 10173,
                 'productCode' => 'S24_2022',
@@ -5389,7 +5390,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '39.42',
                 'orderLineNumber' => 8,
             ),
-            171 => 
+            171 =>
             array (
                 'orderNumber' => 10173,
                 'productCode' => 'S24_2887',
@@ -5397,7 +5398,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.65',
                 'orderLineNumber' => 16,
             ),
-            172 => 
+            172 =>
             array (
                 'orderNumber' => 10173,
                 'productCode' => 'S24_3969',
@@ -5405,7 +5406,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.70',
                 'orderLineNumber' => 11,
             ),
-            173 => 
+            173 =>
             array (
                 'orderNumber' => 10173,
                 'productCode' => 'S24_4258',
@@ -5413,7 +5414,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.49',
                 'orderLineNumber' => 3,
             ),
-            174 => 
+            174 =>
             array (
                 'orderNumber' => 10174,
                 'productCode' => 'S10_1949',
@@ -5421,7 +5422,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '207.87',
                 'orderLineNumber' => 4,
             ),
-            175 => 
+            175 =>
             array (
                 'orderNumber' => 10174,
                 'productCode' => 'S12_1666',
@@ -5429,7 +5430,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.44',
                 'orderLineNumber' => 1,
             ),
-            176 => 
+            176 =>
             array (
                 'orderNumber' => 10174,
                 'productCode' => 'S18_1097',
@@ -5437,7 +5438,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '108.50',
                 'orderLineNumber' => 3,
             ),
-            177 => 
+            177 =>
             array (
                 'orderNumber' => 10174,
                 'productCode' => 'S18_2949',
@@ -5445,7 +5446,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.30',
                 'orderLineNumber' => 5,
             ),
-            178 => 
+            178 =>
             array (
                 'orderNumber' => 10174,
                 'productCode' => 'S18_4668',
@@ -5453,7 +5454,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.27',
                 'orderLineNumber' => 2,
             ),
-            179 => 
+            179 =>
             array (
                 'orderNumber' => 10175,
                 'productCode' => 'S10_4962',
@@ -5461,7 +5462,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.67',
                 'orderLineNumber' => 9,
             ),
-            180 => 
+            180 =>
             array (
                 'orderNumber' => 10175,
                 'productCode' => 'S12_4473',
@@ -5469,7 +5470,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.02',
                 'orderLineNumber' => 1,
             ),
-            181 => 
+            181 =>
             array (
                 'orderNumber' => 10175,
                 'productCode' => 'S18_2319',
@@ -5477,7 +5478,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.87',
                 'orderLineNumber' => 4,
             ),
-            182 => 
+            182 =>
             array (
                 'orderNumber' => 10175,
                 'productCode' => 'S18_2432',
@@ -5485,7 +5486,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.55',
                 'orderLineNumber' => 7,
             ),
-            183 => 
+            183 =>
             array (
                 'orderNumber' => 10175,
                 'productCode' => 'S18_3232',
@@ -5493,7 +5494,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '150.71',
                 'orderLineNumber' => 5,
             ),
-            184 => 
+            184 =>
             array (
                 'orderNumber' => 10175,
                 'productCode' => 'S18_4600',
@@ -5501,7 +5502,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.92',
                 'orderLineNumber' => 10,
             ),
-            185 => 
+            185 =>
             array (
                 'orderNumber' => 10175,
                 'productCode' => 'S24_2300',
@@ -5509,7 +5510,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '121.40',
                 'orderLineNumber' => 6,
             ),
-            186 => 
+            186 =>
             array (
                 'orderNumber' => 10175,
                 'productCode' => 'S24_2840',
@@ -5517,7 +5518,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.18',
                 'orderLineNumber' => 2,
             ),
-            187 => 
+            187 =>
             array (
                 'orderNumber' => 10175,
                 'productCode' => 'S32_1268',
@@ -5525,7 +5526,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.57',
                 'orderLineNumber' => 8,
             ),
-            188 => 
+            188 =>
             array (
                 'orderNumber' => 10175,
                 'productCode' => 'S32_2509',
@@ -5533,7 +5534,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.86',
                 'orderLineNumber' => 3,
             ),
-            189 => 
+            189 =>
             array (
                 'orderNumber' => 10175,
                 'productCode' => 'S32_3522',
@@ -5541,7 +5542,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.24',
                 'orderLineNumber' => 12,
             ),
-            190 => 
+            190 =>
             array (
                 'orderNumber' => 10175,
                 'productCode' => 'S700_2824',
@@ -5549,7 +5550,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.92',
                 'orderLineNumber' => 11,
             ),
-            191 => 
+            191 =>
             array (
                 'orderNumber' => 10176,
                 'productCode' => 'S12_1108',
@@ -5557,7 +5558,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '166.24',
                 'orderLineNumber' => 2,
             ),
-            192 => 
+            192 =>
             array (
                 'orderNumber' => 10176,
                 'productCode' => 'S12_3148',
@@ -5565,7 +5566,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '145.04',
                 'orderLineNumber' => 3,
             ),
-            193 => 
+            193 =>
             array (
                 'orderNumber' => 10176,
                 'productCode' => 'S12_3891',
@@ -5573,7 +5574,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '160.91',
                 'orderLineNumber' => 1,
             ),
-            194 => 
+            194 =>
             array (
                 'orderNumber' => 10176,
                 'productCode' => 'S18_2238',
@@ -5581,7 +5582,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '139.17',
                 'orderLineNumber' => 10,
             ),
-            195 => 
+            195 =>
             array (
                 'orderNumber' => 10176,
                 'productCode' => 'S18_4027',
@@ -5589,7 +5590,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.75',
                 'orderLineNumber' => 5,
             ),
-            196 => 
+            196 =>
             array (
                 'orderNumber' => 10176,
                 'productCode' => 'S24_1444',
@@ -5597,7 +5598,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.49',
                 'orderLineNumber' => 8,
             ),
-            197 => 
+            197 =>
             array (
                 'orderNumber' => 10176,
                 'productCode' => 'S24_4048',
@@ -5605,7 +5606,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.72',
                 'orderLineNumber' => 7,
             ),
-            198 => 
+            198 =>
             array (
                 'orderNumber' => 10176,
                 'productCode' => 'S32_3207',
@@ -5613,7 +5614,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.14',
                 'orderLineNumber' => 6,
             ),
-            199 => 
+            199 =>
             array (
                 'orderNumber' => 10176,
                 'productCode' => 'S50_1392',
@@ -5621,7 +5622,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.96',
                 'orderLineNumber' => 9,
             ),
-            200 => 
+            200 =>
             array (
                 'orderNumber' => 10176,
                 'productCode' => 'S50_1514',
@@ -5629,7 +5630,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.14',
                 'orderLineNumber' => 4,
             ),
-            201 => 
+            201 =>
             array (
                 'orderNumber' => 10177,
                 'productCode' => 'S18_3140',
@@ -5637,7 +5638,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.37',
                 'orderLineNumber' => 9,
             ),
-            202 => 
+            202 =>
             array (
                 'orderNumber' => 10177,
                 'productCode' => 'S18_3259',
@@ -5645,7 +5646,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.77',
                 'orderLineNumber' => 11,
             ),
-            203 => 
+            203 =>
             array (
                 'orderNumber' => 10177,
                 'productCode' => 'S18_4522',
@@ -5653,7 +5654,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.50',
                 'orderLineNumber' => 8,
             ),
-            204 => 
+            204 =>
             array (
                 'orderNumber' => 10177,
                 'productCode' => 'S24_2011',
@@ -5661,7 +5662,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.52',
                 'orderLineNumber' => 7,
             ),
-            205 => 
+            205 =>
             array (
                 'orderNumber' => 10177,
                 'productCode' => 'S24_3151',
@@ -5669,7 +5670,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.66',
                 'orderLineNumber' => 2,
             ),
-            206 => 
+            206 =>
             array (
                 'orderNumber' => 10177,
                 'productCode' => 'S700_1138',
@@ -5677,7 +5678,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.67',
                 'orderLineNumber' => 3,
             ),
-            207 => 
+            207 =>
             array (
                 'orderNumber' => 10177,
                 'productCode' => 'S700_1938',
@@ -5685,7 +5686,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.95',
                 'orderLineNumber' => 10,
             ),
-            208 => 
+            208 =>
             array (
                 'orderNumber' => 10177,
                 'productCode' => 'S700_2610',
@@ -5693,7 +5694,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.33',
                 'orderLineNumber' => 1,
             ),
-            209 => 
+            209 =>
             array (
                 'orderNumber' => 10177,
                 'productCode' => 'S700_3505',
@@ -5701,7 +5702,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.15',
                 'orderLineNumber' => 4,
             ),
-            210 => 
+            210 =>
             array (
                 'orderNumber' => 10177,
                 'productCode' => 'S700_3962',
@@ -5709,7 +5710,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.42',
                 'orderLineNumber' => 5,
             ),
-            211 => 
+            211 =>
             array (
                 'orderNumber' => 10177,
                 'productCode' => 'S72_3212',
@@ -5717,7 +5718,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.96',
                 'orderLineNumber' => 6,
             ),
-            212 => 
+            212 =>
             array (
                 'orderNumber' => 10178,
                 'productCode' => 'S10_4757',
@@ -5725,7 +5726,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '131.92',
                 'orderLineNumber' => 12,
             ),
-            213 => 
+            213 =>
             array (
                 'orderNumber' => 10178,
                 'productCode' => 'S18_1662',
@@ -5733,7 +5734,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '127.73',
                 'orderLineNumber' => 4,
             ),
-            214 => 
+            214 =>
             array (
                 'orderNumber' => 10178,
                 'productCode' => 'S18_3029',
@@ -5741,7 +5742,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.54',
                 'orderLineNumber' => 10,
             ),
-            215 => 
+            215 =>
             array (
                 'orderNumber' => 10178,
                 'productCode' => 'S18_3856',
@@ -5749,7 +5750,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.81',
                 'orderLineNumber' => 9,
             ),
-            216 => 
+            216 =>
             array (
                 'orderNumber' => 10178,
                 'productCode' => 'S24_2841',
@@ -5757,7 +5758,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.82',
                 'orderLineNumber' => 5,
             ),
-            217 => 
+            217 =>
             array (
                 'orderNumber' => 10178,
                 'productCode' => 'S24_3420',
@@ -5765,7 +5766,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.75',
                 'orderLineNumber' => 6,
             ),
-            218 => 
+            218 =>
             array (
                 'orderNumber' => 10178,
                 'productCode' => 'S24_3816',
@@ -5773,7 +5774,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.77',
                 'orderLineNumber' => 11,
             ),
-            219 => 
+            219 =>
             array (
                 'orderNumber' => 10178,
                 'productCode' => 'S24_3949',
@@ -5781,7 +5782,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.15',
                 'orderLineNumber' => 3,
             ),
-            220 => 
+            220 =>
             array (
                 'orderNumber' => 10178,
                 'productCode' => 'S700_2047',
@@ -5789,7 +5790,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.90',
                 'orderLineNumber' => 8,
             ),
-            221 => 
+            221 =>
             array (
                 'orderNumber' => 10178,
                 'productCode' => 'S700_2466',
@@ -5797,7 +5798,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.74',
                 'orderLineNumber' => 1,
             ),
-            222 => 
+            222 =>
             array (
                 'orderNumber' => 10178,
                 'productCode' => 'S700_4002',
@@ -5805,7 +5806,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.11',
                 'orderLineNumber' => 2,
             ),
-            223 => 
+            223 =>
             array (
                 'orderNumber' => 10178,
                 'productCode' => 'S72_1253',
@@ -5813,7 +5814,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '41.71',
                 'orderLineNumber' => 7,
             ),
-            224 => 
+            224 =>
             array (
                 'orderNumber' => 10179,
                 'productCode' => 'S18_2581',
@@ -5821,7 +5822,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.79',
                 'orderLineNumber' => 3,
             ),
-            225 => 
+            225 =>
             array (
                 'orderNumber' => 10179,
                 'productCode' => 'S24_1785',
@@ -5829,7 +5830,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.04',
                 'orderLineNumber' => 5,
             ),
-            226 => 
+            226 =>
             array (
                 'orderNumber' => 10179,
                 'productCode' => 'S24_4278',
@@ -5837,7 +5838,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.65',
                 'orderLineNumber' => 4,
             ),
-            227 => 
+            227 =>
             array (
                 'orderNumber' => 10179,
                 'productCode' => 'S32_1374',
@@ -5845,7 +5846,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.90',
                 'orderLineNumber' => 1,
             ),
-            228 => 
+            228 =>
             array (
                 'orderNumber' => 10179,
                 'productCode' => 'S32_4289',
@@ -5853,7 +5854,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.97',
                 'orderLineNumber' => 6,
             ),
-            229 => 
+            229 =>
             array (
                 'orderNumber' => 10179,
                 'productCode' => 'S50_1341',
@@ -5861,7 +5862,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.20',
                 'orderLineNumber' => 7,
             ),
-            230 => 
+            230 =>
             array (
                 'orderNumber' => 10179,
                 'productCode' => 'S700_1691',
@@ -5869,7 +5870,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.81',
                 'orderLineNumber' => 8,
             ),
-            231 => 
+            231 =>
             array (
                 'orderNumber' => 10179,
                 'productCode' => 'S700_2834',
@@ -5877,7 +5878,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.48',
                 'orderLineNumber' => 2,
             ),
-            232 => 
+            232 =>
             array (
                 'orderNumber' => 10179,
                 'productCode' => 'S700_3167',
@@ -5885,7 +5886,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.00',
                 'orderLineNumber' => 9,
             ),
-            233 => 
+            233 =>
             array (
                 'orderNumber' => 10180,
                 'productCode' => 'S10_1678',
@@ -5893,7 +5894,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.56',
                 'orderLineNumber' => 9,
             ),
-            234 => 
+            234 =>
             array (
                 'orderNumber' => 10180,
                 'productCode' => 'S10_2016',
@@ -5901,7 +5902,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.91',
                 'orderLineNumber' => 12,
             ),
-            235 => 
+            235 =>
             array (
                 'orderNumber' => 10180,
                 'productCode' => 'S10_4698',
@@ -5909,7 +5910,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '164.61',
                 'orderLineNumber' => 11,
             ),
-            236 => 
+            236 =>
             array (
                 'orderNumber' => 10180,
                 'productCode' => 'S12_2823',
@@ -5917,7 +5918,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '131.04',
                 'orderLineNumber' => 8,
             ),
-            237 => 
+            237 =>
             array (
                 'orderNumber' => 10180,
                 'productCode' => 'S18_2625',
@@ -5925,7 +5926,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.46',
                 'orderLineNumber' => 13,
             ),
-            238 => 
+            238 =>
             array (
                 'orderNumber' => 10180,
                 'productCode' => 'S18_3782',
@@ -5933,7 +5934,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.06',
                 'orderLineNumber' => 3,
             ),
-            239 => 
+            239 =>
             array (
                 'orderNumber' => 10180,
                 'productCode' => 'S18_4721',
@@ -5941,7 +5942,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '147.31',
                 'orderLineNumber' => 2,
             ),
-            240 => 
+            240 =>
             array (
                 'orderNumber' => 10180,
                 'productCode' => 'S24_1578',
@@ -5949,7 +5950,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.05',
                 'orderLineNumber' => 10,
             ),
-            241 => 
+            241 =>
             array (
                 'orderNumber' => 10180,
                 'productCode' => 'S24_2000',
@@ -5957,7 +5958,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.70',
                 'orderLineNumber' => 14,
             ),
-            242 => 
+            242 =>
             array (
                 'orderNumber' => 10180,
                 'productCode' => 'S24_2360',
@@ -5965,7 +5966,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.95',
                 'orderLineNumber' => 6,
             ),
-            243 => 
+            243 =>
             array (
                 'orderNumber' => 10180,
                 'productCode' => 'S24_4620',
@@ -5973,7 +5974,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.71',
                 'orderLineNumber' => 1,
             ),
-            244 => 
+            244 =>
             array (
                 'orderNumber' => 10180,
                 'productCode' => 'S32_2206',
@@ -5981,7 +5982,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '33.39',
                 'orderLineNumber' => 4,
             ),
-            245 => 
+            245 =>
             array (
                 'orderNumber' => 10180,
                 'productCode' => 'S32_4485',
@@ -5989,7 +5990,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.05',
                 'orderLineNumber' => 7,
             ),
-            246 => 
+            246 =>
             array (
                 'orderNumber' => 10180,
                 'productCode' => 'S50_4713',
@@ -5997,7 +5998,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.85',
                 'orderLineNumber' => 5,
             ),
-            247 => 
+            247 =>
             array (
                 'orderNumber' => 10181,
                 'productCode' => 'S12_1099',
@@ -6005,7 +6006,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '155.66',
                 'orderLineNumber' => 14,
             ),
-            248 => 
+            248 =>
             array (
                 'orderNumber' => 10181,
                 'productCode' => 'S12_3380',
@@ -6013,7 +6014,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.92',
                 'orderLineNumber' => 12,
             ),
-            249 => 
+            249 =>
             array (
                 'orderNumber' => 10181,
                 'productCode' => 'S12_3990',
@@ -6021,7 +6022,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.03',
                 'orderLineNumber' => 15,
             ),
-            250 => 
+            250 =>
             array (
                 'orderNumber' => 10181,
                 'productCode' => 'S12_4675',
@@ -6029,7 +6030,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.10',
                 'orderLineNumber' => 11,
             ),
-            251 => 
+            251 =>
             array (
                 'orderNumber' => 10181,
                 'productCode' => 'S18_1129',
@@ -6037,7 +6038,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '124.56',
                 'orderLineNumber' => 6,
             ),
-            252 => 
+            252 =>
             array (
                 'orderNumber' => 10181,
                 'productCode' => 'S18_1589',
@@ -6045,7 +6046,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '124.44',
                 'orderLineNumber' => 2,
             ),
-            253 => 
+            253 =>
             array (
                 'orderNumber' => 10181,
                 'productCode' => 'S18_1889',
@@ -6053,7 +6054,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.69',
                 'orderLineNumber' => 10,
             ),
-            254 => 
+            254 =>
             array (
                 'orderNumber' => 10181,
                 'productCode' => 'S18_1984',
@@ -6061,7 +6062,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.45',
                 'orderLineNumber' => 5,
             ),
-            255 => 
+            255 =>
             array (
                 'orderNumber' => 10181,
                 'productCode' => 'S18_2870',
@@ -6069,7 +6070,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '130.68',
                 'orderLineNumber' => 3,
             ),
-            256 => 
+            256 =>
             array (
                 'orderNumber' => 10181,
                 'productCode' => 'S18_3232',
@@ -6077,7 +6078,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '147.33',
                 'orderLineNumber' => 7,
             ),
-            257 => 
+            257 =>
             array (
                 'orderNumber' => 10181,
                 'productCode' => 'S18_3278',
@@ -6085,7 +6086,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.17',
                 'orderLineNumber' => 17,
             ),
-            258 => 
+            258 =>
             array (
                 'orderNumber' => 10181,
                 'productCode' => 'S18_3482',
@@ -6093,7 +6094,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.53',
                 'orderLineNumber' => 16,
             ),
-            259 => 
+            259 =>
             array (
                 'orderNumber' => 10181,
                 'productCode' => 'S18_3685',
@@ -6101,7 +6102,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.04',
                 'orderLineNumber' => 4,
             ),
-            260 => 
+            260 =>
             array (
                 'orderNumber' => 10181,
                 'productCode' => 'S24_1628',
@@ -6109,7 +6110,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '45.28',
                 'orderLineNumber' => 1,
             ),
-            261 => 
+            261 =>
             array (
                 'orderNumber' => 10181,
                 'productCode' => 'S24_2972',
@@ -6117,7 +6118,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.85',
                 'orderLineNumber' => 8,
             ),
-            262 => 
+            262 =>
             array (
                 'orderNumber' => 10181,
                 'productCode' => 'S24_3371',
@@ -6125,7 +6126,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.49',
                 'orderLineNumber' => 13,
             ),
-            263 => 
+            263 =>
             array (
                 'orderNumber' => 10181,
                 'productCode' => 'S24_3856',
@@ -6133,7 +6134,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.17',
                 'orderLineNumber' => 9,
             ),
-            264 => 
+            264 =>
             array (
                 'orderNumber' => 10182,
                 'productCode' => 'S18_1342',
@@ -6141,7 +6142,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.22',
                 'orderLineNumber' => 3,
             ),
-            265 => 
+            265 =>
             array (
                 'orderNumber' => 10182,
                 'productCode' => 'S18_1367',
@@ -6149,7 +6150,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.21',
                 'orderLineNumber' => 2,
             ),
-            266 => 
+            266 =>
             array (
                 'orderNumber' => 10182,
                 'productCode' => 'S18_1749',
@@ -6157,7 +6158,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '159.80',
                 'orderLineNumber' => 10,
             ),
-            267 => 
+            267 =>
             array (
                 'orderNumber' => 10182,
                 'productCode' => 'S18_2248',
@@ -6165,7 +6166,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.49',
                 'orderLineNumber' => 9,
             ),
-            268 => 
+            268 =>
             array (
                 'orderNumber' => 10182,
                 'productCode' => 'S18_2325',
@@ -6173,7 +6174,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.52',
                 'orderLineNumber' => 7,
             ),
-            269 => 
+            269 =>
             array (
                 'orderNumber' => 10182,
                 'productCode' => 'S18_2795',
@@ -6181,7 +6182,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.00',
                 'orderLineNumber' => 4,
             ),
-            270 => 
+            270 =>
             array (
                 'orderNumber' => 10182,
                 'productCode' => 'S18_3320',
@@ -6189,7 +6190,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.31',
                 'orderLineNumber' => 1,
             ),
-            271 => 
+            271 =>
             array (
                 'orderNumber' => 10182,
                 'productCode' => 'S18_4409',
@@ -6197,7 +6198,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.35',
                 'orderLineNumber' => 11,
             ),
-            272 => 
+            272 =>
             array (
                 'orderNumber' => 10182,
                 'productCode' => 'S18_4933',
@@ -6205,7 +6206,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.29',
                 'orderLineNumber' => 12,
             ),
-            273 => 
+            273 =>
             array (
                 'orderNumber' => 10182,
                 'productCode' => 'S24_1046',
@@ -6213,7 +6214,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.20',
                 'orderLineNumber' => 16,
             ),
-            274 => 
+            274 =>
             array (
                 'orderNumber' => 10182,
                 'productCode' => 'S24_1937',
@@ -6221,7 +6222,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '31.86',
                 'orderLineNumber' => 6,
             ),
-            275 => 
+            275 =>
             array (
                 'orderNumber' => 10182,
                 'productCode' => 'S24_2022',
@@ -6229,7 +6230,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '39.87',
                 'orderLineNumber' => 5,
             ),
-            276 => 
+            276 =>
             array (
                 'orderNumber' => 10182,
                 'productCode' => 'S24_2766',
@@ -6237,7 +6238,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.24',
                 'orderLineNumber' => 14,
             ),
-            277 => 
+            277 =>
             array (
                 'orderNumber' => 10182,
                 'productCode' => 'S24_2887',
@@ -6245,7 +6246,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '116.27',
                 'orderLineNumber' => 13,
             ),
-            278 => 
+            278 =>
             array (
                 'orderNumber' => 10182,
                 'productCode' => 'S24_3191',
@@ -6253,7 +6254,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.62',
                 'orderLineNumber' => 15,
             ),
-            279 => 
+            279 =>
             array (
                 'orderNumber' => 10182,
                 'productCode' => 'S24_3432',
@@ -6261,7 +6262,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.30',
                 'orderLineNumber' => 17,
             ),
-            280 => 
+            280 =>
             array (
                 'orderNumber' => 10182,
                 'productCode' => 'S24_3969',
@@ -6269,7 +6270,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '34.88',
                 'orderLineNumber' => 8,
             ),
-            281 => 
+            281 =>
             array (
                 'orderNumber' => 10183,
                 'productCode' => 'S10_1949',
@@ -6277,7 +6278,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '180.01',
                 'orderLineNumber' => 8,
             ),
-            282 => 
+            282 =>
             array (
                 'orderNumber' => 10183,
                 'productCode' => 'S10_4962',
@@ -6285,7 +6286,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '127.06',
                 'orderLineNumber' => 1,
             ),
-            283 => 
+            283 =>
             array (
                 'orderNumber' => 10183,
                 'productCode' => 'S12_1666',
@@ -6293,7 +6294,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.80',
                 'orderLineNumber' => 5,
             ),
-            284 => 
+            284 =>
             array (
                 'orderNumber' => 10183,
                 'productCode' => 'S18_1097',
@@ -6301,7 +6302,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '108.50',
                 'orderLineNumber' => 7,
             ),
-            285 => 
+            285 =>
             array (
                 'orderNumber' => 10183,
                 'productCode' => 'S18_2949',
@@ -6309,7 +6310,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.18',
                 'orderLineNumber' => 9,
             ),
-            286 => 
+            286 =>
             array (
                 'orderNumber' => 10183,
                 'productCode' => 'S18_2957',
@@ -6317,7 +6318,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.22',
                 'orderLineNumber' => 11,
             ),
-            287 => 
+            287 =>
             array (
                 'orderNumber' => 10183,
                 'productCode' => 'S18_3136',
@@ -6325,7 +6326,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.06',
                 'orderLineNumber' => 10,
             ),
-            288 => 
+            288 =>
             array (
                 'orderNumber' => 10183,
                 'productCode' => 'S18_4600',
@@ -6333,7 +6334,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.66',
                 'orderLineNumber' => 2,
             ),
-            289 => 
+            289 =>
             array (
                 'orderNumber' => 10183,
                 'productCode' => 'S18_4668',
@@ -6341,7 +6342,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '42.26',
                 'orderLineNumber' => 6,
             ),
-            290 => 
+            290 =>
             array (
                 'orderNumber' => 10183,
                 'productCode' => 'S24_4258',
@@ -6349,7 +6350,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.81',
                 'orderLineNumber' => 12,
             ),
-            291 => 
+            291 =>
             array (
                 'orderNumber' => 10183,
                 'productCode' => 'S32_3522',
@@ -6357,7 +6358,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.36',
                 'orderLineNumber' => 4,
             ),
-            292 => 
+            292 =>
             array (
                 'orderNumber' => 10183,
                 'productCode' => 'S700_2824',
@@ -6365,7 +6366,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.98',
                 'orderLineNumber' => 3,
             ),
-            293 => 
+            293 =>
             array (
                 'orderNumber' => 10184,
                 'productCode' => 'S12_4473',
@@ -6373,7 +6374,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.47',
                 'orderLineNumber' => 6,
             ),
-            294 => 
+            294 =>
             array (
                 'orderNumber' => 10184,
                 'productCode' => 'S18_2238',
@@ -6381,7 +6382,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '145.72',
                 'orderLineNumber' => 5,
             ),
-            295 => 
+            295 =>
             array (
                 'orderNumber' => 10184,
                 'productCode' => 'S18_2319',
@@ -6389,7 +6390,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.05',
                 'orderLineNumber' => 9,
             ),
-            296 => 
+            296 =>
             array (
                 'orderNumber' => 10184,
                 'productCode' => 'S18_2432',
@@ -6397,7 +6398,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.77',
                 'orderLineNumber' => 12,
             ),
-            297 => 
+            297 =>
             array (
                 'orderNumber' => 10184,
                 'productCode' => 'S18_3232',
@@ -6405,7 +6406,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '165.95',
                 'orderLineNumber' => 10,
             ),
-            298 => 
+            298 =>
             array (
                 'orderNumber' => 10184,
                 'productCode' => 'S24_1444',
@@ -6413,7 +6414,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.22',
                 'orderLineNumber' => 3,
             ),
-            299 => 
+            299 =>
             array (
                 'orderNumber' => 10184,
                 'productCode' => 'S24_2300',
@@ -6421,7 +6422,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.57',
                 'orderLineNumber' => 11,
             ),
-            300 => 
+            300 =>
             array (
                 'orderNumber' => 10184,
                 'productCode' => 'S24_2840',
@@ -6429,7 +6430,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '30.06',
                 'orderLineNumber' => 7,
             ),
-            301 => 
+            301 =>
             array (
                 'orderNumber' => 10184,
                 'productCode' => 'S24_4048',
@@ -6437,7 +6438,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.73',
                 'orderLineNumber' => 2,
             ),
-            302 => 
+            302 =>
             array (
                 'orderNumber' => 10184,
                 'productCode' => 'S32_1268',
@@ -6445,7 +6446,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.75',
                 'orderLineNumber' => 13,
             ),
-            303 => 
+            303 =>
             array (
                 'orderNumber' => 10184,
                 'productCode' => 'S32_2509',
@@ -6453,7 +6454,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.49',
                 'orderLineNumber' => 8,
             ),
-            304 => 
+            304 =>
             array (
                 'orderNumber' => 10184,
                 'productCode' => 'S32_3207',
@@ -6461,7 +6462,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.03',
                 'orderLineNumber' => 1,
             ),
-            305 => 
+            305 =>
             array (
                 'orderNumber' => 10184,
                 'productCode' => 'S50_1392',
@@ -6469,7 +6470,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.60',
                 'orderLineNumber' => 4,
             ),
-            306 => 
+            306 =>
             array (
                 'orderNumber' => 10185,
                 'productCode' => 'S12_1108',
@@ -6477,7 +6478,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '195.33',
                 'orderLineNumber' => 13,
             ),
-            307 => 
+            307 =>
             array (
                 'orderNumber' => 10185,
                 'productCode' => 'S12_3148',
@@ -6485,7 +6486,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '146.55',
                 'orderLineNumber' => 14,
             ),
-            308 => 
+            308 =>
             array (
                 'orderNumber' => 10185,
                 'productCode' => 'S12_3891',
@@ -6493,7 +6494,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '147.07',
                 'orderLineNumber' => 12,
             ),
-            309 => 
+            309 =>
             array (
                 'orderNumber' => 10185,
                 'productCode' => 'S18_3140',
@@ -6501,7 +6502,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '124.30',
                 'orderLineNumber' => 9,
             ),
-            310 => 
+            310 =>
             array (
                 'orderNumber' => 10185,
                 'productCode' => 'S18_3259',
@@ -6509,7 +6510,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.79',
                 'orderLineNumber' => 11,
             ),
-            311 => 
+            311 =>
             array (
                 'orderNumber' => 10185,
                 'productCode' => 'S18_4027',
@@ -6517,7 +6518,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '127.82',
                 'orderLineNumber' => 16,
             ),
-            312 => 
+            312 =>
             array (
                 'orderNumber' => 10185,
                 'productCode' => 'S18_4522',
@@ -6525,7 +6526,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.77',
                 'orderLineNumber' => 8,
             ),
-            313 => 
+            313 =>
             array (
                 'orderNumber' => 10185,
                 'productCode' => 'S24_2011',
@@ -6533,7 +6534,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.69',
                 'orderLineNumber' => 7,
             ),
-            314 => 
+            314 =>
             array (
                 'orderNumber' => 10185,
                 'productCode' => 'S24_3151',
@@ -6541,7 +6542,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.20',
                 'orderLineNumber' => 2,
             ),
-            315 => 
+            315 =>
             array (
                 'orderNumber' => 10185,
                 'productCode' => 'S50_1514',
@@ -6549,7 +6550,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '46.86',
                 'orderLineNumber' => 15,
             ),
-            316 => 
+            316 =>
             array (
                 'orderNumber' => 10185,
                 'productCode' => 'S700_1138',
@@ -6557,7 +6558,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.67',
                 'orderLineNumber' => 3,
             ),
-            317 => 
+            317 =>
             array (
                 'orderNumber' => 10185,
                 'productCode' => 'S700_1938',
@@ -6565,7 +6566,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.68',
                 'orderLineNumber' => 10,
             ),
-            318 => 
+            318 =>
             array (
                 'orderNumber' => 10185,
                 'productCode' => 'S700_2610',
@@ -6573,7 +6574,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.44',
                 'orderLineNumber' => 1,
             ),
-            319 => 
+            319 =>
             array (
                 'orderNumber' => 10185,
                 'productCode' => 'S700_3505',
@@ -6581,7 +6582,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.17',
                 'orderLineNumber' => 4,
             ),
-            320 => 
+            320 =>
             array (
                 'orderNumber' => 10185,
                 'productCode' => 'S700_3962',
@@ -6589,7 +6590,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.35',
                 'orderLineNumber' => 5,
             ),
-            321 => 
+            321 =>
             array (
                 'orderNumber' => 10185,
                 'productCode' => 'S72_3212',
@@ -6597,7 +6598,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.50',
                 'orderLineNumber' => 6,
             ),
-            322 => 
+            322 =>
             array (
                 'orderNumber' => 10186,
                 'productCode' => 'S10_4757',
@@ -6605,7 +6606,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '108.80',
                 'orderLineNumber' => 9,
             ),
-            323 => 
+            323 =>
             array (
                 'orderNumber' => 10186,
                 'productCode' => 'S18_1662',
@@ -6613,7 +6614,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.19',
                 'orderLineNumber' => 1,
             ),
-            324 => 
+            324 =>
             array (
                 'orderNumber' => 10186,
                 'productCode' => 'S18_3029',
@@ -6621,7 +6622,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.12',
                 'orderLineNumber' => 7,
             ),
-            325 => 
+            325 =>
             array (
                 'orderNumber' => 10186,
                 'productCode' => 'S18_3856',
@@ -6629,7 +6630,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.46',
                 'orderLineNumber' => 6,
             ),
-            326 => 
+            326 =>
             array (
                 'orderNumber' => 10186,
                 'productCode' => 'S24_2841',
@@ -6637,7 +6638,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.29',
                 'orderLineNumber' => 2,
             ),
-            327 => 
+            327 =>
             array (
                 'orderNumber' => 10186,
                 'productCode' => 'S24_3420',
@@ -6645,7 +6646,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.83',
                 'orderLineNumber' => 3,
             ),
-            328 => 
+            328 =>
             array (
                 'orderNumber' => 10186,
                 'productCode' => 'S24_3816',
@@ -6653,7 +6654,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.77',
                 'orderLineNumber' => 8,
             ),
-            329 => 
+            329 =>
             array (
                 'orderNumber' => 10186,
                 'productCode' => 'S700_2047',
@@ -6661,7 +6662,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.56',
                 'orderLineNumber' => 5,
             ),
-            330 => 
+            330 =>
             array (
                 'orderNumber' => 10186,
                 'productCode' => 'S72_1253',
@@ -6669,7 +6670,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '42.71',
                 'orderLineNumber' => 4,
             ),
-            331 => 
+            331 =>
             array (
                 'orderNumber' => 10187,
                 'productCode' => 'S18_2581',
@@ -6677,7 +6678,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.12',
                 'orderLineNumber' => 1,
             ),
-            332 => 
+            332 =>
             array (
                 'orderNumber' => 10187,
                 'productCode' => 'S24_1785',
@@ -6685,7 +6686,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.29',
                 'orderLineNumber' => 3,
             ),
-            333 => 
+            333 =>
             array (
                 'orderNumber' => 10187,
                 'productCode' => 'S24_3949',
@@ -6693,7 +6694,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.96',
                 'orderLineNumber' => 10,
             ),
-            334 => 
+            334 =>
             array (
                 'orderNumber' => 10187,
                 'productCode' => 'S24_4278',
@@ -6701,7 +6702,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.48',
                 'orderLineNumber' => 2,
             ),
-            335 => 
+            335 =>
             array (
                 'orderNumber' => 10187,
                 'productCode' => 'S32_4289',
@@ -6709,7 +6710,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.22',
                 'orderLineNumber' => 4,
             ),
-            336 => 
+            336 =>
             array (
                 'orderNumber' => 10187,
                 'productCode' => 'S50_1341',
@@ -6717,7 +6718,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '39.71',
                 'orderLineNumber' => 5,
             ),
-            337 => 
+            337 =>
             array (
                 'orderNumber' => 10187,
                 'productCode' => 'S700_1691',
@@ -6725,7 +6726,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.95',
                 'orderLineNumber' => 6,
             ),
-            338 => 
+            338 =>
             array (
                 'orderNumber' => 10187,
                 'productCode' => 'S700_2466',
@@ -6733,7 +6734,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.73',
                 'orderLineNumber' => 8,
             ),
-            339 => 
+            339 =>
             array (
                 'orderNumber' => 10187,
                 'productCode' => 'S700_3167',
@@ -6741,7 +6742,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.00',
                 'orderLineNumber' => 7,
             ),
-            340 => 
+            340 =>
             array (
                 'orderNumber' => 10187,
                 'productCode' => 'S700_4002',
@@ -6749,7 +6750,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.33',
                 'orderLineNumber' => 9,
             ),
-            341 => 
+            341 =>
             array (
                 'orderNumber' => 10188,
                 'productCode' => 'S10_1678',
@@ -6757,7 +6758,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.70',
                 'orderLineNumber' => 1,
             ),
-            342 => 
+            342 =>
             array (
                 'orderNumber' => 10188,
                 'productCode' => 'S10_2016',
@@ -6765,7 +6766,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.80',
                 'orderLineNumber' => 4,
             ),
-            343 => 
+            343 =>
             array (
                 'orderNumber' => 10188,
                 'productCode' => 'S10_4698',
@@ -6773,7 +6774,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '182.04',
                 'orderLineNumber' => 3,
             ),
-            344 => 
+            344 =>
             array (
                 'orderNumber' => 10188,
                 'productCode' => 'S18_2625',
@@ -6781,7 +6782,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.09',
                 'orderLineNumber' => 5,
             ),
-            345 => 
+            345 =>
             array (
                 'orderNumber' => 10188,
                 'productCode' => 'S24_1578',
@@ -6789,7 +6790,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.80',
                 'orderLineNumber' => 2,
             ),
-            346 => 
+            346 =>
             array (
                 'orderNumber' => 10188,
                 'productCode' => 'S24_2000',
@@ -6797,7 +6798,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.70',
                 'orderLineNumber' => 6,
             ),
-            347 => 
+            347 =>
             array (
                 'orderNumber' => 10188,
                 'productCode' => 'S32_1374',
@@ -6805,7 +6806,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.91',
                 'orderLineNumber' => 7,
             ),
-            348 => 
+            348 =>
             array (
                 'orderNumber' => 10188,
                 'productCode' => 'S700_2834',
@@ -6813,7 +6814,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.11',
                 'orderLineNumber' => 8,
             ),
-            349 => 
+            349 =>
             array (
                 'orderNumber' => 10189,
                 'productCode' => 'S12_2823',
@@ -6821,7 +6822,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '138.57',
                 'orderLineNumber' => 1,
             ),
-            350 => 
+            350 =>
             array (
                 'orderNumber' => 10190,
                 'productCode' => 'S24_2360',
@@ -6829,7 +6830,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.87',
                 'orderLineNumber' => 3,
             ),
-            351 => 
+            351 =>
             array (
                 'orderNumber' => 10190,
                 'productCode' => 'S32_2206',
@@ -6837,7 +6838,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '38.62',
                 'orderLineNumber' => 1,
             ),
-            352 => 
+            352 =>
             array (
                 'orderNumber' => 10190,
                 'productCode' => 'S32_4485',
@@ -6845,7 +6846,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.80',
                 'orderLineNumber' => 4,
             ),
-            353 => 
+            353 =>
             array (
                 'orderNumber' => 10190,
                 'productCode' => 'S50_4713',
@@ -6853,7 +6854,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.53',
                 'orderLineNumber' => 2,
             ),
-            354 => 
+            354 =>
             array (
                 'orderNumber' => 10191,
                 'productCode' => 'S12_1099',
@@ -6861,7 +6862,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '155.66',
                 'orderLineNumber' => 3,
             ),
-            355 => 
+            355 =>
             array (
                 'orderNumber' => 10191,
                 'productCode' => 'S12_3380',
@@ -6869,7 +6870,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.52',
                 'orderLineNumber' => 1,
             ),
-            356 => 
+            356 =>
             array (
                 'orderNumber' => 10191,
                 'productCode' => 'S12_3990',
@@ -6877,7 +6878,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.22',
                 'orderLineNumber' => 4,
             ),
-            357 => 
+            357 =>
             array (
                 'orderNumber' => 10191,
                 'productCode' => 'S18_3278',
@@ -6885,7 +6886,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.59',
                 'orderLineNumber' => 6,
             ),
-            358 => 
+            358 =>
             array (
                 'orderNumber' => 10191,
                 'productCode' => 'S18_3482',
@@ -6893,7 +6894,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.06',
                 'orderLineNumber' => 5,
             ),
-            359 => 
+            359 =>
             array (
                 'orderNumber' => 10191,
                 'productCode' => 'S18_3782',
@@ -6901,7 +6902,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.93',
                 'orderLineNumber' => 9,
             ),
-            360 => 
+            360 =>
             array (
                 'orderNumber' => 10191,
                 'productCode' => 'S18_4721',
@@ -6909,7 +6910,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '136.90',
                 'orderLineNumber' => 8,
             ),
-            361 => 
+            361 =>
             array (
                 'orderNumber' => 10191,
                 'productCode' => 'S24_3371',
@@ -6917,7 +6918,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.27',
                 'orderLineNumber' => 2,
             ),
-            362 => 
+            362 =>
             array (
                 'orderNumber' => 10191,
                 'productCode' => 'S24_4620',
@@ -6925,7 +6926,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.61',
                 'orderLineNumber' => 7,
             ),
-            363 => 
+            363 =>
             array (
                 'orderNumber' => 10192,
                 'productCode' => 'S12_4675',
@@ -6933,7 +6934,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.04',
                 'orderLineNumber' => 16,
             ),
-            364 => 
+            364 =>
             array (
                 'orderNumber' => 10192,
                 'productCode' => 'S18_1129',
@@ -6941,7 +6942,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.12',
                 'orderLineNumber' => 11,
             ),
-            365 => 
+            365 =>
             array (
                 'orderNumber' => 10192,
                 'productCode' => 'S18_1589',
@@ -6949,7 +6950,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.80',
                 'orderLineNumber' => 7,
             ),
-            366 => 
+            366 =>
             array (
                 'orderNumber' => 10192,
                 'productCode' => 'S18_1889',
@@ -6957,7 +6958,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.84',
                 'orderLineNumber' => 15,
             ),
-            367 => 
+            367 =>
             array (
                 'orderNumber' => 10192,
                 'productCode' => 'S18_1984',
@@ -6965,7 +6966,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '128.03',
                 'orderLineNumber' => 10,
             ),
-            368 => 
+            368 =>
             array (
                 'orderNumber' => 10192,
                 'productCode' => 'S18_2870',
@@ -6973,7 +6974,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.88',
                 'orderLineNumber' => 8,
             ),
-            369 => 
+            369 =>
             array (
                 'orderNumber' => 10192,
                 'productCode' => 'S18_3232',
@@ -6981,7 +6982,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.17',
                 'orderLineNumber' => 12,
             ),
-            370 => 
+            370 =>
             array (
                 'orderNumber' => 10192,
                 'productCode' => 'S18_3685',
@@ -6989,7 +6990,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '125.74',
                 'orderLineNumber' => 9,
             ),
-            371 => 
+            371 =>
             array (
                 'orderNumber' => 10192,
                 'productCode' => 'S24_1046',
@@ -6997,7 +6998,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.02',
                 'orderLineNumber' => 4,
             ),
-            372 => 
+            372 =>
             array (
                 'orderNumber' => 10192,
                 'productCode' => 'S24_1628',
@@ -7005,7 +7006,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.30',
                 'orderLineNumber' => 6,
             ),
-            373 => 
+            373 =>
             array (
                 'orderNumber' => 10192,
                 'productCode' => 'S24_2766',
@@ -7013,7 +7014,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.33',
                 'orderLineNumber' => 2,
             ),
-            374 => 
+            374 =>
             array (
                 'orderNumber' => 10192,
                 'productCode' => 'S24_2887',
@@ -7021,7 +7022,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.74',
                 'orderLineNumber' => 1,
             ),
-            375 => 
+            375 =>
             array (
                 'orderNumber' => 10192,
                 'productCode' => 'S24_2972',
@@ -7029,7 +7030,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '33.23',
                 'orderLineNumber' => 13,
             ),
-            376 => 
+            376 =>
             array (
                 'orderNumber' => 10192,
                 'productCode' => 'S24_3191',
@@ -7037,7 +7038,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.34',
                 'orderLineNumber' => 3,
             ),
-            377 => 
+            377 =>
             array (
                 'orderNumber' => 10192,
                 'productCode' => 'S24_3432',
@@ -7045,7 +7046,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.16',
                 'orderLineNumber' => 5,
             ),
-            378 => 
+            378 =>
             array (
                 'orderNumber' => 10192,
                 'productCode' => 'S24_3856',
@@ -7053,7 +7054,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.34',
                 'orderLineNumber' => 14,
             ),
-            379 => 
+            379 =>
             array (
                 'orderNumber' => 10193,
                 'productCode' => 'S18_1342',
@@ -7061,7 +7062,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.47',
                 'orderLineNumber' => 7,
             ),
-            380 => 
+            380 =>
             array (
                 'orderNumber' => 10193,
                 'productCode' => 'S18_1367',
@@ -7069,7 +7070,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '46.36',
                 'orderLineNumber' => 6,
             ),
-            381 => 
+            381 =>
             array (
                 'orderNumber' => 10193,
                 'productCode' => 'S18_1749',
@@ -7077,7 +7078,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '153.00',
                 'orderLineNumber' => 14,
             ),
-            382 => 
+            382 =>
             array (
                 'orderNumber' => 10193,
                 'productCode' => 'S18_2248',
@@ -7085,7 +7086,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.54',
                 'orderLineNumber' => 13,
             ),
-            383 => 
+            383 =>
             array (
                 'orderNumber' => 10193,
                 'productCode' => 'S18_2325',
@@ -7093,7 +7094,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.69',
                 'orderLineNumber' => 11,
             ),
-            384 => 
+            384 =>
             array (
                 'orderNumber' => 10193,
                 'productCode' => 'S18_2795',
@@ -7101,7 +7102,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '143.44',
                 'orderLineNumber' => 8,
             ),
-            385 => 
+            385 =>
             array (
                 'orderNumber' => 10193,
                 'productCode' => 'S18_2949',
@@ -7109,7 +7110,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.13',
                 'orderLineNumber' => 1,
             ),
-            386 => 
+            386 =>
             array (
                 'orderNumber' => 10193,
                 'productCode' => 'S18_2957',
@@ -7117,7 +7118,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.09',
                 'orderLineNumber' => 3,
             ),
-            387 => 
+            387 =>
             array (
                 'orderNumber' => 10193,
                 'productCode' => 'S18_3136',
@@ -7125,7 +7126,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '97.39',
                 'orderLineNumber' => 2,
             ),
-            388 => 
+            388 =>
             array (
                 'orderNumber' => 10193,
                 'productCode' => 'S18_3320',
@@ -7133,7 +7134,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.37',
                 'orderLineNumber' => 5,
             ),
-            389 => 
+            389 =>
             array (
                 'orderNumber' => 10193,
                 'productCode' => 'S18_4409',
@@ -7141,7 +7142,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.03',
                 'orderLineNumber' => 15,
             ),
-            390 => 
+            390 =>
             array (
                 'orderNumber' => 10193,
                 'productCode' => 'S18_4933',
@@ -7149,7 +7150,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.28',
                 'orderLineNumber' => 16,
             ),
-            391 => 
+            391 =>
             array (
                 'orderNumber' => 10193,
                 'productCode' => 'S24_1937',
@@ -7157,7 +7158,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.19',
                 'orderLineNumber' => 10,
             ),
-            392 => 
+            392 =>
             array (
                 'orderNumber' => 10193,
                 'productCode' => 'S24_2022',
@@ -7165,7 +7166,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.80',
                 'orderLineNumber' => 9,
             ),
-            393 => 
+            393 =>
             array (
                 'orderNumber' => 10193,
                 'productCode' => 'S24_3969',
@@ -7173,7 +7174,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '38.16',
                 'orderLineNumber' => 12,
             ),
-            394 => 
+            394 =>
             array (
                 'orderNumber' => 10193,
                 'productCode' => 'S24_4258',
@@ -7181,7 +7182,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.52',
                 'orderLineNumber' => 4,
             ),
-            395 => 
+            395 =>
             array (
                 'orderNumber' => 10194,
                 'productCode' => 'S10_1949',
@@ -7189,7 +7190,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '203.59',
                 'orderLineNumber' => 11,
             ),
-            396 => 
+            396 =>
             array (
                 'orderNumber' => 10194,
                 'productCode' => 'S10_4962',
@@ -7197,7 +7198,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '134.44',
                 'orderLineNumber' => 4,
             ),
-            397 => 
+            397 =>
             array (
                 'orderNumber' => 10194,
                 'productCode' => 'S12_1666',
@@ -7205,7 +7206,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '124.37',
                 'orderLineNumber' => 8,
             ),
-            398 => 
+            398 =>
             array (
                 'orderNumber' => 10194,
                 'productCode' => 'S18_1097',
@@ -7213,7 +7214,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '103.84',
                 'orderLineNumber' => 10,
             ),
-            399 => 
+            399 =>
             array (
                 'orderNumber' => 10194,
                 'productCode' => 'S18_2432',
@@ -7221,7 +7222,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.05',
                 'orderLineNumber' => 2,
             ),
-            400 => 
+            400 =>
             array (
                 'orderNumber' => 10194,
                 'productCode' => 'S18_4600',
@@ -7229,7 +7230,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.82',
                 'orderLineNumber' => 5,
             ),
-            401 => 
+            401 =>
             array (
                 'orderNumber' => 10194,
                 'productCode' => 'S18_4668',
@@ -7237,7 +7238,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.79',
                 'orderLineNumber' => 9,
             ),
-            402 => 
+            402 =>
             array (
                 'orderNumber' => 10194,
                 'productCode' => 'S24_2300',
@@ -7245,7 +7246,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.46',
                 'orderLineNumber' => 1,
             ),
-            403 => 
+            403 =>
             array (
                 'orderNumber' => 10194,
                 'productCode' => 'S32_1268',
@@ -7253,7 +7254,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.05',
                 'orderLineNumber' => 3,
             ),
-            404 => 
+            404 =>
             array (
                 'orderNumber' => 10194,
                 'productCode' => 'S32_3522',
@@ -7261,7 +7262,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.41',
                 'orderLineNumber' => 7,
             ),
-            405 => 
+            405 =>
             array (
                 'orderNumber' => 10194,
                 'productCode' => 'S700_2824',
@@ -7269,7 +7270,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.92',
                 'orderLineNumber' => 6,
             ),
-            406 => 
+            406 =>
             array (
                 'orderNumber' => 10195,
                 'productCode' => 'S12_4473',
@@ -7277,7 +7278,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.50',
                 'orderLineNumber' => 6,
             ),
-            407 => 
+            407 =>
             array (
                 'orderNumber' => 10195,
                 'productCode' => 'S18_2238',
@@ -7285,7 +7286,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '139.17',
                 'orderLineNumber' => 5,
             ),
-            408 => 
+            408 =>
             array (
                 'orderNumber' => 10195,
                 'productCode' => 'S18_2319',
@@ -7293,7 +7294,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.91',
                 'orderLineNumber' => 9,
             ),
-            409 => 
+            409 =>
             array (
                 'orderNumber' => 10195,
                 'productCode' => 'S18_3232',
@@ -7301,7 +7302,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '150.71',
                 'orderLineNumber' => 10,
             ),
-            410 => 
+            410 =>
             array (
                 'orderNumber' => 10195,
                 'productCode' => 'S24_1444',
@@ -7309,7 +7310,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.33',
                 'orderLineNumber' => 3,
             ),
-            411 => 
+            411 =>
             array (
                 'orderNumber' => 10195,
                 'productCode' => 'S24_2840',
@@ -7317,7 +7318,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '31.82',
                 'orderLineNumber' => 7,
             ),
-            412 => 
+            412 =>
             array (
                 'orderNumber' => 10195,
                 'productCode' => 'S24_4048',
@@ -7325,7 +7326,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.81',
                 'orderLineNumber' => 2,
             ),
-            413 => 
+            413 =>
             array (
                 'orderNumber' => 10195,
                 'productCode' => 'S32_2509',
@@ -7333,7 +7334,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.95',
                 'orderLineNumber' => 8,
             ),
-            414 => 
+            414 =>
             array (
                 'orderNumber' => 10195,
                 'productCode' => 'S32_3207',
@@ -7341,7 +7342,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.03',
                 'orderLineNumber' => 1,
             ),
-            415 => 
+            415 =>
             array (
                 'orderNumber' => 10195,
                 'productCode' => 'S50_1392',
@@ -7349,7 +7350,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '97.23',
                 'orderLineNumber' => 4,
             ),
-            416 => 
+            416 =>
             array (
                 'orderNumber' => 10196,
                 'productCode' => 'S12_1108',
@@ -7357,7 +7358,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '203.64',
                 'orderLineNumber' => 5,
             ),
-            417 => 
+            417 =>
             array (
                 'orderNumber' => 10196,
                 'productCode' => 'S12_3148',
@@ -7365,7 +7366,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '151.08',
                 'orderLineNumber' => 6,
             ),
-            418 => 
+            418 =>
             array (
                 'orderNumber' => 10196,
                 'productCode' => 'S12_3891',
@@ -7373,7 +7374,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '147.07',
                 'orderLineNumber' => 4,
             ),
-            419 => 
+            419 =>
             array (
                 'orderNumber' => 10196,
                 'productCode' => 'S18_3140',
@@ -7381,7 +7382,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '127.03',
                 'orderLineNumber' => 1,
             ),
-            420 => 
+            420 =>
             array (
                 'orderNumber' => 10196,
                 'productCode' => 'S18_3259',
@@ -7389,7 +7390,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.68',
                 'orderLineNumber' => 3,
             ),
-            421 => 
+            421 =>
             array (
                 'orderNumber' => 10196,
                 'productCode' => 'S18_4027',
@@ -7397,7 +7398,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.39',
                 'orderLineNumber' => 8,
             ),
-            422 => 
+            422 =>
             array (
                 'orderNumber' => 10196,
                 'productCode' => 'S50_1514',
@@ -7405,7 +7406,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.82',
                 'orderLineNumber' => 7,
             ),
-            423 => 
+            423 =>
             array (
                 'orderNumber' => 10196,
                 'productCode' => 'S700_1938',
@@ -7413,7 +7414,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.88',
                 'orderLineNumber' => 2,
             ),
-            424 => 
+            424 =>
             array (
                 'orderNumber' => 10197,
                 'productCode' => 'S10_4757',
@@ -7421,7 +7422,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.32',
                 'orderLineNumber' => 6,
             ),
-            425 => 
+            425 =>
             array (
                 'orderNumber' => 10197,
                 'productCode' => 'S18_3029',
@@ -7429,7 +7430,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.44',
                 'orderLineNumber' => 4,
             ),
-            426 => 
+            426 =>
             array (
                 'orderNumber' => 10197,
                 'productCode' => 'S18_3856',
@@ -7437,7 +7438,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.75',
                 'orderLineNumber' => 3,
             ),
-            427 => 
+            427 =>
             array (
                 'orderNumber' => 10197,
                 'productCode' => 'S18_4522',
@@ -7445,7 +7446,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.99',
                 'orderLineNumber' => 14,
             ),
-            428 => 
+            428 =>
             array (
                 'orderNumber' => 10197,
                 'productCode' => 'S24_2011',
@@ -7453,7 +7454,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.37',
                 'orderLineNumber' => 13,
             ),
-            429 => 
+            429 =>
             array (
                 'orderNumber' => 10197,
                 'productCode' => 'S24_3151',
@@ -7461,7 +7462,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.20',
                 'orderLineNumber' => 8,
             ),
-            430 => 
+            430 =>
             array (
                 'orderNumber' => 10197,
                 'productCode' => 'S24_3816',
@@ -7469,7 +7470,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.93',
                 'orderLineNumber' => 5,
             ),
-            431 => 
+            431 =>
             array (
                 'orderNumber' => 10197,
                 'productCode' => 'S700_1138',
@@ -7477,7 +7478,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.00',
                 'orderLineNumber' => 9,
             ),
-            432 => 
+            432 =>
             array (
                 'orderNumber' => 10197,
                 'productCode' => 'S700_2047',
@@ -7485,7 +7486,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.75',
                 'orderLineNumber' => 2,
             ),
-            433 => 
+            433 =>
             array (
                 'orderNumber' => 10197,
                 'productCode' => 'S700_2610',
@@ -7493,7 +7494,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.50',
                 'orderLineNumber' => 7,
             ),
-            434 => 
+            434 =>
             array (
                 'orderNumber' => 10197,
                 'productCode' => 'S700_3505',
@@ -7501,7 +7502,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.17',
                 'orderLineNumber' => 10,
             ),
-            435 => 
+            435 =>
             array (
                 'orderNumber' => 10197,
                 'productCode' => 'S700_3962',
@@ -7509,7 +7510,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.39',
                 'orderLineNumber' => 11,
             ),
-            436 => 
+            436 =>
             array (
                 'orderNumber' => 10197,
                 'productCode' => 'S72_1253',
@@ -7517,7 +7518,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '39.73',
                 'orderLineNumber' => 1,
             ),
-            437 => 
+            437 =>
             array (
                 'orderNumber' => 10197,
                 'productCode' => 'S72_3212',
@@ -7525,7 +7526,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.59',
                 'orderLineNumber' => 12,
             ),
-            438 => 
+            438 =>
             array (
                 'orderNumber' => 10198,
                 'productCode' => 'S18_1662',
@@ -7533,7 +7534,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '149.81',
                 'orderLineNumber' => 4,
             ),
-            439 => 
+            439 =>
             array (
                 'orderNumber' => 10198,
                 'productCode' => 'S24_2841',
@@ -7541,7 +7542,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.97',
                 'orderLineNumber' => 5,
             ),
-            440 => 
+            440 =>
             array (
                 'orderNumber' => 10198,
                 'productCode' => 'S24_3420',
@@ -7549,7 +7550,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.81',
                 'orderLineNumber' => 6,
             ),
-            441 => 
+            441 =>
             array (
                 'orderNumber' => 10198,
                 'productCode' => 'S24_3949',
@@ -7557,7 +7558,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.51',
                 'orderLineNumber' => 3,
             ),
-            442 => 
+            442 =>
             array (
                 'orderNumber' => 10198,
                 'productCode' => 'S700_2466',
@@ -7565,7 +7566,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.73',
                 'orderLineNumber' => 1,
             ),
-            443 => 
+            443 =>
             array (
                 'orderNumber' => 10198,
                 'productCode' => 'S700_4002',
@@ -7573,7 +7574,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.03',
                 'orderLineNumber' => 2,
             ),
-            444 => 
+            444 =>
             array (
                 'orderNumber' => 10199,
                 'productCode' => 'S50_1341',
@@ -7581,7 +7582,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '37.97',
                 'orderLineNumber' => 1,
             ),
-            445 => 
+            445 =>
             array (
                 'orderNumber' => 10199,
                 'productCode' => 'S700_1691',
@@ -7589,7 +7590,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.29',
                 'orderLineNumber' => 2,
             ),
-            446 => 
+            446 =>
             array (
                 'orderNumber' => 10199,
                 'productCode' => 'S700_3167',
@@ -7597,7 +7598,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.40',
                 'orderLineNumber' => 3,
             ),
-            447 => 
+            447 =>
             array (
                 'orderNumber' => 10200,
                 'productCode' => 'S18_2581',
@@ -7605,7 +7606,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.34',
                 'orderLineNumber' => 3,
             ),
-            448 => 
+            448 =>
             array (
                 'orderNumber' => 10200,
                 'productCode' => 'S24_1785',
@@ -7613,7 +7614,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.57',
                 'orderLineNumber' => 5,
             ),
-            449 => 
+            449 =>
             array (
                 'orderNumber' => 10200,
                 'productCode' => 'S24_4278',
@@ -7621,7 +7622,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.28',
                 'orderLineNumber' => 4,
             ),
-            450 => 
+            450 =>
             array (
                 'orderNumber' => 10200,
                 'productCode' => 'S32_1374',
@@ -7629,7 +7630,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.91',
                 'orderLineNumber' => 1,
             ),
-            451 => 
+            451 =>
             array (
                 'orderNumber' => 10200,
                 'productCode' => 'S32_4289',
@@ -7637,7 +7638,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.35',
                 'orderLineNumber' => 6,
             ),
-            452 => 
+            452 =>
             array (
                 'orderNumber' => 10200,
                 'productCode' => 'S700_2834',
@@ -7645,7 +7646,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.09',
                 'orderLineNumber' => 2,
             ),
-            453 => 
+            453 =>
             array (
                 'orderNumber' => 10201,
                 'productCode' => 'S10_1678',
@@ -7653,7 +7654,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.30',
                 'orderLineNumber' => 2,
             ),
-            454 => 
+            454 =>
             array (
                 'orderNumber' => 10201,
                 'productCode' => 'S10_2016',
@@ -7661,7 +7662,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '116.56',
                 'orderLineNumber' => 5,
             ),
-            455 => 
+            455 =>
             array (
                 'orderNumber' => 10201,
                 'productCode' => 'S10_4698',
@@ -7669,7 +7670,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '191.72',
                 'orderLineNumber' => 4,
             ),
-            456 => 
+            456 =>
             array (
                 'orderNumber' => 10201,
                 'productCode' => 'S12_2823',
@@ -7677,7 +7678,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.52',
                 'orderLineNumber' => 1,
             ),
-            457 => 
+            457 =>
             array (
                 'orderNumber' => 10201,
                 'productCode' => 'S18_2625',
@@ -7685,7 +7686,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.46',
                 'orderLineNumber' => 6,
             ),
-            458 => 
+            458 =>
             array (
                 'orderNumber' => 10201,
                 'productCode' => 'S24_1578',
@@ -7693,7 +7694,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.54',
                 'orderLineNumber' => 3,
             ),
-            459 => 
+            459 =>
             array (
                 'orderNumber' => 10201,
                 'productCode' => 'S24_2000',
@@ -7701,7 +7702,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.27',
                 'orderLineNumber' => 7,
             ),
-            460 => 
+            460 =>
             array (
                 'orderNumber' => 10202,
                 'productCode' => 'S18_3782',
@@ -7709,7 +7710,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.33',
                 'orderLineNumber' => 3,
             ),
-            461 => 
+            461 =>
             array (
                 'orderNumber' => 10202,
                 'productCode' => 'S18_4721',
@@ -7717,7 +7718,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '124.99',
                 'orderLineNumber' => 2,
             ),
-            462 => 
+            462 =>
             array (
                 'orderNumber' => 10202,
                 'productCode' => 'S24_2360',
@@ -7725,7 +7726,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.10',
                 'orderLineNumber' => 6,
             ),
-            463 => 
+            463 =>
             array (
                 'orderNumber' => 10202,
                 'productCode' => 'S24_4620',
@@ -7733,7 +7734,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.18',
                 'orderLineNumber' => 1,
             ),
-            464 => 
+            464 =>
             array (
                 'orderNumber' => 10202,
                 'productCode' => 'S32_2206',
@@ -7741,7 +7742,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '33.39',
                 'orderLineNumber' => 4,
             ),
-            465 => 
+            465 =>
             array (
                 'orderNumber' => 10202,
                 'productCode' => 'S32_4485',
@@ -7749,7 +7750,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.64',
                 'orderLineNumber' => 7,
             ),
-            466 => 
+            466 =>
             array (
                 'orderNumber' => 10202,
                 'productCode' => 'S50_4713',
@@ -7757,7 +7758,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.73',
                 'orderLineNumber' => 5,
             ),
-            467 => 
+            467 =>
             array (
                 'orderNumber' => 10203,
                 'productCode' => 'S12_1099',
@@ -7765,7 +7766,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '161.49',
                 'orderLineNumber' => 8,
             ),
-            468 => 
+            468 =>
             array (
                 'orderNumber' => 10203,
                 'productCode' => 'S12_3380',
@@ -7773,7 +7774,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.57',
                 'orderLineNumber' => 6,
             ),
-            469 => 
+            469 =>
             array (
                 'orderNumber' => 10203,
                 'productCode' => 'S12_3990',
@@ -7781,7 +7782,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.84',
                 'orderLineNumber' => 9,
             ),
-            470 => 
+            470 =>
             array (
                 'orderNumber' => 10203,
                 'productCode' => 'S12_4675',
@@ -7789,7 +7790,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.16',
                 'orderLineNumber' => 5,
             ),
-            471 => 
+            471 =>
             array (
                 'orderNumber' => 10203,
                 'productCode' => 'S18_1889',
@@ -7797,7 +7798,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.15',
                 'orderLineNumber' => 4,
             ),
-            472 => 
+            472 =>
             array (
                 'orderNumber' => 10203,
                 'productCode' => 'S18_3232',
@@ -7805,7 +7806,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '157.49',
                 'orderLineNumber' => 1,
             ),
-            473 => 
+            473 =>
             array (
                 'orderNumber' => 10203,
                 'productCode' => 'S18_3278',
@@ -7813,7 +7814,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.74',
                 'orderLineNumber' => 11,
             ),
-            474 => 
+            474 =>
             array (
                 'orderNumber' => 10203,
                 'productCode' => 'S18_3482',
@@ -7821,7 +7822,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '127.88',
                 'orderLineNumber' => 10,
             ),
-            475 => 
+            475 =>
             array (
                 'orderNumber' => 10203,
                 'productCode' => 'S24_2972',
@@ -7829,7 +7830,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '33.23',
                 'orderLineNumber' => 2,
             ),
-            476 => 
+            476 =>
             array (
                 'orderNumber' => 10203,
                 'productCode' => 'S24_3371',
@@ -7837,7 +7838,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.94',
                 'orderLineNumber' => 7,
             ),
-            477 => 
+            477 =>
             array (
                 'orderNumber' => 10203,
                 'productCode' => 'S24_3856',
@@ -7845,7 +7846,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.43',
                 'orderLineNumber' => 3,
             ),
-            478 => 
+            478 =>
             array (
                 'orderNumber' => 10204,
                 'productCode' => 'S18_1129',
@@ -7853,7 +7854,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.65',
                 'orderLineNumber' => 17,
             ),
-            479 => 
+            479 =>
             array (
                 'orderNumber' => 10204,
                 'productCode' => 'S18_1589',
@@ -7861,7 +7862,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.24',
                 'orderLineNumber' => 13,
             ),
-            480 => 
+            480 =>
             array (
                 'orderNumber' => 10204,
                 'productCode' => 'S18_1749',
@@ -7869,7 +7870,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '153.00',
                 'orderLineNumber' => 4,
             ),
-            481 => 
+            481 =>
             array (
                 'orderNumber' => 10204,
                 'productCode' => 'S18_1984',
@@ -7877,7 +7878,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '133.72',
                 'orderLineNumber' => 16,
             ),
-            482 => 
+            482 =>
             array (
                 'orderNumber' => 10204,
                 'productCode' => 'S18_2248',
@@ -7885,7 +7886,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.33',
                 'orderLineNumber' => 3,
             ),
-            483 => 
+            483 =>
             array (
                 'orderNumber' => 10204,
                 'productCode' => 'S18_2325',
@@ -7893,7 +7894,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.50',
                 'orderLineNumber' => 1,
             ),
-            484 => 
+            484 =>
             array (
                 'orderNumber' => 10204,
                 'productCode' => 'S18_2870',
@@ -7901,7 +7902,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '106.92',
                 'orderLineNumber' => 14,
             ),
-            485 => 
+            485 =>
             array (
                 'orderNumber' => 10204,
                 'productCode' => 'S18_3685',
@@ -7909,7 +7910,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '132.80',
                 'orderLineNumber' => 15,
             ),
-            486 => 
+            486 =>
             array (
                 'orderNumber' => 10204,
                 'productCode' => 'S18_4409',
@@ -7917,7 +7918,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.75',
                 'orderLineNumber' => 5,
             ),
-            487 => 
+            487 =>
             array (
                 'orderNumber' => 10204,
                 'productCode' => 'S18_4933',
@@ -7925,7 +7926,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.84',
                 'orderLineNumber' => 6,
             ),
-            488 => 
+            488 =>
             array (
                 'orderNumber' => 10204,
                 'productCode' => 'S24_1046',
@@ -7933,7 +7934,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.82',
                 'orderLineNumber' => 10,
             ),
-            489 => 
+            489 =>
             array (
                 'orderNumber' => 10204,
                 'productCode' => 'S24_1628',
@@ -7941,7 +7942,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '46.79',
                 'orderLineNumber' => 12,
             ),
-            490 => 
+            490 =>
             array (
                 'orderNumber' => 10204,
                 'productCode' => 'S24_2766',
@@ -7949,7 +7950,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.06',
                 'orderLineNumber' => 8,
             ),
-            491 => 
+            491 =>
             array (
                 'orderNumber' => 10204,
                 'productCode' => 'S24_2887',
@@ -7957,7 +7958,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.74',
                 'orderLineNumber' => 7,
             ),
-            492 => 
+            492 =>
             array (
                 'orderNumber' => 10204,
                 'productCode' => 'S24_3191',
@@ -7965,7 +7966,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.75',
                 'orderLineNumber' => 9,
             ),
-            493 => 
+            493 =>
             array (
                 'orderNumber' => 10204,
                 'productCode' => 'S24_3432',
@@ -7973,7 +7974,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.94',
                 'orderLineNumber' => 11,
             ),
-            494 => 
+            494 =>
             array (
                 'orderNumber' => 10204,
                 'productCode' => 'S24_3969',
@@ -7981,7 +7982,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '34.88',
                 'orderLineNumber' => 2,
             ),
-            495 => 
+            495 =>
             array (
                 'orderNumber' => 10205,
                 'productCode' => 'S18_1342',
@@ -7989,7 +7990,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.63',
                 'orderLineNumber' => 2,
             ),
-            496 => 
+            496 =>
             array (
                 'orderNumber' => 10205,
                 'productCode' => 'S18_1367',
@@ -7997,7 +7998,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '45.82',
                 'orderLineNumber' => 1,
             ),
-            497 => 
+            497 =>
             array (
                 'orderNumber' => 10205,
                 'productCode' => 'S18_2795',
@@ -8005,7 +8006,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '138.38',
                 'orderLineNumber' => 3,
             ),
-            498 => 
+            498 =>
             array (
                 'orderNumber' => 10205,
                 'productCode' => 'S24_1937',
@@ -8013,7 +8014,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '27.88',
                 'orderLineNumber' => 5,
             ),
-            499 => 
+            499 =>
             array (
                 'orderNumber' => 10205,
                 'productCode' => 'S24_2022',
@@ -8021,9 +8022,9 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '36.74',
                 'orderLineNumber' => 4,
             ),
-        ));
-        \DB::table('orderdetails')->insert(array (
-            0 => 
+        );
+        $data_ketiga = array (
+            0 =>
             array (
                 'orderNumber' => 10206,
                 'productCode' => 'S10_1949',
@@ -8031,7 +8032,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '203.59',
                 'orderLineNumber' => 6,
             ),
-            1 => 
+            1 =>
             array (
                 'orderNumber' => 10206,
                 'productCode' => 'S12_1666',
@@ -8039,7 +8040,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.34',
                 'orderLineNumber' => 3,
             ),
-            2 => 
+            2 =>
             array (
                 'orderNumber' => 10206,
                 'productCode' => 'S18_1097',
@@ -8047,7 +8048,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.50',
                 'orderLineNumber' => 5,
             ),
-            3 => 
+            3 =>
             array (
                 'orderNumber' => 10206,
                 'productCode' => 'S18_2949',
@@ -8055,7 +8056,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.27',
                 'orderLineNumber' => 7,
             ),
-            4 => 
+            4 =>
             array (
                 'orderNumber' => 10206,
                 'productCode' => 'S18_2957',
@@ -8063,7 +8064,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.84',
                 'orderLineNumber' => 9,
             ),
-            5 => 
+            5 =>
             array (
                 'orderNumber' => 10206,
                 'productCode' => 'S18_3136',
@@ -8071,7 +8072,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.63',
                 'orderLineNumber' => 8,
             ),
-            6 => 
+            6 =>
             array (
                 'orderNumber' => 10206,
                 'productCode' => 'S18_3320',
@@ -8079,7 +8080,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.21',
                 'orderLineNumber' => 11,
             ),
-            7 => 
+            7 =>
             array (
                 'orderNumber' => 10206,
                 'productCode' => 'S18_4668',
@@ -8087,7 +8088,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '45.78',
                 'orderLineNumber' => 4,
             ),
-            8 => 
+            8 =>
             array (
                 'orderNumber' => 10206,
                 'productCode' => 'S24_4258',
@@ -8095,7 +8096,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.44',
                 'orderLineNumber' => 10,
             ),
-            9 => 
+            9 =>
             array (
                 'orderNumber' => 10206,
                 'productCode' => 'S32_3522',
@@ -8103,7 +8104,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.94',
                 'orderLineNumber' => 2,
             ),
-            10 => 
+            10 =>
             array (
                 'orderNumber' => 10206,
                 'productCode' => 'S700_2824',
@@ -8111,7 +8112,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.01',
                 'orderLineNumber' => 1,
             ),
-            11 => 
+            11 =>
             array (
                 'orderNumber' => 10207,
                 'productCode' => 'S10_4962',
@@ -8119,7 +8120,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '125.58',
                 'orderLineNumber' => 15,
             ),
-            12 => 
+            12 =>
             array (
                 'orderNumber' => 10207,
                 'productCode' => 'S12_4473',
@@ -8127,7 +8128,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.99',
                 'orderLineNumber' => 7,
             ),
-            13 => 
+            13 =>
             array (
                 'orderNumber' => 10207,
                 'productCode' => 'S18_2238',
@@ -8135,7 +8136,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.81',
                 'orderLineNumber' => 6,
             ),
-            14 => 
+            14 =>
             array (
                 'orderNumber' => 10207,
                 'productCode' => 'S18_2319',
@@ -8143,7 +8144,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.23',
                 'orderLineNumber' => 10,
             ),
-            15 => 
+            15 =>
             array (
                 'orderNumber' => 10207,
                 'productCode' => 'S18_2432',
@@ -8151,7 +8152,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.77',
                 'orderLineNumber' => 13,
             ),
-            16 => 
+            16 =>
             array (
                 'orderNumber' => 10207,
                 'productCode' => 'S18_3232',
@@ -8159,7 +8160,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.55',
                 'orderLineNumber' => 11,
             ),
-            17 => 
+            17 =>
             array (
                 'orderNumber' => 10207,
                 'productCode' => 'S18_4027',
@@ -8167,7 +8168,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '143.62',
                 'orderLineNumber' => 1,
             ),
-            18 => 
+            18 =>
             array (
                 'orderNumber' => 10207,
                 'productCode' => 'S18_4600',
@@ -8175,7 +8176,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.87',
                 'orderLineNumber' => 16,
             ),
-            19 => 
+            19 =>
             array (
                 'orderNumber' => 10207,
                 'productCode' => 'S24_1444',
@@ -8183,7 +8184,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.80',
                 'orderLineNumber' => 4,
             ),
-            20 => 
+            20 =>
             array (
                 'orderNumber' => 10207,
                 'productCode' => 'S24_2300',
@@ -8191,7 +8192,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '127.79',
                 'orderLineNumber' => 12,
             ),
-            21 => 
+            21 =>
             array (
                 'orderNumber' => 10207,
                 'productCode' => 'S24_2840',
@@ -8199,7 +8200,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '30.76',
                 'orderLineNumber' => 8,
             ),
-            22 => 
+            22 =>
             array (
                 'orderNumber' => 10207,
                 'productCode' => 'S24_4048',
@@ -8207,7 +8208,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '108.82',
                 'orderLineNumber' => 3,
             ),
-            23 => 
+            23 =>
             array (
                 'orderNumber' => 10207,
                 'productCode' => 'S32_1268',
@@ -8215,7 +8216,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.75',
                 'orderLineNumber' => 14,
             ),
-            24 => 
+            24 =>
             array (
                 'orderNumber' => 10207,
                 'productCode' => 'S32_2509',
@@ -8223,7 +8224,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.95',
                 'orderLineNumber' => 9,
             ),
-            25 => 
+            25 =>
             array (
                 'orderNumber' => 10207,
                 'productCode' => 'S32_3207',
@@ -8231,7 +8232,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.30',
                 'orderLineNumber' => 2,
             ),
-            26 => 
+            26 =>
             array (
                 'orderNumber' => 10207,
                 'productCode' => 'S50_1392',
@@ -8239,7 +8240,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '106.49',
                 'orderLineNumber' => 5,
             ),
-            27 => 
+            27 =>
             array (
                 'orderNumber' => 10208,
                 'productCode' => 'S12_1108',
@@ -8247,7 +8248,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '176.63',
                 'orderLineNumber' => 13,
             ),
-            28 => 
+            28 =>
             array (
                 'orderNumber' => 10208,
                 'productCode' => 'S12_3148',
@@ -8255,7 +8256,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '128.42',
                 'orderLineNumber' => 14,
             ),
-            29 => 
+            29 =>
             array (
                 'orderNumber' => 10208,
                 'productCode' => 'S12_3891',
@@ -8263,7 +8264,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '152.26',
                 'orderLineNumber' => 12,
             ),
-            30 => 
+            30 =>
             array (
                 'orderNumber' => 10208,
                 'productCode' => 'S18_3140',
@@ -8271,7 +8272,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.47',
                 'orderLineNumber' => 9,
             ),
-            31 => 
+            31 =>
             array (
                 'orderNumber' => 10208,
                 'productCode' => 'S18_3259',
@@ -8279,7 +8280,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.81',
                 'orderLineNumber' => 11,
             ),
-            32 => 
+            32 =>
             array (
                 'orderNumber' => 10208,
                 'productCode' => 'S18_4522',
@@ -8287,7 +8288,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.85',
                 'orderLineNumber' => 8,
             ),
-            33 => 
+            33 =>
             array (
                 'orderNumber' => 10208,
                 'productCode' => 'S24_2011',
@@ -8295,7 +8296,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.89',
                 'orderLineNumber' => 7,
             ),
-            34 => 
+            34 =>
             array (
                 'orderNumber' => 10208,
                 'productCode' => 'S24_3151',
@@ -8303,7 +8304,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.54',
                 'orderLineNumber' => 2,
             ),
-            35 => 
+            35 =>
             array (
                 'orderNumber' => 10208,
                 'productCode' => 'S50_1514',
@@ -8311,7 +8312,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.99',
                 'orderLineNumber' => 15,
             ),
-            36 => 
+            36 =>
             array (
                 'orderNumber' => 10208,
                 'productCode' => 'S700_1138',
@@ -8319,7 +8320,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.67',
                 'orderLineNumber' => 3,
             ),
-            37 => 
+            37 =>
             array (
                 'orderNumber' => 10208,
                 'productCode' => 'S700_1938',
@@ -8327,7 +8328,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.62',
                 'orderLineNumber' => 10,
             ),
-            38 => 
+            38 =>
             array (
                 'orderNumber' => 10208,
                 'productCode' => 'S700_2610',
@@ -8335,7 +8336,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.61',
                 'orderLineNumber' => 1,
             ),
-            39 => 
+            39 =>
             array (
                 'orderNumber' => 10208,
                 'productCode' => 'S700_3505',
@@ -8343,7 +8344,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.16',
                 'orderLineNumber' => 4,
             ),
-            40 => 
+            40 =>
             array (
                 'orderNumber' => 10208,
                 'productCode' => 'S700_3962',
@@ -8351,7 +8352,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.34',
                 'orderLineNumber' => 5,
             ),
-            41 => 
+            41 =>
             array (
                 'orderNumber' => 10208,
                 'productCode' => 'S72_3212',
@@ -8359,7 +8360,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.05',
                 'orderLineNumber' => 6,
             ),
-            42 => 
+            42 =>
             array (
                 'orderNumber' => 10209,
                 'productCode' => 'S10_4757',
@@ -8367,7 +8368,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.20',
                 'orderLineNumber' => 8,
             ),
-            43 => 
+            43 =>
             array (
                 'orderNumber' => 10209,
                 'productCode' => 'S18_3029',
@@ -8375,7 +8376,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.58',
                 'orderLineNumber' => 6,
             ),
-            44 => 
+            44 =>
             array (
                 'orderNumber' => 10209,
                 'productCode' => 'S18_3856',
@@ -8383,7 +8384,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '97.40',
                 'orderLineNumber' => 5,
             ),
-            45 => 
+            45 =>
             array (
                 'orderNumber' => 10209,
                 'productCode' => 'S24_2841',
@@ -8391,7 +8392,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.45',
                 'orderLineNumber' => 1,
             ),
-            46 => 
+            46 =>
             array (
                 'orderNumber' => 10209,
                 'productCode' => 'S24_3420',
@@ -8399,7 +8400,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.55',
                 'orderLineNumber' => 2,
             ),
-            47 => 
+            47 =>
             array (
                 'orderNumber' => 10209,
                 'productCode' => 'S24_3816',
@@ -8407,7 +8408,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.67',
                 'orderLineNumber' => 7,
             ),
-            48 => 
+            48 =>
             array (
                 'orderNumber' => 10209,
                 'productCode' => 'S700_2047',
@@ -8415,7 +8416,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.52',
                 'orderLineNumber' => 4,
             ),
-            49 => 
+            49 =>
             array (
                 'orderNumber' => 10209,
                 'productCode' => 'S72_1253',
@@ -8423,7 +8424,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.20',
                 'orderLineNumber' => 3,
             ),
-            50 => 
+            50 =>
             array (
                 'orderNumber' => 10210,
                 'productCode' => 'S10_2016',
@@ -8431,7 +8432,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.99',
                 'orderLineNumber' => 2,
             ),
-            51 => 
+            51 =>
             array (
                 'orderNumber' => 10210,
                 'productCode' => 'S10_4698',
@@ -8439,7 +8440,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '189.79',
                 'orderLineNumber' => 1,
             ),
-            52 => 
+            52 =>
             array (
                 'orderNumber' => 10210,
                 'productCode' => 'S18_1662',
@@ -8447,7 +8448,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '141.92',
                 'orderLineNumber' => 17,
             ),
-            53 => 
+            53 =>
             array (
                 'orderNumber' => 10210,
                 'productCode' => 'S18_2581',
@@ -8455,7 +8456,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.43',
                 'orderLineNumber' => 7,
             ),
-            54 => 
+            54 =>
             array (
                 'orderNumber' => 10210,
                 'productCode' => 'S18_2625',
@@ -8463,7 +8464,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.48',
                 'orderLineNumber' => 3,
             ),
-            55 => 
+            55 =>
             array (
                 'orderNumber' => 10210,
                 'productCode' => 'S24_1785',
@@ -8471,7 +8472,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.67',
                 'orderLineNumber' => 9,
             ),
-            56 => 
+            56 =>
             array (
                 'orderNumber' => 10210,
                 'productCode' => 'S24_2000',
@@ -8479,7 +8480,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.22',
                 'orderLineNumber' => 4,
             ),
-            57 => 
+            57 =>
             array (
                 'orderNumber' => 10210,
                 'productCode' => 'S24_3949',
@@ -8487,7 +8488,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.64',
                 'orderLineNumber' => 16,
             ),
-            58 => 
+            58 =>
             array (
                 'orderNumber' => 10210,
                 'productCode' => 'S24_4278',
@@ -8495,7 +8496,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.10',
                 'orderLineNumber' => 8,
             ),
-            59 => 
+            59 =>
             array (
                 'orderNumber' => 10210,
                 'productCode' => 'S32_1374',
@@ -8503,7 +8504,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.91',
                 'orderLineNumber' => 5,
             ),
-            60 => 
+            60 =>
             array (
                 'orderNumber' => 10210,
                 'productCode' => 'S32_4289',
@@ -8511,7 +8512,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.10',
                 'orderLineNumber' => 10,
             ),
-            61 => 
+            61 =>
             array (
                 'orderNumber' => 10210,
                 'productCode' => 'S50_1341',
@@ -8519,7 +8520,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.20',
                 'orderLineNumber' => 11,
             ),
-            62 => 
+            62 =>
             array (
                 'orderNumber' => 10210,
                 'productCode' => 'S700_1691',
@@ -8527,7 +8528,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.69',
                 'orderLineNumber' => 12,
             ),
-            63 => 
+            63 =>
             array (
                 'orderNumber' => 10210,
                 'productCode' => 'S700_2466',
@@ -8535,7 +8536,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.74',
                 'orderLineNumber' => 14,
             ),
-            64 => 
+            64 =>
             array (
                 'orderNumber' => 10210,
                 'productCode' => 'S700_2834',
@@ -8543,7 +8544,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.48',
                 'orderLineNumber' => 6,
             ),
-            65 => 
+            65 =>
             array (
                 'orderNumber' => 10210,
                 'productCode' => 'S700_3167',
@@ -8551,7 +8552,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.00',
                 'orderLineNumber' => 13,
             ),
-            66 => 
+            66 =>
             array (
                 'orderNumber' => 10210,
                 'productCode' => 'S700_4002',
@@ -8559,7 +8560,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.70',
                 'orderLineNumber' => 15,
             ),
-            67 => 
+            67 =>
             array (
                 'orderNumber' => 10211,
                 'productCode' => 'S10_1678',
@@ -8567,7 +8568,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.92',
                 'orderLineNumber' => 14,
             ),
-            68 => 
+            68 =>
             array (
                 'orderNumber' => 10211,
                 'productCode' => 'S12_1099',
@@ -8575,7 +8576,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '171.22',
                 'orderLineNumber' => 2,
             ),
-            69 => 
+            69 =>
             array (
                 'orderNumber' => 10211,
                 'productCode' => 'S12_2823',
@@ -8583,7 +8584,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.52',
                 'orderLineNumber' => 13,
             ),
-            70 => 
+            70 =>
             array (
                 'orderNumber' => 10211,
                 'productCode' => 'S12_3990',
@@ -8591,7 +8592,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.80',
                 'orderLineNumber' => 3,
             ),
-            71 => 
+            71 =>
             array (
                 'orderNumber' => 10211,
                 'productCode' => 'S18_3278',
@@ -8599,7 +8600,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.17',
                 'orderLineNumber' => 5,
             ),
-            72 => 
+            72 =>
             array (
                 'orderNumber' => 10211,
                 'productCode' => 'S18_3482',
@@ -8607,7 +8608,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '138.17',
                 'orderLineNumber' => 4,
             ),
-            73 => 
+            73 =>
             array (
                 'orderNumber' => 10211,
                 'productCode' => 'S18_3782',
@@ -8615,7 +8616,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.30',
                 'orderLineNumber' => 8,
             ),
-            74 => 
+            74 =>
             array (
                 'orderNumber' => 10211,
                 'productCode' => 'S18_4721',
@@ -8623,7 +8624,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '148.80',
                 'orderLineNumber' => 7,
             ),
-            75 => 
+            75 =>
             array (
                 'orderNumber' => 10211,
                 'productCode' => 'S24_1578',
@@ -8631,7 +8632,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.32',
                 'orderLineNumber' => 15,
             ),
-            76 => 
+            76 =>
             array (
                 'orderNumber' => 10211,
                 'productCode' => 'S24_2360',
@@ -8639,7 +8640,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.33',
                 'orderLineNumber' => 11,
             ),
-            77 => 
+            77 =>
             array (
                 'orderNumber' => 10211,
                 'productCode' => 'S24_3371',
@@ -8647,7 +8648,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.66',
                 'orderLineNumber' => 1,
             ),
-            78 => 
+            78 =>
             array (
                 'orderNumber' => 10211,
                 'productCode' => 'S24_4620',
@@ -8655,7 +8656,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.84',
                 'orderLineNumber' => 6,
             ),
-            79 => 
+            79 =>
             array (
                 'orderNumber' => 10211,
                 'productCode' => 'S32_2206',
@@ -8663,7 +8664,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '39.83',
                 'orderLineNumber' => 9,
             ),
-            80 => 
+            80 =>
             array (
                 'orderNumber' => 10211,
                 'productCode' => 'S32_4485',
@@ -8671,7 +8672,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.91',
                 'orderLineNumber' => 12,
             ),
-            81 => 
+            81 =>
             array (
                 'orderNumber' => 10211,
                 'productCode' => 'S50_4713',
@@ -8679,7 +8680,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.78',
                 'orderLineNumber' => 10,
             ),
-            82 => 
+            82 =>
             array (
                 'orderNumber' => 10212,
                 'productCode' => 'S12_3380',
@@ -8687,7 +8688,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.82',
                 'orderLineNumber' => 16,
             ),
-            83 => 
+            83 =>
             array (
                 'orderNumber' => 10212,
                 'productCode' => 'S12_4675',
@@ -8695,7 +8696,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.55',
                 'orderLineNumber' => 15,
             ),
-            84 => 
+            84 =>
             array (
                 'orderNumber' => 10212,
                 'productCode' => 'S18_1129',
@@ -8703,7 +8704,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.48',
                 'orderLineNumber' => 10,
             ),
-            85 => 
+            85 =>
             array (
                 'orderNumber' => 10212,
                 'productCode' => 'S18_1589',
@@ -8711,7 +8712,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.77',
                 'orderLineNumber' => 6,
             ),
-            86 => 
+            86 =>
             array (
                 'orderNumber' => 10212,
                 'productCode' => 'S18_1889',
@@ -8719,7 +8720,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.68',
                 'orderLineNumber' => 14,
             ),
-            87 => 
+            87 =>
             array (
                 'orderNumber' => 10212,
                 'productCode' => 'S18_1984',
@@ -8727,7 +8728,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '133.72',
                 'orderLineNumber' => 9,
             ),
-            88 => 
+            88 =>
             array (
                 'orderNumber' => 10212,
                 'productCode' => 'S18_2870',
@@ -8735,7 +8736,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.48',
                 'orderLineNumber' => 7,
             ),
-            89 => 
+            89 =>
             array (
                 'orderNumber' => 10212,
                 'productCode' => 'S18_3232',
@@ -8743,7 +8744,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '155.79',
                 'orderLineNumber' => 11,
             ),
-            90 => 
+            90 =>
             array (
                 'orderNumber' => 10212,
                 'productCode' => 'S18_3685',
@@ -8751,7 +8752,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.85',
                 'orderLineNumber' => 8,
             ),
-            91 => 
+            91 =>
             array (
                 'orderNumber' => 10212,
                 'productCode' => 'S24_1046',
@@ -8759,7 +8760,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.73',
                 'orderLineNumber' => 3,
             ),
-            92 => 
+            92 =>
             array (
                 'orderNumber' => 10212,
                 'productCode' => 'S24_1628',
@@ -8767,7 +8768,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.27',
                 'orderLineNumber' => 5,
             ),
-            93 => 
+            93 =>
             array (
                 'orderNumber' => 10212,
                 'productCode' => 'S24_2766',
@@ -8775,7 +8776,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.78',
                 'orderLineNumber' => 1,
             ),
-            94 => 
+            94 =>
             array (
                 'orderNumber' => 10212,
                 'productCode' => 'S24_2972',
@@ -8783,7 +8784,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '37.38',
                 'orderLineNumber' => 12,
             ),
-            95 => 
+            95 =>
             array (
                 'orderNumber' => 10212,
                 'productCode' => 'S24_3191',
@@ -8791,7 +8792,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.91',
                 'orderLineNumber' => 2,
             ),
-            96 => 
+            96 =>
             array (
                 'orderNumber' => 10212,
                 'productCode' => 'S24_3432',
@@ -8799,7 +8800,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.66',
                 'orderLineNumber' => 4,
             ),
-            97 => 
+            97 =>
             array (
                 'orderNumber' => 10212,
                 'productCode' => 'S24_3856',
@@ -8807,7 +8808,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.96',
                 'orderLineNumber' => 13,
             ),
-            98 => 
+            98 =>
             array (
                 'orderNumber' => 10213,
                 'productCode' => 'S18_4409',
@@ -8815,7 +8816,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.67',
                 'orderLineNumber' => 1,
             ),
-            99 => 
+            99 =>
             array (
                 'orderNumber' => 10213,
                 'productCode' => 'S18_4933',
@@ -8823,7 +8824,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.44',
                 'orderLineNumber' => 2,
             ),
-            100 => 
+            100 =>
             array (
                 'orderNumber' => 10213,
                 'productCode' => 'S24_2887',
@@ -8831,7 +8832,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '97.48',
                 'orderLineNumber' => 3,
             ),
-            101 => 
+            101 =>
             array (
                 'orderNumber' => 10214,
                 'productCode' => 'S18_1749',
@@ -8839,7 +8840,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '166.60',
                 'orderLineNumber' => 7,
             ),
-            102 => 
+            102 =>
             array (
                 'orderNumber' => 10214,
                 'productCode' => 'S18_2248',
@@ -8847,7 +8848,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.28',
                 'orderLineNumber' => 6,
             ),
-            103 => 
+            103 =>
             array (
                 'orderNumber' => 10214,
                 'productCode' => 'S18_2325',
@@ -8855,7 +8856,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '125.86',
                 'orderLineNumber' => 4,
             ),
-            104 => 
+            104 =>
             array (
                 'orderNumber' => 10214,
                 'productCode' => 'S18_2795',
@@ -8863,7 +8864,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '167.06',
                 'orderLineNumber' => 1,
             ),
-            105 => 
+            105 =>
             array (
                 'orderNumber' => 10214,
                 'productCode' => 'S24_1937',
@@ -8871,7 +8872,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.19',
                 'orderLineNumber' => 3,
             ),
-            106 => 
+            106 =>
             array (
                 'orderNumber' => 10214,
                 'productCode' => 'S24_2022',
@@ -8879,7 +8880,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '39.87',
                 'orderLineNumber' => 2,
             ),
-            107 => 
+            107 =>
             array (
                 'orderNumber' => 10214,
                 'productCode' => 'S24_3969',
@@ -8887,7 +8888,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '38.57',
                 'orderLineNumber' => 5,
             ),
-            108 => 
+            108 =>
             array (
                 'orderNumber' => 10215,
                 'productCode' => 'S10_1949',
@@ -8895,7 +8896,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '205.73',
                 'orderLineNumber' => 3,
             ),
-            109 => 
+            109 =>
             array (
                 'orderNumber' => 10215,
                 'productCode' => 'S18_1097',
@@ -8903,7 +8904,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.34',
                 'orderLineNumber' => 2,
             ),
-            110 => 
+            110 =>
             array (
                 'orderNumber' => 10215,
                 'productCode' => 'S18_1342',
@@ -8911,7 +8912,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.47',
                 'orderLineNumber' => 10,
             ),
-            111 => 
+            111 =>
             array (
                 'orderNumber' => 10215,
                 'productCode' => 'S18_1367',
@@ -8919,7 +8920,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.91',
                 'orderLineNumber' => 9,
             ),
-            112 => 
+            112 =>
             array (
                 'orderNumber' => 10215,
                 'productCode' => 'S18_2949',
@@ -8927,7 +8928,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '97.26',
                 'orderLineNumber' => 4,
             ),
-            113 => 
+            113 =>
             array (
                 'orderNumber' => 10215,
                 'productCode' => 'S18_2957',
@@ -8935,7 +8936,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.21',
                 'orderLineNumber' => 6,
             ),
-            114 => 
+            114 =>
             array (
                 'orderNumber' => 10215,
                 'productCode' => 'S18_3136',
@@ -8943,7 +8944,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.01',
                 'orderLineNumber' => 5,
             ),
-            115 => 
+            115 =>
             array (
                 'orderNumber' => 10215,
                 'productCode' => 'S18_3320',
@@ -8951,7 +8952,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.33',
                 'orderLineNumber' => 8,
             ),
-            116 => 
+            116 =>
             array (
                 'orderNumber' => 10215,
                 'productCode' => 'S18_4668',
@@ -8959,7 +8960,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '42.76',
                 'orderLineNumber' => 1,
             ),
-            117 => 
+            117 =>
             array (
                 'orderNumber' => 10215,
                 'productCode' => 'S24_4258',
@@ -8967,7 +8968,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.47',
                 'orderLineNumber' => 7,
             ),
-            118 => 
+            118 =>
             array (
                 'orderNumber' => 10216,
                 'productCode' => 'S12_1666',
@@ -8975,7 +8976,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '133.94',
                 'orderLineNumber' => 1,
             ),
-            119 => 
+            119 =>
             array (
                 'orderNumber' => 10217,
                 'productCode' => 'S10_4962',
@@ -8983,7 +8984,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '132.97',
                 'orderLineNumber' => 4,
             ),
-            120 => 
+            120 =>
             array (
                 'orderNumber' => 10217,
                 'productCode' => 'S18_2432',
@@ -8991,7 +8992,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.34',
                 'orderLineNumber' => 2,
             ),
-            121 => 
+            121 =>
             array (
                 'orderNumber' => 10217,
                 'productCode' => 'S18_4600',
@@ -8999,7 +9000,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.66',
                 'orderLineNumber' => 5,
             ),
-            122 => 
+            122 =>
             array (
                 'orderNumber' => 10217,
                 'productCode' => 'S24_2300',
@@ -9007,7 +9008,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '103.51',
                 'orderLineNumber' => 1,
             ),
-            123 => 
+            123 =>
             array (
                 'orderNumber' => 10217,
                 'productCode' => 'S32_1268',
@@ -9015,7 +9016,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.97',
                 'orderLineNumber' => 3,
             ),
-            124 => 
+            124 =>
             array (
                 'orderNumber' => 10217,
                 'productCode' => 'S32_3522',
@@ -9023,7 +9024,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.24',
                 'orderLineNumber' => 7,
             ),
-            125 => 
+            125 =>
             array (
                 'orderNumber' => 10217,
                 'productCode' => 'S700_2824',
@@ -9031,7 +9032,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.02',
                 'orderLineNumber' => 6,
             ),
-            126 => 
+            126 =>
             array (
                 'orderNumber' => 10218,
                 'productCode' => 'S18_2319',
@@ -9039,7 +9040,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.46',
                 'orderLineNumber' => 1,
             ),
-            127 => 
+            127 =>
             array (
                 'orderNumber' => 10218,
                 'productCode' => 'S18_3232',
@@ -9047,7 +9048,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '152.41',
                 'orderLineNumber' => 2,
             ),
-            128 => 
+            128 =>
             array (
                 'orderNumber' => 10219,
                 'productCode' => 'S12_4473',
@@ -9055,7 +9056,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.80',
                 'orderLineNumber' => 2,
             ),
-            129 => 
+            129 =>
             array (
                 'orderNumber' => 10219,
                 'productCode' => 'S18_2238',
@@ -9063,7 +9064,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '132.62',
                 'orderLineNumber' => 1,
             ),
-            130 => 
+            130 =>
             array (
                 'orderNumber' => 10219,
                 'productCode' => 'S24_2840',
@@ -9071,7 +9072,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '31.12',
                 'orderLineNumber' => 3,
             ),
-            131 => 
+            131 =>
             array (
                 'orderNumber' => 10219,
                 'productCode' => 'S32_2509',
@@ -9079,7 +9080,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.62',
                 'orderLineNumber' => 4,
             ),
-            132 => 
+            132 =>
             array (
                 'orderNumber' => 10220,
                 'productCode' => 'S12_1108',
@@ -9087,7 +9088,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '189.10',
                 'orderLineNumber' => 2,
             ),
-            133 => 
+            133 =>
             array (
                 'orderNumber' => 10220,
                 'productCode' => 'S12_3148',
@@ -9095,7 +9096,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '151.08',
                 'orderLineNumber' => 3,
             ),
-            134 => 
+            134 =>
             array (
                 'orderNumber' => 10220,
                 'productCode' => 'S12_3891',
@@ -9103,7 +9104,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '166.10',
                 'orderLineNumber' => 1,
             ),
-            135 => 
+            135 =>
             array (
                 'orderNumber' => 10220,
                 'productCode' => 'S18_4027',
@@ -9111,7 +9112,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.39',
                 'orderLineNumber' => 5,
             ),
-            136 => 
+            136 =>
             array (
                 'orderNumber' => 10220,
                 'productCode' => 'S24_1444',
@@ -9119,7 +9120,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.55',
                 'orderLineNumber' => 8,
             ),
-            137 => 
+            137 =>
             array (
                 'orderNumber' => 10220,
                 'productCode' => 'S24_4048',
@@ -9127,7 +9128,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.72',
                 'orderLineNumber' => 7,
             ),
-            138 => 
+            138 =>
             array (
                 'orderNumber' => 10220,
                 'productCode' => 'S32_3207',
@@ -9135,7 +9136,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.71',
                 'orderLineNumber' => 6,
             ),
-            139 => 
+            139 =>
             array (
                 'orderNumber' => 10220,
                 'productCode' => 'S50_1392',
@@ -9143,7 +9144,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.60',
                 'orderLineNumber' => 9,
             ),
-            140 => 
+            140 =>
             array (
                 'orderNumber' => 10220,
                 'productCode' => 'S50_1514',
@@ -9151,7 +9152,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.82',
                 'orderLineNumber' => 4,
             ),
-            141 => 
+            141 =>
             array (
                 'orderNumber' => 10221,
                 'productCode' => 'S18_3140',
@@ -9159,7 +9160,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '133.86',
                 'orderLineNumber' => 3,
             ),
-            142 => 
+            142 =>
             array (
                 'orderNumber' => 10221,
                 'productCode' => 'S18_3259',
@@ -9167,7 +9168,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.75',
                 'orderLineNumber' => 5,
             ),
-            143 => 
+            143 =>
             array (
                 'orderNumber' => 10221,
                 'productCode' => 'S18_4522',
@@ -9175,7 +9176,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.26',
                 'orderLineNumber' => 2,
             ),
-            144 => 
+            144 =>
             array (
                 'orderNumber' => 10221,
                 'productCode' => 'S24_2011',
@@ -9183,7 +9184,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.06',
                 'orderLineNumber' => 1,
             ),
-            145 => 
+            145 =>
             array (
                 'orderNumber' => 10221,
                 'productCode' => 'S700_1938',
@@ -9191,7 +9192,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.29',
                 'orderLineNumber' => 4,
             ),
-            146 => 
+            146 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S10_4757',
@@ -9199,7 +9200,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '133.28',
                 'orderLineNumber' => 12,
             ),
-            147 => 
+            147 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S18_1662',
@@ -9207,7 +9208,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.19',
                 'orderLineNumber' => 4,
             ),
-            148 => 
+            148 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S18_3029',
@@ -9215,7 +9216,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.14',
                 'orderLineNumber' => 10,
             ),
-            149 => 
+            149 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S18_3856',
@@ -9223,7 +9224,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.93',
                 'orderLineNumber' => 9,
             ),
-            150 => 
+            150 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S24_2841',
@@ -9231,7 +9232,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.86',
                 'orderLineNumber' => 5,
             ),
-            151 => 
+            151 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S24_3151',
@@ -9239,7 +9240,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.35',
                 'orderLineNumber' => 14,
             ),
-            152 => 
+            152 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S24_3420',
@@ -9247,7 +9248,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.15',
                 'orderLineNumber' => 6,
             ),
-            153 => 
+            153 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S24_3816',
@@ -9255,7 +9256,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.99',
                 'orderLineNumber' => 11,
             ),
-            154 => 
+            154 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S24_3949',
@@ -9263,7 +9264,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.27',
                 'orderLineNumber' => 3,
             ),
-            155 => 
+            155 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S700_1138',
@@ -9271,7 +9272,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.67',
                 'orderLineNumber' => 15,
             ),
-            156 => 
+            156 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S700_2047',
@@ -9279,7 +9280,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.56',
                 'orderLineNumber' => 8,
             ),
-            157 => 
+            157 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S700_2466',
@@ -9287,7 +9288,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.75',
                 'orderLineNumber' => 1,
             ),
-            158 => 
+            158 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S700_2610',
@@ -9295,7 +9296,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.39',
                 'orderLineNumber' => 13,
             ),
-            159 => 
+            159 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S700_3505',
@@ -9303,7 +9304,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.14',
                 'orderLineNumber' => 16,
             ),
-            160 => 
+            160 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S700_3962',
@@ -9311,7 +9312,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.43',
                 'orderLineNumber' => 17,
             ),
-            161 => 
+            161 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S700_4002',
@@ -9319,7 +9320,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.63',
                 'orderLineNumber' => 2,
             ),
-            162 => 
+            162 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S72_1253',
@@ -9327,7 +9328,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '45.19',
                 'orderLineNumber' => 7,
             ),
-            163 => 
+            163 =>
             array (
                 'orderNumber' => 10222,
                 'productCode' => 'S72_3212',
@@ -9335,7 +9336,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.59',
                 'orderLineNumber' => 18,
             ),
-            164 => 
+            164 =>
             array (
                 'orderNumber' => 10223,
                 'productCode' => 'S10_1678',
@@ -9343,7 +9344,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.39',
                 'orderLineNumber' => 1,
             ),
-            165 => 
+            165 =>
             array (
                 'orderNumber' => 10223,
                 'productCode' => 'S10_2016',
@@ -9351,7 +9352,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.61',
                 'orderLineNumber' => 4,
             ),
-            166 => 
+            166 =>
             array (
                 'orderNumber' => 10223,
                 'productCode' => 'S10_4698',
@@ -9359,7 +9360,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '189.79',
                 'orderLineNumber' => 3,
             ),
-            167 => 
+            167 =>
             array (
                 'orderNumber' => 10223,
                 'productCode' => 'S18_2581',
@@ -9367,7 +9368,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.58',
                 'orderLineNumber' => 9,
             ),
-            168 => 
+            168 =>
             array (
                 'orderNumber' => 10223,
                 'productCode' => 'S18_2625',
@@ -9375,7 +9376,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.75',
                 'orderLineNumber' => 5,
             ),
-            169 => 
+            169 =>
             array (
                 'orderNumber' => 10223,
                 'productCode' => 'S24_1578',
@@ -9383,7 +9384,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.81',
                 'orderLineNumber' => 2,
             ),
-            170 => 
+            170 =>
             array (
                 'orderNumber' => 10223,
                 'productCode' => 'S24_1785',
@@ -9391,7 +9392,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.54',
                 'orderLineNumber' => 11,
             ),
-            171 => 
+            171 =>
             array (
                 'orderNumber' => 10223,
                 'productCode' => 'S24_2000',
@@ -9399,7 +9400,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.94',
                 'orderLineNumber' => 6,
             ),
-            172 => 
+            172 =>
             array (
                 'orderNumber' => 10223,
                 'productCode' => 'S24_4278',
@@ -9407,7 +9408,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.10',
                 'orderLineNumber' => 10,
             ),
-            173 => 
+            173 =>
             array (
                 'orderNumber' => 10223,
                 'productCode' => 'S32_1374',
@@ -9415,7 +9416,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.90',
                 'orderLineNumber' => 7,
             ),
-            174 => 
+            174 =>
             array (
                 'orderNumber' => 10223,
                 'productCode' => 'S32_4289',
@@ -9423,7 +9424,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.73',
                 'orderLineNumber' => 12,
             ),
-            175 => 
+            175 =>
             array (
                 'orderNumber' => 10223,
                 'productCode' => 'S50_1341',
@@ -9431,7 +9432,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '41.02',
                 'orderLineNumber' => 13,
             ),
-            176 => 
+            176 =>
             array (
                 'orderNumber' => 10223,
                 'productCode' => 'S700_1691',
@@ -9439,7 +9440,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.03',
                 'orderLineNumber' => 14,
             ),
-            177 => 
+            177 =>
             array (
                 'orderNumber' => 10223,
                 'productCode' => 'S700_2834',
@@ -9447,7 +9448,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.90',
                 'orderLineNumber' => 8,
             ),
-            178 => 
+            178 =>
             array (
                 'orderNumber' => 10223,
                 'productCode' => 'S700_3167',
@@ -9455,7 +9456,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.20',
                 'orderLineNumber' => 15,
             ),
-            179 => 
+            179 =>
             array (
                 'orderNumber' => 10224,
                 'productCode' => 'S12_2823',
@@ -9463,7 +9464,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '141.58',
                 'orderLineNumber' => 6,
             ),
-            180 => 
+            180 =>
             array (
                 'orderNumber' => 10224,
                 'productCode' => 'S18_3782',
@@ -9471,7 +9472,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.20',
                 'orderLineNumber' => 1,
             ),
-            181 => 
+            181 =>
             array (
                 'orderNumber' => 10224,
                 'productCode' => 'S24_2360',
@@ -9479,7 +9480,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.26',
                 'orderLineNumber' => 4,
             ),
-            182 => 
+            182 =>
             array (
                 'orderNumber' => 10224,
                 'productCode' => 'S32_2206',
@@ -9487,7 +9488,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '37.01',
                 'orderLineNumber' => 2,
             ),
-            183 => 
+            183 =>
             array (
                 'orderNumber' => 10224,
                 'productCode' => 'S32_4485',
@@ -9495,7 +9496,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.91',
                 'orderLineNumber' => 5,
             ),
-            184 => 
+            184 =>
             array (
                 'orderNumber' => 10224,
                 'productCode' => 'S50_4713',
@@ -9503,7 +9504,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.36',
                 'orderLineNumber' => 3,
             ),
-            185 => 
+            185 =>
             array (
                 'orderNumber' => 10225,
                 'productCode' => 'S12_1099',
@@ -9511,7 +9512,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '157.60',
                 'orderLineNumber' => 9,
             ),
-            186 => 
+            186 =>
             array (
                 'orderNumber' => 10225,
                 'productCode' => 'S12_3380',
@@ -9519,7 +9520,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.00',
                 'orderLineNumber' => 7,
             ),
-            187 => 
+            187 =>
             array (
                 'orderNumber' => 10225,
                 'productCode' => 'S12_3990',
@@ -9527,7 +9528,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.64',
                 'orderLineNumber' => 10,
             ),
-            188 => 
+            188 =>
             array (
                 'orderNumber' => 10225,
                 'productCode' => 'S12_4675',
@@ -9535,7 +9536,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.19',
                 'orderLineNumber' => 6,
             ),
-            189 => 
+            189 =>
             array (
                 'orderNumber' => 10225,
                 'productCode' => 'S18_1129',
@@ -9543,7 +9544,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '116.06',
                 'orderLineNumber' => 1,
             ),
-            190 => 
+            190 =>
             array (
                 'orderNumber' => 10225,
                 'productCode' => 'S18_1889',
@@ -9551,7 +9552,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.61',
                 'orderLineNumber' => 5,
             ),
-            191 => 
+            191 =>
             array (
                 'orderNumber' => 10225,
                 'productCode' => 'S18_3232',
@@ -9559,7 +9560,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '162.57',
                 'orderLineNumber' => 2,
             ),
-            192 => 
+            192 =>
             array (
                 'orderNumber' => 10225,
                 'productCode' => 'S18_3278',
@@ -9567,7 +9568,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.96',
                 'orderLineNumber' => 12,
             ),
-            193 => 
+            193 =>
             array (
                 'orderNumber' => 10225,
                 'productCode' => 'S18_3482',
@@ -9575,7 +9576,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.06',
                 'orderLineNumber' => 11,
             ),
-            194 => 
+            194 =>
             array (
                 'orderNumber' => 10225,
                 'productCode' => 'S18_4721',
@@ -9583,7 +9584,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.41',
                 'orderLineNumber' => 14,
             ),
-            195 => 
+            195 =>
             array (
                 'orderNumber' => 10225,
                 'productCode' => 'S24_2972',
@@ -9591,7 +9592,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '34.74',
                 'orderLineNumber' => 3,
             ),
-            196 => 
+            196 =>
             array (
                 'orderNumber' => 10225,
                 'productCode' => 'S24_3371',
@@ -9599,7 +9600,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.43',
                 'orderLineNumber' => 8,
             ),
-            197 => 
+            197 =>
             array (
                 'orderNumber' => 10225,
                 'productCode' => 'S24_3856',
@@ -9607,7 +9608,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '130.60',
                 'orderLineNumber' => 4,
             ),
-            198 => 
+            198 =>
             array (
                 'orderNumber' => 10225,
                 'productCode' => 'S24_4620',
@@ -9615,7 +9616,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.61',
                 'orderLineNumber' => 13,
             ),
-            199 => 
+            199 =>
             array (
                 'orderNumber' => 10226,
                 'productCode' => 'S18_1589',
@@ -9623,7 +9624,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '108.26',
                 'orderLineNumber' => 4,
             ),
-            200 => 
+            200 =>
             array (
                 'orderNumber' => 10226,
                 'productCode' => 'S18_1984',
@@ -9631,7 +9632,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.45',
                 'orderLineNumber' => 7,
             ),
-            201 => 
+            201 =>
             array (
                 'orderNumber' => 10226,
                 'productCode' => 'S18_2870',
@@ -9639,7 +9640,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '125.40',
                 'orderLineNumber' => 5,
             ),
-            202 => 
+            202 =>
             array (
                 'orderNumber' => 10226,
                 'productCode' => 'S18_3685',
@@ -9647,7 +9648,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.91',
                 'orderLineNumber' => 6,
             ),
-            203 => 
+            203 =>
             array (
                 'orderNumber' => 10226,
                 'productCode' => 'S24_1046',
@@ -9655,7 +9656,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.41',
                 'orderLineNumber' => 1,
             ),
-            204 => 
+            204 =>
             array (
                 'orderNumber' => 10226,
                 'productCode' => 'S24_1628',
@@ -9663,7 +9664,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.79',
                 'orderLineNumber' => 3,
             ),
-            205 => 
+            205 =>
             array (
                 'orderNumber' => 10226,
                 'productCode' => 'S24_3432',
@@ -9671,7 +9672,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.30',
                 'orderLineNumber' => 2,
             ),
-            206 => 
+            206 =>
             array (
                 'orderNumber' => 10227,
                 'productCode' => 'S18_1342',
@@ -9679,7 +9680,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.27',
                 'orderLineNumber' => 3,
             ),
-            207 => 
+            207 =>
             array (
                 'orderNumber' => 10227,
                 'productCode' => 'S18_1367',
@@ -9687,7 +9688,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.14',
                 'orderLineNumber' => 2,
             ),
-            208 => 
+            208 =>
             array (
                 'orderNumber' => 10227,
                 'productCode' => 'S18_1749',
@@ -9695,7 +9696,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '136.00',
                 'orderLineNumber' => 10,
             ),
-            209 => 
+            209 =>
             array (
                 'orderNumber' => 10227,
                 'productCode' => 'S18_2248',
@@ -9703,7 +9704,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.93',
                 'orderLineNumber' => 9,
             ),
-            210 => 
+            210 =>
             array (
                 'orderNumber' => 10227,
                 'productCode' => 'S18_2325',
@@ -9711,7 +9712,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.23',
                 'orderLineNumber' => 7,
             ),
-            211 => 
+            211 =>
             array (
                 'orderNumber' => 10227,
                 'productCode' => 'S18_2795',
@@ -9719,7 +9720,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '146.81',
                 'orderLineNumber' => 4,
             ),
-            212 => 
+            212 =>
             array (
                 'orderNumber' => 10227,
                 'productCode' => 'S18_3320',
@@ -9727,7 +9728,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.21',
                 'orderLineNumber' => 1,
             ),
-            213 => 
+            213 =>
             array (
                 'orderNumber' => 10227,
                 'productCode' => 'S18_4409',
@@ -9735,7 +9736,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.43',
                 'orderLineNumber' => 11,
             ),
-            214 => 
+            214 =>
             array (
                 'orderNumber' => 10227,
                 'productCode' => 'S18_4933',
@@ -9743,7 +9744,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.56',
                 'orderLineNumber' => 12,
             ),
-            215 => 
+            215 =>
             array (
                 'orderNumber' => 10227,
                 'productCode' => 'S24_1937',
@@ -9751,7 +9752,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '27.22',
                 'orderLineNumber' => 6,
             ),
-            216 => 
+            216 =>
             array (
                 'orderNumber' => 10227,
                 'productCode' => 'S24_2022',
@@ -9759,7 +9760,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '39.42',
                 'orderLineNumber' => 5,
             ),
-            217 => 
+            217 =>
             array (
                 'orderNumber' => 10227,
                 'productCode' => 'S24_2766',
@@ -9767,7 +9768,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.51',
                 'orderLineNumber' => 14,
             ),
-            218 => 
+            218 =>
             array (
                 'orderNumber' => 10227,
                 'productCode' => 'S24_2887',
@@ -9775,7 +9776,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.17',
                 'orderLineNumber' => 13,
             ),
-            219 => 
+            219 =>
             array (
                 'orderNumber' => 10227,
                 'productCode' => 'S24_3191',
@@ -9783,7 +9784,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.76',
                 'orderLineNumber' => 15,
             ),
-            220 => 
+            220 =>
             array (
                 'orderNumber' => 10227,
                 'productCode' => 'S24_3969',
@@ -9791,7 +9792,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '34.88',
                 'orderLineNumber' => 8,
             ),
-            221 => 
+            221 =>
             array (
                 'orderNumber' => 10228,
                 'productCode' => 'S10_1949',
@@ -9799,7 +9800,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '214.30',
                 'orderLineNumber' => 2,
             ),
-            222 => 
+            222 =>
             array (
                 'orderNumber' => 10228,
                 'productCode' => 'S18_1097',
@@ -9807,7 +9808,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.34',
                 'orderLineNumber' => 1,
             ),
-            223 => 
+            223 =>
             array (
                 'orderNumber' => 10228,
                 'productCode' => 'S18_2949',
@@ -9815,7 +9816,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.31',
                 'orderLineNumber' => 3,
             ),
-            224 => 
+            224 =>
             array (
                 'orderNumber' => 10228,
                 'productCode' => 'S18_2957',
@@ -9823,7 +9824,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.46',
                 'orderLineNumber' => 5,
             ),
-            225 => 
+            225 =>
             array (
                 'orderNumber' => 10228,
                 'productCode' => 'S18_3136',
@@ -9831,7 +9832,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.53',
                 'orderLineNumber' => 4,
             ),
-            226 => 
+            226 =>
             array (
                 'orderNumber' => 10228,
                 'productCode' => 'S24_4258',
@@ -9839,7 +9840,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.73',
                 'orderLineNumber' => 6,
             ),
-            227 => 
+            227 =>
             array (
                 'orderNumber' => 10229,
                 'productCode' => 'S10_4962',
@@ -9847,7 +9848,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '138.88',
                 'orderLineNumber' => 9,
             ),
-            228 => 
+            228 =>
             array (
                 'orderNumber' => 10229,
                 'productCode' => 'S12_1666',
@@ -9855,7 +9856,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.70',
                 'orderLineNumber' => 13,
             ),
-            229 => 
+            229 =>
             array (
                 'orderNumber' => 10229,
                 'productCode' => 'S12_4473',
@@ -9863,7 +9864,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.99',
                 'orderLineNumber' => 1,
             ),
-            230 => 
+            230 =>
             array (
                 'orderNumber' => 10229,
                 'productCode' => 'S18_2319',
@@ -9871,7 +9872,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.32',
                 'orderLineNumber' => 4,
             ),
-            231 => 
+            231 =>
             array (
                 'orderNumber' => 10229,
                 'productCode' => 'S18_2432',
@@ -9879,7 +9880,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.48',
                 'orderLineNumber' => 7,
             ),
-            232 => 
+            232 =>
             array (
                 'orderNumber' => 10229,
                 'productCode' => 'S18_3232',
@@ -9887,7 +9888,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '157.49',
                 'orderLineNumber' => 5,
             ),
-            233 => 
+            233 =>
             array (
                 'orderNumber' => 10229,
                 'productCode' => 'S18_4600',
@@ -9895,7 +9896,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.87',
                 'orderLineNumber' => 10,
             ),
-            234 => 
+            234 =>
             array (
                 'orderNumber' => 10229,
                 'productCode' => 'S18_4668',
@@ -9903,7 +9904,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.77',
                 'orderLineNumber' => 14,
             ),
-            235 => 
+            235 =>
             array (
                 'orderNumber' => 10229,
                 'productCode' => 'S24_2300',
@@ -9911,7 +9912,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.01',
                 'orderLineNumber' => 6,
             ),
-            236 => 
+            236 =>
             array (
                 'orderNumber' => 10229,
                 'productCode' => 'S24_2840',
@@ -9919,7 +9920,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '34.65',
                 'orderLineNumber' => 2,
             ),
-            237 => 
+            237 =>
             array (
                 'orderNumber' => 10229,
                 'productCode' => 'S32_1268',
@@ -9927,7 +9928,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.97',
                 'orderLineNumber' => 8,
             ),
-            238 => 
+            238 =>
             array (
                 'orderNumber' => 10229,
                 'productCode' => 'S32_2509',
@@ -9935,7 +9936,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.78',
                 'orderLineNumber' => 3,
             ),
-            239 => 
+            239 =>
             array (
                 'orderNumber' => 10229,
                 'productCode' => 'S32_3522',
@@ -9943,7 +9944,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.36',
                 'orderLineNumber' => 12,
             ),
-            240 => 
+            240 =>
             array (
                 'orderNumber' => 10229,
                 'productCode' => 'S700_2824',
@@ -9951,7 +9952,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.04',
                 'orderLineNumber' => 11,
             ),
-            241 => 
+            241 =>
             array (
                 'orderNumber' => 10230,
                 'productCode' => 'S12_3148',
@@ -9959,7 +9960,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '128.42',
                 'orderLineNumber' => 1,
             ),
-            242 => 
+            242 =>
             array (
                 'orderNumber' => 10230,
                 'productCode' => 'S18_2238',
@@ -9967,7 +9968,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '153.91',
                 'orderLineNumber' => 8,
             ),
-            243 => 
+            243 =>
             array (
                 'orderNumber' => 10230,
                 'productCode' => 'S18_4027',
@@ -9975,7 +9976,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '142.18',
                 'orderLineNumber' => 3,
             ),
-            244 => 
+            244 =>
             array (
                 'orderNumber' => 10230,
                 'productCode' => 'S24_1444',
@@ -9983,7 +9984,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.40',
                 'orderLineNumber' => 6,
             ),
-            245 => 
+            245 =>
             array (
                 'orderNumber' => 10230,
                 'productCode' => 'S24_4048',
@@ -9991,7 +9992,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.36',
                 'orderLineNumber' => 5,
             ),
-            246 => 
+            246 =>
             array (
                 'orderNumber' => 10230,
                 'productCode' => 'S32_3207',
@@ -9999,7 +10000,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.03',
                 'orderLineNumber' => 4,
             ),
-            247 => 
+            247 =>
             array (
                 'orderNumber' => 10230,
                 'productCode' => 'S50_1392',
@@ -10007,7 +10008,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.70',
                 'orderLineNumber' => 7,
             ),
-            248 => 
+            248 =>
             array (
                 'orderNumber' => 10230,
                 'productCode' => 'S50_1514',
@@ -10015,7 +10016,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.41',
                 'orderLineNumber' => 2,
             ),
-            249 => 
+            249 =>
             array (
                 'orderNumber' => 10231,
                 'productCode' => 'S12_1108',
@@ -10023,7 +10024,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '193.25',
                 'orderLineNumber' => 2,
             ),
-            250 => 
+            250 =>
             array (
                 'orderNumber' => 10231,
                 'productCode' => 'S12_3891',
@@ -10031,7 +10032,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '147.07',
                 'orderLineNumber' => 1,
             ),
-            251 => 
+            251 =>
             array (
                 'orderNumber' => 10232,
                 'productCode' => 'S18_3140',
@@ -10039,7 +10040,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '133.86',
                 'orderLineNumber' => 6,
             ),
-            252 => 
+            252 =>
             array (
                 'orderNumber' => 10232,
                 'productCode' => 'S18_3259',
@@ -10047,7 +10048,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '97.81',
                 'orderLineNumber' => 8,
             ),
-            253 => 
+            253 =>
             array (
                 'orderNumber' => 10232,
                 'productCode' => 'S18_4522',
@@ -10055,7 +10056,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.12',
                 'orderLineNumber' => 5,
             ),
-            254 => 
+            254 =>
             array (
                 'orderNumber' => 10232,
                 'productCode' => 'S24_2011',
@@ -10063,7 +10064,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.06',
                 'orderLineNumber' => 4,
             ),
-            255 => 
+            255 =>
             array (
                 'orderNumber' => 10232,
                 'productCode' => 'S700_1938',
@@ -10071,7 +10072,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.88',
                 'orderLineNumber' => 7,
             ),
-            256 => 
+            256 =>
             array (
                 'orderNumber' => 10232,
                 'productCode' => 'S700_3505',
@@ -10079,7 +10080,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.15',
                 'orderLineNumber' => 1,
             ),
-            257 => 
+            257 =>
             array (
                 'orderNumber' => 10232,
                 'productCode' => 'S700_3962',
@@ -10087,7 +10088,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.43',
                 'orderLineNumber' => 2,
             ),
-            258 => 
+            258 =>
             array (
                 'orderNumber' => 10232,
                 'productCode' => 'S72_3212',
@@ -10095,7 +10096,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.59',
                 'orderLineNumber' => 3,
             ),
-            259 => 
+            259 =>
             array (
                 'orderNumber' => 10233,
                 'productCode' => 'S24_3151',
@@ -10103,7 +10104,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.81',
                 'orderLineNumber' => 2,
             ),
-            260 => 
+            260 =>
             array (
                 'orderNumber' => 10233,
                 'productCode' => 'S700_1138',
@@ -10111,7 +10112,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.00',
                 'orderLineNumber' => 3,
             ),
-            261 => 
+            261 =>
             array (
                 'orderNumber' => 10233,
                 'productCode' => 'S700_2610',
@@ -10119,7 +10120,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.94',
                 'orderLineNumber' => 1,
             ),
-            262 => 
+            262 =>
             array (
                 'orderNumber' => 10234,
                 'productCode' => 'S10_4757',
@@ -10127,7 +10128,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.32',
                 'orderLineNumber' => 9,
             ),
-            263 => 
+            263 =>
             array (
                 'orderNumber' => 10234,
                 'productCode' => 'S18_1662',
@@ -10135,7 +10136,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '146.65',
                 'orderLineNumber' => 1,
             ),
-            264 => 
+            264 =>
             array (
                 'orderNumber' => 10234,
                 'productCode' => 'S18_3029',
@@ -10143,7 +10144,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.30',
                 'orderLineNumber' => 7,
             ),
-            265 => 
+            265 =>
             array (
                 'orderNumber' => 10234,
                 'productCode' => 'S18_3856',
@@ -10151,7 +10152,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.75',
                 'orderLineNumber' => 6,
             ),
-            266 => 
+            266 =>
             array (
                 'orderNumber' => 10234,
                 'productCode' => 'S24_2841',
@@ -10159,7 +10160,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.14',
                 'orderLineNumber' => 2,
             ),
-            267 => 
+            267 =>
             array (
                 'orderNumber' => 10234,
                 'productCode' => 'S24_3420',
@@ -10167,7 +10168,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.09',
                 'orderLineNumber' => 3,
             ),
-            268 => 
+            268 =>
             array (
                 'orderNumber' => 10234,
                 'productCode' => 'S24_3816',
@@ -10175,7 +10176,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.83',
                 'orderLineNumber' => 8,
             ),
-            269 => 
+            269 =>
             array (
                 'orderNumber' => 10234,
                 'productCode' => 'S700_2047',
@@ -10183,7 +10184,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.28',
                 'orderLineNumber' => 5,
             ),
-            270 => 
+            270 =>
             array (
                 'orderNumber' => 10234,
                 'productCode' => 'S72_1253',
@@ -10191,7 +10192,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '45.69',
                 'orderLineNumber' => 4,
             ),
-            271 => 
+            271 =>
             array (
                 'orderNumber' => 10235,
                 'productCode' => 'S18_2581',
@@ -10199,7 +10200,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.95',
                 'orderLineNumber' => 3,
             ),
-            272 => 
+            272 =>
             array (
                 'orderNumber' => 10235,
                 'productCode' => 'S24_1785',
@@ -10207,7 +10208,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.72',
                 'orderLineNumber' => 5,
             ),
-            273 => 
+            273 =>
             array (
                 'orderNumber' => 10235,
                 'productCode' => 'S24_3949',
@@ -10215,7 +10216,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.27',
                 'orderLineNumber' => 12,
             ),
-            274 => 
+            274 =>
             array (
                 'orderNumber' => 10235,
                 'productCode' => 'S24_4278',
@@ -10223,7 +10224,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.03',
                 'orderLineNumber' => 4,
             ),
-            275 => 
+            275 =>
             array (
                 'orderNumber' => 10235,
                 'productCode' => 'S32_1374',
@@ -10231,7 +10232,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.90',
                 'orderLineNumber' => 1,
             ),
-            276 => 
+            276 =>
             array (
                 'orderNumber' => 10235,
                 'productCode' => 'S32_4289',
@@ -10239,7 +10240,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.73',
                 'orderLineNumber' => 6,
             ),
-            277 => 
+            277 =>
             array (
                 'orderNumber' => 10235,
                 'productCode' => 'S50_1341',
@@ -10247,7 +10248,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '37.09',
                 'orderLineNumber' => 7,
             ),
-            278 => 
+            278 =>
             array (
                 'orderNumber' => 10235,
                 'productCode' => 'S700_1691',
@@ -10255,7 +10256,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.60',
                 'orderLineNumber' => 8,
             ),
-            279 => 
+            279 =>
             array (
                 'orderNumber' => 10235,
                 'productCode' => 'S700_2466',
@@ -10263,7 +10264,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.74',
                 'orderLineNumber' => 10,
             ),
-            280 => 
+            280 =>
             array (
                 'orderNumber' => 10235,
                 'productCode' => 'S700_2834',
@@ -10271,7 +10272,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '116.28',
                 'orderLineNumber' => 2,
             ),
-            281 => 
+            281 =>
             array (
                 'orderNumber' => 10235,
                 'productCode' => 'S700_3167',
@@ -10279,7 +10280,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.60',
                 'orderLineNumber' => 9,
             ),
-            282 => 
+            282 =>
             array (
                 'orderNumber' => 10235,
                 'productCode' => 'S700_4002',
@@ -10287,7 +10288,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.33',
                 'orderLineNumber' => 11,
             ),
-            283 => 
+            283 =>
             array (
                 'orderNumber' => 10236,
                 'productCode' => 'S10_2016',
@@ -10295,7 +10296,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.86',
                 'orderLineNumber' => 1,
             ),
-            284 => 
+            284 =>
             array (
                 'orderNumber' => 10236,
                 'productCode' => 'S18_2625',
@@ -10303,7 +10304,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.70',
                 'orderLineNumber' => 2,
             ),
-            285 => 
+            285 =>
             array (
                 'orderNumber' => 10236,
                 'productCode' => 'S24_2000',
@@ -10311,7 +10312,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.51',
                 'orderLineNumber' => 3,
             ),
-            286 => 
+            286 =>
             array (
                 'orderNumber' => 10237,
                 'productCode' => 'S10_1678',
@@ -10319,7 +10320,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.87',
                 'orderLineNumber' => 7,
             ),
-            287 => 
+            287 =>
             array (
                 'orderNumber' => 10237,
                 'productCode' => 'S10_4698',
@@ -10327,7 +10328,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '158.80',
                 'orderLineNumber' => 9,
             ),
-            288 => 
+            288 =>
             array (
                 'orderNumber' => 10237,
                 'productCode' => 'S12_2823',
@@ -10335,7 +10336,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.53',
                 'orderLineNumber' => 6,
             ),
-            289 => 
+            289 =>
             array (
                 'orderNumber' => 10237,
                 'productCode' => 'S18_3782',
@@ -10343,7 +10344,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.74',
                 'orderLineNumber' => 1,
             ),
-            290 => 
+            290 =>
             array (
                 'orderNumber' => 10237,
                 'productCode' => 'S24_1578',
@@ -10351,7 +10352,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.32',
                 'orderLineNumber' => 8,
             ),
-            291 => 
+            291 =>
             array (
                 'orderNumber' => 10237,
                 'productCode' => 'S24_2360',
@@ -10359,7 +10360,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.33',
                 'orderLineNumber' => 4,
             ),
-            292 => 
+            292 =>
             array (
                 'orderNumber' => 10237,
                 'productCode' => 'S32_2206',
@@ -10367,7 +10368,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.00',
                 'orderLineNumber' => 2,
             ),
-            293 => 
+            293 =>
             array (
                 'orderNumber' => 10237,
                 'productCode' => 'S32_4485',
@@ -10375,7 +10376,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.91',
                 'orderLineNumber' => 5,
             ),
-            294 => 
+            294 =>
             array (
                 'orderNumber' => 10237,
                 'productCode' => 'S50_4713',
@@ -10383,7 +10384,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.92',
                 'orderLineNumber' => 3,
             ),
-            295 => 
+            295 =>
             array (
                 'orderNumber' => 10238,
                 'productCode' => 'S12_1099',
@@ -10391,7 +10392,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '161.49',
                 'orderLineNumber' => 3,
             ),
-            296 => 
+            296 =>
             array (
                 'orderNumber' => 10238,
                 'productCode' => 'S12_3380',
@@ -10399,7 +10400,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.52',
                 'orderLineNumber' => 1,
             ),
-            297 => 
+            297 =>
             array (
                 'orderNumber' => 10238,
                 'productCode' => 'S12_3990',
@@ -10407,7 +10408,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.42',
                 'orderLineNumber' => 4,
             ),
-            298 => 
+            298 =>
             array (
                 'orderNumber' => 10238,
                 'productCode' => 'S18_3278',
@@ -10415,7 +10416,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.35',
                 'orderLineNumber' => 6,
             ),
-            299 => 
+            299 =>
             array (
                 'orderNumber' => 10238,
                 'productCode' => 'S18_3482',
@@ -10423,7 +10424,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '144.05',
                 'orderLineNumber' => 5,
             ),
-            300 => 
+            300 =>
             array (
                 'orderNumber' => 10238,
                 'productCode' => 'S18_4721',
@@ -10431,7 +10432,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.53',
                 'orderLineNumber' => 8,
             ),
-            301 => 
+            301 =>
             array (
                 'orderNumber' => 10238,
                 'productCode' => 'S24_3371',
@@ -10439,7 +10440,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.88',
                 'orderLineNumber' => 2,
             ),
-            302 => 
+            302 =>
             array (
                 'orderNumber' => 10238,
                 'productCode' => 'S24_4620',
@@ -10447,7 +10448,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.91',
                 'orderLineNumber' => 7,
             ),
-            303 => 
+            303 =>
             array (
                 'orderNumber' => 10239,
                 'productCode' => 'S12_4675',
@@ -10455,7 +10456,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.19',
                 'orderLineNumber' => 5,
             ),
-            304 => 
+            304 =>
             array (
                 'orderNumber' => 10239,
                 'productCode' => 'S18_1889',
@@ -10463,7 +10464,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.07',
                 'orderLineNumber' => 4,
             ),
-            305 => 
+            305 =>
             array (
                 'orderNumber' => 10239,
                 'productCode' => 'S18_3232',
@@ -10471,7 +10472,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.47',
                 'orderLineNumber' => 1,
             ),
-            306 => 
+            306 =>
             array (
                 'orderNumber' => 10239,
                 'productCode' => 'S24_2972',
@@ -10479,7 +10480,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.47',
                 'orderLineNumber' => 2,
             ),
-            307 => 
+            307 =>
             array (
                 'orderNumber' => 10239,
                 'productCode' => 'S24_3856',
@@ -10487,7 +10488,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '133.41',
                 'orderLineNumber' => 3,
             ),
-            308 => 
+            308 =>
             array (
                 'orderNumber' => 10240,
                 'productCode' => 'S18_1129',
@@ -10495,7 +10496,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '125.97',
                 'orderLineNumber' => 3,
             ),
-            309 => 
+            309 =>
             array (
                 'orderNumber' => 10240,
                 'productCode' => 'S18_1984',
@@ -10503,7 +10504,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '136.56',
                 'orderLineNumber' => 2,
             ),
-            310 => 
+            310 =>
             array (
                 'orderNumber' => 10240,
                 'productCode' => 'S18_3685',
@@ -10511,7 +10512,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '134.22',
                 'orderLineNumber' => 1,
             ),
-            311 => 
+            311 =>
             array (
                 'orderNumber' => 10241,
                 'productCode' => 'S18_1589',
@@ -10519,7 +10520,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.46',
                 'orderLineNumber' => 11,
             ),
-            312 => 
+            312 =>
             array (
                 'orderNumber' => 10241,
                 'productCode' => 'S18_1749',
@@ -10527,7 +10528,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '153.00',
                 'orderLineNumber' => 2,
             ),
-            313 => 
+            313 =>
             array (
                 'orderNumber' => 10241,
                 'productCode' => 'S18_2248',
@@ -10535,7 +10536,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.70',
                 'orderLineNumber' => 1,
             ),
-            314 => 
+            314 =>
             array (
                 'orderNumber' => 10241,
                 'productCode' => 'S18_2870',
@@ -10543,7 +10544,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.72',
                 'orderLineNumber' => 12,
             ),
-            315 => 
+            315 =>
             array (
                 'orderNumber' => 10241,
                 'productCode' => 'S18_4409',
@@ -10551,7 +10552,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.31',
                 'orderLineNumber' => 3,
             ),
-            316 => 
+            316 =>
             array (
                 'orderNumber' => 10241,
                 'productCode' => 'S18_4933',
@@ -10559,7 +10560,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.72',
                 'orderLineNumber' => 4,
             ),
-            317 => 
+            317 =>
             array (
                 'orderNumber' => 10241,
                 'productCode' => 'S24_1046',
@@ -10567,7 +10568,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.02',
                 'orderLineNumber' => 8,
             ),
-            318 => 
+            318 =>
             array (
                 'orderNumber' => 10241,
                 'productCode' => 'S24_1628',
@@ -10575,7 +10576,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.29',
                 'orderLineNumber' => 10,
             ),
-            319 => 
+            319 =>
             array (
                 'orderNumber' => 10241,
                 'productCode' => 'S24_2766',
@@ -10583,7 +10584,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.05',
                 'orderLineNumber' => 6,
             ),
-            320 => 
+            320 =>
             array (
                 'orderNumber' => 10241,
                 'productCode' => 'S24_2887',
@@ -10591,7 +10592,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.44',
                 'orderLineNumber' => 5,
             ),
-            321 => 
+            321 =>
             array (
                 'orderNumber' => 10241,
                 'productCode' => 'S24_3191',
@@ -10599,7 +10600,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.34',
                 'orderLineNumber' => 7,
             ),
-            322 => 
+            322 =>
             array (
                 'orderNumber' => 10241,
                 'productCode' => 'S24_3432',
@@ -10607,7 +10608,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.08',
                 'orderLineNumber' => 9,
             ),
-            323 => 
+            323 =>
             array (
                 'orderNumber' => 10242,
                 'productCode' => 'S24_3969',
@@ -10615,7 +10616,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '36.52',
                 'orderLineNumber' => 1,
             ),
-            324 => 
+            324 =>
             array (
                 'orderNumber' => 10243,
                 'productCode' => 'S18_2325',
@@ -10623,7 +10624,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.87',
                 'orderLineNumber' => 2,
             ),
-            325 => 
+            325 =>
             array (
                 'orderNumber' => 10243,
                 'productCode' => 'S24_1937',
@@ -10631,7 +10632,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '30.87',
                 'orderLineNumber' => 1,
             ),
-            326 => 
+            326 =>
             array (
                 'orderNumber' => 10244,
                 'productCode' => 'S18_1342',
@@ -10639,7 +10640,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.66',
                 'orderLineNumber' => 7,
             ),
-            327 => 
+            327 =>
             array (
                 'orderNumber' => 10244,
                 'productCode' => 'S18_1367',
@@ -10647,7 +10648,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.52',
                 'orderLineNumber' => 6,
             ),
-            328 => 
+            328 =>
             array (
                 'orderNumber' => 10244,
                 'productCode' => 'S18_2795',
@@ -10655,7 +10656,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '141.75',
                 'orderLineNumber' => 8,
             ),
-            329 => 
+            329 =>
             array (
                 'orderNumber' => 10244,
                 'productCode' => 'S18_2949',
@@ -10663,7 +10664,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.13',
                 'orderLineNumber' => 1,
             ),
-            330 => 
+            330 =>
             array (
                 'orderNumber' => 10244,
                 'productCode' => 'S18_2957',
@@ -10671,7 +10672,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.96',
                 'orderLineNumber' => 3,
             ),
-            331 => 
+            331 =>
             array (
                 'orderNumber' => 10244,
                 'productCode' => 'S18_3136',
@@ -10679,7 +10680,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.87',
                 'orderLineNumber' => 2,
             ),
-            332 => 
+            332 =>
             array (
                 'orderNumber' => 10244,
                 'productCode' => 'S18_3320',
@@ -10687,7 +10688,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.30',
                 'orderLineNumber' => 5,
             ),
-            333 => 
+            333 =>
             array (
                 'orderNumber' => 10244,
                 'productCode' => 'S24_2022',
@@ -10695,7 +10696,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '42.11',
                 'orderLineNumber' => 9,
             ),
-            334 => 
+            334 =>
             array (
                 'orderNumber' => 10244,
                 'productCode' => 'S24_4258',
@@ -10703,7 +10704,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '97.39',
                 'orderLineNumber' => 4,
             ),
-            335 => 
+            335 =>
             array (
                 'orderNumber' => 10245,
                 'productCode' => 'S10_1949',
@@ -10711,7 +10712,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '195.01',
                 'orderLineNumber' => 9,
             ),
-            336 => 
+            336 =>
             array (
                 'orderNumber' => 10245,
                 'productCode' => 'S10_4962',
@@ -10719,7 +10720,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '147.74',
                 'orderLineNumber' => 2,
             ),
-            337 => 
+            337 =>
             array (
                 'orderNumber' => 10245,
                 'productCode' => 'S12_1666',
@@ -10727,7 +10728,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.27',
                 'orderLineNumber' => 6,
             ),
-            338 => 
+            338 =>
             array (
                 'orderNumber' => 10245,
                 'productCode' => 'S18_1097',
@@ -10735,7 +10736,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.34',
                 'orderLineNumber' => 8,
             ),
-            339 => 
+            339 =>
             array (
                 'orderNumber' => 10245,
                 'productCode' => 'S18_4600',
@@ -10743,7 +10744,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.39',
                 'orderLineNumber' => 3,
             ),
-            340 => 
+            340 =>
             array (
                 'orderNumber' => 10245,
                 'productCode' => 'S18_4668',
@@ -10751,7 +10752,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.80',
                 'orderLineNumber' => 7,
             ),
-            341 => 
+            341 =>
             array (
                 'orderNumber' => 10245,
                 'productCode' => 'S32_1268',
@@ -10759,7 +10760,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.86',
                 'orderLineNumber' => 1,
             ),
-            342 => 
+            342 =>
             array (
                 'orderNumber' => 10245,
                 'productCode' => 'S32_3522',
@@ -10767,7 +10768,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.94',
                 'orderLineNumber' => 5,
             ),
-            343 => 
+            343 =>
             array (
                 'orderNumber' => 10245,
                 'productCode' => 'S700_2824',
@@ -10775,7 +10776,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.93',
                 'orderLineNumber' => 4,
             ),
-            344 => 
+            344 =>
             array (
                 'orderNumber' => 10246,
                 'productCode' => 'S12_4473',
@@ -10783,7 +10784,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.54',
                 'orderLineNumber' => 5,
             ),
-            345 => 
+            345 =>
             array (
                 'orderNumber' => 10246,
                 'productCode' => 'S18_2238',
@@ -10791,7 +10792,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '144.08',
                 'orderLineNumber' => 4,
             ),
-            346 => 
+            346 =>
             array (
                 'orderNumber' => 10246,
                 'productCode' => 'S18_2319',
@@ -10799,7 +10800,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.64',
                 'orderLineNumber' => 8,
             ),
-            347 => 
+            347 =>
             array (
                 'orderNumber' => 10246,
                 'productCode' => 'S18_2432',
@@ -10807,7 +10808,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.73',
                 'orderLineNumber' => 11,
             ),
-            348 => 
+            348 =>
             array (
                 'orderNumber' => 10246,
                 'productCode' => 'S18_3232',
@@ -10815,7 +10816,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '145.63',
                 'orderLineNumber' => 9,
             ),
-            349 => 
+            349 =>
             array (
                 'orderNumber' => 10246,
                 'productCode' => 'S24_1444',
@@ -10823,7 +10824,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '46.24',
                 'orderLineNumber' => 2,
             ),
-            350 => 
+            350 =>
             array (
                 'orderNumber' => 10246,
                 'productCode' => 'S24_2300',
@@ -10831,7 +10832,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.84',
                 'orderLineNumber' => 10,
             ),
-            351 => 
+            351 =>
             array (
                 'orderNumber' => 10246,
                 'productCode' => 'S24_2840',
@@ -10839,7 +10840,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '34.65',
                 'orderLineNumber' => 6,
             ),
-            352 => 
+            352 =>
             array (
                 'orderNumber' => 10246,
                 'productCode' => 'S24_4048',
@@ -10847,7 +10848,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.54',
                 'orderLineNumber' => 1,
             ),
-            353 => 
+            353 =>
             array (
                 'orderNumber' => 10246,
                 'productCode' => 'S32_2509',
@@ -10855,7 +10856,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '45.45',
                 'orderLineNumber' => 7,
             ),
-            354 => 
+            354 =>
             array (
                 'orderNumber' => 10246,
                 'productCode' => 'S50_1392',
@@ -10863,7 +10864,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.44',
                 'orderLineNumber' => 3,
             ),
-            355 => 
+            355 =>
             array (
                 'orderNumber' => 10247,
                 'productCode' => 'S12_1108',
@@ -10871,7 +10872,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '195.33',
                 'orderLineNumber' => 2,
             ),
-            356 => 
+            356 =>
             array (
                 'orderNumber' => 10247,
                 'productCode' => 'S12_3148',
@@ -10879,7 +10880,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.50',
                 'orderLineNumber' => 3,
             ),
-            357 => 
+            357 =>
             array (
                 'orderNumber' => 10247,
                 'productCode' => 'S12_3891',
@@ -10887,7 +10888,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '167.83',
                 'orderLineNumber' => 1,
             ),
-            358 => 
+            358 =>
             array (
                 'orderNumber' => 10247,
                 'productCode' => 'S18_4027',
@@ -10895,7 +10896,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '143.62',
                 'orderLineNumber' => 5,
             ),
-            359 => 
+            359 =>
             array (
                 'orderNumber' => 10247,
                 'productCode' => 'S32_3207',
@@ -10903,7 +10904,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.41',
                 'orderLineNumber' => 6,
             ),
-            360 => 
+            360 =>
             array (
                 'orderNumber' => 10247,
                 'productCode' => 'S50_1514',
@@ -10911,7 +10912,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.55',
                 'orderLineNumber' => 4,
             ),
-            361 => 
+            361 =>
             array (
                 'orderNumber' => 10248,
                 'productCode' => 'S10_4757',
@@ -10919,7 +10920,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.48',
                 'orderLineNumber' => 3,
             ),
-            362 => 
+            362 =>
             array (
                 'orderNumber' => 10248,
                 'productCode' => 'S18_3029',
@@ -10927,7 +10928,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.86',
                 'orderLineNumber' => 1,
             ),
-            363 => 
+            363 =>
             array (
                 'orderNumber' => 10248,
                 'productCode' => 'S18_3140',
@@ -10935,7 +10936,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '133.86',
                 'orderLineNumber' => 12,
             ),
-            364 => 
+            364 =>
             array (
                 'orderNumber' => 10248,
                 'productCode' => 'S18_3259',
@@ -10943,7 +10944,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.80',
                 'orderLineNumber' => 14,
             ),
-            365 => 
+            365 =>
             array (
                 'orderNumber' => 10248,
                 'productCode' => 'S18_4522',
@@ -10951,7 +10952,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.77',
                 'orderLineNumber' => 11,
             ),
-            366 => 
+            366 =>
             array (
                 'orderNumber' => 10248,
                 'productCode' => 'S24_2011',
@@ -10959,7 +10960,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.89',
                 'orderLineNumber' => 10,
             ),
-            367 => 
+            367 =>
             array (
                 'orderNumber' => 10248,
                 'productCode' => 'S24_3151',
@@ -10967,7 +10968,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.85',
                 'orderLineNumber' => 5,
             ),
-            368 => 
+            368 =>
             array (
                 'orderNumber' => 10248,
                 'productCode' => 'S24_3816',
@@ -10975,7 +10976,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.02',
                 'orderLineNumber' => 2,
             ),
-            369 => 
+            369 =>
             array (
                 'orderNumber' => 10248,
                 'productCode' => 'S700_1138',
@@ -10983,7 +10984,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.00',
                 'orderLineNumber' => 6,
             ),
-            370 => 
+            370 =>
             array (
                 'orderNumber' => 10248,
                 'productCode' => 'S700_1938',
@@ -10991,7 +10992,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.41',
                 'orderLineNumber' => 13,
             ),
-            371 => 
+            371 =>
             array (
                 'orderNumber' => 10248,
                 'productCode' => 'S700_2610',
@@ -10999,7 +11000,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.39',
                 'orderLineNumber' => 4,
             ),
-            372 => 
+            372 =>
             array (
                 'orderNumber' => 10248,
                 'productCode' => 'S700_3505',
@@ -11007,7 +11008,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.14',
                 'orderLineNumber' => 7,
             ),
-            373 => 
+            373 =>
             array (
                 'orderNumber' => 10248,
                 'productCode' => 'S700_3962',
@@ -11015,7 +11016,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.36',
                 'orderLineNumber' => 8,
             ),
-            374 => 
+            374 =>
             array (
                 'orderNumber' => 10248,
                 'productCode' => 'S72_3212',
@@ -11023,7 +11024,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.51',
                 'orderLineNumber' => 9,
             ),
-            375 => 
+            375 =>
             array (
                 'orderNumber' => 10249,
                 'productCode' => 'S18_3856',
@@ -11031,7 +11032,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.93',
                 'orderLineNumber' => 5,
             ),
-            376 => 
+            376 =>
             array (
                 'orderNumber' => 10249,
                 'productCode' => 'S24_2841',
@@ -11039,7 +11040,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.81',
                 'orderLineNumber' => 1,
             ),
-            377 => 
+            377 =>
             array (
                 'orderNumber' => 10249,
                 'productCode' => 'S24_3420',
@@ -11047,7 +11048,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.75',
                 'orderLineNumber' => 2,
             ),
-            378 => 
+            378 =>
             array (
                 'orderNumber' => 10249,
                 'productCode' => 'S700_2047',
@@ -11055,7 +11056,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.99',
                 'orderLineNumber' => 4,
             ),
-            379 => 
+            379 =>
             array (
                 'orderNumber' => 10249,
                 'productCode' => 'S72_1253',
@@ -11063,7 +11064,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.16',
                 'orderLineNumber' => 3,
             ),
-            380 => 
+            380 =>
             array (
                 'orderNumber' => 10250,
                 'productCode' => 'S18_1662',
@@ -11071,7 +11072,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '148.23',
                 'orderLineNumber' => 14,
             ),
-            381 => 
+            381 =>
             array (
                 'orderNumber' => 10250,
                 'productCode' => 'S18_2581',
@@ -11079,7 +11080,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.48',
                 'orderLineNumber' => 4,
             ),
-            382 => 
+            382 =>
             array (
                 'orderNumber' => 10250,
                 'productCode' => 'S24_1785',
@@ -11087,7 +11088,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.20',
                 'orderLineNumber' => 6,
             ),
-            383 => 
+            383 =>
             array (
                 'orderNumber' => 10250,
                 'productCode' => 'S24_2000',
@@ -11095,7 +11096,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.22',
                 'orderLineNumber' => 1,
             ),
-            384 => 
+            384 =>
             array (
                 'orderNumber' => 10250,
                 'productCode' => 'S24_3949',
@@ -11103,7 +11104,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.42',
                 'orderLineNumber' => 13,
             ),
-            385 => 
+            385 =>
             array (
                 'orderNumber' => 10250,
                 'productCode' => 'S24_4278',
@@ -11111,7 +11112,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.45',
                 'orderLineNumber' => 5,
             ),
-            386 => 
+            386 =>
             array (
                 'orderNumber' => 10250,
                 'productCode' => 'S32_1374',
@@ -11119,7 +11120,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.89',
                 'orderLineNumber' => 2,
             ),
-            387 => 
+            387 =>
             array (
                 'orderNumber' => 10250,
                 'productCode' => 'S32_4289',
@@ -11127,7 +11128,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.60',
                 'orderLineNumber' => 7,
             ),
-            388 => 
+            388 =>
             array (
                 'orderNumber' => 10250,
                 'productCode' => 'S50_1341',
@@ -11135,7 +11136,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '36.66',
                 'orderLineNumber' => 8,
             ),
-            389 => 
+            389 =>
             array (
                 'orderNumber' => 10250,
                 'productCode' => 'S700_1691',
@@ -11143,7 +11144,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.34',
                 'orderLineNumber' => 9,
             ),
-            390 => 
+            390 =>
             array (
                 'orderNumber' => 10250,
                 'productCode' => 'S700_2466',
@@ -11151,7 +11152,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.75',
                 'orderLineNumber' => 11,
             ),
-            391 => 
+            391 =>
             array (
                 'orderNumber' => 10250,
                 'productCode' => 'S700_2834',
@@ -11159,7 +11160,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.48',
                 'orderLineNumber' => 3,
             ),
-            392 => 
+            392 =>
             array (
                 'orderNumber' => 10250,
                 'productCode' => 'S700_3167',
@@ -11167,7 +11168,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.00',
                 'orderLineNumber' => 10,
             ),
-            393 => 
+            393 =>
             array (
                 'orderNumber' => 10250,
                 'productCode' => 'S700_4002',
@@ -11175,7 +11176,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.89',
                 'orderLineNumber' => 12,
             ),
-            394 => 
+            394 =>
             array (
                 'orderNumber' => 10251,
                 'productCode' => 'S10_1678',
@@ -11183,7 +11184,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.79',
                 'orderLineNumber' => 2,
             ),
-            395 => 
+            395 =>
             array (
                 'orderNumber' => 10251,
                 'productCode' => 'S10_2016',
@@ -11191,7 +11192,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.37',
                 'orderLineNumber' => 5,
             ),
-            396 => 
+            396 =>
             array (
                 'orderNumber' => 10251,
                 'productCode' => 'S10_4698',
@@ -11199,7 +11200,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '172.36',
                 'orderLineNumber' => 4,
             ),
-            397 => 
+            397 =>
             array (
                 'orderNumber' => 10251,
                 'productCode' => 'S12_2823',
@@ -11207,7 +11208,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.53',
                 'orderLineNumber' => 1,
             ),
-            398 => 
+            398 =>
             array (
                 'orderNumber' => 10251,
                 'productCode' => 'S18_2625',
@@ -11215,7 +11216,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.15',
                 'orderLineNumber' => 6,
             ),
-            399 => 
+            399 =>
             array (
                 'orderNumber' => 10251,
                 'productCode' => 'S24_1578',
@@ -11223,7 +11224,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.29',
                 'orderLineNumber' => 3,
             ),
-            400 => 
+            400 =>
             array (
                 'orderNumber' => 10252,
                 'productCode' => 'S18_3278',
@@ -11231,7 +11232,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.78',
                 'orderLineNumber' => 2,
             ),
-            401 => 
+            401 =>
             array (
                 'orderNumber' => 10252,
                 'productCode' => 'S18_3482',
@@ -11239,7 +11240,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '145.52',
                 'orderLineNumber' => 1,
             ),
-            402 => 
+            402 =>
             array (
                 'orderNumber' => 10252,
                 'productCode' => 'S18_3782',
@@ -11247,7 +11248,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.36',
                 'orderLineNumber' => 5,
             ),
-            403 => 
+            403 =>
             array (
                 'orderNumber' => 10252,
                 'productCode' => 'S18_4721',
@@ -11255,7 +11256,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '127.97',
                 'orderLineNumber' => 4,
             ),
-            404 => 
+            404 =>
             array (
                 'orderNumber' => 10252,
                 'productCode' => 'S24_2360',
@@ -11263,7 +11264,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.03',
                 'orderLineNumber' => 8,
             ),
-            405 => 
+            405 =>
             array (
                 'orderNumber' => 10252,
                 'productCode' => 'S24_4620',
@@ -11271,7 +11272,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.52',
                 'orderLineNumber' => 3,
             ),
-            406 => 
+            406 =>
             array (
                 'orderNumber' => 10252,
                 'productCode' => 'S32_2206',
@@ -11279,7 +11280,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '36.21',
                 'orderLineNumber' => 6,
             ),
-            407 => 
+            407 =>
             array (
                 'orderNumber' => 10252,
                 'productCode' => 'S32_4485',
@@ -11287,7 +11288,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.89',
                 'orderLineNumber' => 9,
             ),
-            408 => 
+            408 =>
             array (
                 'orderNumber' => 10252,
                 'productCode' => 'S50_4713',
@@ -11295,7 +11296,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.41',
                 'orderLineNumber' => 7,
             ),
-            409 => 
+            409 =>
             array (
                 'orderNumber' => 10253,
                 'productCode' => 'S12_1099',
@@ -11303,7 +11304,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '157.60',
                 'orderLineNumber' => 13,
             ),
-            410 => 
+            410 =>
             array (
                 'orderNumber' => 10253,
                 'productCode' => 'S12_3380',
@@ -11311,7 +11312,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.17',
                 'orderLineNumber' => 11,
             ),
-            411 => 
+            411 =>
             array (
                 'orderNumber' => 10253,
                 'productCode' => 'S12_3990',
@@ -11319,7 +11320,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.03',
                 'orderLineNumber' => 14,
             ),
-            412 => 
+            412 =>
             array (
                 'orderNumber' => 10253,
                 'productCode' => 'S12_4675',
@@ -11327,7 +11328,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.40',
                 'orderLineNumber' => 10,
             ),
-            413 => 
+            413 =>
             array (
                 'orderNumber' => 10253,
                 'productCode' => 'S18_1129',
@@ -11335,7 +11336,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '130.22',
                 'orderLineNumber' => 5,
             ),
-            414 => 
+            414 =>
             array (
                 'orderNumber' => 10253,
                 'productCode' => 'S18_1589',
@@ -11343,7 +11344,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '103.29',
                 'orderLineNumber' => 1,
             ),
-            415 => 
+            415 =>
             array (
                 'orderNumber' => 10253,
                 'productCode' => 'S18_1889',
@@ -11351,7 +11352,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.76',
                 'orderLineNumber' => 9,
             ),
-            416 => 
+            416 =>
             array (
                 'orderNumber' => 10253,
                 'productCode' => 'S18_1984',
@@ -11359,7 +11360,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '130.87',
                 'orderLineNumber' => 4,
             ),
-            417 => 
+            417 =>
             array (
                 'orderNumber' => 10253,
                 'productCode' => 'S18_2870',
@@ -11367,7 +11368,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.84',
                 'orderLineNumber' => 2,
             ),
-            418 => 
+            418 =>
             array (
                 'orderNumber' => 10253,
                 'productCode' => 'S18_3232',
@@ -11375,7 +11376,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '145.63',
                 'orderLineNumber' => 6,
             ),
-            419 => 
+            419 =>
             array (
                 'orderNumber' => 10253,
                 'productCode' => 'S18_3685',
@@ -11383,7 +11384,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '139.87',
                 'orderLineNumber' => 3,
             ),
-            420 => 
+            420 =>
             array (
                 'orderNumber' => 10253,
                 'productCode' => 'S24_2972',
@@ -11391,7 +11392,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '34.74',
                 'orderLineNumber' => 7,
             ),
-            421 => 
+            421 =>
             array (
                 'orderNumber' => 10253,
                 'productCode' => 'S24_3371',
@@ -11399,7 +11400,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.82',
                 'orderLineNumber' => 12,
             ),
-            422 => 
+            422 =>
             array (
                 'orderNumber' => 10253,
                 'productCode' => 'S24_3856',
@@ -11407,7 +11408,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.15',
                 'orderLineNumber' => 8,
             ),
-            423 => 
+            423 =>
             array (
                 'orderNumber' => 10254,
                 'productCode' => 'S18_1749',
@@ -11415,7 +11416,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.70',
                 'orderLineNumber' => 5,
             ),
-            424 => 
+            424 =>
             array (
                 'orderNumber' => 10254,
                 'productCode' => 'S18_2248',
@@ -11423,7 +11424,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.09',
                 'orderLineNumber' => 4,
             ),
-            425 => 
+            425 =>
             array (
                 'orderNumber' => 10254,
                 'productCode' => 'S18_2325',
@@ -11431,7 +11432,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.98',
                 'orderLineNumber' => 2,
             ),
-            426 => 
+            426 =>
             array (
                 'orderNumber' => 10254,
                 'productCode' => 'S18_4409',
@@ -11439,7 +11440,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.99',
                 'orderLineNumber' => 6,
             ),
-            427 => 
+            427 =>
             array (
                 'orderNumber' => 10254,
                 'productCode' => 'S18_4933',
@@ -11447,7 +11448,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.87',
                 'orderLineNumber' => 7,
             ),
-            428 => 
+            428 =>
             array (
                 'orderNumber' => 10254,
                 'productCode' => 'S24_1046',
@@ -11455,7 +11456,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.88',
                 'orderLineNumber' => 11,
             ),
-            429 => 
+            429 =>
             array (
                 'orderNumber' => 10254,
                 'productCode' => 'S24_1628',
@@ -11463,7 +11464,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.27',
                 'orderLineNumber' => 13,
             ),
-            430 => 
+            430 =>
             array (
                 'orderNumber' => 10254,
                 'productCode' => 'S24_1937',
@@ -11471,7 +11472,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '28.88',
                 'orderLineNumber' => 1,
             ),
-            431 => 
+            431 =>
             array (
                 'orderNumber' => 10254,
                 'productCode' => 'S24_2766',
@@ -11479,7 +11480,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.42',
                 'orderLineNumber' => 9,
             ),
-            432 => 
+            432 =>
             array (
                 'orderNumber' => 10254,
                 'productCode' => 'S24_2887',
@@ -11487,7 +11488,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.57',
                 'orderLineNumber' => 8,
             ),
-            433 => 
+            433 =>
             array (
                 'orderNumber' => 10254,
                 'productCode' => 'S24_3191',
@@ -11495,7 +11496,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.34',
                 'orderLineNumber' => 10,
             ),
-            434 => 
+            434 =>
             array (
                 'orderNumber' => 10254,
                 'productCode' => 'S24_3432',
@@ -11503,7 +11504,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.73',
                 'orderLineNumber' => 12,
             ),
-            435 => 
+            435 =>
             array (
                 'orderNumber' => 10254,
                 'productCode' => 'S24_3969',
@@ -11511,7 +11512,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '39.80',
                 'orderLineNumber' => 3,
             ),
-            436 => 
+            436 =>
             array (
                 'orderNumber' => 10255,
                 'productCode' => 'S18_2795',
@@ -11519,7 +11520,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.00',
                 'orderLineNumber' => 1,
             ),
-            437 => 
+            437 =>
             array (
                 'orderNumber' => 10255,
                 'productCode' => 'S24_2022',
@@ -11527,7 +11528,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '37.63',
                 'orderLineNumber' => 2,
             ),
-            438 => 
+            438 =>
             array (
                 'orderNumber' => 10256,
                 'productCode' => 'S18_1342',
@@ -11535,7 +11536,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.49',
                 'orderLineNumber' => 2,
             ),
-            439 => 
+            439 =>
             array (
                 'orderNumber' => 10256,
                 'productCode' => 'S18_1367',
@@ -11543,7 +11544,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.83',
                 'orderLineNumber' => 1,
             ),
-            440 => 
+            440 =>
             array (
                 'orderNumber' => 10257,
                 'productCode' => 'S18_2949',
@@ -11551,7 +11552,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.19',
                 'orderLineNumber' => 1,
             ),
-            441 => 
+            441 =>
             array (
                 'orderNumber' => 10257,
                 'productCode' => 'S18_2957',
@@ -11559,7 +11560,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.34',
                 'orderLineNumber' => 3,
             ),
-            442 => 
+            442 =>
             array (
                 'orderNumber' => 10257,
                 'productCode' => 'S18_3136',
@@ -11567,7 +11568,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.78',
                 'orderLineNumber' => 2,
             ),
-            443 => 
+            443 =>
             array (
                 'orderNumber' => 10257,
                 'productCode' => 'S18_3320',
@@ -11575,7 +11576,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.27',
                 'orderLineNumber' => 5,
             ),
-            444 => 
+            444 =>
             array (
                 'orderNumber' => 10257,
                 'productCode' => 'S24_4258',
@@ -11583,7 +11584,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.81',
                 'orderLineNumber' => 4,
             ),
-            445 => 
+            445 =>
             array (
                 'orderNumber' => 10258,
                 'productCode' => 'S10_1949',
@@ -11591,7 +11592,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '177.87',
                 'orderLineNumber' => 6,
             ),
-            446 => 
+            446 =>
             array (
                 'orderNumber' => 10258,
                 'productCode' => 'S12_1666',
@@ -11599,7 +11600,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '133.94',
                 'orderLineNumber' => 3,
             ),
-            447 => 
+            447 =>
             array (
                 'orderNumber' => 10258,
                 'productCode' => 'S18_1097',
@@ -11607,7 +11608,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.17',
                 'orderLineNumber' => 5,
             ),
-            448 => 
+            448 =>
             array (
                 'orderNumber' => 10258,
                 'productCode' => 'S18_4668',
@@ -11615,7 +11616,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.81',
                 'orderLineNumber' => 4,
             ),
-            449 => 
+            449 =>
             array (
                 'orderNumber' => 10258,
                 'productCode' => 'S32_3522',
@@ -11623,7 +11624,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.70',
                 'orderLineNumber' => 2,
             ),
-            450 => 
+            450 =>
             array (
                 'orderNumber' => 10258,
                 'productCode' => 'S700_2824',
@@ -11631,7 +11632,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.99',
                 'orderLineNumber' => 1,
             ),
-            451 => 
+            451 =>
             array (
                 'orderNumber' => 10259,
                 'productCode' => 'S10_4962',
@@ -11639,7 +11640,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '121.15',
                 'orderLineNumber' => 12,
             ),
-            452 => 
+            452 =>
             array (
                 'orderNumber' => 10259,
                 'productCode' => 'S12_4473',
@@ -11647,7 +11648,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.32',
                 'orderLineNumber' => 4,
             ),
-            453 => 
+            453 =>
             array (
                 'orderNumber' => 10259,
                 'productCode' => 'S18_2238',
@@ -11655,7 +11656,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '134.26',
                 'orderLineNumber' => 3,
             ),
-            454 => 
+            454 =>
             array (
                 'orderNumber' => 10259,
                 'productCode' => 'S18_2319',
@@ -11663,7 +11664,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.28',
                 'orderLineNumber' => 7,
             ),
-            455 => 
+            455 =>
             array (
                 'orderNumber' => 10259,
                 'productCode' => 'S18_2432',
@@ -11671,7 +11672,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.55',
                 'orderLineNumber' => 10,
             ),
-            456 => 
+            456 =>
             array (
                 'orderNumber' => 10259,
                 'productCode' => 'S18_3232',
@@ -11679,7 +11680,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '152.41',
                 'orderLineNumber' => 8,
             ),
-            457 => 
+            457 =>
             array (
                 'orderNumber' => 10259,
                 'productCode' => 'S18_4600',
@@ -11687,7 +11688,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.76',
                 'orderLineNumber' => 13,
             ),
-            458 => 
+            458 =>
             array (
                 'orderNumber' => 10259,
                 'productCode' => 'S24_1444',
@@ -11695,7 +11696,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '46.82',
                 'orderLineNumber' => 1,
             ),
-            459 => 
+            459 =>
             array (
                 'orderNumber' => 10259,
                 'productCode' => 'S24_2300',
@@ -11703,7 +11704,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '121.40',
                 'orderLineNumber' => 9,
             ),
-            460 => 
+            460 =>
             array (
                 'orderNumber' => 10259,
                 'productCode' => 'S24_2840',
@@ -11711,7 +11712,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '31.47',
                 'orderLineNumber' => 5,
             ),
-            461 => 
+            461 =>
             array (
                 'orderNumber' => 10259,
                 'productCode' => 'S32_1268',
@@ -11719,7 +11720,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.35',
                 'orderLineNumber' => 11,
             ),
-            462 => 
+            462 =>
             array (
                 'orderNumber' => 10259,
                 'productCode' => 'S32_2509',
@@ -11727,7 +11728,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '45.99',
                 'orderLineNumber' => 6,
             ),
-            463 => 
+            463 =>
             array (
                 'orderNumber' => 10259,
                 'productCode' => 'S50_1392',
@@ -11735,7 +11736,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.33',
                 'orderLineNumber' => 2,
             ),
-            464 => 
+            464 =>
             array (
                 'orderNumber' => 10260,
                 'productCode' => 'S12_1108',
@@ -11743,7 +11744,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '180.79',
                 'orderLineNumber' => 5,
             ),
-            465 => 
+            465 =>
             array (
                 'orderNumber' => 10260,
                 'productCode' => 'S12_3148',
@@ -11751,7 +11752,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.50',
                 'orderLineNumber' => 6,
             ),
-            466 => 
+            466 =>
             array (
                 'orderNumber' => 10260,
                 'productCode' => 'S12_3891',
@@ -11759,7 +11760,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '169.56',
                 'orderLineNumber' => 4,
             ),
-            467 => 
+            467 =>
             array (
                 'orderNumber' => 10260,
                 'productCode' => 'S18_3140',
@@ -11767,7 +11768,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '121.57',
                 'orderLineNumber' => 1,
             ),
-            468 => 
+            468 =>
             array (
                 'orderNumber' => 10260,
                 'productCode' => 'S18_3259',
@@ -11775,7 +11776,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.77',
                 'orderLineNumber' => 3,
             ),
-            469 => 
+            469 =>
             array (
                 'orderNumber' => 10260,
                 'productCode' => 'S18_4027',
@@ -11783,7 +11784,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.88',
                 'orderLineNumber' => 8,
             ),
-            470 => 
+            470 =>
             array (
                 'orderNumber' => 10260,
                 'productCode' => 'S24_4048',
@@ -11791,7 +11792,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.10',
                 'orderLineNumber' => 10,
             ),
-            471 => 
+            471 =>
             array (
                 'orderNumber' => 10260,
                 'productCode' => 'S32_3207',
@@ -11799,7 +11800,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.30',
                 'orderLineNumber' => 9,
             ),
-            472 => 
+            472 =>
             array (
                 'orderNumber' => 10260,
                 'productCode' => 'S50_1514',
@@ -11807,7 +11808,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.24',
                 'orderLineNumber' => 7,
             ),
-            473 => 
+            473 =>
             array (
                 'orderNumber' => 10260,
                 'productCode' => 'S700_1938',
@@ -11815,7 +11816,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.55',
                 'orderLineNumber' => 2,
             ),
-            474 => 
+            474 =>
             array (
                 'orderNumber' => 10261,
                 'productCode' => 'S10_4757',
@@ -11823,7 +11824,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '116.96',
                 'orderLineNumber' => 1,
             ),
-            475 => 
+            475 =>
             array (
                 'orderNumber' => 10261,
                 'productCode' => 'S18_4522',
@@ -11831,7 +11832,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.75',
                 'orderLineNumber' => 9,
             ),
-            476 => 
+            476 =>
             array (
                 'orderNumber' => 10261,
                 'productCode' => 'S24_2011',
@@ -11839,7 +11840,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.69',
                 'orderLineNumber' => 8,
             ),
-            477 => 
+            477 =>
             array (
                 'orderNumber' => 10261,
                 'productCode' => 'S24_3151',
@@ -11847,7 +11848,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.66',
                 'orderLineNumber' => 3,
             ),
-            478 => 
+            478 =>
             array (
                 'orderNumber' => 10261,
                 'productCode' => 'S700_1138',
@@ -11855,7 +11856,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.00',
                 'orderLineNumber' => 4,
             ),
-            479 => 
+            479 =>
             array (
                 'orderNumber' => 10261,
                 'productCode' => 'S700_2610',
@@ -11863,7 +11864,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.55',
                 'orderLineNumber' => 2,
             ),
-            480 => 
+            480 =>
             array (
                 'orderNumber' => 10261,
                 'productCode' => 'S700_3505',
@@ -11871,7 +11872,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.15',
                 'orderLineNumber' => 5,
             ),
-            481 => 
+            481 =>
             array (
                 'orderNumber' => 10261,
                 'productCode' => 'S700_3962',
@@ -11879,7 +11880,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.39',
                 'orderLineNumber' => 6,
             ),
-            482 => 
+            482 =>
             array (
                 'orderNumber' => 10261,
                 'productCode' => 'S72_3212',
@@ -11887,7 +11888,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.68',
                 'orderLineNumber' => 7,
             ),
-            483 => 
+            483 =>
             array (
                 'orderNumber' => 10262,
                 'productCode' => 'S18_1662',
@@ -11895,7 +11896,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '157.69',
                 'orderLineNumber' => 9,
             ),
-            484 => 
+            484 =>
             array (
                 'orderNumber' => 10262,
                 'productCode' => 'S18_3029',
@@ -11903,7 +11904,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.72',
                 'orderLineNumber' => 15,
             ),
-            485 => 
+            485 =>
             array (
                 'orderNumber' => 10262,
                 'productCode' => 'S18_3856',
@@ -11911,7 +11912,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.75',
                 'orderLineNumber' => 14,
             ),
-            486 => 
+            486 =>
             array (
                 'orderNumber' => 10262,
                 'productCode' => 'S24_1785',
@@ -11919,7 +11920,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.48',
                 'orderLineNumber' => 1,
             ),
-            487 => 
+            487 =>
             array (
                 'orderNumber' => 10262,
                 'productCode' => 'S24_2841',
@@ -11927,7 +11928,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.71',
                 'orderLineNumber' => 10,
             ),
-            488 => 
+            488 =>
             array (
                 'orderNumber' => 10262,
                 'productCode' => 'S24_3420',
@@ -11935,7 +11936,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.75',
                 'orderLineNumber' => 11,
             ),
-            489 => 
+            489 =>
             array (
                 'orderNumber' => 10262,
                 'productCode' => 'S24_3816',
@@ -11943,7 +11944,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.18',
                 'orderLineNumber' => 16,
             ),
-            490 => 
+            490 =>
             array (
                 'orderNumber' => 10262,
                 'productCode' => 'S24_3949',
@@ -11951,7 +11952,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.69',
                 'orderLineNumber' => 8,
             ),
-            491 => 
+            491 =>
             array (
                 'orderNumber' => 10262,
                 'productCode' => 'S32_4289',
@@ -11959,7 +11960,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.97',
                 'orderLineNumber' => 2,
             ),
-            492 => 
+            492 =>
             array (
                 'orderNumber' => 10262,
                 'productCode' => 'S50_1341',
@@ -11967,7 +11968,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.78',
                 'orderLineNumber' => 3,
             ),
-            493 => 
+            493 =>
             array (
                 'orderNumber' => 10262,
                 'productCode' => 'S700_1691',
@@ -11975,7 +11976,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.69',
                 'orderLineNumber' => 4,
             ),
-            494 => 
+            494 =>
             array (
                 'orderNumber' => 10262,
                 'productCode' => 'S700_2047',
@@ -11983,7 +11984,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.28',
                 'orderLineNumber' => 13,
             ),
-            495 => 
+            495 =>
             array (
                 'orderNumber' => 10262,
                 'productCode' => 'S700_2466',
@@ -11991,7 +11992,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.77',
                 'orderLineNumber' => 6,
             ),
-            496 => 
+            496 =>
             array (
                 'orderNumber' => 10262,
                 'productCode' => 'S700_3167',
@@ -11999,7 +12000,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.80',
                 'orderLineNumber' => 5,
             ),
-            497 => 
+            497 =>
             array (
                 'orderNumber' => 10262,
                 'productCode' => 'S700_4002',
@@ -12007,7 +12008,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.41',
                 'orderLineNumber' => 7,
             ),
-            498 => 
+            498 =>
             array (
                 'orderNumber' => 10262,
                 'productCode' => 'S72_1253',
@@ -12015,7 +12016,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '41.71',
                 'orderLineNumber' => 12,
             ),
-            499 => 
+            499 =>
             array (
                 'orderNumber' => 10263,
                 'productCode' => 'S10_1678',
@@ -12023,9 +12024,9 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.00',
                 'orderLineNumber' => 2,
             ),
-        ));
-        \DB::table('orderdetails')->insert(array (
-            0 => 
+        );
+        $data_keempat = array (
+            0 =>
             array (
                 'orderNumber' => 10263,
                 'productCode' => 'S10_2016',
@@ -12033,7 +12034,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.05',
                 'orderLineNumber' => 5,
             ),
-            1 => 
+            1 =>
             array (
                 'orderNumber' => 10263,
                 'productCode' => 'S10_4698',
@@ -12041,7 +12042,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '193.66',
                 'orderLineNumber' => 4,
             ),
-            2 => 
+            2 =>
             array (
                 'orderNumber' => 10263,
                 'productCode' => 'S12_2823',
@@ -12049,7 +12050,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '123.51',
                 'orderLineNumber' => 1,
             ),
-            3 => 
+            3 =>
             array (
                 'orderNumber' => 10263,
                 'productCode' => 'S18_2581',
@@ -12057,7 +12058,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.58',
                 'orderLineNumber' => 10,
             ),
-            4 => 
+            4 =>
             array (
                 'orderNumber' => 10263,
                 'productCode' => 'S18_2625',
@@ -12065,7 +12066,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.27',
                 'orderLineNumber' => 6,
             ),
-            5 => 
+            5 =>
             array (
                 'orderNumber' => 10263,
                 'productCode' => 'S24_1578',
@@ -12073,7 +12074,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.32',
                 'orderLineNumber' => 3,
             ),
-            6 => 
+            6 =>
             array (
                 'orderNumber' => 10263,
                 'productCode' => 'S24_2000',
@@ -12081,7 +12082,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.03',
                 'orderLineNumber' => 7,
             ),
-            7 => 
+            7 =>
             array (
                 'orderNumber' => 10263,
                 'productCode' => 'S24_4278',
@@ -12089,7 +12090,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.41',
                 'orderLineNumber' => 11,
             ),
-            8 => 
+            8 =>
             array (
                 'orderNumber' => 10263,
                 'productCode' => 'S32_1374',
@@ -12097,7 +12098,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.90',
                 'orderLineNumber' => 8,
             ),
-            9 => 
+            9 =>
             array (
                 'orderNumber' => 10263,
                 'productCode' => 'S700_2834',
@@ -12105,7 +12106,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.46',
                 'orderLineNumber' => 9,
             ),
-            10 => 
+            10 =>
             array (
                 'orderNumber' => 10264,
                 'productCode' => 'S18_3782',
@@ -12113,7 +12114,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.44',
                 'orderLineNumber' => 3,
             ),
-            11 => 
+            11 =>
             array (
                 'orderNumber' => 10264,
                 'productCode' => 'S18_4721',
@@ -12121,7 +12122,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '124.99',
                 'orderLineNumber' => 2,
             ),
-            12 => 
+            12 =>
             array (
                 'orderNumber' => 10264,
                 'productCode' => 'S24_2360',
@@ -12129,7 +12130,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.64',
                 'orderLineNumber' => 6,
             ),
-            13 => 
+            13 =>
             array (
                 'orderNumber' => 10264,
                 'productCode' => 'S24_4620',
@@ -12137,7 +12138,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.18',
                 'orderLineNumber' => 1,
             ),
-            14 => 
+            14 =>
             array (
                 'orderNumber' => 10264,
                 'productCode' => 'S32_2206',
@@ -12145,7 +12146,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '39.02',
                 'orderLineNumber' => 4,
             ),
-            15 => 
+            15 =>
             array (
                 'orderNumber' => 10264,
                 'productCode' => 'S32_4485',
@@ -12153,7 +12154,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.01',
                 'orderLineNumber' => 7,
             ),
-            16 => 
+            16 =>
             array (
                 'orderNumber' => 10264,
                 'productCode' => 'S50_4713',
@@ -12161,7 +12162,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.53',
                 'orderLineNumber' => 5,
             ),
-            17 => 
+            17 =>
             array (
                 'orderNumber' => 10265,
                 'productCode' => 'S18_3278',
@@ -12169,7 +12170,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.78',
                 'orderLineNumber' => 2,
             ),
-            18 => 
+            18 =>
             array (
                 'orderNumber' => 10265,
                 'productCode' => 'S18_3482',
@@ -12177,7 +12178,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '123.47',
                 'orderLineNumber' => 1,
             ),
-            19 => 
+            19 =>
             array (
                 'orderNumber' => 10266,
                 'productCode' => 'S12_1099',
@@ -12185,7 +12186,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '188.73',
                 'orderLineNumber' => 14,
             ),
-            20 => 
+            20 =>
             array (
                 'orderNumber' => 10266,
                 'productCode' => 'S12_3380',
@@ -12193,7 +12194,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.39',
                 'orderLineNumber' => 12,
             ),
-            21 => 
+            21 =>
             array (
                 'orderNumber' => 10266,
                 'productCode' => 'S12_3990',
@@ -12201,7 +12202,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.83',
                 'orderLineNumber' => 15,
             ),
-            22 => 
+            22 =>
             array (
                 'orderNumber' => 10266,
                 'productCode' => 'S12_4675',
@@ -12209,7 +12210,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.86',
                 'orderLineNumber' => 11,
             ),
-            23 => 
+            23 =>
             array (
                 'orderNumber' => 10266,
                 'productCode' => 'S18_1129',
@@ -12217,7 +12218,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '131.63',
                 'orderLineNumber' => 6,
             ),
-            24 => 
+            24 =>
             array (
                 'orderNumber' => 10266,
                 'productCode' => 'S18_1589',
@@ -12225,7 +12226,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.55',
                 'orderLineNumber' => 2,
             ),
-            25 => 
+            25 =>
             array (
                 'orderNumber' => 10266,
                 'productCode' => 'S18_1889',
@@ -12233,7 +12234,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.00',
                 'orderLineNumber' => 10,
             ),
-            26 => 
+            26 =>
             array (
                 'orderNumber' => 10266,
                 'productCode' => 'S18_1984',
@@ -12241,7 +12242,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '139.41',
                 'orderLineNumber' => 5,
             ),
-            27 => 
+            27 =>
             array (
                 'orderNumber' => 10266,
                 'productCode' => 'S18_2870',
@@ -12249,7 +12250,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.52',
                 'orderLineNumber' => 3,
             ),
-            28 => 
+            28 =>
             array (
                 'orderNumber' => 10266,
                 'productCode' => 'S18_3232',
@@ -12257,7 +12258,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.17',
                 'orderLineNumber' => 7,
             ),
-            29 => 
+            29 =>
             array (
                 'orderNumber' => 10266,
                 'productCode' => 'S18_3685',
@@ -12265,7 +12266,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '127.15',
                 'orderLineNumber' => 4,
             ),
-            30 => 
+            30 =>
             array (
                 'orderNumber' => 10266,
                 'productCode' => 'S24_1628',
@@ -12273,7 +12274,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '40.25',
                 'orderLineNumber' => 1,
             ),
-            31 => 
+            31 =>
             array (
                 'orderNumber' => 10266,
                 'productCode' => 'S24_2972',
@@ -12281,7 +12282,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.12',
                 'orderLineNumber' => 8,
             ),
-            32 => 
+            32 =>
             array (
                 'orderNumber' => 10266,
                 'productCode' => 'S24_3371',
@@ -12289,7 +12290,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.33',
                 'orderLineNumber' => 13,
             ),
-            33 => 
+            33 =>
             array (
                 'orderNumber' => 10266,
                 'productCode' => 'S24_3856',
@@ -12297,7 +12298,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.37',
                 'orderLineNumber' => 9,
             ),
-            34 => 
+            34 =>
             array (
                 'orderNumber' => 10267,
                 'productCode' => 'S18_4933',
@@ -12305,7 +12306,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.27',
                 'orderLineNumber' => 1,
             ),
-            35 => 
+            35 =>
             array (
                 'orderNumber' => 10267,
                 'productCode' => 'S24_1046',
@@ -12313,7 +12314,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.02',
                 'orderLineNumber' => 5,
             ),
-            36 => 
+            36 =>
             array (
                 'orderNumber' => 10267,
                 'productCode' => 'S24_2766',
@@ -12321,7 +12322,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.33',
                 'orderLineNumber' => 3,
             ),
-            37 => 
+            37 =>
             array (
                 'orderNumber' => 10267,
                 'productCode' => 'S24_2887',
@@ -12329,7 +12330,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.95',
                 'orderLineNumber' => 2,
             ),
-            38 => 
+            38 =>
             array (
                 'orderNumber' => 10267,
                 'productCode' => 'S24_3191',
@@ -12337,7 +12338,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.90',
                 'orderLineNumber' => 4,
             ),
-            39 => 
+            39 =>
             array (
                 'orderNumber' => 10267,
                 'productCode' => 'S24_3432',
@@ -12345,7 +12346,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.51',
                 'orderLineNumber' => 6,
             ),
-            40 => 
+            40 =>
             array (
                 'orderNumber' => 10268,
                 'productCode' => 'S18_1342',
@@ -12353,7 +12354,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.49',
                 'orderLineNumber' => 3,
             ),
-            41 => 
+            41 =>
             array (
                 'orderNumber' => 10268,
                 'productCode' => 'S18_1367',
@@ -12361,7 +12362,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '45.82',
                 'orderLineNumber' => 2,
             ),
-            42 => 
+            42 =>
             array (
                 'orderNumber' => 10268,
                 'productCode' => 'S18_1749',
@@ -12369,7 +12370,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '164.90',
                 'orderLineNumber' => 10,
             ),
-            43 => 
+            43 =>
             array (
                 'orderNumber' => 10268,
                 'productCode' => 'S18_2248',
@@ -12377,7 +12378,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.54',
                 'orderLineNumber' => 9,
             ),
-            44 => 
+            44 =>
             array (
                 'orderNumber' => 10268,
                 'productCode' => 'S18_2325',
@@ -12385,7 +12386,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '124.59',
                 'orderLineNumber' => 7,
             ),
-            45 => 
+            45 =>
             array (
                 'orderNumber' => 10268,
                 'productCode' => 'S18_2795',
@@ -12393,7 +12394,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '148.50',
                 'orderLineNumber' => 4,
             ),
-            46 => 
+            46 =>
             array (
                 'orderNumber' => 10268,
                 'productCode' => 'S18_3320',
@@ -12401,7 +12402,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.23',
                 'orderLineNumber' => 1,
             ),
-            47 => 
+            47 =>
             array (
                 'orderNumber' => 10268,
                 'productCode' => 'S18_4409',
@@ -12409,7 +12410,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.67',
                 'orderLineNumber' => 11,
             ),
-            48 => 
+            48 =>
             array (
                 'orderNumber' => 10268,
                 'productCode' => 'S24_1937',
@@ -12417,7 +12418,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '31.86',
                 'orderLineNumber' => 6,
             ),
-            49 => 
+            49 =>
             array (
                 'orderNumber' => 10268,
                 'productCode' => 'S24_2022',
@@ -12425,7 +12426,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '36.29',
                 'orderLineNumber' => 5,
             ),
-            50 => 
+            50 =>
             array (
                 'orderNumber' => 10268,
                 'productCode' => 'S24_3969',
@@ -12433,7 +12434,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '37.75',
                 'orderLineNumber' => 8,
             ),
-            51 => 
+            51 =>
             array (
                 'orderNumber' => 10269,
                 'productCode' => 'S18_2957',
@@ -12441,7 +12442,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.46',
                 'orderLineNumber' => 1,
             ),
-            52 => 
+            52 =>
             array (
                 'orderNumber' => 10269,
                 'productCode' => 'S24_4258',
@@ -12449,7 +12450,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.44',
                 'orderLineNumber' => 2,
             ),
-            53 => 
+            53 =>
             array (
                 'orderNumber' => 10270,
                 'productCode' => 'S10_1949',
@@ -12457,7 +12458,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '171.44',
                 'orderLineNumber' => 9,
             ),
-            54 => 
+            54 =>
             array (
                 'orderNumber' => 10270,
                 'productCode' => 'S10_4962',
@@ -12465,7 +12466,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '124.10',
                 'orderLineNumber' => 2,
             ),
-            55 => 
+            55 =>
             array (
                 'orderNumber' => 10270,
                 'productCode' => 'S12_1666',
@@ -12473,7 +12474,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.30',
                 'orderLineNumber' => 6,
             ),
-            56 => 
+            56 =>
             array (
                 'orderNumber' => 10270,
                 'productCode' => 'S18_1097',
@@ -12481,7 +12482,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.50',
                 'orderLineNumber' => 8,
             ),
-            57 => 
+            57 =>
             array (
                 'orderNumber' => 10270,
                 'productCode' => 'S18_2949',
@@ -12489,7 +12490,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.05',
                 'orderLineNumber' => 10,
             ),
-            58 => 
+            58 =>
             array (
                 'orderNumber' => 10270,
                 'productCode' => 'S18_3136',
@@ -12497,7 +12498,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.87',
                 'orderLineNumber' => 11,
             ),
-            59 => 
+            59 =>
             array (
                 'orderNumber' => 10270,
                 'productCode' => 'S18_4600',
@@ -12505,7 +12506,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.76',
                 'orderLineNumber' => 3,
             ),
-            60 => 
+            60 =>
             array (
                 'orderNumber' => 10270,
                 'productCode' => 'S18_4668',
@@ -12513,7 +12514,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '40.25',
                 'orderLineNumber' => 7,
             ),
-            61 => 
+            61 =>
             array (
                 'orderNumber' => 10270,
                 'productCode' => 'S32_1268',
@@ -12521,7 +12522,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.42',
                 'orderLineNumber' => 1,
             ),
-            62 => 
+            62 =>
             array (
                 'orderNumber' => 10270,
                 'productCode' => 'S32_3522',
@@ -12529,7 +12530,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.36',
                 'orderLineNumber' => 5,
             ),
-            63 => 
+            63 =>
             array (
                 'orderNumber' => 10270,
                 'productCode' => 'S700_2824',
@@ -12537,7 +12538,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.15',
                 'orderLineNumber' => 4,
             ),
-            64 => 
+            64 =>
             array (
                 'orderNumber' => 10271,
                 'productCode' => 'S12_4473',
@@ -12545,7 +12546,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.54',
                 'orderLineNumber' => 5,
             ),
-            65 => 
+            65 =>
             array (
                 'orderNumber' => 10271,
                 'productCode' => 'S18_2238',
@@ -12553,7 +12554,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '147.36',
                 'orderLineNumber' => 4,
             ),
-            66 => 
+            66 =>
             array (
                 'orderNumber' => 10271,
                 'productCode' => 'S18_2319',
@@ -12561,7 +12562,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '121.50',
                 'orderLineNumber' => 8,
             ),
-            67 => 
+            67 =>
             array (
                 'orderNumber' => 10271,
                 'productCode' => 'S18_2432',
@@ -12569,7 +12570,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.55',
                 'orderLineNumber' => 11,
             ),
-            68 => 
+            68 =>
             array (
                 'orderNumber' => 10271,
                 'productCode' => 'S18_3232',
@@ -12577,7 +12578,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '169.34',
                 'orderLineNumber' => 9,
             ),
-            69 => 
+            69 =>
             array (
                 'orderNumber' => 10271,
                 'productCode' => 'S24_1444',
@@ -12585,7 +12586,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.71',
                 'orderLineNumber' => 2,
             ),
-            70 => 
+            70 =>
             array (
                 'orderNumber' => 10271,
                 'productCode' => 'S24_2300',
@@ -12593,7 +12594,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.68',
                 'orderLineNumber' => 10,
             ),
-            71 => 
+            71 =>
             array (
                 'orderNumber' => 10271,
                 'productCode' => 'S24_2840',
@@ -12601,7 +12602,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '28.64',
                 'orderLineNumber' => 6,
             ),
-            72 => 
+            72 =>
             array (
                 'orderNumber' => 10271,
                 'productCode' => 'S24_4048',
@@ -12609,7 +12610,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.00',
                 'orderLineNumber' => 1,
             ),
-            73 => 
+            73 =>
             array (
                 'orderNumber' => 10271,
                 'productCode' => 'S32_2509',
@@ -12617,7 +12618,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.95',
                 'orderLineNumber' => 7,
             ),
-            74 => 
+            74 =>
             array (
                 'orderNumber' => 10271,
                 'productCode' => 'S50_1392',
@@ -12625,7 +12626,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.76',
                 'orderLineNumber' => 3,
             ),
-            75 => 
+            75 =>
             array (
                 'orderNumber' => 10272,
                 'productCode' => 'S12_1108',
@@ -12633,7 +12634,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '187.02',
                 'orderLineNumber' => 2,
             ),
-            76 => 
+            76 =>
             array (
                 'orderNumber' => 10272,
                 'productCode' => 'S12_3148',
@@ -12641,7 +12642,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '123.89',
                 'orderLineNumber' => 3,
             ),
-            77 => 
+            77 =>
             array (
                 'orderNumber' => 10272,
                 'productCode' => 'S12_3891',
@@ -12649,7 +12650,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '148.80',
                 'orderLineNumber' => 1,
             ),
-            78 => 
+            78 =>
             array (
                 'orderNumber' => 10272,
                 'productCode' => 'S18_4027',
@@ -12657,7 +12658,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.39',
                 'orderLineNumber' => 5,
             ),
-            79 => 
+            79 =>
             array (
                 'orderNumber' => 10272,
                 'productCode' => 'S32_3207',
@@ -12665,7 +12666,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.55',
                 'orderLineNumber' => 6,
             ),
-            80 => 
+            80 =>
             array (
                 'orderNumber' => 10272,
                 'productCode' => 'S50_1514',
@@ -12673,7 +12674,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.89',
                 'orderLineNumber' => 4,
             ),
-            81 => 
+            81 =>
             array (
                 'orderNumber' => 10273,
                 'productCode' => 'S10_4757',
@@ -12681,7 +12682,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '136.00',
                 'orderLineNumber' => 4,
             ),
-            82 => 
+            82 =>
             array (
                 'orderNumber' => 10273,
                 'productCode' => 'S18_3029',
@@ -12689,7 +12690,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.30',
                 'orderLineNumber' => 2,
             ),
-            83 => 
+            83 =>
             array (
                 'orderNumber' => 10273,
                 'productCode' => 'S18_3140',
@@ -12697,7 +12698,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.47',
                 'orderLineNumber' => 13,
             ),
-            84 => 
+            84 =>
             array (
                 'orderNumber' => 10273,
                 'productCode' => 'S18_3259',
@@ -12705,7 +12706,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.73',
                 'orderLineNumber' => 15,
             ),
-            85 => 
+            85 =>
             array (
                 'orderNumber' => 10273,
                 'productCode' => 'S18_3856',
@@ -12713,7 +12714,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.87',
                 'orderLineNumber' => 1,
             ),
-            86 => 
+            86 =>
             array (
                 'orderNumber' => 10273,
                 'productCode' => 'S18_4522',
@@ -12721,7 +12722,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.85',
                 'orderLineNumber' => 12,
             ),
-            87 => 
+            87 =>
             array (
                 'orderNumber' => 10273,
                 'productCode' => 'S24_2011',
@@ -12729,7 +12730,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '103.23',
                 'orderLineNumber' => 11,
             ),
-            88 => 
+            88 =>
             array (
                 'orderNumber' => 10273,
                 'productCode' => 'S24_3151',
@@ -12737,7 +12738,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.08',
                 'orderLineNumber' => 6,
             ),
-            89 => 
+            89 =>
             array (
                 'orderNumber' => 10273,
                 'productCode' => 'S24_3816',
@@ -12745,7 +12746,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.86',
                 'orderLineNumber' => 3,
             ),
-            90 => 
+            90 =>
             array (
                 'orderNumber' => 10273,
                 'productCode' => 'S700_1138',
@@ -12753,7 +12754,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.00',
                 'orderLineNumber' => 7,
             ),
-            91 => 
+            91 =>
             array (
                 'orderNumber' => 10273,
                 'productCode' => 'S700_1938',
@@ -12761,7 +12762,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.95',
                 'orderLineNumber' => 14,
             ),
-            92 => 
+            92 =>
             array (
                 'orderNumber' => 10273,
                 'productCode' => 'S700_2610',
@@ -12769,7 +12770,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.82',
                 'orderLineNumber' => 5,
             ),
-            93 => 
+            93 =>
             array (
                 'orderNumber' => 10273,
                 'productCode' => 'S700_3505',
@@ -12777,7 +12778,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.15',
                 'orderLineNumber' => 8,
             ),
-            94 => 
+            94 =>
             array (
                 'orderNumber' => 10273,
                 'productCode' => 'S700_3962',
@@ -12785,7 +12786,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.38',
                 'orderLineNumber' => 9,
             ),
-            95 => 
+            95 =>
             array (
                 'orderNumber' => 10273,
                 'productCode' => 'S72_3212',
@@ -12793,7 +12794,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.32',
                 'orderLineNumber' => 10,
             ),
-            96 => 
+            96 =>
             array (
                 'orderNumber' => 10274,
                 'productCode' => 'S18_1662',
@@ -12801,7 +12802,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.31',
                 'orderLineNumber' => 1,
             ),
-            97 => 
+            97 =>
             array (
                 'orderNumber' => 10274,
                 'productCode' => 'S24_2841',
@@ -12809,7 +12810,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.86',
                 'orderLineNumber' => 2,
             ),
-            98 => 
+            98 =>
             array (
                 'orderNumber' => 10274,
                 'productCode' => 'S24_3420',
@@ -12817,7 +12818,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.09',
                 'orderLineNumber' => 3,
             ),
-            99 => 
+            99 =>
             array (
                 'orderNumber' => 10274,
                 'productCode' => 'S700_2047',
@@ -12825,7 +12826,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.13',
                 'orderLineNumber' => 5,
             ),
-            100 => 
+            100 =>
             array (
                 'orderNumber' => 10274,
                 'productCode' => 'S72_1253',
@@ -12833,7 +12834,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.66',
                 'orderLineNumber' => 4,
             ),
-            101 => 
+            101 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S10_1678',
@@ -12841,7 +12842,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.35',
                 'orderLineNumber' => 1,
             ),
-            102 => 
+            102 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S10_2016',
@@ -12849,7 +12850,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.37',
                 'orderLineNumber' => 4,
             ),
-            103 => 
+            103 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S10_4698',
@@ -12857,7 +12858,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '154.93',
                 'orderLineNumber' => 3,
             ),
-            104 => 
+            104 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S18_2581',
@@ -12865,7 +12866,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.12',
                 'orderLineNumber' => 9,
             ),
-            105 => 
+            105 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S18_2625',
@@ -12873,7 +12874,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.09',
                 'orderLineNumber' => 5,
             ),
-            106 => 
+            106 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S24_1578',
@@ -12881,7 +12882,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.94',
                 'orderLineNumber' => 2,
             ),
-            107 => 
+            107 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S24_1785',
@@ -12889,7 +12890,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '97.38',
                 'orderLineNumber' => 11,
             ),
-            108 => 
+            108 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S24_2000',
@@ -12897,7 +12898,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.70',
                 'orderLineNumber' => 6,
             ),
-            109 => 
+            109 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S24_3949',
@@ -12905,7 +12906,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.00',
                 'orderLineNumber' => 18,
             ),
-            110 => 
+            110 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S24_4278',
@@ -12913,7 +12914,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.38',
                 'orderLineNumber' => 10,
             ),
-            111 => 
+            111 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S32_1374',
@@ -12921,7 +12922,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.90',
                 'orderLineNumber' => 7,
             ),
-            112 => 
+            112 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S32_4289',
@@ -12929,7 +12930,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.47',
                 'orderLineNumber' => 12,
             ),
-            113 => 
+            113 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S50_1341',
@@ -12937,7 +12938,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '40.15',
                 'orderLineNumber' => 13,
             ),
-            114 => 
+            114 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S700_1691',
@@ -12945,7 +12946,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.86',
                 'orderLineNumber' => 14,
             ),
-            115 => 
+            115 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S700_2466',
@@ -12953,7 +12954,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.77',
                 'orderLineNumber' => 16,
             ),
-            116 => 
+            116 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S700_2834',
@@ -12961,7 +12962,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.04',
                 'orderLineNumber' => 8,
             ),
-            117 => 
+            117 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S700_3167',
@@ -12969,7 +12970,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.00',
                 'orderLineNumber' => 15,
             ),
-            118 => 
+            118 =>
             array (
                 'orderNumber' => 10275,
                 'productCode' => 'S700_4002',
@@ -12977,7 +12978,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.96',
                 'orderLineNumber' => 17,
             ),
-            119 => 
+            119 =>
             array (
                 'orderNumber' => 10276,
                 'productCode' => 'S12_1099',
@@ -12985,7 +12986,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '184.84',
                 'orderLineNumber' => 3,
             ),
-            120 => 
+            120 =>
             array (
                 'orderNumber' => 10276,
                 'productCode' => 'S12_2823',
@@ -12993,7 +12994,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '150.62',
                 'orderLineNumber' => 14,
             ),
-            121 => 
+            121 =>
             array (
                 'orderNumber' => 10276,
                 'productCode' => 'S12_3380',
@@ -13001,7 +13002,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.52',
                 'orderLineNumber' => 1,
             ),
-            122 => 
+            122 =>
             array (
                 'orderNumber' => 10276,
                 'productCode' => 'S12_3990',
@@ -13009,7 +13010,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.83',
                 'orderLineNumber' => 4,
             ),
-            123 => 
+            123 =>
             array (
                 'orderNumber' => 10276,
                 'productCode' => 'S18_3278',
@@ -13017,7 +13018,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.00',
                 'orderLineNumber' => 6,
             ),
-            124 => 
+            124 =>
             array (
                 'orderNumber' => 10276,
                 'productCode' => 'S18_3482',
@@ -13025,7 +13026,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '139.64',
                 'orderLineNumber' => 5,
             ),
-            125 => 
+            125 =>
             array (
                 'orderNumber' => 10276,
                 'productCode' => 'S18_3782',
@@ -13033,7 +13034,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.71',
                 'orderLineNumber' => 9,
             ),
-            126 => 
+            126 =>
             array (
                 'orderNumber' => 10276,
                 'productCode' => 'S18_4721',
@@ -13041,7 +13042,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.53',
                 'orderLineNumber' => 8,
             ),
-            127 => 
+            127 =>
             array (
                 'orderNumber' => 10276,
                 'productCode' => 'S24_2360',
@@ -13049,7 +13050,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.64',
                 'orderLineNumber' => 12,
             ),
-            128 => 
+            128 =>
             array (
                 'orderNumber' => 10276,
                 'productCode' => 'S24_3371',
@@ -13057,7 +13058,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.17',
                 'orderLineNumber' => 2,
             ),
-            129 => 
+            129 =>
             array (
                 'orderNumber' => 10276,
                 'productCode' => 'S24_4620',
@@ -13065,7 +13066,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.10',
                 'orderLineNumber' => 7,
             ),
-            130 => 
+            130 =>
             array (
                 'orderNumber' => 10276,
                 'productCode' => 'S32_2206',
@@ -13073,7 +13074,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.40',
                 'orderLineNumber' => 10,
             ),
-            131 => 
+            131 =>
             array (
                 'orderNumber' => 10276,
                 'productCode' => 'S32_4485',
@@ -13081,7 +13082,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.91',
                 'orderLineNumber' => 13,
             ),
-            132 => 
+            132 =>
             array (
                 'orderNumber' => 10276,
                 'productCode' => 'S50_4713',
@@ -13089,7 +13090,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.53',
                 'orderLineNumber' => 11,
             ),
-            133 => 
+            133 =>
             array (
                 'orderNumber' => 10277,
                 'productCode' => 'S12_4675',
@@ -13097,7 +13098,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.28',
                 'orderLineNumber' => 1,
             ),
-            134 => 
+            134 =>
             array (
                 'orderNumber' => 10278,
                 'productCode' => 'S18_1129',
@@ -13105,7 +13106,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.65',
                 'orderLineNumber' => 6,
             ),
-            135 => 
+            135 =>
             array (
                 'orderNumber' => 10278,
                 'productCode' => 'S18_1589',
@@ -13113,7 +13114,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.02',
                 'orderLineNumber' => 2,
             ),
-            136 => 
+            136 =>
             array (
                 'orderNumber' => 10278,
                 'productCode' => 'S18_1889',
@@ -13121,7 +13122,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.15',
                 'orderLineNumber' => 10,
             ),
-            137 => 
+            137 =>
             array (
                 'orderNumber' => 10278,
                 'productCode' => 'S18_1984',
@@ -13129,7 +13130,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.07',
                 'orderLineNumber' => 5,
             ),
-            138 => 
+            138 =>
             array (
                 'orderNumber' => 10278,
                 'productCode' => 'S18_2870',
@@ -13137,7 +13138,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.48',
                 'orderLineNumber' => 3,
             ),
-            139 => 
+            139 =>
             array (
                 'orderNumber' => 10278,
                 'productCode' => 'S18_3232',
@@ -13145,7 +13146,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '167.65',
                 'orderLineNumber' => 7,
             ),
-            140 => 
+            140 =>
             array (
                 'orderNumber' => 10278,
                 'productCode' => 'S18_3685',
@@ -13153,7 +13154,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.44',
                 'orderLineNumber' => 4,
             ),
-            141 => 
+            141 =>
             array (
                 'orderNumber' => 10278,
                 'productCode' => 'S24_1628',
@@ -13161,7 +13162,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.80',
                 'orderLineNumber' => 1,
             ),
-            142 => 
+            142 =>
             array (
                 'orderNumber' => 10278,
                 'productCode' => 'S24_2972',
@@ -13169,7 +13170,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '37.38',
                 'orderLineNumber' => 8,
             ),
-            143 => 
+            143 =>
             array (
                 'orderNumber' => 10278,
                 'productCode' => 'S24_3856',
@@ -13177,7 +13178,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '136.22',
                 'orderLineNumber' => 9,
             ),
-            144 => 
+            144 =>
             array (
                 'orderNumber' => 10279,
                 'productCode' => 'S18_4933',
@@ -13185,7 +13186,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.42',
                 'orderLineNumber' => 1,
             ),
-            145 => 
+            145 =>
             array (
                 'orderNumber' => 10279,
                 'productCode' => 'S24_1046',
@@ -13193,7 +13194,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.35',
                 'orderLineNumber' => 5,
             ),
-            146 => 
+            146 =>
             array (
                 'orderNumber' => 10279,
                 'productCode' => 'S24_2766',
@@ -13201,7 +13202,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.33',
                 'orderLineNumber' => 3,
             ),
-            147 => 
+            147 =>
             array (
                 'orderNumber' => 10279,
                 'productCode' => 'S24_2887',
@@ -13209,7 +13210,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '106.87',
                 'orderLineNumber' => 2,
             ),
-            148 => 
+            148 =>
             array (
                 'orderNumber' => 10279,
                 'productCode' => 'S24_3191',
@@ -13217,7 +13218,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.76',
                 'orderLineNumber' => 4,
             ),
-            149 => 
+            149 =>
             array (
                 'orderNumber' => 10279,
                 'productCode' => 'S24_3432',
@@ -13225,7 +13226,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.30',
                 'orderLineNumber' => 6,
             ),
-            150 => 
+            150 =>
             array (
                 'orderNumber' => 10280,
                 'productCode' => 'S10_1949',
@@ -13233,7 +13234,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '205.73',
                 'orderLineNumber' => 2,
             ),
-            151 => 
+            151 =>
             array (
                 'orderNumber' => 10280,
                 'productCode' => 'S18_1097',
@@ -13241,7 +13242,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.00',
                 'orderLineNumber' => 1,
             ),
-            152 => 
+            152 =>
             array (
                 'orderNumber' => 10280,
                 'productCode' => 'S18_1342',
@@ -13249,7 +13250,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.33',
                 'orderLineNumber' => 9,
             ),
-            153 => 
+            153 =>
             array (
                 'orderNumber' => 10280,
                 'productCode' => 'S18_1367',
@@ -13257,7 +13258,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.44',
                 'orderLineNumber' => 8,
             ),
-            154 => 
+            154 =>
             array (
                 'orderNumber' => 10280,
                 'productCode' => 'S18_1749',
@@ -13265,7 +13266,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '161.50',
                 'orderLineNumber' => 16,
             ),
-            155 => 
+            155 =>
             array (
                 'orderNumber' => 10280,
                 'productCode' => 'S18_2248',
@@ -13273,7 +13274,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.28',
                 'orderLineNumber' => 15,
             ),
-            156 => 
+            156 =>
             array (
                 'orderNumber' => 10280,
                 'productCode' => 'S18_2325',
@@ -13281,7 +13282,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.33',
                 'orderLineNumber' => 13,
             ),
-            157 => 
+            157 =>
             array (
                 'orderNumber' => 10280,
                 'productCode' => 'S18_2795',
@@ -13289,7 +13290,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '158.63',
                 'orderLineNumber' => 10,
             ),
-            158 => 
+            158 =>
             array (
                 'orderNumber' => 10280,
                 'productCode' => 'S18_2949',
@@ -13297,7 +13298,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.06',
                 'orderLineNumber' => 3,
             ),
-            159 => 
+            159 =>
             array (
                 'orderNumber' => 10280,
                 'productCode' => 'S18_2957',
@@ -13305,7 +13306,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.34',
                 'orderLineNumber' => 5,
             ),
-            160 => 
+            160 =>
             array (
                 'orderNumber' => 10280,
                 'productCode' => 'S18_3136',
@@ -13313,7 +13314,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.63',
                 'orderLineNumber' => 4,
             ),
-            161 => 
+            161 =>
             array (
                 'orderNumber' => 10280,
                 'productCode' => 'S18_3320',
@@ -13321,7 +13322,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.21',
                 'orderLineNumber' => 7,
             ),
-            162 => 
+            162 =>
             array (
                 'orderNumber' => 10280,
                 'productCode' => 'S18_4409',
@@ -13329,7 +13330,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.31',
                 'orderLineNumber' => 17,
             ),
-            163 => 
+            163 =>
             array (
                 'orderNumber' => 10280,
                 'productCode' => 'S24_1937',
@@ -13337,7 +13338,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '29.87',
                 'orderLineNumber' => 12,
             ),
-            164 => 
+            164 =>
             array (
                 'orderNumber' => 10280,
                 'productCode' => 'S24_2022',
@@ -13345,7 +13346,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '36.29',
                 'orderLineNumber' => 11,
             ),
-            165 => 
+            165 =>
             array (
                 'orderNumber' => 10280,
                 'productCode' => 'S24_3969',
@@ -13353,7 +13354,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.29',
                 'orderLineNumber' => 14,
             ),
-            166 => 
+            166 =>
             array (
                 'orderNumber' => 10280,
                 'productCode' => 'S24_4258',
@@ -13361,7 +13362,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.86',
                 'orderLineNumber' => 6,
             ),
-            167 => 
+            167 =>
             array (
                 'orderNumber' => 10281,
                 'productCode' => 'S10_4962',
@@ -13369,7 +13370,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '132.97',
                 'orderLineNumber' => 9,
             ),
-            168 => 
+            168 =>
             array (
                 'orderNumber' => 10281,
                 'productCode' => 'S12_1666',
@@ -13377,7 +13378,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '127.10',
                 'orderLineNumber' => 13,
             ),
-            169 => 
+            169 =>
             array (
                 'orderNumber' => 10281,
                 'productCode' => 'S12_4473',
@@ -13385,7 +13386,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.36',
                 'orderLineNumber' => 1,
             ),
-            170 => 
+            170 =>
             array (
                 'orderNumber' => 10281,
                 'productCode' => 'S18_2319',
@@ -13393,7 +13394,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.14',
                 'orderLineNumber' => 4,
             ),
-            171 => 
+            171 =>
             array (
                 'orderNumber' => 10281,
                 'productCode' => 'S18_2432',
@@ -13401,7 +13402,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.52',
                 'orderLineNumber' => 7,
             ),
-            172 => 
+            172 =>
             array (
                 'orderNumber' => 10281,
                 'productCode' => 'S18_3232',
@@ -13409,7 +13410,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.47',
                 'orderLineNumber' => 5,
             ),
-            173 => 
+            173 =>
             array (
                 'orderNumber' => 10281,
                 'productCode' => 'S18_4600',
@@ -13417,7 +13418,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.86',
                 'orderLineNumber' => 10,
             ),
-            174 => 
+            174 =>
             array (
                 'orderNumber' => 10281,
                 'productCode' => 'S18_4668',
@@ -13425,7 +13426,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '42.76',
                 'orderLineNumber' => 14,
             ),
-            175 => 
+            175 =>
             array (
                 'orderNumber' => 10281,
                 'productCode' => 'S24_2300',
@@ -13433,7 +13434,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.46',
                 'orderLineNumber' => 6,
             ),
-            176 => 
+            176 =>
             array (
                 'orderNumber' => 10281,
                 'productCode' => 'S24_2840',
@@ -13441,7 +13442,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '33.95',
                 'orderLineNumber' => 2,
             ),
-            177 => 
+            177 =>
             array (
                 'orderNumber' => 10281,
                 'productCode' => 'S32_1268',
@@ -13449,7 +13450,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.90',
                 'orderLineNumber' => 8,
             ),
-            178 => 
+            178 =>
             array (
                 'orderNumber' => 10281,
                 'productCode' => 'S32_2509',
@@ -13457,7 +13458,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.91',
                 'orderLineNumber' => 3,
             ),
-            179 => 
+            179 =>
             array (
                 'orderNumber' => 10281,
                 'productCode' => 'S32_3522',
@@ -13465,7 +13466,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.47',
                 'orderLineNumber' => 12,
             ),
-            180 => 
+            180 =>
             array (
                 'orderNumber' => 10281,
                 'productCode' => 'S700_2824',
@@ -13473,7 +13474,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.01',
                 'orderLineNumber' => 11,
             ),
-            181 => 
+            181 =>
             array (
                 'orderNumber' => 10282,
                 'productCode' => 'S12_1108',
@@ -13481,7 +13482,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '176.63',
                 'orderLineNumber' => 5,
             ),
-            182 => 
+            182 =>
             array (
                 'orderNumber' => 10282,
                 'productCode' => 'S12_3148',
@@ -13489,7 +13490,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '142.02',
                 'orderLineNumber' => 6,
             ),
-            183 => 
+            183 =>
             array (
                 'orderNumber' => 10282,
                 'productCode' => 'S12_3891',
@@ -13497,7 +13498,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '169.56',
                 'orderLineNumber' => 4,
             ),
-            184 => 
+            184 =>
             array (
                 'orderNumber' => 10282,
                 'productCode' => 'S18_2238',
@@ -13505,7 +13506,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '147.36',
                 'orderLineNumber' => 13,
             ),
-            185 => 
+            185 =>
             array (
                 'orderNumber' => 10282,
                 'productCode' => 'S18_3140',
@@ -13513,7 +13514,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.93',
                 'orderLineNumber' => 1,
             ),
-            186 => 
+            186 =>
             array (
                 'orderNumber' => 10282,
                 'productCode' => 'S18_3259',
@@ -13521,7 +13522,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.74',
                 'orderLineNumber' => 3,
             ),
-            187 => 
+            187 =>
             array (
                 'orderNumber' => 10282,
                 'productCode' => 'S18_4027',
@@ -13529,7 +13530,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '132.13',
                 'orderLineNumber' => 8,
             ),
-            188 => 
+            188 =>
             array (
                 'orderNumber' => 10282,
                 'productCode' => 'S24_1444',
@@ -13537,7 +13538,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.71',
                 'orderLineNumber' => 11,
             ),
-            189 => 
+            189 =>
             array (
                 'orderNumber' => 10282,
                 'productCode' => 'S24_4048',
@@ -13545,7 +13546,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.99',
                 'orderLineNumber' => 10,
             ),
-            190 => 
+            190 =>
             array (
                 'orderNumber' => 10282,
                 'productCode' => 'S32_3207',
@@ -13553,7 +13554,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.58',
                 'orderLineNumber' => 9,
             ),
-            191 => 
+            191 =>
             array (
                 'orderNumber' => 10282,
                 'productCode' => 'S50_1392',
@@ -13561,7 +13562,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.59',
                 'orderLineNumber' => 12,
             ),
-            192 => 
+            192 =>
             array (
                 'orderNumber' => 10282,
                 'productCode' => 'S50_1514',
@@ -13569,7 +13570,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.24',
                 'orderLineNumber' => 7,
             ),
-            193 => 
+            193 =>
             array (
                 'orderNumber' => 10282,
                 'productCode' => 'S700_1938',
@@ -13577,7 +13578,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.95',
                 'orderLineNumber' => 2,
             ),
-            194 => 
+            194 =>
             array (
                 'orderNumber' => 10283,
                 'productCode' => 'S10_4757',
@@ -13585,7 +13586,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '130.56',
                 'orderLineNumber' => 6,
             ),
-            195 => 
+            195 =>
             array (
                 'orderNumber' => 10283,
                 'productCode' => 'S18_3029',
@@ -13593,7 +13594,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.28',
                 'orderLineNumber' => 4,
             ),
-            196 => 
+            196 =>
             array (
                 'orderNumber' => 10283,
                 'productCode' => 'S18_3856',
@@ -13601,7 +13602,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.58',
                 'orderLineNumber' => 3,
             ),
-            197 => 
+            197 =>
             array (
                 'orderNumber' => 10283,
                 'productCode' => 'S18_4522',
@@ -13609,7 +13610,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.97',
                 'orderLineNumber' => 14,
             ),
-            198 => 
+            198 =>
             array (
                 'orderNumber' => 10283,
                 'productCode' => 'S24_2011',
@@ -13617,7 +13618,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.54',
                 'orderLineNumber' => 13,
             ),
-            199 => 
+            199 =>
             array (
                 'orderNumber' => 10283,
                 'productCode' => 'S24_3151',
@@ -13625,7 +13626,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.54',
                 'orderLineNumber' => 8,
             ),
-            200 => 
+            200 =>
             array (
                 'orderNumber' => 10283,
                 'productCode' => 'S24_3816',
@@ -13633,7 +13634,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.15',
                 'orderLineNumber' => 5,
             ),
-            201 => 
+            201 =>
             array (
                 'orderNumber' => 10283,
                 'productCode' => 'S700_1138',
@@ -13641,7 +13642,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.00',
                 'orderLineNumber' => 9,
             ),
-            202 => 
+            202 =>
             array (
                 'orderNumber' => 10283,
                 'productCode' => 'S700_2047',
@@ -13649,7 +13650,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.23',
                 'orderLineNumber' => 2,
             ),
-            203 => 
+            203 =>
             array (
                 'orderNumber' => 10283,
                 'productCode' => 'S700_2610',
@@ -13657,7 +13658,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.67',
                 'orderLineNumber' => 7,
             ),
-            204 => 
+            204 =>
             array (
                 'orderNumber' => 10283,
                 'productCode' => 'S700_3505',
@@ -13665,7 +13666,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.15',
                 'orderLineNumber' => 10,
             ),
-            205 => 
+            205 =>
             array (
                 'orderNumber' => 10283,
                 'productCode' => 'S700_3962',
@@ -13673,7 +13674,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.41',
                 'orderLineNumber' => 11,
             ),
-            206 => 
+            206 =>
             array (
                 'orderNumber' => 10283,
                 'productCode' => 'S72_1253',
@@ -13681,7 +13682,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '41.22',
                 'orderLineNumber' => 1,
             ),
-            207 => 
+            207 =>
             array (
                 'orderNumber' => 10283,
                 'productCode' => 'S72_3212',
@@ -13689,7 +13690,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.14',
                 'orderLineNumber' => 12,
             ),
-            208 => 
+            208 =>
             array (
                 'orderNumber' => 10284,
                 'productCode' => 'S18_1662',
@@ -13697,7 +13698,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.19',
                 'orderLineNumber' => 11,
             ),
-            209 => 
+            209 =>
             array (
                 'orderNumber' => 10284,
                 'productCode' => 'S18_2581',
@@ -13705,7 +13706,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.43',
                 'orderLineNumber' => 1,
             ),
-            210 => 
+            210 =>
             array (
                 'orderNumber' => 10284,
                 'productCode' => 'S24_1785',
@@ -13713,7 +13714,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.76',
                 'orderLineNumber' => 3,
             ),
-            211 => 
+            211 =>
             array (
                 'orderNumber' => 10284,
                 'productCode' => 'S24_2841',
@@ -13721,7 +13722,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.08',
                 'orderLineNumber' => 12,
             ),
-            212 => 
+            212 =>
             array (
                 'orderNumber' => 10284,
                 'productCode' => 'S24_3420',
@@ -13729,7 +13730,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.83',
                 'orderLineNumber' => 13,
             ),
-            213 => 
+            213 =>
             array (
                 'orderNumber' => 10284,
                 'productCode' => 'S24_3949',
@@ -13737,7 +13738,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.51',
                 'orderLineNumber' => 10,
             ),
-            214 => 
+            214 =>
             array (
                 'orderNumber' => 10284,
                 'productCode' => 'S24_4278',
@@ -13745,7 +13746,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.65',
                 'orderLineNumber' => 2,
             ),
-            215 => 
+            215 =>
             array (
                 'orderNumber' => 10284,
                 'productCode' => 'S32_4289',
@@ -13753,7 +13754,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.54',
                 'orderLineNumber' => 4,
             ),
-            216 => 
+            216 =>
             array (
                 'orderNumber' => 10284,
                 'productCode' => 'S50_1341',
@@ -13761,7 +13762,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.78',
                 'orderLineNumber' => 5,
             ),
-            217 => 
+            217 =>
             array (
                 'orderNumber' => 10284,
                 'productCode' => 'S700_1691',
@@ -13769,7 +13770,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.69',
                 'orderLineNumber' => 6,
             ),
-            218 => 
+            218 =>
             array (
                 'orderNumber' => 10284,
                 'productCode' => 'S700_2466',
@@ -13777,7 +13778,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.73',
                 'orderLineNumber' => 8,
             ),
-            219 => 
+            219 =>
             array (
                 'orderNumber' => 10284,
                 'productCode' => 'S700_3167',
@@ -13785,7 +13786,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.00',
                 'orderLineNumber' => 7,
             ),
-            220 => 
+            220 =>
             array (
                 'orderNumber' => 10284,
                 'productCode' => 'S700_4002',
@@ -13793,7 +13794,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.29',
                 'orderLineNumber' => 9,
             ),
-            221 => 
+            221 =>
             array (
                 'orderNumber' => 10285,
                 'productCode' => 'S10_1678',
@@ -13801,7 +13802,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.70',
                 'orderLineNumber' => 6,
             ),
-            222 => 
+            222 =>
             array (
                 'orderNumber' => 10285,
                 'productCode' => 'S10_2016',
@@ -13809,7 +13810,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.61',
                 'orderLineNumber' => 9,
             ),
-            223 => 
+            223 =>
             array (
                 'orderNumber' => 10285,
                 'productCode' => 'S10_4698',
@@ -13817,7 +13818,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '166.55',
                 'orderLineNumber' => 8,
             ),
-            224 => 
+            224 =>
             array (
                 'orderNumber' => 10285,
                 'productCode' => 'S12_2823',
@@ -13825,7 +13826,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '131.04',
                 'orderLineNumber' => 5,
             ),
-            225 => 
+            225 =>
             array (
                 'orderNumber' => 10285,
                 'productCode' => 'S18_2625',
@@ -13833,7 +13834,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.88',
                 'orderLineNumber' => 10,
             ),
-            226 => 
+            226 =>
             array (
                 'orderNumber' => 10285,
                 'productCode' => 'S24_1578',
@@ -13841,7 +13842,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.29',
                 'orderLineNumber' => 7,
             ),
-            227 => 
+            227 =>
             array (
                 'orderNumber' => 10285,
                 'productCode' => 'S24_2000',
@@ -13849,7 +13850,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.70',
                 'orderLineNumber' => 11,
             ),
-            228 => 
+            228 =>
             array (
                 'orderNumber' => 10285,
                 'productCode' => 'S24_2360',
@@ -13857,7 +13858,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.41',
                 'orderLineNumber' => 3,
             ),
-            229 => 
+            229 =>
             array (
                 'orderNumber' => 10285,
                 'productCode' => 'S32_1374',
@@ -13865,7 +13866,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.91',
                 'orderLineNumber' => 12,
             ),
-            230 => 
+            230 =>
             array (
                 'orderNumber' => 10285,
                 'productCode' => 'S32_2206',
@@ -13873,7 +13874,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '36.61',
                 'orderLineNumber' => 1,
             ),
-            231 => 
+            231 =>
             array (
                 'orderNumber' => 10285,
                 'productCode' => 'S32_4485',
@@ -13881,7 +13882,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.01',
                 'orderLineNumber' => 4,
             ),
-            232 => 
+            232 =>
             array (
                 'orderNumber' => 10285,
                 'productCode' => 'S50_4713',
@@ -13889,7 +13890,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.48',
                 'orderLineNumber' => 2,
             ),
-            233 => 
+            233 =>
             array (
                 'orderNumber' => 10285,
                 'productCode' => 'S700_2834',
@@ -13897,7 +13898,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.04',
                 'orderLineNumber' => 13,
             ),
-            234 => 
+            234 =>
             array (
                 'orderNumber' => 10286,
                 'productCode' => 'S18_3782',
@@ -13905,7 +13906,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.60',
                 'orderLineNumber' => 1,
             ),
-            235 => 
+            235 =>
             array (
                 'orderNumber' => 10287,
                 'productCode' => 'S12_1099',
@@ -13913,7 +13914,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '190.68',
                 'orderLineNumber' => 12,
             ),
-            236 => 
+            236 =>
             array (
                 'orderNumber' => 10287,
                 'productCode' => 'S12_3380',
@@ -13921,7 +13922,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.44',
                 'orderLineNumber' => 10,
             ),
-            237 => 
+            237 =>
             array (
                 'orderNumber' => 10287,
                 'productCode' => 'S12_3990',
@@ -13929,7 +13930,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.21',
                 'orderLineNumber' => 13,
             ),
-            238 => 
+            238 =>
             array (
                 'orderNumber' => 10287,
                 'productCode' => 'S12_4675',
@@ -13937,7 +13938,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.10',
                 'orderLineNumber' => 9,
             ),
-            239 => 
+            239 =>
             array (
                 'orderNumber' => 10287,
                 'productCode' => 'S18_1129',
@@ -13945,7 +13946,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.23',
                 'orderLineNumber' => 4,
             ),
-            240 => 
+            240 =>
             array (
                 'orderNumber' => 10287,
                 'productCode' => 'S18_1889',
@@ -13953,7 +13954,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.60',
                 'orderLineNumber' => 8,
             ),
-            241 => 
+            241 =>
             array (
                 'orderNumber' => 10287,
                 'productCode' => 'S18_1984',
@@ -13961,7 +13962,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '123.76',
                 'orderLineNumber' => 3,
             ),
-            242 => 
+            242 =>
             array (
                 'orderNumber' => 10287,
                 'productCode' => 'S18_2870',
@@ -13969,7 +13970,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.84',
                 'orderLineNumber' => 1,
             ),
-            243 => 
+            243 =>
             array (
                 'orderNumber' => 10287,
                 'productCode' => 'S18_3232',
@@ -13977,7 +13978,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.17',
                 'orderLineNumber' => 5,
             ),
-            244 => 
+            244 =>
             array (
                 'orderNumber' => 10287,
                 'productCode' => 'S18_3278',
@@ -13985,7 +13986,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.35',
                 'orderLineNumber' => 15,
             ),
-            245 => 
+            245 =>
             array (
                 'orderNumber' => 10287,
                 'productCode' => 'S18_3482',
@@ -13993,7 +13994,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '127.88',
                 'orderLineNumber' => 14,
             ),
-            246 => 
+            246 =>
             array (
                 'orderNumber' => 10287,
                 'productCode' => 'S18_3685',
@@ -14001,7 +14002,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '139.87',
                 'orderLineNumber' => 2,
             ),
-            247 => 
+            247 =>
             array (
                 'orderNumber' => 10287,
                 'productCode' => 'S18_4721',
@@ -14009,7 +14010,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.04',
                 'orderLineNumber' => 17,
             ),
-            248 => 
+            248 =>
             array (
                 'orderNumber' => 10287,
                 'productCode' => 'S24_2972',
@@ -14017,7 +14018,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '31.34',
                 'orderLineNumber' => 6,
             ),
-            249 => 
+            249 =>
             array (
                 'orderNumber' => 10287,
                 'productCode' => 'S24_3371',
@@ -14025,7 +14026,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.17',
                 'orderLineNumber' => 11,
             ),
-            250 => 
+            250 =>
             array (
                 'orderNumber' => 10287,
                 'productCode' => 'S24_3856',
@@ -14033,7 +14034,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.62',
                 'orderLineNumber' => 7,
             ),
-            251 => 
+            251 =>
             array (
                 'orderNumber' => 10287,
                 'productCode' => 'S24_4620',
@@ -14041,7 +14042,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.22',
                 'orderLineNumber' => 16,
             ),
-            252 => 
+            252 =>
             array (
                 'orderNumber' => 10288,
                 'productCode' => 'S18_1589',
@@ -14049,7 +14050,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.71',
                 'orderLineNumber' => 14,
             ),
-            253 => 
+            253 =>
             array (
                 'orderNumber' => 10288,
                 'productCode' => 'S18_1749',
@@ -14057,7 +14058,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '168.30',
                 'orderLineNumber' => 5,
             ),
-            254 => 
+            254 =>
             array (
                 'orderNumber' => 10288,
                 'productCode' => 'S18_2248',
@@ -14065,7 +14066,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.25',
                 'orderLineNumber' => 4,
             ),
-            255 => 
+            255 =>
             array (
                 'orderNumber' => 10288,
                 'productCode' => 'S18_2325',
@@ -14073,7 +14074,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.98',
                 'orderLineNumber' => 2,
             ),
-            256 => 
+            256 =>
             array (
                 'orderNumber' => 10288,
                 'productCode' => 'S18_4409',
@@ -14081,7 +14082,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.19',
                 'orderLineNumber' => 6,
             ),
-            257 => 
+            257 =>
             array (
                 'orderNumber' => 10288,
                 'productCode' => 'S18_4933',
@@ -14089,7 +14090,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.02',
                 'orderLineNumber' => 7,
             ),
-            258 => 
+            258 =>
             array (
                 'orderNumber' => 10288,
                 'productCode' => 'S24_1046',
@@ -14097,7 +14098,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.88',
                 'orderLineNumber' => 11,
             ),
-            259 => 
+            259 =>
             array (
                 'orderNumber' => 10288,
                 'productCode' => 'S24_1628',
@@ -14105,7 +14106,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.30',
                 'orderLineNumber' => 13,
             ),
-            260 => 
+            260 =>
             array (
                 'orderNumber' => 10288,
                 'productCode' => 'S24_1937',
@@ -14113,7 +14114,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.19',
                 'orderLineNumber' => 1,
             ),
-            261 => 
+            261 =>
             array (
                 'orderNumber' => 10288,
                 'productCode' => 'S24_2766',
@@ -14121,7 +14122,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.78',
                 'orderLineNumber' => 9,
             ),
-            262 => 
+            262 =>
             array (
                 'orderNumber' => 10288,
                 'productCode' => 'S24_2887',
@@ -14129,7 +14130,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.22',
                 'orderLineNumber' => 8,
             ),
-            263 => 
+            263 =>
             array (
                 'orderNumber' => 10288,
                 'productCode' => 'S24_3191',
@@ -14137,7 +14138,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.19',
                 'orderLineNumber' => 10,
             ),
-            264 => 
+            264 =>
             array (
                 'orderNumber' => 10288,
                 'productCode' => 'S24_3432',
@@ -14145,7 +14146,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.73',
                 'orderLineNumber' => 12,
             ),
-            265 => 
+            265 =>
             array (
                 'orderNumber' => 10288,
                 'productCode' => 'S24_3969',
@@ -14153,7 +14154,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '37.75',
                 'orderLineNumber' => 3,
             ),
-            266 => 
+            266 =>
             array (
                 'orderNumber' => 10289,
                 'productCode' => 'S18_1342',
@@ -14161,7 +14162,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.47',
                 'orderLineNumber' => 2,
             ),
-            267 => 
+            267 =>
             array (
                 'orderNumber' => 10289,
                 'productCode' => 'S18_1367',
@@ -14169,7 +14170,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.75',
                 'orderLineNumber' => 1,
             ),
-            268 => 
+            268 =>
             array (
                 'orderNumber' => 10289,
                 'productCode' => 'S18_2795',
@@ -14177,7 +14178,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '141.75',
                 'orderLineNumber' => 3,
             ),
-            269 => 
+            269 =>
             array (
                 'orderNumber' => 10289,
                 'productCode' => 'S24_2022',
@@ -14185,7 +14186,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '41.22',
                 'orderLineNumber' => 4,
             ),
-            270 => 
+            270 =>
             array (
                 'orderNumber' => 10290,
                 'productCode' => 'S18_3320',
@@ -14193,7 +14194,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.36',
                 'orderLineNumber' => 2,
             ),
-            271 => 
+            271 =>
             array (
                 'orderNumber' => 10290,
                 'productCode' => 'S24_4258',
@@ -14201,7 +14202,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.76',
                 'orderLineNumber' => 1,
             ),
-            272 => 
+            272 =>
             array (
                 'orderNumber' => 10291,
                 'productCode' => 'S10_1949',
@@ -14209,7 +14210,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '210.01',
                 'orderLineNumber' => 11,
             ),
-            273 => 
+            273 =>
             array (
                 'orderNumber' => 10291,
                 'productCode' => 'S10_4962',
@@ -14217,7 +14218,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '141.83',
                 'orderLineNumber' => 4,
             ),
-            274 => 
+            274 =>
             array (
                 'orderNumber' => 10291,
                 'productCode' => 'S12_1666',
@@ -14225,7 +14226,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '123.00',
                 'orderLineNumber' => 8,
             ),
-            275 => 
+            275 =>
             array (
                 'orderNumber' => 10291,
                 'productCode' => 'S18_1097',
@@ -14233,7 +14234,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.84',
                 'orderLineNumber' => 10,
             ),
-            276 => 
+            276 =>
             array (
                 'orderNumber' => 10291,
                 'productCode' => 'S18_2432',
@@ -14241,7 +14242,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.26',
                 'orderLineNumber' => 2,
             ),
-            277 => 
+            277 =>
             array (
                 'orderNumber' => 10291,
                 'productCode' => 'S18_2949',
@@ -14249,7 +14250,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.28',
                 'orderLineNumber' => 12,
             ),
-            278 => 
+            278 =>
             array (
                 'orderNumber' => 10291,
                 'productCode' => 'S18_2957',
@@ -14257,7 +14258,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.21',
                 'orderLineNumber' => 14,
             ),
-            279 => 
+            279 =>
             array (
                 'orderNumber' => 10291,
                 'productCode' => 'S18_3136',
@@ -14265,7 +14266,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.20',
                 'orderLineNumber' => 13,
             ),
-            280 => 
+            280 =>
             array (
                 'orderNumber' => 10291,
                 'productCode' => 'S18_4600',
@@ -14273,7 +14274,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.86',
                 'orderLineNumber' => 5,
             ),
-            281 => 
+            281 =>
             array (
                 'orderNumber' => 10291,
                 'productCode' => 'S18_4668',
@@ -14281,7 +14282,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '45.28',
                 'orderLineNumber' => 9,
             ),
-            282 => 
+            282 =>
             array (
                 'orderNumber' => 10291,
                 'productCode' => 'S24_2300',
@@ -14289,7 +14290,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.90',
                 'orderLineNumber' => 1,
             ),
-            283 => 
+            283 =>
             array (
                 'orderNumber' => 10291,
                 'productCode' => 'S32_1268',
@@ -14297,7 +14298,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.83',
                 'orderLineNumber' => 3,
             ),
-            284 => 
+            284 =>
             array (
                 'orderNumber' => 10291,
                 'productCode' => 'S32_3522',
@@ -14305,7 +14306,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.00',
                 'orderLineNumber' => 7,
             ),
-            285 => 
+            285 =>
             array (
                 'orderNumber' => 10291,
                 'productCode' => 'S700_2824',
@@ -14313,7 +14314,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.99',
                 'orderLineNumber' => 6,
             ),
-            286 => 
+            286 =>
             array (
                 'orderNumber' => 10292,
                 'productCode' => 'S12_4473',
@@ -14321,7 +14322,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.80',
                 'orderLineNumber' => 8,
             ),
-            287 => 
+            287 =>
             array (
                 'orderNumber' => 10292,
                 'productCode' => 'S18_2238',
@@ -14329,7 +14330,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.81',
                 'orderLineNumber' => 7,
             ),
-            288 => 
+            288 =>
             array (
                 'orderNumber' => 10292,
                 'productCode' => 'S18_2319',
@@ -14337,7 +14338,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '103.09',
                 'orderLineNumber' => 11,
             ),
-            289 => 
+            289 =>
             array (
                 'orderNumber' => 10292,
                 'productCode' => 'S18_3232',
@@ -14345,7 +14346,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '147.33',
                 'orderLineNumber' => 12,
             ),
-            290 => 
+            290 =>
             array (
                 'orderNumber' => 10292,
                 'productCode' => 'S18_4027',
@@ -14353,7 +14354,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.90',
                 'orderLineNumber' => 2,
             ),
-            291 => 
+            291 =>
             array (
                 'orderNumber' => 10292,
                 'productCode' => 'S24_1444',
@@ -14361,7 +14362,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.55',
                 'orderLineNumber' => 5,
             ),
-            292 => 
+            292 =>
             array (
                 'orderNumber' => 10292,
                 'productCode' => 'S24_2840',
@@ -14369,7 +14370,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '34.30',
                 'orderLineNumber' => 9,
             ),
-            293 => 
+            293 =>
             array (
                 'orderNumber' => 10292,
                 'productCode' => 'S24_4048',
@@ -14377,7 +14378,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.55',
                 'orderLineNumber' => 4,
             ),
-            294 => 
+            294 =>
             array (
                 'orderNumber' => 10292,
                 'productCode' => 'S32_2509',
@@ -14385,7 +14386,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.11',
                 'orderLineNumber' => 10,
             ),
-            295 => 
+            295 =>
             array (
                 'orderNumber' => 10292,
                 'productCode' => 'S32_3207',
@@ -14393,7 +14394,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.65',
                 'orderLineNumber' => 3,
             ),
-            296 => 
+            296 =>
             array (
                 'orderNumber' => 10292,
                 'productCode' => 'S50_1392',
@@ -14401,7 +14402,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.44',
                 'orderLineNumber' => 6,
             ),
-            297 => 
+            297 =>
             array (
                 'orderNumber' => 10292,
                 'productCode' => 'S50_1514',
@@ -14409,7 +14410,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.79',
                 'orderLineNumber' => 1,
             ),
-            298 => 
+            298 =>
             array (
                 'orderNumber' => 10293,
                 'productCode' => 'S12_1108',
@@ -14417,7 +14418,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '187.02',
                 'orderLineNumber' => 8,
             ),
-            299 => 
+            299 =>
             array (
                 'orderNumber' => 10293,
                 'productCode' => 'S12_3148',
@@ -14425,7 +14426,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.93',
                 'orderLineNumber' => 9,
             ),
-            300 => 
+            300 =>
             array (
                 'orderNumber' => 10293,
                 'productCode' => 'S12_3891',
@@ -14433,7 +14434,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '171.29',
                 'orderLineNumber' => 7,
             ),
-            301 => 
+            301 =>
             array (
                 'orderNumber' => 10293,
                 'productCode' => 'S18_3140',
@@ -14441,7 +14442,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.64',
                 'orderLineNumber' => 4,
             ),
-            302 => 
+            302 =>
             array (
                 'orderNumber' => 10293,
                 'productCode' => 'S18_3259',
@@ -14449,7 +14450,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.76',
                 'orderLineNumber' => 6,
             ),
-            303 => 
+            303 =>
             array (
                 'orderNumber' => 10293,
                 'productCode' => 'S18_4522',
@@ -14457,7 +14458,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.85',
                 'orderLineNumber' => 3,
             ),
-            304 => 
+            304 =>
             array (
                 'orderNumber' => 10293,
                 'productCode' => 'S24_2011',
@@ -14465,7 +14466,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.83',
                 'orderLineNumber' => 2,
             ),
-            305 => 
+            305 =>
             array (
                 'orderNumber' => 10293,
                 'productCode' => 'S700_1938',
@@ -14473,7 +14474,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.95',
                 'orderLineNumber' => 5,
             ),
-            306 => 
+            306 =>
             array (
                 'orderNumber' => 10293,
                 'productCode' => 'S72_3212',
@@ -14481,7 +14482,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.32',
                 'orderLineNumber' => 1,
             ),
-            307 => 
+            307 =>
             array (
                 'orderNumber' => 10294,
                 'productCode' => 'S700_3962',
@@ -14489,7 +14490,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.32',
                 'orderLineNumber' => 1,
             ),
-            308 => 
+            308 =>
             array (
                 'orderNumber' => 10295,
                 'productCode' => 'S10_4757',
@@ -14497,7 +14498,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '136.00',
                 'orderLineNumber' => 1,
             ),
-            309 => 
+            309 =>
             array (
                 'orderNumber' => 10295,
                 'productCode' => 'S24_3151',
@@ -14505,7 +14506,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.08',
                 'orderLineNumber' => 3,
             ),
-            310 => 
+            310 =>
             array (
                 'orderNumber' => 10295,
                 'productCode' => 'S700_1138',
@@ -14513,7 +14514,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.00',
                 'orderLineNumber' => 4,
             ),
-            311 => 
+            311 =>
             array (
                 'orderNumber' => 10295,
                 'productCode' => 'S700_2610',
@@ -14521,7 +14522,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.56',
                 'orderLineNumber' => 2,
             ),
-            312 => 
+            312 =>
             array (
                 'orderNumber' => 10295,
                 'productCode' => 'S700_3505',
@@ -14529,7 +14530,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.16',
                 'orderLineNumber' => 5,
             ),
-            313 => 
+            313 =>
             array (
                 'orderNumber' => 10296,
                 'productCode' => 'S18_1662',
@@ -14537,7 +14538,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '146.65',
                 'orderLineNumber' => 7,
             ),
-            314 => 
+            314 =>
             array (
                 'orderNumber' => 10296,
                 'productCode' => 'S18_3029',
@@ -14545,7 +14546,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.68',
                 'orderLineNumber' => 13,
             ),
-            315 => 
+            315 =>
             array (
                 'orderNumber' => 10296,
                 'productCode' => 'S18_3856',
@@ -14553,7 +14554,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.87',
                 'orderLineNumber' => 12,
             ),
-            316 => 
+            316 =>
             array (
                 'orderNumber' => 10296,
                 'productCode' => 'S24_2841',
@@ -14561,7 +14562,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.97',
                 'orderLineNumber' => 8,
             ),
-            317 => 
+            317 =>
             array (
                 'orderNumber' => 10296,
                 'productCode' => 'S24_3420',
@@ -14569,7 +14570,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.78',
                 'orderLineNumber' => 9,
             ),
-            318 => 
+            318 =>
             array (
                 'orderNumber' => 10296,
                 'productCode' => 'S24_3816',
@@ -14577,7 +14578,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.02',
                 'orderLineNumber' => 14,
             ),
-            319 => 
+            319 =>
             array (
                 'orderNumber' => 10296,
                 'productCode' => 'S24_3949',
@@ -14585,7 +14586,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.46',
                 'orderLineNumber' => 6,
             ),
-            320 => 
+            320 =>
             array (
                 'orderNumber' => 10296,
                 'productCode' => 'S50_1341',
@@ -14593,7 +14594,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '41.02',
                 'orderLineNumber' => 1,
             ),
-            321 => 
+            321 =>
             array (
                 'orderNumber' => 10296,
                 'productCode' => 'S700_1691',
@@ -14601,7 +14602,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.81',
                 'orderLineNumber' => 2,
             ),
-            322 => 
+            322 =>
             array (
                 'orderNumber' => 10296,
                 'productCode' => 'S700_2047',
@@ -14609,7 +14610,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.61',
                 'orderLineNumber' => 11,
             ),
-            323 => 
+            323 =>
             array (
                 'orderNumber' => 10296,
                 'productCode' => 'S700_2466',
@@ -14617,7 +14618,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.73',
                 'orderLineNumber' => 4,
             ),
-            324 => 
+            324 =>
             array (
                 'orderNumber' => 10296,
                 'productCode' => 'S700_3167',
@@ -14625,7 +14626,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.40',
                 'orderLineNumber' => 3,
             ),
-            325 => 
+            325 =>
             array (
                 'orderNumber' => 10296,
                 'productCode' => 'S700_4002',
@@ -14633,7 +14634,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.44',
                 'orderLineNumber' => 5,
             ),
-            326 => 
+            326 =>
             array (
                 'orderNumber' => 10296,
                 'productCode' => 'S72_1253',
@@ -14641,7 +14642,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '46.68',
                 'orderLineNumber' => 10,
             ),
-            327 => 
+            327 =>
             array (
                 'orderNumber' => 10297,
                 'productCode' => 'S18_2581',
@@ -14649,7 +14650,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.95',
                 'orderLineNumber' => 4,
             ),
-            328 => 
+            328 =>
             array (
                 'orderNumber' => 10297,
                 'productCode' => 'S24_1785',
@@ -14657,7 +14658,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.23',
                 'orderLineNumber' => 6,
             ),
-            329 => 
+            329 =>
             array (
                 'orderNumber' => 10297,
                 'productCode' => 'S24_2000',
@@ -14665,7 +14666,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.08',
                 'orderLineNumber' => 1,
             ),
-            330 => 
+            330 =>
             array (
                 'orderNumber' => 10297,
                 'productCode' => 'S24_4278',
@@ -14673,7 +14674,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.73',
                 'orderLineNumber' => 5,
             ),
-            331 => 
+            331 =>
             array (
                 'orderNumber' => 10297,
                 'productCode' => 'S32_1374',
@@ -14681,7 +14682,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.90',
                 'orderLineNumber' => 2,
             ),
-            332 => 
+            332 =>
             array (
                 'orderNumber' => 10297,
                 'productCode' => 'S32_4289',
@@ -14689,7 +14690,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.29',
                 'orderLineNumber' => 7,
             ),
-            333 => 
+            333 =>
             array (
                 'orderNumber' => 10297,
                 'productCode' => 'S700_2834',
@@ -14697,7 +14698,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.53',
                 'orderLineNumber' => 3,
             ),
-            334 => 
+            334 =>
             array (
                 'orderNumber' => 10298,
                 'productCode' => 'S10_2016',
@@ -14705,7 +14706,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.86',
                 'orderLineNumber' => 1,
             ),
-            335 => 
+            335 =>
             array (
                 'orderNumber' => 10298,
                 'productCode' => 'S18_2625',
@@ -14713,7 +14714,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.57',
                 'orderLineNumber' => 2,
             ),
-            336 => 
+            336 =>
             array (
                 'orderNumber' => 10299,
                 'productCode' => 'S10_1678',
@@ -14721,7 +14722,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.56',
                 'orderLineNumber' => 9,
             ),
-            337 => 
+            337 =>
             array (
                 'orderNumber' => 10299,
                 'productCode' => 'S10_4698',
@@ -14729,7 +14730,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '164.61',
                 'orderLineNumber' => 11,
             ),
-            338 => 
+            338 =>
             array (
                 'orderNumber' => 10299,
                 'productCode' => 'S12_2823',
@@ -14737,7 +14738,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '123.51',
                 'orderLineNumber' => 8,
             ),
-            339 => 
+            339 =>
             array (
                 'orderNumber' => 10299,
                 'productCode' => 'S18_3782',
@@ -14745,7 +14746,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.17',
                 'orderLineNumber' => 3,
             ),
-            340 => 
+            340 =>
             array (
                 'orderNumber' => 10299,
                 'productCode' => 'S18_4721',
@@ -14753,7 +14754,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.04',
                 'orderLineNumber' => 2,
             ),
-            341 => 
+            341 =>
             array (
                 'orderNumber' => 10299,
                 'productCode' => 'S24_1578',
@@ -14761,7 +14762,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.07',
                 'orderLineNumber' => 10,
             ),
-            342 => 
+            342 =>
             array (
                 'orderNumber' => 10299,
                 'productCode' => 'S24_2360',
@@ -14769,7 +14770,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.87',
                 'orderLineNumber' => 6,
             ),
-            343 => 
+            343 =>
             array (
                 'orderNumber' => 10299,
                 'productCode' => 'S24_4620',
@@ -14777,7 +14778,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.29',
                 'orderLineNumber' => 1,
             ),
-            344 => 
+            344 =>
             array (
                 'orderNumber' => 10299,
                 'productCode' => 'S32_2206',
@@ -14785,7 +14786,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '36.21',
                 'orderLineNumber' => 4,
             ),
-            345 => 
+            345 =>
             array (
                 'orderNumber' => 10299,
                 'productCode' => 'S32_4485',
@@ -14793,7 +14794,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.70',
                 'orderLineNumber' => 7,
             ),
-            346 => 
+            346 =>
             array (
                 'orderNumber' => 10299,
                 'productCode' => 'S50_4713',
@@ -14801,7 +14802,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.29',
                 'orderLineNumber' => 5,
             ),
-            347 => 
+            347 =>
             array (
                 'orderNumber' => 10300,
                 'productCode' => 'S12_1099',
@@ -14809,7 +14810,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '184.84',
                 'orderLineNumber' => 5,
             ),
-            348 => 
+            348 =>
             array (
                 'orderNumber' => 10300,
                 'productCode' => 'S12_3380',
@@ -14817,7 +14818,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '116.27',
                 'orderLineNumber' => 3,
             ),
-            349 => 
+            349 =>
             array (
                 'orderNumber' => 10300,
                 'productCode' => 'S12_3990',
@@ -14825,7 +14826,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.61',
                 'orderLineNumber' => 6,
             ),
-            350 => 
+            350 =>
             array (
                 'orderNumber' => 10300,
                 'productCode' => 'S12_4675',
@@ -14833,7 +14834,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.58',
                 'orderLineNumber' => 2,
             ),
-            351 => 
+            351 =>
             array (
                 'orderNumber' => 10300,
                 'productCode' => 'S18_1889',
@@ -14841,7 +14842,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.14',
                 'orderLineNumber' => 1,
             ),
-            352 => 
+            352 =>
             array (
                 'orderNumber' => 10300,
                 'productCode' => 'S18_3278',
@@ -14849,7 +14850,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.94',
                 'orderLineNumber' => 8,
             ),
-            353 => 
+            353 =>
             array (
                 'orderNumber' => 10300,
                 'productCode' => 'S18_3482',
@@ -14857,7 +14858,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '144.05',
                 'orderLineNumber' => 7,
             ),
-            354 => 
+            354 =>
             array (
                 'orderNumber' => 10300,
                 'productCode' => 'S24_3371',
@@ -14865,7 +14866,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.05',
                 'orderLineNumber' => 4,
             ),
-            355 => 
+            355 =>
             array (
                 'orderNumber' => 10301,
                 'productCode' => 'S18_1129',
@@ -14873,7 +14874,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.65',
                 'orderLineNumber' => 8,
             ),
-            356 => 
+            356 =>
             array (
                 'orderNumber' => 10301,
                 'productCode' => 'S18_1589',
@@ -14881,7 +14882,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.22',
                 'orderLineNumber' => 4,
             ),
-            357 => 
+            357 =>
             array (
                 'orderNumber' => 10301,
                 'productCode' => 'S18_1984',
@@ -14889,7 +14890,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.49',
                 'orderLineNumber' => 7,
             ),
-            358 => 
+            358 =>
             array (
                 'orderNumber' => 10301,
                 'productCode' => 'S18_2870',
@@ -14897,7 +14898,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.52',
                 'orderLineNumber' => 5,
             ),
-            359 => 
+            359 =>
             array (
                 'orderNumber' => 10301,
                 'productCode' => 'S18_3232',
@@ -14905,7 +14906,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.47',
                 'orderLineNumber' => 9,
             ),
-            360 => 
+            360 =>
             array (
                 'orderNumber' => 10301,
                 'productCode' => 'S18_3685',
@@ -14913,7 +14914,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.04',
                 'orderLineNumber' => 6,
             ),
-            361 => 
+            361 =>
             array (
                 'orderNumber' => 10301,
                 'productCode' => 'S24_1046',
@@ -14921,7 +14922,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.67',
                 'orderLineNumber' => 1,
             ),
-            362 => 
+            362 =>
             array (
                 'orderNumber' => 10301,
                 'productCode' => 'S24_1628',
@@ -14929,7 +14930,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '40.75',
                 'orderLineNumber' => 3,
             ),
-            363 => 
+            363 =>
             array (
                 'orderNumber' => 10301,
                 'productCode' => 'S24_2972',
@@ -14937,7 +14938,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.10',
                 'orderLineNumber' => 10,
             ),
-            364 => 
+            364 =>
             array (
                 'orderNumber' => 10301,
                 'productCode' => 'S24_3432',
@@ -14945,7 +14946,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.73',
                 'orderLineNumber' => 2,
             ),
-            365 => 
+            365 =>
             array (
                 'orderNumber' => 10301,
                 'productCode' => 'S24_3856',
@@ -14953,7 +14954,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.17',
                 'orderLineNumber' => 11,
             ),
-            366 => 
+            366 =>
             array (
                 'orderNumber' => 10302,
                 'productCode' => 'S18_1749',
@@ -14961,7 +14962,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '166.60',
                 'orderLineNumber' => 1,
             ),
-            367 => 
+            367 =>
             array (
                 'orderNumber' => 10302,
                 'productCode' => 'S18_4409',
@@ -14969,7 +14970,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.83',
                 'orderLineNumber' => 2,
             ),
-            368 => 
+            368 =>
             array (
                 'orderNumber' => 10302,
                 'productCode' => 'S18_4933',
@@ -14977,7 +14978,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.56',
                 'orderLineNumber' => 3,
             ),
-            369 => 
+            369 =>
             array (
                 'orderNumber' => 10302,
                 'productCode' => 'S24_2766',
@@ -14985,7 +14986,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.42',
                 'orderLineNumber' => 5,
             ),
-            370 => 
+            370 =>
             array (
                 'orderNumber' => 10302,
                 'productCode' => 'S24_2887',
@@ -14993,7 +14994,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.52',
                 'orderLineNumber' => 4,
             ),
-            371 => 
+            371 =>
             array (
                 'orderNumber' => 10302,
                 'productCode' => 'S24_3191',
@@ -15001,7 +15002,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.48',
                 'orderLineNumber' => 6,
             ),
-            372 => 
+            372 =>
             array (
                 'orderNumber' => 10303,
                 'productCode' => 'S18_2248',
@@ -15009,7 +15010,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.91',
                 'orderLineNumber' => 2,
             ),
-            373 => 
+            373 =>
             array (
                 'orderNumber' => 10303,
                 'productCode' => 'S24_3969',
@@ -15017,7 +15018,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.70',
                 'orderLineNumber' => 1,
             ),
-            374 => 
+            374 =>
             array (
                 'orderNumber' => 10304,
                 'productCode' => 'S10_1949',
@@ -15025,7 +15026,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '201.44',
                 'orderLineNumber' => 6,
             ),
-            375 => 
+            375 =>
             array (
                 'orderNumber' => 10304,
                 'productCode' => 'S12_1666',
@@ -15033,7 +15034,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.54',
                 'orderLineNumber' => 3,
             ),
-            376 => 
+            376 =>
             array (
                 'orderNumber' => 10304,
                 'productCode' => 'S18_1097',
@@ -15041,7 +15042,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '106.17',
                 'orderLineNumber' => 5,
             ),
-            377 => 
+            377 =>
             array (
                 'orderNumber' => 10304,
                 'productCode' => 'S18_1342',
@@ -15049,7 +15050,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.55',
                 'orderLineNumber' => 13,
             ),
-            378 => 
+            378 =>
             array (
                 'orderNumber' => 10304,
                 'productCode' => 'S18_1367',
@@ -15057,7 +15058,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '46.90',
                 'orderLineNumber' => 12,
             ),
-            379 => 
+            379 =>
             array (
                 'orderNumber' => 10304,
                 'productCode' => 'S18_2325',
@@ -15065,7 +15066,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.98',
                 'orderLineNumber' => 17,
             ),
-            380 => 
+            380 =>
             array (
                 'orderNumber' => 10304,
                 'productCode' => 'S18_2795',
@@ -15073,7 +15074,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '141.75',
                 'orderLineNumber' => 14,
             ),
-            381 => 
+            381 =>
             array (
                 'orderNumber' => 10304,
                 'productCode' => 'S18_2949',
@@ -15081,7 +15082,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.27',
                 'orderLineNumber' => 7,
             ),
-            382 => 
+            382 =>
             array (
                 'orderNumber' => 10304,
                 'productCode' => 'S18_2957',
@@ -15089,7 +15090,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.34',
                 'orderLineNumber' => 9,
             ),
-            383 => 
+            383 =>
             array (
                 'orderNumber' => 10304,
                 'productCode' => 'S18_3136',
@@ -15097,7 +15098,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.06',
                 'orderLineNumber' => 8,
             ),
-            384 => 
+            384 =>
             array (
                 'orderNumber' => 10304,
                 'productCode' => 'S18_3320',
@@ -15105,7 +15106,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.24',
                 'orderLineNumber' => 11,
             ),
-            385 => 
+            385 =>
             array (
                 'orderNumber' => 10304,
                 'productCode' => 'S18_4668',
@@ -15113,7 +15114,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.27',
                 'orderLineNumber' => 4,
             ),
-            386 => 
+            386 =>
             array (
                 'orderNumber' => 10304,
                 'productCode' => 'S24_1937',
@@ -15121,7 +15122,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '29.21',
                 'orderLineNumber' => 16,
             ),
-            387 => 
+            387 =>
             array (
                 'orderNumber' => 10304,
                 'productCode' => 'S24_2022',
@@ -15129,7 +15130,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '42.11',
                 'orderLineNumber' => 15,
             ),
-            388 => 
+            388 =>
             array (
                 'orderNumber' => 10304,
                 'productCode' => 'S24_4258',
@@ -15137,7 +15138,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.83',
                 'orderLineNumber' => 10,
             ),
-            389 => 
+            389 =>
             array (
                 'orderNumber' => 10304,
                 'productCode' => 'S32_3522',
@@ -15145,7 +15146,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.36',
                 'orderLineNumber' => 2,
             ),
-            390 => 
+            390 =>
             array (
                 'orderNumber' => 10304,
                 'productCode' => 'S700_2824',
@@ -15153,7 +15154,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.92',
                 'orderLineNumber' => 1,
             ),
-            391 => 
+            391 =>
             array (
                 'orderNumber' => 10305,
                 'productCode' => 'S10_4962',
@@ -15161,7 +15162,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '130.01',
                 'orderLineNumber' => 13,
             ),
-            392 => 
+            392 =>
             array (
                 'orderNumber' => 10305,
                 'productCode' => 'S12_4473',
@@ -15169,7 +15170,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.84',
                 'orderLineNumber' => 5,
             ),
-            393 => 
+            393 =>
             array (
                 'orderNumber' => 10305,
                 'productCode' => 'S18_2238',
@@ -15177,7 +15178,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '132.62',
                 'orderLineNumber' => 4,
             ),
-            394 => 
+            394 =>
             array (
                 'orderNumber' => 10305,
                 'productCode' => 'S18_2319',
@@ -15185,7 +15186,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.82',
                 'orderLineNumber' => 8,
             ),
-            395 => 
+            395 =>
             array (
                 'orderNumber' => 10305,
                 'productCode' => 'S18_2432',
@@ -15193,7 +15194,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.95',
                 'orderLineNumber' => 11,
             ),
-            396 => 
+            396 =>
             array (
                 'orderNumber' => 10305,
                 'productCode' => 'S18_3232',
@@ -15201,7 +15202,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '160.87',
                 'orderLineNumber' => 9,
             ),
-            397 => 
+            397 =>
             array (
                 'orderNumber' => 10305,
                 'productCode' => 'S18_4600',
@@ -15209,7 +15210,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.60',
                 'orderLineNumber' => 14,
             ),
-            398 => 
+            398 =>
             array (
                 'orderNumber' => 10305,
                 'productCode' => 'S24_1444',
@@ -15217,7 +15218,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.55',
                 'orderLineNumber' => 2,
             ),
-            399 => 
+            399 =>
             array (
                 'orderNumber' => 10305,
                 'productCode' => 'S24_2300',
@@ -15225,7 +15226,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.34',
                 'orderLineNumber' => 10,
             ),
-            400 => 
+            400 =>
             array (
                 'orderNumber' => 10305,
                 'productCode' => 'S24_2840',
@@ -15233,7 +15234,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '30.76',
                 'orderLineNumber' => 6,
             ),
-            401 => 
+            401 =>
             array (
                 'orderNumber' => 10305,
                 'productCode' => 'S24_4048',
@@ -15241,7 +15242,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.28',
                 'orderLineNumber' => 1,
             ),
-            402 => 
+            402 =>
             array (
                 'orderNumber' => 10305,
                 'productCode' => 'S32_1268',
@@ -15249,7 +15250,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.38',
                 'orderLineNumber' => 12,
             ),
-            403 => 
+            403 =>
             array (
                 'orderNumber' => 10305,
                 'productCode' => 'S32_2509',
@@ -15257,7 +15258,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.70',
                 'orderLineNumber' => 7,
             ),
-            404 => 
+            404 =>
             array (
                 'orderNumber' => 10305,
                 'productCode' => 'S50_1392',
@@ -15265,7 +15266,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.96',
                 'orderLineNumber' => 3,
             ),
-            405 => 
+            405 =>
             array (
                 'orderNumber' => 10306,
                 'productCode' => 'S12_1108',
@@ -15273,7 +15274,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '182.86',
                 'orderLineNumber' => 13,
             ),
-            406 => 
+            406 =>
             array (
                 'orderNumber' => 10306,
                 'productCode' => 'S12_3148',
@@ -15281,7 +15282,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '145.04',
                 'orderLineNumber' => 14,
             ),
-            407 => 
+            407 =>
             array (
                 'orderNumber' => 10306,
                 'productCode' => 'S12_3891',
@@ -15289,7 +15290,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '145.34',
                 'orderLineNumber' => 12,
             ),
-            408 => 
+            408 =>
             array (
                 'orderNumber' => 10306,
                 'productCode' => 'S18_3140',
@@ -15297,7 +15298,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.74',
                 'orderLineNumber' => 9,
             ),
-            409 => 
+            409 =>
             array (
                 'orderNumber' => 10306,
                 'productCode' => 'S18_3259',
@@ -15305,7 +15306,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.70',
                 'orderLineNumber' => 11,
             ),
-            410 => 
+            410 =>
             array (
                 'orderNumber' => 10306,
                 'productCode' => 'S18_4027',
@@ -15313,7 +15314,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.39',
                 'orderLineNumber' => 16,
             ),
-            411 => 
+            411 =>
             array (
                 'orderNumber' => 10306,
                 'productCode' => 'S18_4522',
@@ -15321,7 +15322,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.14',
                 'orderLineNumber' => 8,
             ),
-            412 => 
+            412 =>
             array (
                 'orderNumber' => 10306,
                 'productCode' => 'S24_2011',
@@ -15329,7 +15330,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.37',
                 'orderLineNumber' => 7,
             ),
-            413 => 
+            413 =>
             array (
                 'orderNumber' => 10306,
                 'productCode' => 'S24_3151',
@@ -15337,7 +15338,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.12',
                 'orderLineNumber' => 2,
             ),
-            414 => 
+            414 =>
             array (
                 'orderNumber' => 10306,
                 'productCode' => 'S32_3207',
@@ -15345,7 +15346,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.28',
                 'orderLineNumber' => 17,
             ),
-            415 => 
+            415 =>
             array (
                 'orderNumber' => 10306,
                 'productCode' => 'S50_1514',
@@ -15353,7 +15354,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.55',
                 'orderLineNumber' => 15,
             ),
-            416 => 
+            416 =>
             array (
                 'orderNumber' => 10306,
                 'productCode' => 'S700_1138',
@@ -15361,7 +15362,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.34',
                 'orderLineNumber' => 3,
             ),
-            417 => 
+            417 =>
             array (
                 'orderNumber' => 10306,
                 'productCode' => 'S700_1938',
@@ -15369,7 +15370,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.62',
                 'orderLineNumber' => 10,
             ),
-            418 => 
+            418 =>
             array (
                 'orderNumber' => 10306,
                 'productCode' => 'S700_2610',
@@ -15377,7 +15378,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.16',
                 'orderLineNumber' => 1,
             ),
-            419 => 
+            419 =>
             array (
                 'orderNumber' => 10306,
                 'productCode' => 'S700_3505',
@@ -15385,7 +15386,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.17',
                 'orderLineNumber' => 4,
             ),
-            420 => 
+            420 =>
             array (
                 'orderNumber' => 10306,
                 'productCode' => 'S700_3962',
@@ -15393,7 +15394,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.39',
                 'orderLineNumber' => 5,
             ),
-            421 => 
+            421 =>
             array (
                 'orderNumber' => 10306,
                 'productCode' => 'S72_3212',
@@ -15401,7 +15402,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.05',
                 'orderLineNumber' => 6,
             ),
-            422 => 
+            422 =>
             array (
                 'orderNumber' => 10307,
                 'productCode' => 'S10_4757',
@@ -15409,7 +15410,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.32',
                 'orderLineNumber' => 9,
             ),
-            423 => 
+            423 =>
             array (
                 'orderNumber' => 10307,
                 'productCode' => 'S18_1662',
@@ -15417,7 +15418,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.61',
                 'orderLineNumber' => 1,
             ),
-            424 => 
+            424 =>
             array (
                 'orderNumber' => 10307,
                 'productCode' => 'S18_3029',
@@ -15425,7 +15426,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.40',
                 'orderLineNumber' => 7,
             ),
-            425 => 
+            425 =>
             array (
                 'orderNumber' => 10307,
                 'productCode' => 'S18_3856',
@@ -15433,7 +15434,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.11',
                 'orderLineNumber' => 6,
             ),
-            426 => 
+            426 =>
             array (
                 'orderNumber' => 10307,
                 'productCode' => 'S24_2841',
@@ -15441,7 +15442,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.23',
                 'orderLineNumber' => 2,
             ),
-            427 => 
+            427 =>
             array (
                 'orderNumber' => 10307,
                 'productCode' => 'S24_3420',
@@ -15449,7 +15450,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.44',
                 'orderLineNumber' => 3,
             ),
-            428 => 
+            428 =>
             array (
                 'orderNumber' => 10307,
                 'productCode' => 'S24_3816',
@@ -15457,7 +15458,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.47',
                 'orderLineNumber' => 8,
             ),
-            429 => 
+            429 =>
             array (
                 'orderNumber' => 10307,
                 'productCode' => 'S700_2047',
@@ -15465,7 +15466,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.47',
                 'orderLineNumber' => 5,
             ),
-            430 => 
+            430 =>
             array (
                 'orderNumber' => 10307,
                 'productCode' => 'S72_1253',
@@ -15473,7 +15474,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.20',
                 'orderLineNumber' => 4,
             ),
-            431 => 
+            431 =>
             array (
                 'orderNumber' => 10308,
                 'productCode' => 'S10_2016',
@@ -15481,7 +15482,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.37',
                 'orderLineNumber' => 2,
             ),
-            432 => 
+            432 =>
             array (
                 'orderNumber' => 10308,
                 'productCode' => 'S10_4698',
@@ -15489,7 +15490,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '187.85',
                 'orderLineNumber' => 1,
             ),
-            433 => 
+            433 =>
             array (
                 'orderNumber' => 10308,
                 'productCode' => 'S18_2581',
@@ -15497,7 +15498,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.95',
                 'orderLineNumber' => 7,
             ),
-            434 => 
+            434 =>
             array (
                 'orderNumber' => 10308,
                 'productCode' => 'S18_2625',
@@ -15505,7 +15506,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.46',
                 'orderLineNumber' => 3,
             ),
-            435 => 
+            435 =>
             array (
                 'orderNumber' => 10308,
                 'productCode' => 'S24_1785',
@@ -15513,7 +15514,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.57',
                 'orderLineNumber' => 9,
             ),
-            436 => 
+            436 =>
             array (
                 'orderNumber' => 10308,
                 'productCode' => 'S24_2000',
@@ -15521,7 +15522,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.55',
                 'orderLineNumber' => 4,
             ),
-            437 => 
+            437 =>
             array (
                 'orderNumber' => 10308,
                 'productCode' => 'S24_3949',
@@ -15529,7 +15530,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.00',
                 'orderLineNumber' => 16,
             ),
-            438 => 
+            438 =>
             array (
                 'orderNumber' => 10308,
                 'productCode' => 'S24_4278',
@@ -15537,7 +15538,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.73',
                 'orderLineNumber' => 8,
             ),
-            439 => 
+            439 =>
             array (
                 'orderNumber' => 10308,
                 'productCode' => 'S32_1374',
@@ -15545,7 +15546,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.89',
                 'orderLineNumber' => 5,
             ),
-            440 => 
+            440 =>
             array (
                 'orderNumber' => 10308,
                 'productCode' => 'S32_4289',
@@ -15553,7 +15554,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.22',
                 'orderLineNumber' => 10,
             ),
-            441 => 
+            441 =>
             array (
                 'orderNumber' => 10308,
                 'productCode' => 'S50_1341',
@@ -15561,7 +15562,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '37.09',
                 'orderLineNumber' => 11,
             ),
-            442 => 
+            442 =>
             array (
                 'orderNumber' => 10308,
                 'productCode' => 'S700_1691',
@@ -15569,7 +15570,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.07',
                 'orderLineNumber' => 12,
             ),
-            443 => 
+            443 =>
             array (
                 'orderNumber' => 10308,
                 'productCode' => 'S700_2466',
@@ -15577,7 +15578,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.75',
                 'orderLineNumber' => 14,
             ),
-            444 => 
+            444 =>
             array (
                 'orderNumber' => 10308,
                 'productCode' => 'S700_2834',
@@ -15585,7 +15586,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.85',
                 'orderLineNumber' => 6,
             ),
-            445 => 
+            445 =>
             array (
                 'orderNumber' => 10308,
                 'productCode' => 'S700_3167',
@@ -15593,7 +15594,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.20',
                 'orderLineNumber' => 13,
             ),
-            446 => 
+            446 =>
             array (
                 'orderNumber' => 10308,
                 'productCode' => 'S700_4002',
@@ -15601,7 +15602,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.93',
                 'orderLineNumber' => 15,
             ),
-            447 => 
+            447 =>
             array (
                 'orderNumber' => 10309,
                 'productCode' => 'S10_1678',
@@ -15609,7 +15610,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.74',
                 'orderLineNumber' => 5,
             ),
-            448 => 
+            448 =>
             array (
                 'orderNumber' => 10309,
                 'productCode' => 'S12_2823',
@@ -15617,7 +15618,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '144.60',
                 'orderLineNumber' => 4,
             ),
-            449 => 
+            449 =>
             array (
                 'orderNumber' => 10309,
                 'productCode' => 'S24_1578',
@@ -15625,7 +15626,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.92',
                 'orderLineNumber' => 6,
             ),
-            450 => 
+            450 =>
             array (
                 'orderNumber' => 10309,
                 'productCode' => 'S24_2360',
@@ -15633,7 +15634,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.56',
                 'orderLineNumber' => 2,
             ),
-            451 => 
+            451 =>
             array (
                 'orderNumber' => 10309,
                 'productCode' => 'S32_4485',
@@ -15641,7 +15642,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.89',
                 'orderLineNumber' => 3,
             ),
-            452 => 
+            452 =>
             array (
                 'orderNumber' => 10309,
                 'productCode' => 'S50_4713',
@@ -15649,7 +15650,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.04',
                 'orderLineNumber' => 1,
             ),
-            453 => 
+            453 =>
             array (
                 'orderNumber' => 10310,
                 'productCode' => 'S12_1099',
@@ -15657,7 +15658,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '165.38',
                 'orderLineNumber' => 10,
             ),
-            454 => 
+            454 =>
             array (
                 'orderNumber' => 10310,
                 'productCode' => 'S12_3380',
@@ -15665,7 +15666,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.70',
                 'orderLineNumber' => 8,
             ),
-            455 => 
+            455 =>
             array (
                 'orderNumber' => 10310,
                 'productCode' => 'S12_3990',
@@ -15673,7 +15674,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.41',
                 'orderLineNumber' => 11,
             ),
-            456 => 
+            456 =>
             array (
                 'orderNumber' => 10310,
                 'productCode' => 'S12_4675',
@@ -15681,7 +15682,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.34',
                 'orderLineNumber' => 7,
             ),
-            457 => 
+            457 =>
             array (
                 'orderNumber' => 10310,
                 'productCode' => 'S18_1129',
@@ -15689,7 +15690,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '128.80',
                 'orderLineNumber' => 2,
             ),
-            458 => 
+            458 =>
             array (
                 'orderNumber' => 10310,
                 'productCode' => 'S18_1889',
@@ -15697,7 +15698,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.99',
                 'orderLineNumber' => 6,
             ),
-            459 => 
+            459 =>
             array (
                 'orderNumber' => 10310,
                 'productCode' => 'S18_1984',
@@ -15705,7 +15706,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.45',
                 'orderLineNumber' => 1,
             ),
-            460 => 
+            460 =>
             array (
                 'orderNumber' => 10310,
                 'productCode' => 'S18_3232',
@@ -15713,7 +15714,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '159.18',
                 'orderLineNumber' => 3,
             ),
-            461 => 
+            461 =>
             array (
                 'orderNumber' => 10310,
                 'productCode' => 'S18_3278',
@@ -15721,7 +15722,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.76',
                 'orderLineNumber' => 13,
             ),
-            462 => 
+            462 =>
             array (
                 'orderNumber' => 10310,
                 'productCode' => 'S18_3482',
@@ -15729,7 +15730,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.00',
                 'orderLineNumber' => 12,
             ),
-            463 => 
+            463 =>
             array (
                 'orderNumber' => 10310,
                 'productCode' => 'S18_3782',
@@ -15737,7 +15738,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.06',
                 'orderLineNumber' => 16,
             ),
-            464 => 
+            464 =>
             array (
                 'orderNumber' => 10310,
                 'productCode' => 'S18_4721',
@@ -15745,7 +15746,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '133.92',
                 'orderLineNumber' => 15,
             ),
-            465 => 
+            465 =>
             array (
                 'orderNumber' => 10310,
                 'productCode' => 'S24_2972',
@@ -15753,7 +15754,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '33.23',
                 'orderLineNumber' => 4,
             ),
-            466 => 
+            466 =>
             array (
                 'orderNumber' => 10310,
                 'productCode' => 'S24_3371',
@@ -15761,7 +15762,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.21',
                 'orderLineNumber' => 9,
             ),
-            467 => 
+            467 =>
             array (
                 'orderNumber' => 10310,
                 'productCode' => 'S24_3856',
@@ -15769,7 +15770,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '139.03',
                 'orderLineNumber' => 5,
             ),
-            468 => 
+            468 =>
             array (
                 'orderNumber' => 10310,
                 'productCode' => 'S24_4620',
@@ -15777,7 +15778,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.18',
                 'orderLineNumber' => 14,
             ),
-            469 => 
+            469 =>
             array (
                 'orderNumber' => 10310,
                 'productCode' => 'S32_2206',
@@ -15785,7 +15786,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '38.62',
                 'orderLineNumber' => 17,
             ),
-            470 => 
+            470 =>
             array (
                 'orderNumber' => 10311,
                 'productCode' => 'S18_1589',
@@ -15793,7 +15794,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '124.44',
                 'orderLineNumber' => 9,
             ),
-            471 => 
+            471 =>
             array (
                 'orderNumber' => 10311,
                 'productCode' => 'S18_2870',
@@ -15801,7 +15802,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.84',
                 'orderLineNumber' => 10,
             ),
-            472 => 
+            472 =>
             array (
                 'orderNumber' => 10311,
                 'productCode' => 'S18_3685',
@@ -15809,7 +15810,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '134.22',
                 'orderLineNumber' => 11,
             ),
-            473 => 
+            473 =>
             array (
                 'orderNumber' => 10311,
                 'productCode' => 'S18_4409',
@@ -15817,7 +15818,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.03',
                 'orderLineNumber' => 1,
             ),
-            474 => 
+            474 =>
             array (
                 'orderNumber' => 10311,
                 'productCode' => 'S18_4933',
@@ -15825,7 +15826,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.99',
                 'orderLineNumber' => 2,
             ),
-            475 => 
+            475 =>
             array (
                 'orderNumber' => 10311,
                 'productCode' => 'S24_1046',
@@ -15833,7 +15834,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.55',
                 'orderLineNumber' => 6,
             ),
-            476 => 
+            476 =>
             array (
                 'orderNumber' => 10311,
                 'productCode' => 'S24_1628',
@@ -15841,7 +15842,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.80',
                 'orderLineNumber' => 8,
             ),
-            477 => 
+            477 =>
             array (
                 'orderNumber' => 10311,
                 'productCode' => 'S24_2766',
@@ -15849,7 +15850,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.05',
                 'orderLineNumber' => 4,
             ),
-            478 => 
+            478 =>
             array (
                 'orderNumber' => 10311,
                 'productCode' => 'S24_2887',
@@ -15857,7 +15858,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '116.27',
                 'orderLineNumber' => 3,
             ),
-            479 => 
+            479 =>
             array (
                 'orderNumber' => 10311,
                 'productCode' => 'S24_3191',
@@ -15865,7 +15866,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.61',
                 'orderLineNumber' => 5,
             ),
-            480 => 
+            480 =>
             array (
                 'orderNumber' => 10311,
                 'productCode' => 'S24_3432',
@@ -15873,7 +15874,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.02',
                 'orderLineNumber' => 7,
             ),
-            481 => 
+            481 =>
             array (
                 'orderNumber' => 10312,
                 'productCode' => 'S10_1949',
@@ -15881,7 +15882,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '214.30',
                 'orderLineNumber' => 3,
             ),
-            482 => 
+            482 =>
             array (
                 'orderNumber' => 10312,
                 'productCode' => 'S18_1097',
@@ -15889,7 +15890,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.50',
                 'orderLineNumber' => 2,
             ),
-            483 => 
+            483 =>
             array (
                 'orderNumber' => 10312,
                 'productCode' => 'S18_1342',
@@ -15897,7 +15898,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.74',
                 'orderLineNumber' => 10,
             ),
-            484 => 
+            484 =>
             array (
                 'orderNumber' => 10312,
                 'productCode' => 'S18_1367',
@@ -15905,7 +15906,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.67',
                 'orderLineNumber' => 9,
             ),
-            485 => 
+            485 =>
             array (
                 'orderNumber' => 10312,
                 'productCode' => 'S18_1749',
@@ -15913,7 +15914,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '146.20',
                 'orderLineNumber' => 17,
             ),
-            486 => 
+            486 =>
             array (
                 'orderNumber' => 10312,
                 'productCode' => 'S18_2248',
@@ -15921,7 +15922,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.43',
                 'orderLineNumber' => 16,
             ),
-            487 => 
+            487 =>
             array (
                 'orderNumber' => 10312,
                 'productCode' => 'S18_2325',
@@ -15929,7 +15930,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.87',
                 'orderLineNumber' => 14,
             ),
-            488 => 
+            488 =>
             array (
                 'orderNumber' => 10312,
                 'productCode' => 'S18_2795',
@@ -15937,7 +15938,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '150.19',
                 'orderLineNumber' => 11,
             ),
-            489 => 
+            489 =>
             array (
                 'orderNumber' => 10312,
                 'productCode' => 'S18_2949',
@@ -15945,7 +15946,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.18',
                 'orderLineNumber' => 4,
             ),
-            490 => 
+            490 =>
             array (
                 'orderNumber' => 10312,
                 'productCode' => 'S18_2957',
@@ -15953,7 +15954,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.34',
                 'orderLineNumber' => 6,
             ),
-            491 => 
+            491 =>
             array (
                 'orderNumber' => 10312,
                 'productCode' => 'S18_3136',
@@ -15961,7 +15962,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.20',
                 'orderLineNumber' => 5,
             ),
-            492 => 
+            492 =>
             array (
                 'orderNumber' => 10312,
                 'productCode' => 'S18_3320',
@@ -15969,7 +15970,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.33',
                 'orderLineNumber' => 8,
             ),
-            493 => 
+            493 =>
             array (
                 'orderNumber' => 10312,
                 'productCode' => 'S18_4668',
@@ -15977,7 +15978,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.27',
                 'orderLineNumber' => 1,
             ),
-            494 => 
+            494 =>
             array (
                 'orderNumber' => 10312,
                 'productCode' => 'S24_1937',
@@ -15985,7 +15986,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '27.88',
                 'orderLineNumber' => 13,
             ),
-            495 => 
+            495 =>
             array (
                 'orderNumber' => 10312,
                 'productCode' => 'S24_2022',
@@ -15993,7 +15994,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.46',
                 'orderLineNumber' => 12,
             ),
-            496 => 
+            496 =>
             array (
                 'orderNumber' => 10312,
                 'productCode' => 'S24_3969',
@@ -16001,7 +16002,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '40.21',
                 'orderLineNumber' => 15,
             ),
-            497 => 
+            497 =>
             array (
                 'orderNumber' => 10312,
                 'productCode' => 'S24_4258',
@@ -16009,7 +16010,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.42',
                 'orderLineNumber' => 7,
             ),
-            498 => 
+            498 =>
             array (
                 'orderNumber' => 10313,
                 'productCode' => 'S10_4962',
@@ -16017,7 +16018,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '141.83',
                 'orderLineNumber' => 7,
             ),
-            499 => 
+            499 =>
             array (
                 'orderNumber' => 10313,
                 'productCode' => 'S12_1666',
@@ -16025,9 +16026,9 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '131.20',
                 'orderLineNumber' => 11,
             ),
-        ));
-        \DB::table('orderdetails')->insert(array (
-            0 => 
+        );
+        $data_kelima = array (
+            0 =>
             array (
                 'orderNumber' => 10313,
                 'productCode' => 'S18_2319',
@@ -16035,7 +16036,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.23',
                 'orderLineNumber' => 2,
             ),
-            1 => 
+            1 =>
             array (
                 'orderNumber' => 10313,
                 'productCode' => 'S18_2432',
@@ -16043,7 +16044,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.87',
                 'orderLineNumber' => 5,
             ),
-            2 => 
+            2 =>
             array (
                 'orderNumber' => 10313,
                 'productCode' => 'S18_3232',
@@ -16051,7 +16052,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '143.94',
                 'orderLineNumber' => 3,
             ),
-            3 => 
+            3 =>
             array (
                 'orderNumber' => 10313,
                 'productCode' => 'S18_4600',
@@ -16059,7 +16060,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.18',
                 'orderLineNumber' => 8,
             ),
-            4 => 
+            4 =>
             array (
                 'orderNumber' => 10313,
                 'productCode' => 'S24_2300',
@@ -16067,7 +16068,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.23',
                 'orderLineNumber' => 4,
             ),
-            5 => 
+            5 =>
             array (
                 'orderNumber' => 10313,
                 'productCode' => 'S32_1268',
@@ -16075,7 +16076,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.31',
                 'orderLineNumber' => 6,
             ),
-            6 => 
+            6 =>
             array (
                 'orderNumber' => 10313,
                 'productCode' => 'S32_2509',
@@ -16083,7 +16084,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.70',
                 'orderLineNumber' => 1,
             ),
-            7 => 
+            7 =>
             array (
                 'orderNumber' => 10313,
                 'productCode' => 'S32_3522',
@@ -16091,7 +16092,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.59',
                 'orderLineNumber' => 10,
             ),
-            8 => 
+            8 =>
             array (
                 'orderNumber' => 10313,
                 'productCode' => 'S700_2824',
@@ -16099,7 +16100,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.09',
                 'orderLineNumber' => 9,
             ),
-            9 => 
+            9 =>
             array (
                 'orderNumber' => 10314,
                 'productCode' => 'S12_1108',
@@ -16107,7 +16108,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '176.63',
                 'orderLineNumber' => 5,
             ),
-            10 => 
+            10 =>
             array (
                 'orderNumber' => 10314,
                 'productCode' => 'S12_3148',
@@ -16115,7 +16116,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '125.40',
                 'orderLineNumber' => 6,
             ),
-            11 => 
+            11 =>
             array (
                 'orderNumber' => 10314,
                 'productCode' => 'S12_3891',
@@ -16123,7 +16124,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '169.56',
                 'orderLineNumber' => 4,
             ),
-            12 => 
+            12 =>
             array (
                 'orderNumber' => 10314,
                 'productCode' => 'S12_4473',
@@ -16131,7 +16132,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.99',
                 'orderLineNumber' => 14,
             ),
-            13 => 
+            13 =>
             array (
                 'orderNumber' => 10314,
                 'productCode' => 'S18_2238',
@@ -16139,7 +16140,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.90',
                 'orderLineNumber' => 13,
             ),
-            14 => 
+            14 =>
             array (
                 'orderNumber' => 10314,
                 'productCode' => 'S18_3140',
@@ -16147,7 +16148,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.76',
                 'orderLineNumber' => 1,
             ),
-            15 => 
+            15 =>
             array (
                 'orderNumber' => 10314,
                 'productCode' => 'S18_3259',
@@ -16155,7 +16156,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.71',
                 'orderLineNumber' => 3,
             ),
-            16 => 
+            16 =>
             array (
                 'orderNumber' => 10314,
                 'productCode' => 'S18_4027',
@@ -16163,7 +16164,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.26',
                 'orderLineNumber' => 8,
             ),
-            17 => 
+            17 =>
             array (
                 'orderNumber' => 10314,
                 'productCode' => 'S24_1444',
@@ -16171,7 +16172,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.44',
                 'orderLineNumber' => 11,
             ),
-            18 => 
+            18 =>
             array (
                 'orderNumber' => 10314,
                 'productCode' => 'S24_2840',
@@ -16179,7 +16180,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '31.82',
                 'orderLineNumber' => 15,
             ),
-            19 => 
+            19 =>
             array (
                 'orderNumber' => 10314,
                 'productCode' => 'S24_4048',
@@ -16187,7 +16188,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.18',
                 'orderLineNumber' => 10,
             ),
-            20 => 
+            20 =>
             array (
                 'orderNumber' => 10314,
                 'productCode' => 'S32_3207',
@@ -16195,7 +16196,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.41',
                 'orderLineNumber' => 9,
             ),
-            21 => 
+            21 =>
             array (
                 'orderNumber' => 10314,
                 'productCode' => 'S50_1392',
@@ -16203,7 +16204,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.75',
                 'orderLineNumber' => 12,
             ),
-            22 => 
+            22 =>
             array (
                 'orderNumber' => 10314,
                 'productCode' => 'S50_1514',
@@ -16211,7 +16212,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.38',
                 'orderLineNumber' => 7,
             ),
-            23 => 
+            23 =>
             array (
                 'orderNumber' => 10314,
                 'productCode' => 'S700_1938',
@@ -16219,7 +16220,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.15',
                 'orderLineNumber' => 2,
             ),
-            24 => 
+            24 =>
             array (
                 'orderNumber' => 10315,
                 'productCode' => 'S18_4522',
@@ -16227,7 +16228,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.12',
                 'orderLineNumber' => 7,
             ),
-            25 => 
+            25 =>
             array (
                 'orderNumber' => 10315,
                 'productCode' => 'S24_2011',
@@ -16235,7 +16236,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.83',
                 'orderLineNumber' => 6,
             ),
-            26 => 
+            26 =>
             array (
                 'orderNumber' => 10315,
                 'productCode' => 'S24_3151',
@@ -16243,7 +16244,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.77',
                 'orderLineNumber' => 1,
             ),
-            27 => 
+            27 =>
             array (
                 'orderNumber' => 10315,
                 'productCode' => 'S700_1138',
@@ -16251,7 +16252,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.67',
                 'orderLineNumber' => 2,
             ),
-            28 => 
+            28 =>
             array (
                 'orderNumber' => 10315,
                 'productCode' => 'S700_3505',
@@ -16259,7 +16260,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.17',
                 'orderLineNumber' => 3,
             ),
-            29 => 
+            29 =>
             array (
                 'orderNumber' => 10315,
                 'productCode' => 'S700_3962',
@@ -16267,7 +16268,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.39',
                 'orderLineNumber' => 4,
             ),
-            30 => 
+            30 =>
             array (
                 'orderNumber' => 10315,
                 'productCode' => 'S72_3212',
@@ -16275,7 +16276,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.32',
                 'orderLineNumber' => 5,
             ),
-            31 => 
+            31 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S10_4757',
@@ -16283,7 +16284,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.48',
                 'orderLineNumber' => 17,
             ),
-            32 => 
+            32 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S18_1662',
@@ -16291,7 +16292,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.34',
                 'orderLineNumber' => 9,
             ),
-            33 => 
+            33 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S18_3029',
@@ -16299,7 +16300,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.26',
                 'orderLineNumber' => 15,
             ),
-            34 => 
+            34 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S18_3856',
@@ -16307,7 +16308,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.99',
                 'orderLineNumber' => 14,
             ),
-            35 => 
+            35 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S24_1785',
@@ -16315,7 +16316,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.01',
                 'orderLineNumber' => 1,
             ),
-            36 => 
+            36 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S24_2841',
@@ -16323,7 +16324,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.14',
                 'orderLineNumber' => 10,
             ),
-            37 => 
+            37 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S24_3420',
@@ -16331,7 +16332,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.23',
                 'orderLineNumber' => 11,
             ),
-            38 => 
+            38 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S24_3816',
@@ -16339,7 +16340,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.15',
                 'orderLineNumber' => 16,
             ),
-            39 => 
+            39 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S24_3949',
@@ -16347,7 +16348,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.56',
                 'orderLineNumber' => 8,
             ),
-            40 => 
+            40 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S32_4289',
@@ -16355,7 +16356,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.16',
                 'orderLineNumber' => 2,
             ),
-            41 => 
+            41 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S50_1341',
@@ -16363,7 +16364,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '36.66',
                 'orderLineNumber' => 3,
             ),
-            42 => 
+            42 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S700_1691',
@@ -16371,7 +16372,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.90',
                 'orderLineNumber' => 4,
             ),
-            43 => 
+            43 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S700_2047',
@@ -16379,7 +16380,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.32',
                 'orderLineNumber' => 13,
             ),
-            44 => 
+            44 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S700_2466',
@@ -16387,7 +16388,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.76',
                 'orderLineNumber' => 6,
             ),
-            45 => 
+            45 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S700_2610',
@@ -16395,7 +16396,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.22',
                 'orderLineNumber' => 18,
             ),
-            46 => 
+            46 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S700_3167',
@@ -16403,7 +16404,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.60',
                 'orderLineNumber' => 5,
             ),
-            47 => 
+            47 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S700_4002',
@@ -16411,7 +16412,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.11',
                 'orderLineNumber' => 7,
             ),
-            48 => 
+            48 =>
             array (
                 'orderNumber' => 10316,
                 'productCode' => 'S72_1253',
@@ -16419,7 +16420,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.70',
                 'orderLineNumber' => 12,
             ),
-            49 => 
+            49 =>
             array (
                 'orderNumber' => 10317,
                 'productCode' => 'S24_4278',
@@ -16427,7 +16428,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.55',
                 'orderLineNumber' => 1,
             ),
-            50 => 
+            50 =>
             array (
                 'orderNumber' => 10318,
                 'productCode' => 'S10_1678',
@@ -16435,7 +16436,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.22',
                 'orderLineNumber' => 1,
             ),
-            51 => 
+            51 =>
             array (
                 'orderNumber' => 10318,
                 'productCode' => 'S10_2016',
@@ -16443,7 +16444,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.29',
                 'orderLineNumber' => 4,
             ),
-            52 => 
+            52 =>
             array (
                 'orderNumber' => 10318,
                 'productCode' => 'S10_4698',
@@ -16451,7 +16452,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '189.79',
                 'orderLineNumber' => 3,
             ),
-            53 => 
+            53 =>
             array (
                 'orderNumber' => 10318,
                 'productCode' => 'S18_2581',
@@ -16459,7 +16460,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.95',
                 'orderLineNumber' => 9,
             ),
-            54 => 
+            54 =>
             array (
                 'orderNumber' => 10318,
                 'productCode' => 'S18_2625',
@@ -16467,7 +16468,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.67',
                 'orderLineNumber' => 5,
             ),
-            55 => 
+            55 =>
             array (
                 'orderNumber' => 10318,
                 'productCode' => 'S24_1578',
@@ -16475,7 +16476,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.54',
                 'orderLineNumber' => 2,
             ),
-            56 => 
+            56 =>
             array (
                 'orderNumber' => 10318,
                 'productCode' => 'S24_2000',
@@ -16483,7 +16484,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.94',
                 'orderLineNumber' => 6,
             ),
-            57 => 
+            57 =>
             array (
                 'orderNumber' => 10318,
                 'productCode' => 'S32_1374',
@@ -16491,7 +16492,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.91',
                 'orderLineNumber' => 7,
             ),
-            58 => 
+            58 =>
             array (
                 'orderNumber' => 10318,
                 'productCode' => 'S700_2834',
@@ -16499,7 +16500,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.04',
                 'orderLineNumber' => 8,
             ),
-            59 => 
+            59 =>
             array (
                 'orderNumber' => 10319,
                 'productCode' => 'S12_2823',
@@ -16507,7 +16508,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '134.05',
                 'orderLineNumber' => 9,
             ),
-            60 => 
+            60 =>
             array (
                 'orderNumber' => 10319,
                 'productCode' => 'S18_3278',
@@ -16515,7 +16516,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.19',
                 'orderLineNumber' => 1,
             ),
-            61 => 
+            61 =>
             array (
                 'orderNumber' => 10319,
                 'productCode' => 'S18_3782',
@@ -16523,7 +16524,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.71',
                 'orderLineNumber' => 4,
             ),
-            62 => 
+            62 =>
             array (
                 'orderNumber' => 10319,
                 'productCode' => 'S18_4721',
@@ -16531,7 +16532,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.53',
                 'orderLineNumber' => 3,
             ),
-            63 => 
+            63 =>
             array (
                 'orderNumber' => 10319,
                 'productCode' => 'S24_2360',
@@ -16539,7 +16540,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.80',
                 'orderLineNumber' => 7,
             ),
-            64 => 
+            64 =>
             array (
                 'orderNumber' => 10319,
                 'productCode' => 'S24_4620',
@@ -16547,7 +16548,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.41',
                 'orderLineNumber' => 2,
             ),
-            65 => 
+            65 =>
             array (
                 'orderNumber' => 10319,
                 'productCode' => 'S32_2206',
@@ -16555,7 +16556,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.00',
                 'orderLineNumber' => 5,
             ),
-            66 => 
+            66 =>
             array (
                 'orderNumber' => 10319,
                 'productCode' => 'S32_4485',
@@ -16563,7 +16564,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.95',
                 'orderLineNumber' => 8,
             ),
-            67 => 
+            67 =>
             array (
                 'orderNumber' => 10319,
                 'productCode' => 'S50_4713',
@@ -16571,7 +16572,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.73',
                 'orderLineNumber' => 6,
             ),
-            68 => 
+            68 =>
             array (
                 'orderNumber' => 10320,
                 'productCode' => 'S12_1099',
@@ -16579,7 +16580,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '184.84',
                 'orderLineNumber' => 3,
             ),
-            69 => 
+            69 =>
             array (
                 'orderNumber' => 10320,
                 'productCode' => 'S12_3380',
@@ -16587,7 +16588,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.17',
                 'orderLineNumber' => 1,
             ),
-            70 => 
+            70 =>
             array (
                 'orderNumber' => 10320,
                 'productCode' => 'S12_3990',
@@ -16595,7 +16596,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.84',
                 'orderLineNumber' => 4,
             ),
-            71 => 
+            71 =>
             array (
                 'orderNumber' => 10320,
                 'productCode' => 'S18_3482',
@@ -16603,7 +16604,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '139.64',
                 'orderLineNumber' => 5,
             ),
-            72 => 
+            72 =>
             array (
                 'orderNumber' => 10320,
                 'productCode' => 'S24_3371',
@@ -16611,7 +16612,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.62',
                 'orderLineNumber' => 2,
             ),
-            73 => 
+            73 =>
             array (
                 'orderNumber' => 10321,
                 'productCode' => 'S12_4675',
@@ -16619,7 +16620,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.95',
                 'orderLineNumber' => 15,
             ),
-            74 => 
+            74 =>
             array (
                 'orderNumber' => 10321,
                 'productCode' => 'S18_1129',
@@ -16627,7 +16628,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '123.14',
                 'orderLineNumber' => 10,
             ),
-            75 => 
+            75 =>
             array (
                 'orderNumber' => 10321,
                 'productCode' => 'S18_1589',
@@ -16635,7 +16636,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.71',
                 'orderLineNumber' => 6,
             ),
-            76 => 
+            76 =>
             array (
                 'orderNumber' => 10321,
                 'productCode' => 'S18_1889',
@@ -16643,7 +16644,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.92',
                 'orderLineNumber' => 14,
             ),
-            77 => 
+            77 =>
             array (
                 'orderNumber' => 10321,
                 'productCode' => 'S18_1984',
@@ -16651,7 +16652,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '142.25',
                 'orderLineNumber' => 9,
             ),
-            78 => 
+            78 =>
             array (
                 'orderNumber' => 10321,
                 'productCode' => 'S18_2870',
@@ -16659,7 +16660,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.72',
                 'orderLineNumber' => 7,
             ),
-            79 => 
+            79 =>
             array (
                 'orderNumber' => 10321,
                 'productCode' => 'S18_3232',
@@ -16667,7 +16668,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '164.26',
                 'orderLineNumber' => 11,
             ),
-            80 => 
+            80 =>
             array (
                 'orderNumber' => 10321,
                 'productCode' => 'S18_3685',
@@ -16675,7 +16676,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '138.45',
                 'orderLineNumber' => 8,
             ),
-            81 => 
+            81 =>
             array (
                 'orderNumber' => 10321,
                 'productCode' => 'S24_1046',
@@ -16683,7 +16684,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.35',
                 'orderLineNumber' => 3,
             ),
-            82 => 
+            82 =>
             array (
                 'orderNumber' => 10321,
                 'productCode' => 'S24_1628',
@@ -16691,7 +16692,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '42.76',
                 'orderLineNumber' => 5,
             ),
-            83 => 
+            83 =>
             array (
                 'orderNumber' => 10321,
                 'productCode' => 'S24_2766',
@@ -16699,7 +16700,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.51',
                 'orderLineNumber' => 1,
             ),
-            84 => 
+            84 =>
             array (
                 'orderNumber' => 10321,
                 'productCode' => 'S24_2972',
@@ -16707,7 +16708,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '31.72',
                 'orderLineNumber' => 12,
             ),
-            85 => 
+            85 =>
             array (
                 'orderNumber' => 10321,
                 'productCode' => 'S24_3191',
@@ -16715,7 +16716,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.33',
                 'orderLineNumber' => 2,
             ),
-            86 => 
+            86 =>
             array (
                 'orderNumber' => 10321,
                 'productCode' => 'S24_3432',
@@ -16723,7 +16724,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '103.87',
                 'orderLineNumber' => 4,
             ),
-            87 => 
+            87 =>
             array (
                 'orderNumber' => 10321,
                 'productCode' => 'S24_3856',
@@ -16731,7 +16732,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.62',
                 'orderLineNumber' => 13,
             ),
-            88 => 
+            88 =>
             array (
                 'orderNumber' => 10322,
                 'productCode' => 'S10_1949',
@@ -16739,7 +16740,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '180.01',
                 'orderLineNumber' => 1,
             ),
-            89 => 
+            89 =>
             array (
                 'orderNumber' => 10322,
                 'productCode' => 'S10_4962',
@@ -16747,7 +16748,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '141.83',
                 'orderLineNumber' => 8,
             ),
-            90 => 
+            90 =>
             array (
                 'orderNumber' => 10322,
                 'productCode' => 'S12_1666',
@@ -16755,7 +16756,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '136.67',
                 'orderLineNumber' => 9,
             ),
-            91 => 
+            91 =>
             array (
                 'orderNumber' => 10322,
                 'productCode' => 'S18_1097',
@@ -16763,7 +16764,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.50',
                 'orderLineNumber' => 10,
             ),
-            92 => 
+            92 =>
             array (
                 'orderNumber' => 10322,
                 'productCode' => 'S18_1342',
@@ -16771,7 +16772,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.47',
                 'orderLineNumber' => 14,
             ),
-            93 => 
+            93 =>
             array (
                 'orderNumber' => 10322,
                 'productCode' => 'S18_1367',
@@ -16779,7 +16780,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.21',
                 'orderLineNumber' => 5,
             ),
-            94 => 
+            94 =>
             array (
                 'orderNumber' => 10322,
                 'productCode' => 'S18_2325',
@@ -16787,7 +16788,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.77',
                 'orderLineNumber' => 6,
             ),
-            95 => 
+            95 =>
             array (
                 'orderNumber' => 10322,
                 'productCode' => 'S18_2432',
@@ -16795,7 +16796,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.12',
                 'orderLineNumber' => 11,
             ),
-            96 => 
+            96 =>
             array (
                 'orderNumber' => 10322,
                 'productCode' => 'S18_2795',
@@ -16803,7 +16804,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '158.63',
                 'orderLineNumber' => 2,
             ),
-            97 => 
+            97 =>
             array (
                 'orderNumber' => 10322,
                 'productCode' => 'S18_2949',
@@ -16811,7 +16812,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.30',
                 'orderLineNumber' => 12,
             ),
-            98 => 
+            98 =>
             array (
                 'orderNumber' => 10322,
                 'productCode' => 'S18_2957',
@@ -16819,7 +16820,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.34',
                 'orderLineNumber' => 13,
             ),
-            99 => 
+            99 =>
             array (
                 'orderNumber' => 10322,
                 'productCode' => 'S18_3136',
@@ -16827,7 +16828,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.06',
                 'orderLineNumber' => 7,
             ),
-            100 => 
+            100 =>
             array (
                 'orderNumber' => 10322,
                 'productCode' => 'S24_1937',
@@ -16835,7 +16836,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '26.55',
                 'orderLineNumber' => 3,
             ),
-            101 => 
+            101 =>
             array (
                 'orderNumber' => 10322,
                 'productCode' => 'S24_2022',
@@ -16843,7 +16844,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '40.77',
                 'orderLineNumber' => 4,
             ),
-            102 => 
+            102 =>
             array (
                 'orderNumber' => 10323,
                 'productCode' => 'S18_3320',
@@ -16851,7 +16852,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.30',
                 'orderLineNumber' => 2,
             ),
-            103 => 
+            103 =>
             array (
                 'orderNumber' => 10323,
                 'productCode' => 'S18_4600',
@@ -16859,7 +16860,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.86',
                 'orderLineNumber' => 1,
             ),
-            104 => 
+            104 =>
             array (
                 'orderNumber' => 10324,
                 'productCode' => 'S12_3148',
@@ -16867,7 +16868,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '148.06',
                 'orderLineNumber' => 1,
             ),
-            105 => 
+            105 =>
             array (
                 'orderNumber' => 10324,
                 'productCode' => 'S12_4473',
@@ -16875,7 +16876,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.73',
                 'orderLineNumber' => 7,
             ),
-            106 => 
+            106 =>
             array (
                 'orderNumber' => 10324,
                 'productCode' => 'S18_2238',
@@ -16883,7 +16884,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '142.45',
                 'orderLineNumber' => 8,
             ),
-            107 => 
+            107 =>
             array (
                 'orderNumber' => 10324,
                 'productCode' => 'S18_2319',
@@ -16891,7 +16892,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.55',
                 'orderLineNumber' => 10,
             ),
-            108 => 
+            108 =>
             array (
                 'orderNumber' => 10324,
                 'productCode' => 'S18_3232',
@@ -16899,7 +16900,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.17',
                 'orderLineNumber' => 12,
             ),
-            109 => 
+            109 =>
             array (
                 'orderNumber' => 10324,
                 'productCode' => 'S18_4027',
@@ -16907,7 +16908,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.64',
                 'orderLineNumber' => 13,
             ),
-            110 => 
+            110 =>
             array (
                 'orderNumber' => 10324,
                 'productCode' => 'S18_4668',
@@ -16915,7 +16916,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.81',
                 'orderLineNumber' => 6,
             ),
-            111 => 
+            111 =>
             array (
                 'orderNumber' => 10324,
                 'productCode' => 'S24_1444',
@@ -16923,7 +16924,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.71',
                 'orderLineNumber' => 14,
             ),
-            112 => 
+            112 =>
             array (
                 'orderNumber' => 10324,
                 'productCode' => 'S24_2300',
@@ -16931,7 +16932,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.34',
                 'orderLineNumber' => 2,
             ),
-            113 => 
+            113 =>
             array (
                 'orderNumber' => 10324,
                 'productCode' => 'S24_2840',
@@ -16939,7 +16940,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '29.35',
                 'orderLineNumber' => 9,
             ),
-            114 => 
+            114 =>
             array (
                 'orderNumber' => 10324,
                 'productCode' => 'S24_4258',
@@ -16947,7 +16948,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.44',
                 'orderLineNumber' => 3,
             ),
-            115 => 
+            115 =>
             array (
                 'orderNumber' => 10324,
                 'productCode' => 'S32_1268',
@@ -16955,7 +16956,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.49',
                 'orderLineNumber' => 11,
             ),
-            116 => 
+            116 =>
             array (
                 'orderNumber' => 10324,
                 'productCode' => 'S32_3522',
@@ -16963,7 +16964,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.76',
                 'orderLineNumber' => 4,
             ),
-            117 => 
+            117 =>
             array (
                 'orderNumber' => 10324,
                 'productCode' => 'S700_2824',
@@ -16971,7 +16972,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.92',
                 'orderLineNumber' => 5,
             ),
-            118 => 
+            118 =>
             array (
                 'orderNumber' => 10325,
                 'productCode' => 'S10_4757',
@@ -16979,7 +16980,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.52',
                 'orderLineNumber' => 6,
             ),
-            119 => 
+            119 =>
             array (
                 'orderNumber' => 10325,
                 'productCode' => 'S12_1108',
@@ -16987,7 +16988,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '193.25',
                 'orderLineNumber' => 8,
             ),
-            120 => 
+            120 =>
             array (
                 'orderNumber' => 10325,
                 'productCode' => 'S12_3891',
@@ -16995,7 +16996,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '166.10',
                 'orderLineNumber' => 1,
             ),
-            121 => 
+            121 =>
             array (
                 'orderNumber' => 10325,
                 'productCode' => 'S18_3140',
@@ -17003,7 +17004,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.74',
                 'orderLineNumber' => 9,
             ),
-            122 => 
+            122 =>
             array (
                 'orderNumber' => 10325,
                 'productCode' => 'S24_4048',
@@ -17011,7 +17012,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.73',
                 'orderLineNumber' => 5,
             ),
-            123 => 
+            123 =>
             array (
                 'orderNumber' => 10325,
                 'productCode' => 'S32_2509',
@@ -17019,7 +17020,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.37',
                 'orderLineNumber' => 3,
             ),
-            124 => 
+            124 =>
             array (
                 'orderNumber' => 10325,
                 'productCode' => 'S32_3207',
@@ -17027,7 +17028,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.30',
                 'orderLineNumber' => 2,
             ),
-            125 => 
+            125 =>
             array (
                 'orderNumber' => 10325,
                 'productCode' => 'S50_1392',
@@ -17035,7 +17036,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.55',
                 'orderLineNumber' => 4,
             ),
-            126 => 
+            126 =>
             array (
                 'orderNumber' => 10325,
                 'productCode' => 'S50_1514',
@@ -17043,7 +17044,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.24',
                 'orderLineNumber' => 7,
             ),
-            127 => 
+            127 =>
             array (
                 'orderNumber' => 10326,
                 'productCode' => 'S18_3259',
@@ -17051,7 +17052,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.79',
                 'orderLineNumber' => 6,
             ),
-            128 => 
+            128 =>
             array (
                 'orderNumber' => 10326,
                 'productCode' => 'S18_4522',
@@ -17059,7 +17060,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.73',
                 'orderLineNumber' => 5,
             ),
-            129 => 
+            129 =>
             array (
                 'orderNumber' => 10326,
                 'productCode' => 'S24_2011',
@@ -17067,7 +17068,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.43',
                 'orderLineNumber' => 4,
             ),
-            130 => 
+            130 =>
             array (
                 'orderNumber' => 10326,
                 'productCode' => 'S24_3151',
@@ -17075,7 +17076,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.74',
                 'orderLineNumber' => 3,
             ),
-            131 => 
+            131 =>
             array (
                 'orderNumber' => 10326,
                 'productCode' => 'S24_3816',
@@ -17083,7 +17084,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.34',
                 'orderLineNumber' => 2,
             ),
-            132 => 
+            132 =>
             array (
                 'orderNumber' => 10326,
                 'productCode' => 'S700_1138',
@@ -17091,7 +17092,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.67',
                 'orderLineNumber' => 1,
             ),
-            133 => 
+            133 =>
             array (
                 'orderNumber' => 10327,
                 'productCode' => 'S18_1662',
@@ -17099,7 +17100,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '154.54',
                 'orderLineNumber' => 6,
             ),
-            134 => 
+            134 =>
             array (
                 'orderNumber' => 10327,
                 'productCode' => 'S18_2581',
@@ -17107,7 +17108,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.34',
                 'orderLineNumber' => 8,
             ),
-            135 => 
+            135 =>
             array (
                 'orderNumber' => 10327,
                 'productCode' => 'S18_3029',
@@ -17115,7 +17116,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.84',
                 'orderLineNumber' => 5,
             ),
-            136 => 
+            136 =>
             array (
                 'orderNumber' => 10327,
                 'productCode' => 'S700_1938',
@@ -17123,7 +17124,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.68',
                 'orderLineNumber' => 7,
             ),
-            137 => 
+            137 =>
             array (
                 'orderNumber' => 10327,
                 'productCode' => 'S700_2610',
@@ -17131,7 +17132,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.05',
                 'orderLineNumber' => 1,
             ),
-            138 => 
+            138 =>
             array (
                 'orderNumber' => 10327,
                 'productCode' => 'S700_3505',
@@ -17139,7 +17140,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.14',
                 'orderLineNumber' => 2,
             ),
-            139 => 
+            139 =>
             array (
                 'orderNumber' => 10327,
                 'productCode' => 'S700_3962',
@@ -17147,7 +17148,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.42',
                 'orderLineNumber' => 3,
             ),
-            140 => 
+            140 =>
             array (
                 'orderNumber' => 10327,
                 'productCode' => 'S72_3212',
@@ -17155,7 +17156,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.05',
                 'orderLineNumber' => 4,
             ),
-            141 => 
+            141 =>
             array (
                 'orderNumber' => 10328,
                 'productCode' => 'S18_3856',
@@ -17163,7 +17164,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.81',
                 'orderLineNumber' => 6,
             ),
-            142 => 
+            142 =>
             array (
                 'orderNumber' => 10328,
                 'productCode' => 'S24_1785',
@@ -17171,7 +17172,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.54',
                 'orderLineNumber' => 14,
             ),
-            143 => 
+            143 =>
             array (
                 'orderNumber' => 10328,
                 'productCode' => 'S24_2841',
@@ -17179,7 +17180,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.82',
                 'orderLineNumber' => 1,
             ),
-            144 => 
+            144 =>
             array (
                 'orderNumber' => 10328,
                 'productCode' => 'S24_3420',
@@ -17187,7 +17188,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.55',
                 'orderLineNumber' => 2,
             ),
-            145 => 
+            145 =>
             array (
                 'orderNumber' => 10328,
                 'productCode' => 'S24_3949',
@@ -17195,7 +17196,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.96',
                 'orderLineNumber' => 3,
             ),
-            146 => 
+            146 =>
             array (
                 'orderNumber' => 10328,
                 'productCode' => 'S24_4278',
@@ -17203,7 +17204,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.55',
                 'orderLineNumber' => 4,
             ),
-            147 => 
+            147 =>
             array (
                 'orderNumber' => 10328,
                 'productCode' => 'S32_4289',
@@ -17211,7 +17212,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.10',
                 'orderLineNumber' => 5,
             ),
-            148 => 
+            148 =>
             array (
                 'orderNumber' => 10328,
                 'productCode' => 'S50_1341',
@@ -17219,7 +17220,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '42.33',
                 'orderLineNumber' => 7,
             ),
-            149 => 
+            149 =>
             array (
                 'orderNumber' => 10328,
                 'productCode' => 'S700_1691',
@@ -17227,7 +17228,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.03',
                 'orderLineNumber' => 8,
             ),
-            150 => 
+            150 =>
             array (
                 'orderNumber' => 10328,
                 'productCode' => 'S700_2047',
@@ -17235,7 +17236,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.13',
                 'orderLineNumber' => 9,
             ),
-            151 => 
+            151 =>
             array (
                 'orderNumber' => 10328,
                 'productCode' => 'S700_2466',
@@ -17243,7 +17244,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.73',
                 'orderLineNumber' => 10,
             ),
-            152 => 
+            152 =>
             array (
                 'orderNumber' => 10328,
                 'productCode' => 'S700_2834',
@@ -17251,7 +17252,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.46',
                 'orderLineNumber' => 11,
             ),
-            153 => 
+            153 =>
             array (
                 'orderNumber' => 10328,
                 'productCode' => 'S700_3167',
@@ -17259,7 +17260,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.20',
                 'orderLineNumber' => 13,
             ),
-            154 => 
+            154 =>
             array (
                 'orderNumber' => 10328,
                 'productCode' => 'S700_4002',
@@ -17267,7 +17268,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.59',
                 'orderLineNumber' => 12,
             ),
-            155 => 
+            155 =>
             array (
                 'orderNumber' => 10329,
                 'productCode' => 'S10_1678',
@@ -17275,7 +17276,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.39',
                 'orderLineNumber' => 1,
             ),
-            156 => 
+            156 =>
             array (
                 'orderNumber' => 10329,
                 'productCode' => 'S10_2016',
@@ -17283,7 +17284,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.42',
                 'orderLineNumber' => 2,
             ),
-            157 => 
+            157 =>
             array (
                 'orderNumber' => 10329,
                 'productCode' => 'S10_4698',
@@ -17291,7 +17292,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '164.61',
                 'orderLineNumber' => 3,
             ),
-            158 => 
+            158 =>
             array (
                 'orderNumber' => 10329,
                 'productCode' => 'S12_1099',
@@ -17299,7 +17300,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '182.90',
                 'orderLineNumber' => 5,
             ),
-            159 => 
+            159 =>
             array (
                 'orderNumber' => 10329,
                 'productCode' => 'S12_2823',
@@ -17307,7 +17308,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '128.03',
                 'orderLineNumber' => 6,
             ),
-            160 => 
+            160 =>
             array (
                 'orderNumber' => 10329,
                 'productCode' => 'S12_3380',
@@ -17315,7 +17316,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.44',
                 'orderLineNumber' => 13,
             ),
-            161 => 
+            161 =>
             array (
                 'orderNumber' => 10329,
                 'productCode' => 'S12_3990',
@@ -17323,7 +17324,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.21',
                 'orderLineNumber' => 14,
             ),
-            162 => 
+            162 =>
             array (
                 'orderNumber' => 10329,
                 'productCode' => 'S12_4675',
@@ -17331,7 +17332,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.49',
                 'orderLineNumber' => 15,
             ),
-            163 => 
+            163 =>
             array (
                 'orderNumber' => 10329,
                 'productCode' => 'S18_1889',
@@ -17339,7 +17340,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.22',
                 'orderLineNumber' => 9,
             ),
-            164 => 
+            164 =>
             array (
                 'orderNumber' => 10329,
                 'productCode' => 'S18_2625',
@@ -17347,7 +17348,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.72',
                 'orderLineNumber' => 12,
             ),
-            165 => 
+            165 =>
             array (
                 'orderNumber' => 10329,
                 'productCode' => 'S18_3278',
@@ -17355,7 +17356,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.13',
                 'orderLineNumber' => 10,
             ),
-            166 => 
+            166 =>
             array (
                 'orderNumber' => 10329,
                 'productCode' => 'S24_1578',
@@ -17363,7 +17364,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.81',
                 'orderLineNumber' => 7,
             ),
-            167 => 
+            167 =>
             array (
                 'orderNumber' => 10329,
                 'productCode' => 'S24_2000',
@@ -17371,7 +17372,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.60',
                 'orderLineNumber' => 4,
             ),
-            168 => 
+            168 =>
             array (
                 'orderNumber' => 10329,
                 'productCode' => 'S32_1374',
@@ -17379,7 +17380,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.91',
                 'orderLineNumber' => 11,
             ),
-            169 => 
+            169 =>
             array (
                 'orderNumber' => 10329,
                 'productCode' => 'S72_1253',
@@ -17387,7 +17388,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '41.22',
                 'orderLineNumber' => 8,
             ),
-            170 => 
+            170 =>
             array (
                 'orderNumber' => 10330,
                 'productCode' => 'S18_3482',
@@ -17395,7 +17396,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '136.70',
                 'orderLineNumber' => 3,
             ),
-            171 => 
+            171 =>
             array (
                 'orderNumber' => 10330,
                 'productCode' => 'S18_3782',
@@ -17403,7 +17404,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.06',
                 'orderLineNumber' => 2,
             ),
-            172 => 
+            172 =>
             array (
                 'orderNumber' => 10330,
                 'productCode' => 'S18_4721',
@@ -17411,7 +17412,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '133.92',
                 'orderLineNumber' => 4,
             ),
-            173 => 
+            173 =>
             array (
                 'orderNumber' => 10330,
                 'productCode' => 'S24_2360',
@@ -17419,7 +17420,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.10',
                 'orderLineNumber' => 1,
             ),
-            174 => 
+            174 =>
             array (
                 'orderNumber' => 10331,
                 'productCode' => 'S18_1129',
@@ -17427,7 +17428,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.31',
                 'orderLineNumber' => 6,
             ),
-            175 => 
+            175 =>
             array (
                 'orderNumber' => 10331,
                 'productCode' => 'S18_1589',
@@ -17435,7 +17436,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.55',
                 'orderLineNumber' => 14,
             ),
-            176 => 
+            176 =>
             array (
                 'orderNumber' => 10331,
                 'productCode' => 'S18_1749',
@@ -17443,7 +17444,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '154.70',
                 'orderLineNumber' => 7,
             ),
-            177 => 
+            177 =>
             array (
                 'orderNumber' => 10331,
                 'productCode' => 'S18_1984',
@@ -17451,7 +17452,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.14',
                 'orderLineNumber' => 8,
             ),
-            178 => 
+            178 =>
             array (
                 'orderNumber' => 10331,
                 'productCode' => 'S18_2870',
@@ -17459,7 +17460,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '130.68',
                 'orderLineNumber' => 10,
             ),
-            179 => 
+            179 =>
             array (
                 'orderNumber' => 10331,
                 'productCode' => 'S18_3232',
@@ -17467,7 +17468,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '169.34',
                 'orderLineNumber' => 11,
             ),
-            180 => 
+            180 =>
             array (
                 'orderNumber' => 10331,
                 'productCode' => 'S18_3685',
@@ -17475,7 +17476,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '132.80',
                 'orderLineNumber' => 12,
             ),
-            181 => 
+            181 =>
             array (
                 'orderNumber' => 10331,
                 'productCode' => 'S24_2972',
@@ -17483,7 +17484,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '37.00',
                 'orderLineNumber' => 13,
             ),
-            182 => 
+            182 =>
             array (
                 'orderNumber' => 10331,
                 'productCode' => 'S24_3371',
@@ -17491,7 +17492,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.11',
                 'orderLineNumber' => 9,
             ),
-            183 => 
+            183 =>
             array (
                 'orderNumber' => 10331,
                 'productCode' => 'S24_3856',
@@ -17499,7 +17500,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '139.03',
                 'orderLineNumber' => 1,
             ),
-            184 => 
+            184 =>
             array (
                 'orderNumber' => 10331,
                 'productCode' => 'S24_4620',
@@ -17507,7 +17508,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.33',
                 'orderLineNumber' => 2,
             ),
-            185 => 
+            185 =>
             array (
                 'orderNumber' => 10331,
                 'productCode' => 'S32_2206',
@@ -17515,7 +17516,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '33.39',
                 'orderLineNumber' => 3,
             ),
-            186 => 
+            186 =>
             array (
                 'orderNumber' => 10331,
                 'productCode' => 'S32_4485',
@@ -17523,7 +17524,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.01',
                 'orderLineNumber' => 4,
             ),
-            187 => 
+            187 =>
             array (
                 'orderNumber' => 10331,
                 'productCode' => 'S50_4713',
@@ -17531,7 +17532,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.04',
                 'orderLineNumber' => 5,
             ),
-            188 => 
+            188 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S18_1342',
@@ -17539,7 +17540,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.38',
                 'orderLineNumber' => 15,
             ),
-            189 => 
+            189 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S18_1367',
@@ -17547,7 +17548,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.21',
                 'orderLineNumber' => 16,
             ),
-            190 => 
+            190 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S18_2248',
@@ -17555,7 +17556,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.88',
                 'orderLineNumber' => 9,
             ),
-            191 => 
+            191 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S18_2325',
@@ -17563,7 +17564,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '116.96',
                 'orderLineNumber' => 8,
             ),
-            192 => 
+            192 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S18_2795',
@@ -17571,7 +17572,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '138.38',
                 'orderLineNumber' => 1,
             ),
-            193 => 
+            193 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S18_2957',
@@ -17579,7 +17580,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.09',
                 'orderLineNumber' => 17,
             ),
-            194 => 
+            194 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S18_3136',
@@ -17587,7 +17588,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.53',
                 'orderLineNumber' => 18,
             ),
-            195 => 
+            195 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S18_4409',
@@ -17595,7 +17596,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.03',
                 'orderLineNumber' => 2,
             ),
-            196 => 
+            196 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S18_4933',
@@ -17603,7 +17604,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.56',
                 'orderLineNumber' => 3,
             ),
-            197 => 
+            197 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S24_1046',
@@ -17611,7 +17612,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.73',
                 'orderLineNumber' => 4,
             ),
-            198 => 
+            198 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S24_1628',
@@ -17619,7 +17620,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.29',
                 'orderLineNumber' => 5,
             ),
-            199 => 
+            199 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S24_1937',
@@ -17627,7 +17628,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '29.87',
                 'orderLineNumber' => 6,
             ),
-            200 => 
+            200 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S24_2022',
@@ -17635,7 +17636,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.01',
                 'orderLineNumber' => 10,
             ),
-            201 => 
+            201 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S24_2766',
@@ -17643,7 +17644,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.51',
                 'orderLineNumber' => 7,
             ),
-            202 => 
+            202 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S24_2887',
@@ -17651,7 +17652,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '108.04',
                 'orderLineNumber' => 11,
             ),
-            203 => 
+            203 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S24_3191',
@@ -17659,7 +17660,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.91',
                 'orderLineNumber' => 12,
             ),
-            204 => 
+            204 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S24_3432',
@@ -17667,7 +17668,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.23',
                 'orderLineNumber' => 13,
             ),
-            205 => 
+            205 =>
             array (
                 'orderNumber' => 10332,
                 'productCode' => 'S24_3969',
@@ -17675,7 +17676,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '34.47',
                 'orderLineNumber' => 14,
             ),
-            206 => 
+            206 =>
             array (
                 'orderNumber' => 10333,
                 'productCode' => 'S10_1949',
@@ -17683,7 +17684,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '188.58',
                 'orderLineNumber' => 3,
             ),
-            207 => 
+            207 =>
             array (
                 'orderNumber' => 10333,
                 'productCode' => 'S12_1666',
@@ -17691,7 +17692,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '121.64',
                 'orderLineNumber' => 6,
             ),
-            208 => 
+            208 =>
             array (
                 'orderNumber' => 10333,
                 'productCode' => 'S18_1097',
@@ -17699,7 +17700,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.84',
                 'orderLineNumber' => 7,
             ),
-            209 => 
+            209 =>
             array (
                 'orderNumber' => 10333,
                 'productCode' => 'S18_2949',
@@ -17707,7 +17708,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.23',
                 'orderLineNumber' => 5,
             ),
-            210 => 
+            210 =>
             array (
                 'orderNumber' => 10333,
                 'productCode' => 'S18_3320',
@@ -17715,7 +17716,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.24',
                 'orderLineNumber' => 2,
             ),
-            211 => 
+            211 =>
             array (
                 'orderNumber' => 10333,
                 'productCode' => 'S18_4668',
@@ -17723,7 +17724,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '42.26',
                 'orderLineNumber' => 8,
             ),
-            212 => 
+            212 =>
             array (
                 'orderNumber' => 10333,
                 'productCode' => 'S24_4258',
@@ -17731,7 +17732,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.44',
                 'orderLineNumber' => 1,
             ),
-            213 => 
+            213 =>
             array (
                 'orderNumber' => 10333,
                 'productCode' => 'S32_3522',
@@ -17739,7 +17740,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.05',
                 'orderLineNumber' => 4,
             ),
-            214 => 
+            214 =>
             array (
                 'orderNumber' => 10334,
                 'productCode' => 'S10_4962',
@@ -17747,7 +17748,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '130.01',
                 'orderLineNumber' => 2,
             ),
-            215 => 
+            215 =>
             array (
                 'orderNumber' => 10334,
                 'productCode' => 'S18_2319',
@@ -17755,7 +17756,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '108.00',
                 'orderLineNumber' => 6,
             ),
-            216 => 
+            216 =>
             array (
                 'orderNumber' => 10334,
                 'productCode' => 'S18_2432',
@@ -17763,7 +17764,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.87',
                 'orderLineNumber' => 1,
             ),
-            217 => 
+            217 =>
             array (
                 'orderNumber' => 10334,
                 'productCode' => 'S18_3232',
@@ -17771,7 +17772,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '147.33',
                 'orderLineNumber' => 3,
             ),
-            218 => 
+            218 =>
             array (
                 'orderNumber' => 10334,
                 'productCode' => 'S18_4600',
@@ -17779,7 +17780,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.71',
                 'orderLineNumber' => 4,
             ),
-            219 => 
+            219 =>
             array (
                 'orderNumber' => 10334,
                 'productCode' => 'S24_2300',
@@ -17787,7 +17788,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.57',
                 'orderLineNumber' => 5,
             ),
-            220 => 
+            220 =>
             array (
                 'orderNumber' => 10335,
                 'productCode' => 'S24_2840',
@@ -17795,7 +17796,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.88',
                 'orderLineNumber' => 2,
             ),
-            221 => 
+            221 =>
             array (
                 'orderNumber' => 10335,
                 'productCode' => 'S32_1268',
@@ -17803,7 +17804,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.05',
                 'orderLineNumber' => 1,
             ),
-            222 => 
+            222 =>
             array (
                 'orderNumber' => 10335,
                 'productCode' => 'S32_2509',
@@ -17811,7 +17812,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.78',
                 'orderLineNumber' => 3,
             ),
-            223 => 
+            223 =>
             array (
                 'orderNumber' => 10336,
                 'productCode' => 'S12_1108',
@@ -17819,7 +17820,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '176.63',
                 'orderLineNumber' => 10,
             ),
-            224 => 
+            224 =>
             array (
                 'orderNumber' => 10336,
                 'productCode' => 'S12_3148',
@@ -17827,7 +17828,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.91',
                 'orderLineNumber' => 11,
             ),
-            225 => 
+            225 =>
             array (
                 'orderNumber' => 10336,
                 'productCode' => 'S12_3891',
@@ -17835,7 +17836,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '141.88',
                 'orderLineNumber' => 1,
             ),
-            226 => 
+            226 =>
             array (
                 'orderNumber' => 10336,
                 'productCode' => 'S12_4473',
@@ -17843,7 +17844,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.99',
                 'orderLineNumber' => 3,
             ),
-            227 => 
+            227 =>
             array (
                 'orderNumber' => 10336,
                 'productCode' => 'S18_2238',
@@ -17851,7 +17852,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '153.91',
                 'orderLineNumber' => 6,
             ),
-            228 => 
+            228 =>
             array (
                 'orderNumber' => 10336,
                 'productCode' => 'S18_3140',
@@ -17859,7 +17860,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.22',
                 'orderLineNumber' => 12,
             ),
-            229 => 
+            229 =>
             array (
                 'orderNumber' => 10336,
                 'productCode' => 'S18_3259',
@@ -17867,7 +17868,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.84',
                 'orderLineNumber' => 7,
             ),
-            230 => 
+            230 =>
             array (
                 'orderNumber' => 10336,
                 'productCode' => 'S24_1444',
@@ -17875,7 +17876,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.71',
                 'orderLineNumber' => 4,
             ),
-            231 => 
+            231 =>
             array (
                 'orderNumber' => 10336,
                 'productCode' => 'S24_4048',
@@ -17883,7 +17884,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.55',
                 'orderLineNumber' => 5,
             ),
-            232 => 
+            232 =>
             array (
                 'orderNumber' => 10336,
                 'productCode' => 'S32_3207',
@@ -17891,7 +17892,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.03',
                 'orderLineNumber' => 9,
             ),
-            233 => 
+            233 =>
             array (
                 'orderNumber' => 10336,
                 'productCode' => 'S50_1392',
@@ -17899,7 +17900,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.96',
                 'orderLineNumber' => 8,
             ),
-            234 => 
+            234 =>
             array (
                 'orderNumber' => 10336,
                 'productCode' => 'S700_2824',
@@ -17907,7 +17908,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.07',
                 'orderLineNumber' => 2,
             ),
-            235 => 
+            235 =>
             array (
                 'orderNumber' => 10337,
                 'productCode' => 'S10_4757',
@@ -17915,7 +17916,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '131.92',
                 'orderLineNumber' => 8,
             ),
-            236 => 
+            236 =>
             array (
                 'orderNumber' => 10337,
                 'productCode' => 'S18_4027',
@@ -17923,7 +17924,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.75',
                 'orderLineNumber' => 3,
             ),
-            237 => 
+            237 =>
             array (
                 'orderNumber' => 10337,
                 'productCode' => 'S18_4522',
@@ -17931,7 +17932,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.36',
                 'orderLineNumber' => 2,
             ),
-            238 => 
+            238 =>
             array (
                 'orderNumber' => 10337,
                 'productCode' => 'S24_2011',
@@ -17939,7 +17940,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.20',
                 'orderLineNumber' => 4,
             ),
-            239 => 
+            239 =>
             array (
                 'orderNumber' => 10337,
                 'productCode' => 'S50_1514',
@@ -17947,7 +17948,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.48',
                 'orderLineNumber' => 6,
             ),
-            240 => 
+            240 =>
             array (
                 'orderNumber' => 10337,
                 'productCode' => 'S700_1938',
@@ -17955,7 +17956,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.62',
                 'orderLineNumber' => 9,
             ),
-            241 => 
+            241 =>
             array (
                 'orderNumber' => 10337,
                 'productCode' => 'S700_3505',
@@ -17963,7 +17964,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.14',
                 'orderLineNumber' => 1,
             ),
-            242 => 
+            242 =>
             array (
                 'orderNumber' => 10337,
                 'productCode' => 'S700_3962',
@@ -17971,7 +17972,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.42',
                 'orderLineNumber' => 7,
             ),
-            243 => 
+            243 =>
             array (
                 'orderNumber' => 10337,
                 'productCode' => 'S72_3212',
@@ -17979,7 +17980,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.14',
                 'orderLineNumber' => 5,
             ),
-            244 => 
+            244 =>
             array (
                 'orderNumber' => 10338,
                 'productCode' => 'S18_1662',
@@ -17987,7 +17988,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.19',
                 'orderLineNumber' => 1,
             ),
-            245 => 
+            245 =>
             array (
                 'orderNumber' => 10338,
                 'productCode' => 'S18_3029',
@@ -17995,7 +17996,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.86',
                 'orderLineNumber' => 3,
             ),
-            246 => 
+            246 =>
             array (
                 'orderNumber' => 10338,
                 'productCode' => 'S18_3856',
@@ -18003,7 +18004,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.17',
                 'orderLineNumber' => 2,
             ),
-            247 => 
+            247 =>
             array (
                 'orderNumber' => 10339,
                 'productCode' => 'S10_2016',
@@ -18011,7 +18012,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.75',
                 'orderLineNumber' => 4,
             ),
-            248 => 
+            248 =>
             array (
                 'orderNumber' => 10339,
                 'productCode' => 'S10_4698',
@@ -18019,7 +18020,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '178.17',
                 'orderLineNumber' => 3,
             ),
-            249 => 
+            249 =>
             array (
                 'orderNumber' => 10339,
                 'productCode' => 'S18_2581',
@@ -18027,7 +18028,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.41',
                 'orderLineNumber' => 2,
             ),
-            250 => 
+            250 =>
             array (
                 'orderNumber' => 10339,
                 'productCode' => 'S18_2625',
@@ -18035,7 +18036,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.46',
                 'orderLineNumber' => 1,
             ),
-            251 => 
+            251 =>
             array (
                 'orderNumber' => 10339,
                 'productCode' => 'S24_1578',
@@ -18043,7 +18044,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.92',
                 'orderLineNumber' => 10,
             ),
-            252 => 
+            252 =>
             array (
                 'orderNumber' => 10339,
                 'productCode' => 'S24_1785',
@@ -18051,7 +18052,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '106.14',
                 'orderLineNumber' => 7,
             ),
-            253 => 
+            253 =>
             array (
                 'orderNumber' => 10339,
                 'productCode' => 'S24_2841',
@@ -18059,7 +18060,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.82',
                 'orderLineNumber' => 12,
             ),
-            254 => 
+            254 =>
             array (
                 'orderNumber' => 10339,
                 'productCode' => 'S24_3151',
@@ -18067,7 +18068,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.46',
                 'orderLineNumber' => 13,
             ),
-            255 => 
+            255 =>
             array (
                 'orderNumber' => 10339,
                 'productCode' => 'S24_3420',
@@ -18075,7 +18076,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.86',
                 'orderLineNumber' => 14,
             ),
-            256 => 
+            256 =>
             array (
                 'orderNumber' => 10339,
                 'productCode' => 'S24_3816',
@@ -18083,7 +18084,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.96',
                 'orderLineNumber' => 16,
             ),
-            257 => 
+            257 =>
             array (
                 'orderNumber' => 10339,
                 'productCode' => 'S24_3949',
@@ -18091,7 +18092,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.32',
                 'orderLineNumber' => 11,
             ),
-            258 => 
+            258 =>
             array (
                 'orderNumber' => 10339,
                 'productCode' => 'S700_1138',
@@ -18099,7 +18100,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.34',
                 'orderLineNumber' => 5,
             ),
-            259 => 
+            259 =>
             array (
                 'orderNumber' => 10339,
                 'productCode' => 'S700_2047',
@@ -18107,7 +18108,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.90',
                 'orderLineNumber' => 15,
             ),
-            260 => 
+            260 =>
             array (
                 'orderNumber' => 10339,
                 'productCode' => 'S700_2610',
@@ -18115,7 +18116,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.16',
                 'orderLineNumber' => 9,
             ),
-            261 => 
+            261 =>
             array (
                 'orderNumber' => 10339,
                 'productCode' => 'S700_4002',
@@ -18123,7 +18124,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.63',
                 'orderLineNumber' => 8,
             ),
-            262 => 
+            262 =>
             array (
                 'orderNumber' => 10339,
                 'productCode' => 'S72_1253',
@@ -18131,7 +18132,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.66',
                 'orderLineNumber' => 6,
             ),
-            263 => 
+            263 =>
             array (
                 'orderNumber' => 10340,
                 'productCode' => 'S24_2000',
@@ -18139,7 +18140,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.46',
                 'orderLineNumber' => 8,
             ),
-            264 => 
+            264 =>
             array (
                 'orderNumber' => 10340,
                 'productCode' => 'S24_4278',
@@ -18147,7 +18148,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.76',
                 'orderLineNumber' => 1,
             ),
-            265 => 
+            265 =>
             array (
                 'orderNumber' => 10340,
                 'productCode' => 'S32_1374',
@@ -18155,7 +18156,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.89',
                 'orderLineNumber' => 2,
             ),
-            266 => 
+            266 =>
             array (
                 'orderNumber' => 10340,
                 'productCode' => 'S32_4289',
@@ -18163,7 +18164,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.41',
                 'orderLineNumber' => 3,
             ),
-            267 => 
+            267 =>
             array (
                 'orderNumber' => 10340,
                 'productCode' => 'S50_1341',
@@ -18171,7 +18172,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '37.09',
                 'orderLineNumber' => 4,
             ),
-            268 => 
+            268 =>
             array (
                 'orderNumber' => 10340,
                 'productCode' => 'S700_1691',
@@ -18179,7 +18180,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.99',
                 'orderLineNumber' => 5,
             ),
-            269 => 
+            269 =>
             array (
                 'orderNumber' => 10340,
                 'productCode' => 'S700_2466',
@@ -18187,7 +18188,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.77',
                 'orderLineNumber' => 7,
             ),
-            270 => 
+            270 =>
             array (
                 'orderNumber' => 10340,
                 'productCode' => 'S700_2834',
@@ -18195,7 +18196,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.48',
                 'orderLineNumber' => 6,
             ),
-            271 => 
+            271 =>
             array (
                 'orderNumber' => 10341,
                 'productCode' => 'S10_1678',
@@ -18203,7 +18204,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.22',
                 'orderLineNumber' => 9,
             ),
-            272 => 
+            272 =>
             array (
                 'orderNumber' => 10341,
                 'productCode' => 'S12_1099',
@@ -18211,7 +18212,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '192.62',
                 'orderLineNumber' => 2,
             ),
-            273 => 
+            273 =>
             array (
                 'orderNumber' => 10341,
                 'productCode' => 'S12_2823',
@@ -18219,7 +18220,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.50',
                 'orderLineNumber' => 8,
             ),
-            274 => 
+            274 =>
             array (
                 'orderNumber' => 10341,
                 'productCode' => 'S12_3380',
@@ -18227,7 +18228,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.57',
                 'orderLineNumber' => 1,
             ),
-            275 => 
+            275 =>
             array (
                 'orderNumber' => 10341,
                 'productCode' => 'S12_3990',
@@ -18235,7 +18236,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.41',
                 'orderLineNumber' => 10,
             ),
-            276 => 
+            276 =>
             array (
                 'orderNumber' => 10341,
                 'productCode' => 'S12_4675',
@@ -18243,7 +18244,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.40',
                 'orderLineNumber' => 7,
             ),
-            277 => 
+            277 =>
             array (
                 'orderNumber' => 10341,
                 'productCode' => 'S24_2360',
@@ -18251,7 +18252,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.03',
                 'orderLineNumber' => 6,
             ),
-            278 => 
+            278 =>
             array (
                 'orderNumber' => 10341,
                 'productCode' => 'S32_4485',
@@ -18259,7 +18260,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.93',
                 'orderLineNumber' => 4,
             ),
-            279 => 
+            279 =>
             array (
                 'orderNumber' => 10341,
                 'productCode' => 'S50_4713',
@@ -18267,7 +18268,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.11',
                 'orderLineNumber' => 3,
             ),
-            280 => 
+            280 =>
             array (
                 'orderNumber' => 10341,
                 'productCode' => 'S700_3167',
@@ -18275,7 +18276,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.40',
                 'orderLineNumber' => 5,
             ),
-            281 => 
+            281 =>
             array (
                 'orderNumber' => 10342,
                 'productCode' => 'S18_1129',
@@ -18283,7 +18284,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.89',
                 'orderLineNumber' => 2,
             ),
-            282 => 
+            282 =>
             array (
                 'orderNumber' => 10342,
                 'productCode' => 'S18_1889',
@@ -18291,7 +18292,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.14',
                 'orderLineNumber' => 1,
             ),
-            283 => 
+            283 =>
             array (
                 'orderNumber' => 10342,
                 'productCode' => 'S18_1984',
@@ -18299,7 +18300,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.22',
                 'orderLineNumber' => 3,
             ),
-            284 => 
+            284 =>
             array (
                 'orderNumber' => 10342,
                 'productCode' => 'S18_3232',
@@ -18307,7 +18308,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '167.65',
                 'orderLineNumber' => 4,
             ),
-            285 => 
+            285 =>
             array (
                 'orderNumber' => 10342,
                 'productCode' => 'S18_3278',
@@ -18315,7 +18316,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.39',
                 'orderLineNumber' => 5,
             ),
-            286 => 
+            286 =>
             array (
                 'orderNumber' => 10342,
                 'productCode' => 'S18_3482',
@@ -18323,7 +18324,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '136.70',
                 'orderLineNumber' => 7,
             ),
-            287 => 
+            287 =>
             array (
                 'orderNumber' => 10342,
                 'productCode' => 'S18_3782',
@@ -18331,7 +18332,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.82',
                 'orderLineNumber' => 8,
             ),
-            288 => 
+            288 =>
             array (
                 'orderNumber' => 10342,
                 'productCode' => 'S18_4721',
@@ -18339,7 +18340,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '124.99',
                 'orderLineNumber' => 11,
             ),
-            289 => 
+            289 =>
             array (
                 'orderNumber' => 10342,
                 'productCode' => 'S24_2972',
@@ -18347,7 +18348,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '30.59',
                 'orderLineNumber' => 9,
             ),
-            290 => 
+            290 =>
             array (
                 'orderNumber' => 10342,
                 'productCode' => 'S24_3371',
@@ -18355,7 +18356,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.01',
                 'orderLineNumber' => 10,
             ),
-            291 => 
+            291 =>
             array (
                 'orderNumber' => 10342,
                 'productCode' => 'S24_3856',
@@ -18363,7 +18364,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.34',
                 'orderLineNumber' => 6,
             ),
-            292 => 
+            292 =>
             array (
                 'orderNumber' => 10343,
                 'productCode' => 'S18_1589',
@@ -18371,7 +18372,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.51',
                 'orderLineNumber' => 4,
             ),
-            293 => 
+            293 =>
             array (
                 'orderNumber' => 10343,
                 'productCode' => 'S18_2870',
@@ -18379,7 +18380,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.80',
                 'orderLineNumber' => 3,
             ),
-            294 => 
+            294 =>
             array (
                 'orderNumber' => 10343,
                 'productCode' => 'S18_3685',
@@ -18387,7 +18388,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '127.15',
                 'orderLineNumber' => 2,
             ),
-            295 => 
+            295 =>
             array (
                 'orderNumber' => 10343,
                 'productCode' => 'S24_1628',
@@ -18395,7 +18396,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.78',
                 'orderLineNumber' => 6,
             ),
-            296 => 
+            296 =>
             array (
                 'orderNumber' => 10343,
                 'productCode' => 'S24_4620',
@@ -18403,7 +18404,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.80',
                 'orderLineNumber' => 1,
             ),
-            297 => 
+            297 =>
             array (
                 'orderNumber' => 10343,
                 'productCode' => 'S32_2206',
@@ -18411,7 +18412,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '37.41',
                 'orderLineNumber' => 5,
             ),
-            298 => 
+            298 =>
             array (
                 'orderNumber' => 10344,
                 'productCode' => 'S18_1749',
@@ -18419,7 +18420,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '168.30',
                 'orderLineNumber' => 1,
             ),
-            299 => 
+            299 =>
             array (
                 'orderNumber' => 10344,
                 'productCode' => 'S18_2248',
@@ -18427,7 +18428,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.04',
                 'orderLineNumber' => 2,
             ),
-            300 => 
+            300 =>
             array (
                 'orderNumber' => 10344,
                 'productCode' => 'S18_2325',
@@ -18435,7 +18436,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.23',
                 'orderLineNumber' => 3,
             ),
-            301 => 
+            301 =>
             array (
                 'orderNumber' => 10344,
                 'productCode' => 'S18_4409',
@@ -18443,7 +18444,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.99',
                 'orderLineNumber' => 4,
             ),
-            302 => 
+            302 =>
             array (
                 'orderNumber' => 10344,
                 'productCode' => 'S18_4933',
@@ -18451,7 +18452,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.42',
                 'orderLineNumber' => 5,
             ),
-            303 => 
+            303 =>
             array (
                 'orderNumber' => 10344,
                 'productCode' => 'S24_1046',
@@ -18459,7 +18460,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.00',
                 'orderLineNumber' => 7,
             ),
-            304 => 
+            304 =>
             array (
                 'orderNumber' => 10344,
                 'productCode' => 'S24_1937',
@@ -18467,7 +18468,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '27.88',
                 'orderLineNumber' => 6,
             ),
-            305 => 
+            305 =>
             array (
                 'orderNumber' => 10345,
                 'productCode' => 'S24_2022',
@@ -18475,7 +18476,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '38.98',
                 'orderLineNumber' => 1,
             ),
-            306 => 
+            306 =>
             array (
                 'orderNumber' => 10346,
                 'productCode' => 'S18_1342',
@@ -18483,7 +18484,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.36',
                 'orderLineNumber' => 3,
             ),
-            307 => 
+            307 =>
             array (
                 'orderNumber' => 10346,
                 'productCode' => 'S24_2766',
@@ -18491,7 +18492,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.24',
                 'orderLineNumber' => 1,
             ),
-            308 => 
+            308 =>
             array (
                 'orderNumber' => 10346,
                 'productCode' => 'S24_2887',
@@ -18499,7 +18500,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.44',
                 'orderLineNumber' => 5,
             ),
-            309 => 
+            309 =>
             array (
                 'orderNumber' => 10346,
                 'productCode' => 'S24_3191',
@@ -18507,7 +18508,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.47',
                 'orderLineNumber' => 2,
             ),
-            310 => 
+            310 =>
             array (
                 'orderNumber' => 10346,
                 'productCode' => 'S24_3432',
@@ -18515,7 +18516,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '103.87',
                 'orderLineNumber' => 6,
             ),
-            311 => 
+            311 =>
             array (
                 'orderNumber' => 10346,
                 'productCode' => 'S24_3969',
@@ -18523,7 +18524,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '38.57',
                 'orderLineNumber' => 4,
             ),
-            312 => 
+            312 =>
             array (
                 'orderNumber' => 10347,
                 'productCode' => 'S10_1949',
@@ -18531,7 +18532,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '188.58',
                 'orderLineNumber' => 1,
             ),
-            313 => 
+            313 =>
             array (
                 'orderNumber' => 10347,
                 'productCode' => 'S10_4962',
@@ -18539,7 +18540,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '132.97',
                 'orderLineNumber' => 2,
             ),
-            314 => 
+            314 =>
             array (
                 'orderNumber' => 10347,
                 'productCode' => 'S12_1666',
@@ -18547,7 +18548,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '132.57',
                 'orderLineNumber' => 3,
             ),
-            315 => 
+            315 =>
             array (
                 'orderNumber' => 10347,
                 'productCode' => 'S18_1097',
@@ -18555,7 +18556,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.17',
                 'orderLineNumber' => 5,
             ),
-            316 => 
+            316 =>
             array (
                 'orderNumber' => 10347,
                 'productCode' => 'S18_1367',
@@ -18563,7 +18564,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '46.36',
                 'orderLineNumber' => 7,
             ),
-            317 => 
+            317 =>
             array (
                 'orderNumber' => 10347,
                 'productCode' => 'S18_2432',
@@ -18571,7 +18572,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.05',
                 'orderLineNumber' => 8,
             ),
-            318 => 
+            318 =>
             array (
                 'orderNumber' => 10347,
                 'productCode' => 'S18_2795',
@@ -18579,7 +18580,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '136.69',
                 'orderLineNumber' => 6,
             ),
-            319 => 
+            319 =>
             array (
                 'orderNumber' => 10347,
                 'productCode' => 'S18_2949',
@@ -18587,7 +18588,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.09',
                 'orderLineNumber' => 9,
             ),
-            320 => 
+            320 =>
             array (
                 'orderNumber' => 10347,
                 'productCode' => 'S18_2957',
@@ -18595,7 +18596,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.59',
                 'orderLineNumber' => 10,
             ),
-            321 => 
+            321 =>
             array (
                 'orderNumber' => 10347,
                 'productCode' => 'S18_3136',
@@ -18603,7 +18604,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.30',
                 'orderLineNumber' => 11,
             ),
-            322 => 
+            322 =>
             array (
                 'orderNumber' => 10347,
                 'productCode' => 'S18_3320',
@@ -18611,7 +18612,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.33',
                 'orderLineNumber' => 12,
             ),
-            323 => 
+            323 =>
             array (
                 'orderNumber' => 10347,
                 'productCode' => 'S18_4600',
@@ -18619,7 +18620,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.03',
                 'orderLineNumber' => 4,
             ),
-            324 => 
+            324 =>
             array (
                 'orderNumber' => 10348,
                 'productCode' => 'S12_1108',
@@ -18627,7 +18628,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '207.80',
                 'orderLineNumber' => 8,
             ),
-            325 => 
+            325 =>
             array (
                 'orderNumber' => 10348,
                 'productCode' => 'S12_3148',
@@ -18635,7 +18636,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.37',
                 'orderLineNumber' => 4,
             ),
-            326 => 
+            326 =>
             array (
                 'orderNumber' => 10348,
                 'productCode' => 'S18_4668',
@@ -18643,7 +18644,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.77',
                 'orderLineNumber' => 6,
             ),
-            327 => 
+            327 =>
             array (
                 'orderNumber' => 10348,
                 'productCode' => 'S24_2300',
@@ -18651,7 +18652,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.34',
                 'orderLineNumber' => 1,
             ),
-            328 => 
+            328 =>
             array (
                 'orderNumber' => 10348,
                 'productCode' => 'S24_4258',
@@ -18659,7 +18660,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.78',
                 'orderLineNumber' => 2,
             ),
-            329 => 
+            329 =>
             array (
                 'orderNumber' => 10348,
                 'productCode' => 'S32_1268',
@@ -18667,7 +18668,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.53',
                 'orderLineNumber' => 3,
             ),
-            330 => 
+            330 =>
             array (
                 'orderNumber' => 10348,
                 'productCode' => 'S32_3522',
@@ -18675,7 +18676,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.70',
                 'orderLineNumber' => 5,
             ),
-            331 => 
+            331 =>
             array (
                 'orderNumber' => 10348,
                 'productCode' => 'S700_2824',
@@ -18683,7 +18684,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.14',
                 'orderLineNumber' => 7,
             ),
-            332 => 
+            332 =>
             array (
                 'orderNumber' => 10349,
                 'productCode' => 'S12_3891',
@@ -18691,7 +18692,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '166.10',
                 'orderLineNumber' => 10,
             ),
-            333 => 
+            333 =>
             array (
                 'orderNumber' => 10349,
                 'productCode' => 'S12_4473',
@@ -18699,7 +18700,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.95',
                 'orderLineNumber' => 9,
             ),
-            334 => 
+            334 =>
             array (
                 'orderNumber' => 10349,
                 'productCode' => 'S18_2238',
@@ -18707,7 +18708,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '142.45',
                 'orderLineNumber' => 8,
             ),
-            335 => 
+            335 =>
             array (
                 'orderNumber' => 10349,
                 'productCode' => 'S18_2319',
@@ -18715,7 +18716,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.82',
                 'orderLineNumber' => 7,
             ),
-            336 => 
+            336 =>
             array (
                 'orderNumber' => 10349,
                 'productCode' => 'S18_3232',
@@ -18723,7 +18724,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '164.26',
                 'orderLineNumber' => 6,
             ),
-            337 => 
+            337 =>
             array (
                 'orderNumber' => 10349,
                 'productCode' => 'S18_4027',
@@ -18731,7 +18732,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.75',
                 'orderLineNumber' => 5,
             ),
-            338 => 
+            338 =>
             array (
                 'orderNumber' => 10349,
                 'productCode' => 'S24_1444',
@@ -18739,7 +18740,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.29',
                 'orderLineNumber' => 4,
             ),
-            339 => 
+            339 =>
             array (
                 'orderNumber' => 10349,
                 'productCode' => 'S24_2840',
@@ -18747,7 +18748,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '31.47',
                 'orderLineNumber' => 3,
             ),
-            340 => 
+            340 =>
             array (
                 'orderNumber' => 10349,
                 'productCode' => 'S24_4048',
@@ -18755,7 +18756,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.18',
                 'orderLineNumber' => 2,
             ),
-            341 => 
+            341 =>
             array (
                 'orderNumber' => 10349,
                 'productCode' => 'S32_2509',
@@ -18763,7 +18764,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.37',
                 'orderLineNumber' => 1,
             ),
-            342 => 
+            342 =>
             array (
                 'orderNumber' => 10350,
                 'productCode' => 'S10_4757',
@@ -18771,7 +18772,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.16',
                 'orderLineNumber' => 5,
             ),
-            343 => 
+            343 =>
             array (
                 'orderNumber' => 10350,
                 'productCode' => 'S18_3029',
@@ -18779,7 +18780,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.30',
                 'orderLineNumber' => 6,
             ),
-            344 => 
+            344 =>
             array (
                 'orderNumber' => 10350,
                 'productCode' => 'S18_3140',
@@ -18787,7 +18788,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.22',
                 'orderLineNumber' => 1,
             ),
-            345 => 
+            345 =>
             array (
                 'orderNumber' => 10350,
                 'productCode' => 'S18_3259',
@@ -18795,7 +18796,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.79',
                 'orderLineNumber' => 2,
             ),
-            346 => 
+            346 =>
             array (
                 'orderNumber' => 10350,
                 'productCode' => 'S18_4522',
@@ -18803,7 +18804,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.22',
                 'orderLineNumber' => 3,
             ),
-            347 => 
+            347 =>
             array (
                 'orderNumber' => 10350,
                 'productCode' => 'S24_2011',
@@ -18811,7 +18812,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.31',
                 'orderLineNumber' => 7,
             ),
-            348 => 
+            348 =>
             array (
                 'orderNumber' => 10350,
                 'productCode' => 'S24_3151',
@@ -18819,7 +18820,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.74',
                 'orderLineNumber' => 9,
             ),
-            349 => 
+            349 =>
             array (
                 'orderNumber' => 10350,
                 'productCode' => 'S24_3816',
@@ -18827,7 +18828,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.15',
                 'orderLineNumber' => 10,
             ),
-            350 => 
+            350 =>
             array (
                 'orderNumber' => 10350,
                 'productCode' => 'S32_3207',
@@ -18835,7 +18836,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.52',
                 'orderLineNumber' => 14,
             ),
-            351 => 
+            351 =>
             array (
                 'orderNumber' => 10350,
                 'productCode' => 'S50_1392',
@@ -18843,7 +18844,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.18',
                 'orderLineNumber' => 8,
             ),
-            352 => 
+            352 =>
             array (
                 'orderNumber' => 10350,
                 'productCode' => 'S50_1514',
@@ -18851,7 +18852,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.82',
                 'orderLineNumber' => 17,
             ),
-            353 => 
+            353 =>
             array (
                 'orderNumber' => 10350,
                 'productCode' => 'S700_1138',
@@ -18859,7 +18860,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.00',
                 'orderLineNumber' => 11,
             ),
-            354 => 
+            354 =>
             array (
                 'orderNumber' => 10350,
                 'productCode' => 'S700_1938',
@@ -18867,7 +18868,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.22',
                 'orderLineNumber' => 4,
             ),
-            355 => 
+            355 =>
             array (
                 'orderNumber' => 10350,
                 'productCode' => 'S700_2610',
@@ -18875,7 +18876,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.67',
                 'orderLineNumber' => 12,
             ),
-            356 => 
+            356 =>
             array (
                 'orderNumber' => 10350,
                 'productCode' => 'S700_3505',
@@ -18883,7 +18884,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.15',
                 'orderLineNumber' => 13,
             ),
-            357 => 
+            357 =>
             array (
                 'orderNumber' => 10350,
                 'productCode' => 'S700_3962',
@@ -18891,7 +18892,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '97.32',
                 'orderLineNumber' => 16,
             ),
-            358 => 
+            358 =>
             array (
                 'orderNumber' => 10350,
                 'productCode' => 'S72_3212',
@@ -18899,7 +18900,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.05',
                 'orderLineNumber' => 15,
             ),
-            359 => 
+            359 =>
             array (
                 'orderNumber' => 10351,
                 'productCode' => 'S18_1662',
@@ -18907,7 +18908,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '143.50',
                 'orderLineNumber' => 1,
             ),
-            360 => 
+            360 =>
             array (
                 'orderNumber' => 10351,
                 'productCode' => 'S18_3856',
@@ -18915,7 +18916,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.81',
                 'orderLineNumber' => 2,
             ),
-            361 => 
+            361 =>
             array (
                 'orderNumber' => 10351,
                 'productCode' => 'S24_2841',
@@ -18923,7 +18924,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.40',
                 'orderLineNumber' => 5,
             ),
-            362 => 
+            362 =>
             array (
                 'orderNumber' => 10351,
                 'productCode' => 'S24_3420',
@@ -18931,7 +18932,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.92',
                 'orderLineNumber' => 4,
             ),
-            363 => 
+            363 =>
             array (
                 'orderNumber' => 10351,
                 'productCode' => 'S24_3949',
@@ -18939,7 +18940,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.24',
                 'orderLineNumber' => 3,
             ),
-            364 => 
+            364 =>
             array (
                 'orderNumber' => 10352,
                 'productCode' => 'S700_2047',
@@ -18947,7 +18948,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.13',
                 'orderLineNumber' => 3,
             ),
-            365 => 
+            365 =>
             array (
                 'orderNumber' => 10352,
                 'productCode' => 'S700_2466',
@@ -18955,7 +18956,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.75',
                 'orderLineNumber' => 2,
             ),
-            366 => 
+            366 =>
             array (
                 'orderNumber' => 10352,
                 'productCode' => 'S700_4002',
@@ -18963,7 +18964,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.19',
                 'orderLineNumber' => 1,
             ),
-            367 => 
+            367 =>
             array (
                 'orderNumber' => 10352,
                 'productCode' => 'S72_1253',
@@ -18971,7 +18972,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '46.18',
                 'orderLineNumber' => 4,
             ),
-            368 => 
+            368 =>
             array (
                 'orderNumber' => 10353,
                 'productCode' => 'S18_2581',
@@ -18979,7 +18980,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.81',
                 'orderLineNumber' => 1,
             ),
-            369 => 
+            369 =>
             array (
                 'orderNumber' => 10353,
                 'productCode' => 'S24_1785',
@@ -18987,7 +18988,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.23',
                 'orderLineNumber' => 2,
             ),
-            370 => 
+            370 =>
             array (
                 'orderNumber' => 10353,
                 'productCode' => 'S24_4278',
@@ -18995,7 +18996,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.55',
                 'orderLineNumber' => 3,
             ),
-            371 => 
+            371 =>
             array (
                 'orderNumber' => 10353,
                 'productCode' => 'S32_1374',
@@ -19003,7 +19004,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.90',
                 'orderLineNumber' => 5,
             ),
-            372 => 
+            372 =>
             array (
                 'orderNumber' => 10353,
                 'productCode' => 'S32_4289',
@@ -19011,7 +19012,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.10',
                 'orderLineNumber' => 7,
             ),
-            373 => 
+            373 =>
             array (
                 'orderNumber' => 10353,
                 'productCode' => 'S50_1341',
@@ -19019,7 +19020,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.78',
                 'orderLineNumber' => 8,
             ),
-            374 => 
+            374 =>
             array (
                 'orderNumber' => 10353,
                 'productCode' => 'S700_1691',
@@ -19027,7 +19028,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.07',
                 'orderLineNumber' => 9,
             ),
-            375 => 
+            375 =>
             array (
                 'orderNumber' => 10353,
                 'productCode' => 'S700_2834',
@@ -19035,7 +19036,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.48',
                 'orderLineNumber' => 4,
             ),
-            376 => 
+            376 =>
             array (
                 'orderNumber' => 10353,
                 'productCode' => 'S700_3167',
@@ -19043,7 +19044,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.40',
                 'orderLineNumber' => 6,
             ),
-            377 => 
+            377 =>
             array (
                 'orderNumber' => 10354,
                 'productCode' => 'S10_1678',
@@ -19051,7 +19052,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.22',
                 'orderLineNumber' => 6,
             ),
-            378 => 
+            378 =>
             array (
                 'orderNumber' => 10354,
                 'productCode' => 'S10_2016',
@@ -19059,7 +19060,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.15',
                 'orderLineNumber' => 2,
             ),
-            379 => 
+            379 =>
             array (
                 'orderNumber' => 10354,
                 'productCode' => 'S10_4698',
@@ -19067,7 +19068,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '178.17',
                 'orderLineNumber' => 3,
             ),
-            380 => 
+            380 =>
             array (
                 'orderNumber' => 10354,
                 'productCode' => 'S12_1099',
@@ -19075,7 +19076,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '157.60',
                 'orderLineNumber' => 9,
             ),
-            381 => 
+            381 =>
             array (
                 'orderNumber' => 10354,
                 'productCode' => 'S12_2823',
@@ -19083,7 +19084,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '141.58',
                 'orderLineNumber' => 4,
             ),
-            382 => 
+            382 =>
             array (
                 'orderNumber' => 10354,
                 'productCode' => 'S12_3380',
@@ -19091,7 +19092,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.65',
                 'orderLineNumber' => 11,
             ),
-            383 => 
+            383 =>
             array (
                 'orderNumber' => 10354,
                 'productCode' => 'S12_3990',
@@ -19099,7 +19100,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.61',
                 'orderLineNumber' => 12,
             ),
-            384 => 
+            384 =>
             array (
                 'orderNumber' => 10354,
                 'productCode' => 'S12_4675',
@@ -19107,7 +19108,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.19',
                 'orderLineNumber' => 13,
             ),
-            385 => 
+            385 =>
             array (
                 'orderNumber' => 10354,
                 'productCode' => 'S18_1889',
@@ -19115,7 +19116,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.23',
                 'orderLineNumber' => 8,
             ),
-            386 => 
+            386 =>
             array (
                 'orderNumber' => 10354,
                 'productCode' => 'S18_2625',
@@ -19123,7 +19124,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.06',
                 'orderLineNumber' => 10,
             ),
-            387 => 
+            387 =>
             array (
                 'orderNumber' => 10354,
                 'productCode' => 'S18_3278',
@@ -19131,7 +19132,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.15',
                 'orderLineNumber' => 7,
             ),
-            388 => 
+            388 =>
             array (
                 'orderNumber' => 10354,
                 'productCode' => 'S24_1578',
@@ -19139,7 +19140,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.92',
                 'orderLineNumber' => 5,
             ),
-            389 => 
+            389 =>
             array (
                 'orderNumber' => 10354,
                 'productCode' => 'S24_2000',
@@ -19147,7 +19148,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.46',
                 'orderLineNumber' => 1,
             ),
-            390 => 
+            390 =>
             array (
                 'orderNumber' => 10355,
                 'productCode' => 'S18_3482',
@@ -19155,7 +19156,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.59',
                 'orderLineNumber' => 7,
             ),
-            391 => 
+            391 =>
             array (
                 'orderNumber' => 10355,
                 'productCode' => 'S18_3782',
@@ -19163,7 +19164,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.30',
                 'orderLineNumber' => 1,
             ),
-            392 => 
+            392 =>
             array (
                 'orderNumber' => 10355,
                 'productCode' => 'S18_4721',
@@ -19171,7 +19172,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '124.99',
                 'orderLineNumber' => 2,
             ),
-            393 => 
+            393 =>
             array (
                 'orderNumber' => 10355,
                 'productCode' => 'S24_2360',
@@ -19179,7 +19180,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.10',
                 'orderLineNumber' => 3,
             ),
-            394 => 
+            394 =>
             array (
                 'orderNumber' => 10355,
                 'productCode' => 'S24_2972',
@@ -19187,7 +19188,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '37.38',
                 'orderLineNumber' => 4,
             ),
-            395 => 
+            395 =>
             array (
                 'orderNumber' => 10355,
                 'productCode' => 'S24_3371',
@@ -19195,7 +19196,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.62',
                 'orderLineNumber' => 6,
             ),
-            396 => 
+            396 =>
             array (
                 'orderNumber' => 10355,
                 'productCode' => 'S24_3856',
@@ -19203,7 +19204,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.62',
                 'orderLineNumber' => 8,
             ),
-            397 => 
+            397 =>
             array (
                 'orderNumber' => 10355,
                 'productCode' => 'S24_4620',
@@ -19211,7 +19212,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.18',
                 'orderLineNumber' => 9,
             ),
-            398 => 
+            398 =>
             array (
                 'orderNumber' => 10355,
                 'productCode' => 'S32_2206',
@@ -19219,7 +19220,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.99',
                 'orderLineNumber' => 10,
             ),
-            399 => 
+            399 =>
             array (
                 'orderNumber' => 10355,
                 'productCode' => 'S32_4485',
@@ -19227,7 +19228,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.89',
                 'orderLineNumber' => 5,
             ),
-            400 => 
+            400 =>
             array (
                 'orderNumber' => 10356,
                 'productCode' => 'S18_1129',
@@ -19235,7 +19236,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.31',
                 'orderLineNumber' => 8,
             ),
-            401 => 
+            401 =>
             array (
                 'orderNumber' => 10356,
                 'productCode' => 'S18_1342',
@@ -19243,7 +19244,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.19',
                 'orderLineNumber' => 9,
             ),
-            402 => 
+            402 =>
             array (
                 'orderNumber' => 10356,
                 'productCode' => 'S18_1367',
@@ -19251,7 +19252,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.75',
                 'orderLineNumber' => 6,
             ),
-            403 => 
+            403 =>
             array (
                 'orderNumber' => 10356,
                 'productCode' => 'S18_1984',
@@ -19259,7 +19260,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '130.87',
                 'orderLineNumber' => 2,
             ),
-            404 => 
+            404 =>
             array (
                 'orderNumber' => 10356,
                 'productCode' => 'S18_2325',
@@ -19267,7 +19268,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '106.79',
                 'orderLineNumber' => 3,
             ),
-            405 => 
+            405 =>
             array (
                 'orderNumber' => 10356,
                 'productCode' => 'S18_2795',
@@ -19275,7 +19276,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '158.63',
                 'orderLineNumber' => 1,
             ),
-            406 => 
+            406 =>
             array (
                 'orderNumber' => 10356,
                 'productCode' => 'S24_1937',
@@ -19283,7 +19284,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '31.86',
                 'orderLineNumber' => 5,
             ),
-            407 => 
+            407 =>
             array (
                 'orderNumber' => 10356,
                 'productCode' => 'S24_2022',
@@ -19291,7 +19292,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '42.11',
                 'orderLineNumber' => 7,
             ),
-            408 => 
+            408 =>
             array (
                 'orderNumber' => 10356,
                 'productCode' => 'S50_4713',
@@ -19299,7 +19300,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.11',
                 'orderLineNumber' => 4,
             ),
-            409 => 
+            409 =>
             array (
                 'orderNumber' => 10357,
                 'productCode' => 'S10_1949',
@@ -19307,7 +19308,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '199.30',
                 'orderLineNumber' => 10,
             ),
-            410 => 
+            410 =>
             array (
                 'orderNumber' => 10357,
                 'productCode' => 'S10_4962',
@@ -19315,7 +19316,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.92',
                 'orderLineNumber' => 9,
             ),
-            411 => 
+            411 =>
             array (
                 'orderNumber' => 10357,
                 'productCode' => 'S12_1666',
@@ -19323,7 +19324,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.34',
                 'orderLineNumber' => 8,
             ),
-            412 => 
+            412 =>
             array (
                 'orderNumber' => 10357,
                 'productCode' => 'S18_1097',
@@ -19331,7 +19332,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.00',
                 'orderLineNumber' => 1,
             ),
-            413 => 
+            413 =>
             array (
                 'orderNumber' => 10357,
                 'productCode' => 'S18_2432',
@@ -19339,7 +19340,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.95',
                 'orderLineNumber' => 7,
             ),
-            414 => 
+            414 =>
             array (
                 'orderNumber' => 10357,
                 'productCode' => 'S18_2949',
@@ -19347,7 +19348,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.18',
                 'orderLineNumber' => 6,
             ),
-            415 => 
+            415 =>
             array (
                 'orderNumber' => 10357,
                 'productCode' => 'S18_2957',
@@ -19355,7 +19356,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.34',
                 'orderLineNumber' => 5,
             ),
-            416 => 
+            416 =>
             array (
                 'orderNumber' => 10357,
                 'productCode' => 'S18_3136',
@@ -19363,7 +19364,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.72',
                 'orderLineNumber' => 4,
             ),
-            417 => 
+            417 =>
             array (
                 'orderNumber' => 10357,
                 'productCode' => 'S18_3320',
@@ -19371,7 +19372,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.33',
                 'orderLineNumber' => 3,
             ),
-            418 => 
+            418 =>
             array (
                 'orderNumber' => 10357,
                 'productCode' => 'S18_4600',
@@ -19379,7 +19380,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.34',
                 'orderLineNumber' => 2,
             ),
-            419 => 
+            419 =>
             array (
                 'orderNumber' => 10358,
                 'productCode' => 'S12_3148',
@@ -19387,7 +19388,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.93',
                 'orderLineNumber' => 5,
             ),
-            420 => 
+            420 =>
             array (
                 'orderNumber' => 10358,
                 'productCode' => 'S12_4473',
@@ -19395,7 +19396,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.36',
                 'orderLineNumber' => 9,
             ),
-            421 => 
+            421 =>
             array (
                 'orderNumber' => 10358,
                 'productCode' => 'S18_2238',
@@ -19403,7 +19404,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '142.45',
                 'orderLineNumber' => 10,
             ),
-            422 => 
+            422 =>
             array (
                 'orderNumber' => 10358,
                 'productCode' => 'S18_2319',
@@ -19411,7 +19412,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.41',
                 'orderLineNumber' => 11,
             ),
-            423 => 
+            423 =>
             array (
                 'orderNumber' => 10358,
                 'productCode' => 'S18_3232',
@@ -19419,7 +19420,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.17',
                 'orderLineNumber' => 12,
             ),
-            424 => 
+            424 =>
             array (
                 'orderNumber' => 10358,
                 'productCode' => 'S18_4027',
@@ -19427,7 +19428,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.77',
                 'orderLineNumber' => 13,
             ),
-            425 => 
+            425 =>
             array (
                 'orderNumber' => 10358,
                 'productCode' => 'S18_4668',
@@ -19435,7 +19436,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '46.29',
                 'orderLineNumber' => 8,
             ),
-            426 => 
+            426 =>
             array (
                 'orderNumber' => 10358,
                 'productCode' => 'S24_1444',
@@ -19443,7 +19444,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.07',
                 'orderLineNumber' => 14,
             ),
-            427 => 
+            427 =>
             array (
                 'orderNumber' => 10358,
                 'productCode' => 'S24_2300',
@@ -19451,7 +19452,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '127.79',
                 'orderLineNumber' => 7,
             ),
-            428 => 
+            428 =>
             array (
                 'orderNumber' => 10358,
                 'productCode' => 'S24_2840',
@@ -19459,7 +19460,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '33.59',
                 'orderLineNumber' => 4,
             ),
-            429 => 
+            429 =>
             array (
                 'orderNumber' => 10358,
                 'productCode' => 'S24_4258',
@@ -19467,7 +19468,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.62',
                 'orderLineNumber' => 6,
             ),
-            430 => 
+            430 =>
             array (
                 'orderNumber' => 10358,
                 'productCode' => 'S32_1268',
@@ -19475,7 +19476,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.83',
                 'orderLineNumber' => 1,
             ),
-            431 => 
+            431 =>
             array (
                 'orderNumber' => 10358,
                 'productCode' => 'S32_3522',
@@ -19483,7 +19484,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.71',
                 'orderLineNumber' => 2,
             ),
-            432 => 
+            432 =>
             array (
                 'orderNumber' => 10358,
                 'productCode' => 'S700_2824',
@@ -19491,7 +19492,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.98',
                 'orderLineNumber' => 3,
             ),
-            433 => 
+            433 =>
             array (
                 'orderNumber' => 10359,
                 'productCode' => 'S10_4757',
@@ -19499,7 +19500,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.40',
                 'orderLineNumber' => 6,
             ),
-            434 => 
+            434 =>
             array (
                 'orderNumber' => 10359,
                 'productCode' => 'S12_1108',
@@ -19507,7 +19508,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '180.79',
                 'orderLineNumber' => 8,
             ),
-            435 => 
+            435 =>
             array (
                 'orderNumber' => 10359,
                 'productCode' => 'S12_3891',
@@ -19515,7 +19516,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '162.64',
                 'orderLineNumber' => 5,
             ),
-            436 => 
+            436 =>
             array (
                 'orderNumber' => 10359,
                 'productCode' => 'S24_4048',
@@ -19523,7 +19524,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '108.82',
                 'orderLineNumber' => 7,
             ),
-            437 => 
+            437 =>
             array (
                 'orderNumber' => 10359,
                 'productCode' => 'S32_2509',
@@ -19531,7 +19532,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '45.45',
                 'orderLineNumber' => 3,
             ),
-            438 => 
+            438 =>
             array (
                 'orderNumber' => 10359,
                 'productCode' => 'S32_3207',
@@ -19539,7 +19540,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.14',
                 'orderLineNumber' => 1,
             ),
-            439 => 
+            439 =>
             array (
                 'orderNumber' => 10359,
                 'productCode' => 'S50_1392',
@@ -19547,7 +19548,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.55',
                 'orderLineNumber' => 2,
             ),
-            440 => 
+            440 =>
             array (
                 'orderNumber' => 10359,
                 'productCode' => 'S50_1514',
@@ -19555,7 +19556,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.45',
                 'orderLineNumber' => 4,
             ),
-            441 => 
+            441 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S18_1662',
@@ -19563,7 +19564,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.15',
                 'orderLineNumber' => 12,
             ),
-            442 => 
+            442 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S18_2581',
@@ -19571,7 +19572,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.43',
                 'orderLineNumber' => 13,
             ),
-            443 => 
+            443 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S18_3029',
@@ -19579,7 +19580,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.40',
                 'orderLineNumber' => 14,
             ),
-            444 => 
+            444 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S18_3140',
@@ -19587,7 +19588,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.93',
                 'orderLineNumber' => 8,
             ),
-            445 => 
+            445 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S18_3259',
@@ -19595,7 +19596,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.79',
                 'orderLineNumber' => 18,
             ),
-            446 => 
+            446 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S18_3856',
@@ -19603,7 +19604,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.64',
                 'orderLineNumber' => 15,
             ),
-            447 => 
+            447 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S18_4522',
@@ -19611,7 +19612,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.36',
                 'orderLineNumber' => 1,
             ),
-            448 => 
+            448 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S24_1785',
@@ -19619,7 +19620,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '106.14',
                 'orderLineNumber' => 17,
             ),
-            449 => 
+            449 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S24_2011',
@@ -19627,7 +19628,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.77',
                 'orderLineNumber' => 2,
             ),
-            450 => 
+            450 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S24_2841',
@@ -19635,7 +19636,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.49',
                 'orderLineNumber' => 16,
             ),
-            451 => 
+            451 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S24_3151',
@@ -19643,7 +19644,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.81',
                 'orderLineNumber' => 3,
             ),
-            452 => 
+            452 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S24_3816',
@@ -19651,7 +19652,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.83',
                 'orderLineNumber' => 4,
             ),
-            453 => 
+            453 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S700_1138',
@@ -19659,7 +19660,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.67',
                 'orderLineNumber' => 5,
             ),
-            454 => 
+            454 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S700_1938',
@@ -19667,7 +19668,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.61',
                 'orderLineNumber' => 6,
             ),
-            455 => 
+            455 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S700_2610',
@@ -19675,7 +19676,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.11',
                 'orderLineNumber' => 7,
             ),
-            456 => 
+            456 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S700_3505',
@@ -19683,7 +19684,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.14',
                 'orderLineNumber' => 9,
             ),
-            457 => 
+            457 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S700_3962',
@@ -19691,7 +19692,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.36',
                 'orderLineNumber' => 10,
             ),
-            458 => 
+            458 =>
             array (
                 'orderNumber' => 10360,
                 'productCode' => 'S72_3212',
@@ -19699,7 +19700,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.05',
                 'orderLineNumber' => 11,
             ),
-            459 => 
+            459 =>
             array (
                 'orderNumber' => 10361,
                 'productCode' => 'S10_1678',
@@ -19707,7 +19708,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.83',
                 'orderLineNumber' => 13,
             ),
-            460 => 
+            460 =>
             array (
                 'orderNumber' => 10361,
                 'productCode' => 'S10_2016',
@@ -19715,7 +19716,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.18',
                 'orderLineNumber' => 8,
             ),
-            461 => 
+            461 =>
             array (
                 'orderNumber' => 10361,
                 'productCode' => 'S24_3420',
@@ -19723,7 +19724,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.46',
                 'orderLineNumber' => 6,
             ),
-            462 => 
+            462 =>
             array (
                 'orderNumber' => 10361,
                 'productCode' => 'S24_3949',
@@ -19731,7 +19732,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.42',
                 'orderLineNumber' => 7,
             ),
-            463 => 
+            463 =>
             array (
                 'orderNumber' => 10361,
                 'productCode' => 'S24_4278',
@@ -19739,7 +19740,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.83',
                 'orderLineNumber' => 1,
             ),
-            464 => 
+            464 =>
             array (
                 'orderNumber' => 10361,
                 'productCode' => 'S32_4289',
@@ -19747,7 +19748,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.41',
                 'orderLineNumber' => 2,
             ),
-            465 => 
+            465 =>
             array (
                 'orderNumber' => 10361,
                 'productCode' => 'S50_1341',
@@ -19755,7 +19756,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.78',
                 'orderLineNumber' => 3,
             ),
-            466 => 
+            466 =>
             array (
                 'orderNumber' => 10361,
                 'productCode' => 'S700_1691',
@@ -19763,7 +19764,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.60',
                 'orderLineNumber' => 4,
             ),
-            467 => 
+            467 =>
             array (
                 'orderNumber' => 10361,
                 'productCode' => 'S700_2047',
@@ -19771,7 +19772,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.99',
                 'orderLineNumber' => 14,
             ),
-            468 => 
+            468 =>
             array (
                 'orderNumber' => 10361,
                 'productCode' => 'S700_2466',
@@ -19779,7 +19780,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.74',
                 'orderLineNumber' => 9,
             ),
-            469 => 
+            469 =>
             array (
                 'orderNumber' => 10361,
                 'productCode' => 'S700_2834',
@@ -19787,7 +19788,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.97',
                 'orderLineNumber' => 5,
             ),
-            470 => 
+            470 =>
             array (
                 'orderNumber' => 10361,
                 'productCode' => 'S700_3167',
@@ -19795,7 +19796,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.80',
                 'orderLineNumber' => 10,
             ),
-            471 => 
+            471 =>
             array (
                 'orderNumber' => 10361,
                 'productCode' => 'S700_4002',
@@ -19803,7 +19804,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.19',
                 'orderLineNumber' => 11,
             ),
-            472 => 
+            472 =>
             array (
                 'orderNumber' => 10361,
                 'productCode' => 'S72_1253',
@@ -19811,7 +19812,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.67',
                 'orderLineNumber' => 12,
             ),
-            473 => 
+            473 =>
             array (
                 'orderNumber' => 10362,
                 'productCode' => 'S10_4698',
@@ -19819,7 +19820,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '182.04',
                 'orderLineNumber' => 4,
             ),
-            474 => 
+            474 =>
             array (
                 'orderNumber' => 10362,
                 'productCode' => 'S12_2823',
@@ -19827,7 +19828,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '131.04',
                 'orderLineNumber' => 1,
             ),
-            475 => 
+            475 =>
             array (
                 'orderNumber' => 10362,
                 'productCode' => 'S18_2625',
@@ -19835,7 +19836,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.91',
                 'orderLineNumber' => 3,
             ),
-            476 => 
+            476 =>
             array (
                 'orderNumber' => 10362,
                 'productCode' => 'S24_1578',
@@ -19843,7 +19844,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.29',
                 'orderLineNumber' => 2,
             ),
-            477 => 
+            477 =>
             array (
                 'orderNumber' => 10363,
                 'productCode' => 'S12_1099',
@@ -19851,7 +19852,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '180.95',
                 'orderLineNumber' => 3,
             ),
-            478 => 
+            478 =>
             array (
                 'orderNumber' => 10363,
                 'productCode' => 'S12_3380',
@@ -19859,7 +19860,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '106.87',
                 'orderLineNumber' => 4,
             ),
-            479 => 
+            479 =>
             array (
                 'orderNumber' => 10363,
                 'productCode' => 'S12_3990',
@@ -19867,7 +19868,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.63',
                 'orderLineNumber' => 5,
             ),
-            480 => 
+            480 =>
             array (
                 'orderNumber' => 10363,
                 'productCode' => 'S12_4675',
@@ -19875,7 +19876,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '103.64',
                 'orderLineNumber' => 6,
             ),
-            481 => 
+            481 =>
             array (
                 'orderNumber' => 10363,
                 'productCode' => 'S18_1889',
@@ -19883,7 +19884,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.60',
                 'orderLineNumber' => 7,
             ),
-            482 => 
+            482 =>
             array (
                 'orderNumber' => 10363,
                 'productCode' => 'S18_3278',
@@ -19891,7 +19892,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.15',
                 'orderLineNumber' => 10,
             ),
-            483 => 
+            483 =>
             array (
                 'orderNumber' => 10363,
                 'productCode' => 'S18_3482',
@@ -19899,7 +19900,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '124.94',
                 'orderLineNumber' => 11,
             ),
-            484 => 
+            484 =>
             array (
                 'orderNumber' => 10363,
                 'productCode' => 'S18_3782',
@@ -19907,7 +19908,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.22',
                 'orderLineNumber' => 12,
             ),
-            485 => 
+            485 =>
             array (
                 'orderNumber' => 10363,
                 'productCode' => 'S18_4721',
@@ -19915,7 +19916,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '123.50',
                 'orderLineNumber' => 13,
             ),
-            486 => 
+            486 =>
             array (
                 'orderNumber' => 10363,
                 'productCode' => 'S24_2000',
@@ -19923,7 +19924,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.08',
                 'orderLineNumber' => 8,
             ),
-            487 => 
+            487 =>
             array (
                 'orderNumber' => 10363,
                 'productCode' => 'S24_2360',
@@ -19931,7 +19932,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.10',
                 'orderLineNumber' => 14,
             ),
-            488 => 
+            488 =>
             array (
                 'orderNumber' => 10363,
                 'productCode' => 'S24_3371',
@@ -19939,7 +19940,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.05',
                 'orderLineNumber' => 15,
             ),
-            489 => 
+            489 =>
             array (
                 'orderNumber' => 10363,
                 'productCode' => 'S24_3856',
@@ -19947,7 +19948,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.75',
                 'orderLineNumber' => 1,
             ),
-            490 => 
+            490 =>
             array (
                 'orderNumber' => 10363,
                 'productCode' => 'S24_4620',
@@ -19955,7 +19956,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.99',
                 'orderLineNumber' => 9,
             ),
-            491 => 
+            491 =>
             array (
                 'orderNumber' => 10363,
                 'productCode' => 'S32_1374',
@@ -19963,7 +19964,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.90',
                 'orderLineNumber' => 2,
             ),
-            492 => 
+            492 =>
             array (
                 'orderNumber' => 10364,
                 'productCode' => 'S32_2206',
@@ -19971,7 +19972,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '38.22',
                 'orderLineNumber' => 1,
             ),
-            493 => 
+            493 =>
             array (
                 'orderNumber' => 10365,
                 'productCode' => 'S18_1129',
@@ -19979,7 +19980,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '116.06',
                 'orderLineNumber' => 1,
             ),
-            494 => 
+            494 =>
             array (
                 'orderNumber' => 10365,
                 'productCode' => 'S32_4485',
@@ -19987,7 +19988,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.66',
                 'orderLineNumber' => 3,
             ),
-            495 => 
+            495 =>
             array (
                 'orderNumber' => 10365,
                 'productCode' => 'S50_4713',
@@ -19995,7 +19996,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.34',
                 'orderLineNumber' => 2,
             ),
-            496 => 
+            496 =>
             array (
                 'orderNumber' => 10366,
                 'productCode' => 'S18_1984',
@@ -20003,7 +20004,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '116.65',
                 'orderLineNumber' => 3,
             ),
-            497 => 
+            497 =>
             array (
                 'orderNumber' => 10366,
                 'productCode' => 'S18_2870',
@@ -20011,7 +20012,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.60',
                 'orderLineNumber' => 2,
             ),
-            498 => 
+            498 =>
             array (
                 'orderNumber' => 10366,
                 'productCode' => 'S18_3232',
@@ -20019,7 +20020,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '154.10',
                 'orderLineNumber' => 1,
             ),
-            499 => 
+            499 =>
             array (
                 'orderNumber' => 10367,
                 'productCode' => 'S18_1589',
@@ -20027,9 +20028,9 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.77',
                 'orderLineNumber' => 1,
             ),
-        ));
-        \DB::table('orderdetails')->insert(array (
-            0 => 
+        );
+        $data_keenam = array (
+            0 =>
             array (
                 'orderNumber' => 10367,
                 'productCode' => 'S18_1749',
@@ -20037,7 +20038,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '144.50',
                 'orderLineNumber' => 3,
             ),
-            1 => 
+            1 =>
             array (
                 'orderNumber' => 10367,
                 'productCode' => 'S18_2248',
@@ -20045,7 +20046,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.25',
                 'orderLineNumber' => 4,
             ),
-            2 => 
+            2 =>
             array (
                 'orderNumber' => 10367,
                 'productCode' => 'S18_2325',
@@ -20053,7 +20054,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '124.59',
                 'orderLineNumber' => 5,
             ),
-            3 => 
+            3 =>
             array (
                 'orderNumber' => 10367,
                 'productCode' => 'S18_2795',
@@ -20061,7 +20062,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.06',
                 'orderLineNumber' => 7,
             ),
-            4 => 
+            4 =>
             array (
                 'orderNumber' => 10367,
                 'productCode' => 'S18_3685',
@@ -20069,7 +20070,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '131.39',
                 'orderLineNumber' => 6,
             ),
-            5 => 
+            5 =>
             array (
                 'orderNumber' => 10367,
                 'productCode' => 'S18_4409',
@@ -20077,7 +20078,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.31',
                 'orderLineNumber' => 8,
             ),
-            6 => 
+            6 =>
             array (
                 'orderNumber' => 10367,
                 'productCode' => 'S18_4933',
@@ -20085,7 +20086,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.99',
                 'orderLineNumber' => 9,
             ),
-            7 => 
+            7 =>
             array (
                 'orderNumber' => 10367,
                 'productCode' => 'S24_1046',
@@ -20093,7 +20094,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.76',
                 'orderLineNumber' => 10,
             ),
-            8 => 
+            8 =>
             array (
                 'orderNumber' => 10367,
                 'productCode' => 'S24_1628',
@@ -20101,7 +20102,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.31',
                 'orderLineNumber' => 11,
             ),
-            9 => 
+            9 =>
             array (
                 'orderNumber' => 10367,
                 'productCode' => 'S24_1937',
@@ -20109,7 +20110,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '29.54',
                 'orderLineNumber' => 13,
             ),
-            10 => 
+            10 =>
             array (
                 'orderNumber' => 10367,
                 'productCode' => 'S24_2022',
@@ -20117,7 +20118,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.01',
                 'orderLineNumber' => 12,
             ),
-            11 => 
+            11 =>
             array (
                 'orderNumber' => 10367,
                 'productCode' => 'S24_2972',
@@ -20125,7 +20126,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '36.25',
                 'orderLineNumber' => 2,
             ),
-            12 => 
+            12 =>
             array (
                 'orderNumber' => 10368,
                 'productCode' => 'S24_2766',
@@ -20133,7 +20134,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.60',
                 'orderLineNumber' => 2,
             ),
-            13 => 
+            13 =>
             array (
                 'orderNumber' => 10368,
                 'productCode' => 'S24_2887',
@@ -20141,7 +20142,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.09',
                 'orderLineNumber' => 5,
             ),
-            14 => 
+            14 =>
             array (
                 'orderNumber' => 10368,
                 'productCode' => 'S24_3191',
@@ -20149,7 +20150,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.04',
                 'orderLineNumber' => 1,
             ),
-            15 => 
+            15 =>
             array (
                 'orderNumber' => 10368,
                 'productCode' => 'S24_3432',
@@ -20157,7 +20158,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.16',
                 'orderLineNumber' => 4,
             ),
-            16 => 
+            16 =>
             array (
                 'orderNumber' => 10368,
                 'productCode' => 'S24_3969',
@@ -20165,7 +20166,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '36.52',
                 'orderLineNumber' => 3,
             ),
-            17 => 
+            17 =>
             array (
                 'orderNumber' => 10369,
                 'productCode' => 'S10_1949',
@@ -20173,7 +20174,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '195.01',
                 'orderLineNumber' => 2,
             ),
-            18 => 
+            18 =>
             array (
                 'orderNumber' => 10369,
                 'productCode' => 'S18_1342',
@@ -20181,7 +20182,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.38',
                 'orderLineNumber' => 8,
             ),
-            19 => 
+            19 =>
             array (
                 'orderNumber' => 10369,
                 'productCode' => 'S18_1367',
@@ -20189,7 +20190,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '46.36',
                 'orderLineNumber' => 7,
             ),
-            20 => 
+            20 =>
             array (
                 'orderNumber' => 10369,
                 'productCode' => 'S18_2949',
@@ -20197,7 +20198,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.30',
                 'orderLineNumber' => 1,
             ),
-            21 => 
+            21 =>
             array (
                 'orderNumber' => 10369,
                 'productCode' => 'S18_2957',
@@ -20205,7 +20206,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.84',
                 'orderLineNumber' => 6,
             ),
-            22 => 
+            22 =>
             array (
                 'orderNumber' => 10369,
                 'productCode' => 'S18_3136',
@@ -20213,7 +20214,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.06',
                 'orderLineNumber' => 5,
             ),
-            23 => 
+            23 =>
             array (
                 'orderNumber' => 10369,
                 'productCode' => 'S18_3320',
@@ -20221,7 +20222,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.36',
                 'orderLineNumber' => 4,
             ),
-            24 => 
+            24 =>
             array (
                 'orderNumber' => 10369,
                 'productCode' => 'S24_4258',
@@ -20229,7 +20230,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.49',
                 'orderLineNumber' => 3,
             ),
-            25 => 
+            25 =>
             array (
                 'orderNumber' => 10370,
                 'productCode' => 'S10_4962',
@@ -20237,7 +20238,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '128.53',
                 'orderLineNumber' => 4,
             ),
-            26 => 
+            26 =>
             array (
                 'orderNumber' => 10370,
                 'productCode' => 'S12_1666',
@@ -20245,7 +20246,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '128.47',
                 'orderLineNumber' => 8,
             ),
-            27 => 
+            27 =>
             array (
                 'orderNumber' => 10370,
                 'productCode' => 'S18_1097',
@@ -20253,7 +20254,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.34',
                 'orderLineNumber' => 1,
             ),
-            28 => 
+            28 =>
             array (
                 'orderNumber' => 10370,
                 'productCode' => 'S18_2319',
@@ -20261,7 +20262,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.87',
                 'orderLineNumber' => 5,
             ),
-            29 => 
+            29 =>
             array (
                 'orderNumber' => 10370,
                 'productCode' => 'S18_2432',
@@ -20269,7 +20270,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.16',
                 'orderLineNumber' => 7,
             ),
-            30 => 
+            30 =>
             array (
                 'orderNumber' => 10370,
                 'productCode' => 'S18_3232',
@@ -20277,7 +20278,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '167.65',
                 'orderLineNumber' => 9,
             ),
-            31 => 
+            31 =>
             array (
                 'orderNumber' => 10370,
                 'productCode' => 'S18_4600',
@@ -20285,7 +20286,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.34',
                 'orderLineNumber' => 6,
             ),
-            32 => 
+            32 =>
             array (
                 'orderNumber' => 10370,
                 'productCode' => 'S18_4668',
@@ -20293,7 +20294,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '41.76',
                 'orderLineNumber' => 2,
             ),
-            33 => 
+            33 =>
             array (
                 'orderNumber' => 10370,
                 'productCode' => 'S32_3522',
@@ -20301,7 +20302,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.99',
                 'orderLineNumber' => 3,
             ),
-            34 => 
+            34 =>
             array (
                 'orderNumber' => 10371,
                 'productCode' => 'S12_1108',
@@ -20309,7 +20310,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '178.71',
                 'orderLineNumber' => 6,
             ),
-            35 => 
+            35 =>
             array (
                 'orderNumber' => 10371,
                 'productCode' => 'S12_4473',
@@ -20317,7 +20318,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.28',
                 'orderLineNumber' => 4,
             ),
-            36 => 
+            36 =>
             array (
                 'orderNumber' => 10371,
                 'productCode' => 'S18_2238',
@@ -20325,7 +20326,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '160.46',
                 'orderLineNumber' => 7,
             ),
-            37 => 
+            37 =>
             array (
                 'orderNumber' => 10371,
                 'productCode' => 'S24_1444',
@@ -20333,7 +20334,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.75',
                 'orderLineNumber' => 12,
             ),
-            38 => 
+            38 =>
             array (
                 'orderNumber' => 10371,
                 'productCode' => 'S24_2300',
@@ -20341,7 +20342,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '126.51',
                 'orderLineNumber' => 5,
             ),
-            39 => 
+            39 =>
             array (
                 'orderNumber' => 10371,
                 'productCode' => 'S24_2840',
@@ -20349,7 +20350,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.01',
                 'orderLineNumber' => 8,
             ),
-            40 => 
+            40 =>
             array (
                 'orderNumber' => 10371,
                 'productCode' => 'S24_4048',
@@ -20357,7 +20358,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.81',
                 'orderLineNumber' => 9,
             ),
-            41 => 
+            41 =>
             array (
                 'orderNumber' => 10371,
                 'productCode' => 'S32_1268',
@@ -20365,7 +20366,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.83',
                 'orderLineNumber' => 1,
             ),
-            42 => 
+            42 =>
             array (
                 'orderNumber' => 10371,
                 'productCode' => 'S32_2509',
@@ -20373,7 +20374,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.37',
                 'orderLineNumber' => 2,
             ),
-            43 => 
+            43 =>
             array (
                 'orderNumber' => 10371,
                 'productCode' => 'S32_3207',
@@ -20381,7 +20382,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.44',
                 'orderLineNumber' => 11,
             ),
-            44 => 
+            44 =>
             array (
                 'orderNumber' => 10371,
                 'productCode' => 'S50_1392',
@@ -20389,7 +20390,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '97.23',
                 'orderLineNumber' => 10,
             ),
-            45 => 
+            45 =>
             array (
                 'orderNumber' => 10371,
                 'productCode' => 'S700_2824',
@@ -20397,7 +20398,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.95',
                 'orderLineNumber' => 3,
             ),
-            46 => 
+            46 =>
             array (
                 'orderNumber' => 10372,
                 'productCode' => 'S12_3148',
@@ -20405,7 +20406,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '146.55',
                 'orderLineNumber' => 4,
             ),
-            47 => 
+            47 =>
             array (
                 'orderNumber' => 10372,
                 'productCode' => 'S12_3891',
@@ -20413,7 +20414,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.15',
                 'orderLineNumber' => 1,
             ),
-            48 => 
+            48 =>
             array (
                 'orderNumber' => 10372,
                 'productCode' => 'S18_3140',
@@ -20421,7 +20422,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '131.13',
                 'orderLineNumber' => 3,
             ),
-            49 => 
+            49 =>
             array (
                 'orderNumber' => 10372,
                 'productCode' => 'S18_3259',
@@ -20429,7 +20430,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.76',
                 'orderLineNumber' => 5,
             ),
-            50 => 
+            50 =>
             array (
                 'orderNumber' => 10372,
                 'productCode' => 'S18_4027',
@@ -20437,7 +20438,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.20',
                 'orderLineNumber' => 6,
             ),
-            51 => 
+            51 =>
             array (
                 'orderNumber' => 10372,
                 'productCode' => 'S18_4522',
@@ -20445,7 +20446,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.99',
                 'orderLineNumber' => 7,
             ),
-            52 => 
+            52 =>
             array (
                 'orderNumber' => 10372,
                 'productCode' => 'S24_2011',
@@ -20453,7 +20454,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.00',
                 'orderLineNumber' => 8,
             ),
-            53 => 
+            53 =>
             array (
                 'orderNumber' => 10372,
                 'productCode' => 'S50_1514',
@@ -20461,7 +20462,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.82',
                 'orderLineNumber' => 9,
             ),
-            54 => 
+            54 =>
             array (
                 'orderNumber' => 10372,
                 'productCode' => 'S700_1938',
@@ -20469,7 +20470,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.48',
                 'orderLineNumber' => 2,
             ),
-            55 => 
+            55 =>
             array (
                 'orderNumber' => 10373,
                 'productCode' => 'S10_4757',
@@ -20477,7 +20478,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.32',
                 'orderLineNumber' => 3,
             ),
-            56 => 
+            56 =>
             array (
                 'orderNumber' => 10373,
                 'productCode' => 'S18_1662',
@@ -20485,7 +20486,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '143.50',
                 'orderLineNumber' => 4,
             ),
-            57 => 
+            57 =>
             array (
                 'orderNumber' => 10373,
                 'productCode' => 'S18_3029',
@@ -20493,7 +20494,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.70',
                 'orderLineNumber' => 5,
             ),
-            58 => 
+            58 =>
             array (
                 'orderNumber' => 10373,
                 'productCode' => 'S18_3856',
@@ -20501,7 +20502,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.52',
                 'orderLineNumber' => 6,
             ),
-            59 => 
+            59 =>
             array (
                 'orderNumber' => 10373,
                 'productCode' => 'S24_2841',
@@ -20509,7 +20510,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.92',
                 'orderLineNumber' => 7,
             ),
-            60 => 
+            60 =>
             array (
                 'orderNumber' => 10373,
                 'productCode' => 'S24_3151',
@@ -20517,7 +20518,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.31',
                 'orderLineNumber' => 12,
             ),
-            61 => 
+            61 =>
             array (
                 'orderNumber' => 10373,
                 'productCode' => 'S24_3420',
@@ -20525,7 +20526,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.92',
                 'orderLineNumber' => 11,
             ),
-            62 => 
+            62 =>
             array (
                 'orderNumber' => 10373,
                 'productCode' => 'S24_3816',
@@ -20533,7 +20534,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.86',
                 'orderLineNumber' => 10,
             ),
-            63 => 
+            63 =>
             array (
                 'orderNumber' => 10373,
                 'productCode' => 'S24_3949',
@@ -20541,7 +20542,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.10',
                 'orderLineNumber' => 13,
             ),
-            64 => 
+            64 =>
             array (
                 'orderNumber' => 10373,
                 'productCode' => 'S700_1138',
@@ -20549,7 +20550,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.00',
                 'orderLineNumber' => 14,
             ),
-            65 => 
+            65 =>
             array (
                 'orderNumber' => 10373,
                 'productCode' => 'S700_2047',
@@ -20557,7 +20558,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.94',
                 'orderLineNumber' => 15,
             ),
-            66 => 
+            66 =>
             array (
                 'orderNumber' => 10373,
                 'productCode' => 'S700_2610',
@@ -20565,7 +20566,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.39',
                 'orderLineNumber' => 16,
             ),
-            67 => 
+            67 =>
             array (
                 'orderNumber' => 10373,
                 'productCode' => 'S700_3505',
@@ -20573,7 +20574,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.16',
                 'orderLineNumber' => 2,
             ),
-            68 => 
+            68 =>
             array (
                 'orderNumber' => 10373,
                 'productCode' => 'S700_3962',
@@ -20581,7 +20582,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.42',
                 'orderLineNumber' => 8,
             ),
-            69 => 
+            69 =>
             array (
                 'orderNumber' => 10373,
                 'productCode' => 'S700_4002',
@@ -20589,7 +20590,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.11',
                 'orderLineNumber' => 17,
             ),
-            70 => 
+            70 =>
             array (
                 'orderNumber' => 10373,
                 'productCode' => 'S72_1253',
@@ -20597,7 +20598,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.20',
                 'orderLineNumber' => 9,
             ),
-            71 => 
+            71 =>
             array (
                 'orderNumber' => 10373,
                 'productCode' => 'S72_3212',
@@ -20605,7 +20606,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.05',
                 'orderLineNumber' => 1,
             ),
-            72 => 
+            72 =>
             array (
                 'orderNumber' => 10374,
                 'productCode' => 'S10_2016',
@@ -20613,7 +20614,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.37',
                 'orderLineNumber' => 5,
             ),
-            73 => 
+            73 =>
             array (
                 'orderNumber' => 10374,
                 'productCode' => 'S10_4698',
@@ -20621,7 +20622,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '158.80',
                 'orderLineNumber' => 1,
             ),
-            74 => 
+            74 =>
             array (
                 'orderNumber' => 10374,
                 'productCode' => 'S18_2581',
@@ -20629,7 +20630,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.19',
                 'orderLineNumber' => 2,
             ),
-            75 => 
+            75 =>
             array (
                 'orderNumber' => 10374,
                 'productCode' => 'S18_2625',
@@ -20637,7 +20638,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.46',
                 'orderLineNumber' => 4,
             ),
-            76 => 
+            76 =>
             array (
                 'orderNumber' => 10374,
                 'productCode' => 'S24_1578',
@@ -20645,7 +20646,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.70',
                 'orderLineNumber' => 6,
             ),
-            77 => 
+            77 =>
             array (
                 'orderNumber' => 10374,
                 'productCode' => 'S24_1785',
@@ -20653,7 +20654,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.23',
                 'orderLineNumber' => 3,
             ),
-            78 => 
+            78 =>
             array (
                 'orderNumber' => 10375,
                 'productCode' => 'S10_1678',
@@ -20661,7 +20662,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.56',
                 'orderLineNumber' => 12,
             ),
-            79 => 
+            79 =>
             array (
                 'orderNumber' => 10375,
                 'productCode' => 'S12_1099',
@@ -20669,7 +20670,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '184.84',
                 'orderLineNumber' => 7,
             ),
-            80 => 
+            80 =>
             array (
                 'orderNumber' => 10375,
                 'productCode' => 'S12_2823',
@@ -20677,7 +20678,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '150.62',
                 'orderLineNumber' => 13,
             ),
-            81 => 
+            81 =>
             array (
                 'orderNumber' => 10375,
                 'productCode' => 'S24_2000',
@@ -20685,7 +20686,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.03',
                 'orderLineNumber' => 9,
             ),
-            82 => 
+            82 =>
             array (
                 'orderNumber' => 10375,
                 'productCode' => 'S24_2360',
@@ -20693,7 +20694,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.26',
                 'orderLineNumber' => 14,
             ),
-            83 => 
+            83 =>
             array (
                 'orderNumber' => 10375,
                 'productCode' => 'S24_4278',
@@ -20701,7 +20702,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.13',
                 'orderLineNumber' => 2,
             ),
-            84 => 
+            84 =>
             array (
                 'orderNumber' => 10375,
                 'productCode' => 'S32_1374',
@@ -20709,7 +20710,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.90',
                 'orderLineNumber' => 3,
             ),
-            85 => 
+            85 =>
             array (
                 'orderNumber' => 10375,
                 'productCode' => 'S32_4289',
@@ -20717,7 +20718,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.85',
                 'orderLineNumber' => 4,
             ),
-            86 => 
+            86 =>
             array (
                 'orderNumber' => 10375,
                 'productCode' => 'S32_4485',
@@ -20725,7 +20726,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.95',
                 'orderLineNumber' => 15,
             ),
-            87 => 
+            87 =>
             array (
                 'orderNumber' => 10375,
                 'productCode' => 'S50_1341',
@@ -20733,7 +20734,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '36.22',
                 'orderLineNumber' => 5,
             ),
-            88 => 
+            88 =>
             array (
                 'orderNumber' => 10375,
                 'productCode' => 'S50_4713',
@@ -20741,7 +20742,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.16',
                 'orderLineNumber' => 8,
             ),
-            89 => 
+            89 =>
             array (
                 'orderNumber' => 10375,
                 'productCode' => 'S700_1691',
@@ -20749,7 +20750,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.77',
                 'orderLineNumber' => 6,
             ),
-            90 => 
+            90 =>
             array (
                 'orderNumber' => 10375,
                 'productCode' => 'S700_2466',
@@ -20757,7 +20758,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.73',
                 'orderLineNumber' => 1,
             ),
-            91 => 
+            91 =>
             array (
                 'orderNumber' => 10375,
                 'productCode' => 'S700_2834',
@@ -20765,7 +20766,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.48',
                 'orderLineNumber' => 10,
             ),
-            92 => 
+            92 =>
             array (
                 'orderNumber' => 10375,
                 'productCode' => 'S700_3167',
@@ -20773,7 +20774,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.60',
                 'orderLineNumber' => 11,
             ),
-            93 => 
+            93 =>
             array (
                 'orderNumber' => 10376,
                 'productCode' => 'S12_3380',
@@ -20781,7 +20782,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.65',
                 'orderLineNumber' => 1,
             ),
-            94 => 
+            94 =>
             array (
                 'orderNumber' => 10377,
                 'productCode' => 'S12_3990',
@@ -20789,7 +20790,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.44',
                 'orderLineNumber' => 5,
             ),
-            95 => 
+            95 =>
             array (
                 'orderNumber' => 10377,
                 'productCode' => 'S12_4675',
@@ -20797,7 +20798,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.86',
                 'orderLineNumber' => 1,
             ),
-            96 => 
+            96 =>
             array (
                 'orderNumber' => 10377,
                 'productCode' => 'S18_1129',
@@ -20805,7 +20806,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '124.56',
                 'orderLineNumber' => 2,
             ),
-            97 => 
+            97 =>
             array (
                 'orderNumber' => 10377,
                 'productCode' => 'S18_1889',
@@ -20813,7 +20814,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.60',
                 'orderLineNumber' => 4,
             ),
-            98 => 
+            98 =>
             array (
                 'orderNumber' => 10377,
                 'productCode' => 'S18_1984',
@@ -20821,7 +20822,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '125.18',
                 'orderLineNumber' => 6,
             ),
-            99 => 
+            99 =>
             array (
                 'orderNumber' => 10377,
                 'productCode' => 'S18_3232',
@@ -20829,7 +20830,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '143.94',
                 'orderLineNumber' => 3,
             ),
-            100 => 
+            100 =>
             array (
                 'orderNumber' => 10378,
                 'productCode' => 'S18_1589',
@@ -20837,7 +20838,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '121.95',
                 'orderLineNumber' => 5,
             ),
-            101 => 
+            101 =>
             array (
                 'orderNumber' => 10378,
                 'productCode' => 'S18_3278',
@@ -20845,7 +20846,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.74',
                 'orderLineNumber' => 4,
             ),
-            102 => 
+            102 =>
             array (
                 'orderNumber' => 10378,
                 'productCode' => 'S18_3482',
@@ -20853,7 +20854,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '146.99',
                 'orderLineNumber' => 10,
             ),
-            103 => 
+            103 =>
             array (
                 'orderNumber' => 10378,
                 'productCode' => 'S18_3782',
@@ -20861,7 +20862,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.30',
                 'orderLineNumber' => 9,
             ),
-            104 => 
+            104 =>
             array (
                 'orderNumber' => 10378,
                 'productCode' => 'S18_4721',
@@ -20869,7 +20870,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.02',
                 'orderLineNumber' => 8,
             ),
-            105 => 
+            105 =>
             array (
                 'orderNumber' => 10378,
                 'productCode' => 'S24_2972',
@@ -20877,7 +20878,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '30.59',
                 'orderLineNumber' => 7,
             ),
-            106 => 
+            106 =>
             array (
                 'orderNumber' => 10378,
                 'productCode' => 'S24_3371',
@@ -20885,7 +20886,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.66',
                 'orderLineNumber' => 6,
             ),
-            107 => 
+            107 =>
             array (
                 'orderNumber' => 10378,
                 'productCode' => 'S24_3856',
@@ -20893,7 +20894,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.20',
                 'orderLineNumber' => 3,
             ),
-            108 => 
+            108 =>
             array (
                 'orderNumber' => 10378,
                 'productCode' => 'S24_4620',
@@ -20901,7 +20902,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.84',
                 'orderLineNumber' => 2,
             ),
-            109 => 
+            109 =>
             array (
                 'orderNumber' => 10378,
                 'productCode' => 'S32_2206',
@@ -20909,7 +20910,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.80',
                 'orderLineNumber' => 1,
             ),
-            110 => 
+            110 =>
             array (
                 'orderNumber' => 10379,
                 'productCode' => 'S18_1749',
@@ -20917,7 +20918,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '156.40',
                 'orderLineNumber' => 2,
             ),
-            111 => 
+            111 =>
             array (
                 'orderNumber' => 10379,
                 'productCode' => 'S18_2248',
@@ -20925,7 +20926,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.85',
                 'orderLineNumber' => 1,
             ),
-            112 => 
+            112 =>
             array (
                 'orderNumber' => 10379,
                 'productCode' => 'S18_2870',
@@ -20933,7 +20934,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '113.52',
                 'orderLineNumber' => 5,
             ),
-            113 => 
+            113 =>
             array (
                 'orderNumber' => 10379,
                 'productCode' => 'S18_3685',
@@ -20941,7 +20942,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '134.22',
                 'orderLineNumber' => 4,
             ),
-            114 => 
+            114 =>
             array (
                 'orderNumber' => 10379,
                 'productCode' => 'S24_1628',
@@ -20949,7 +20950,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.80',
                 'orderLineNumber' => 3,
             ),
-            115 => 
+            115 =>
             array (
                 'orderNumber' => 10380,
                 'productCode' => 'S18_1342',
@@ -20957,7 +20958,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.36',
                 'orderLineNumber' => 13,
             ),
-            116 => 
+            116 =>
             array (
                 'orderNumber' => 10380,
                 'productCode' => 'S18_2325',
@@ -20965,7 +20966,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.50',
                 'orderLineNumber' => 10,
             ),
-            117 => 
+            117 =>
             array (
                 'orderNumber' => 10380,
                 'productCode' => 'S18_2795',
@@ -20973,7 +20974,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '156.94',
                 'orderLineNumber' => 8,
             ),
-            118 => 
+            118 =>
             array (
                 'orderNumber' => 10380,
                 'productCode' => 'S18_4409',
@@ -20981,7 +20982,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.23',
                 'orderLineNumber' => 1,
             ),
-            119 => 
+            119 =>
             array (
                 'orderNumber' => 10380,
                 'productCode' => 'S18_4933',
@@ -20989,7 +20990,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.99',
                 'orderLineNumber' => 2,
             ),
-            120 => 
+            120 =>
             array (
                 'orderNumber' => 10380,
                 'productCode' => 'S24_1046',
@@ -20997,7 +20998,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.88',
                 'orderLineNumber' => 3,
             ),
-            121 => 
+            121 =>
             array (
                 'orderNumber' => 10380,
                 'productCode' => 'S24_1937',
@@ -21005,7 +21006,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '29.87',
                 'orderLineNumber' => 4,
             ),
-            122 => 
+            122 =>
             array (
                 'orderNumber' => 10380,
                 'productCode' => 'S24_2022',
@@ -21013,7 +21014,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '37.63',
                 'orderLineNumber' => 5,
             ),
-            123 => 
+            123 =>
             array (
                 'orderNumber' => 10380,
                 'productCode' => 'S24_2766',
@@ -21021,7 +21022,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.24',
                 'orderLineNumber' => 6,
             ),
-            124 => 
+            124 =>
             array (
                 'orderNumber' => 10380,
                 'productCode' => 'S24_2887',
@@ -21029,7 +21030,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.57',
                 'orderLineNumber' => 7,
             ),
-            125 => 
+            125 =>
             array (
                 'orderNumber' => 10380,
                 'productCode' => 'S24_3191',
@@ -21037,7 +21038,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.05',
                 'orderLineNumber' => 9,
             ),
-            126 => 
+            126 =>
             array (
                 'orderNumber' => 10380,
                 'productCode' => 'S24_3432',
@@ -21045,7 +21046,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.02',
                 'orderLineNumber' => 11,
             ),
-            127 => 
+            127 =>
             array (
                 'orderNumber' => 10380,
                 'productCode' => 'S24_3969',
@@ -21053,7 +21054,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.82',
                 'orderLineNumber' => 12,
             ),
-            128 => 
+            128 =>
             array (
                 'orderNumber' => 10381,
                 'productCode' => 'S10_1949',
@@ -21061,7 +21062,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '182.16',
                 'orderLineNumber' => 3,
             ),
-            129 => 
+            129 =>
             array (
                 'orderNumber' => 10381,
                 'productCode' => 'S10_4962',
@@ -21069,7 +21070,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '138.88',
                 'orderLineNumber' => 6,
             ),
-            130 => 
+            130 =>
             array (
                 'orderNumber' => 10381,
                 'productCode' => 'S12_1666',
@@ -21077,7 +21078,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '132.57',
                 'orderLineNumber' => 1,
             ),
-            131 => 
+            131 =>
             array (
                 'orderNumber' => 10381,
                 'productCode' => 'S18_1097',
@@ -21085,7 +21086,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.34',
                 'orderLineNumber' => 2,
             ),
-            132 => 
+            132 =>
             array (
                 'orderNumber' => 10381,
                 'productCode' => 'S18_1367',
@@ -21093,7 +21094,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.60',
                 'orderLineNumber' => 9,
             ),
-            133 => 
+            133 =>
             array (
                 'orderNumber' => 10381,
                 'productCode' => 'S18_2432',
@@ -21101,7 +21102,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.77',
                 'orderLineNumber' => 7,
             ),
-            134 => 
+            134 =>
             array (
                 'orderNumber' => 10381,
                 'productCode' => 'S18_2949',
@@ -21109,7 +21110,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.30',
                 'orderLineNumber' => 8,
             ),
-            135 => 
+            135 =>
             array (
                 'orderNumber' => 10381,
                 'productCode' => 'S18_2957',
@@ -21117,7 +21118,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.22',
                 'orderLineNumber' => 4,
             ),
-            136 => 
+            136 =>
             array (
                 'orderNumber' => 10381,
                 'productCode' => 'S18_3136',
@@ -21125,7 +21126,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.20',
                 'orderLineNumber' => 5,
             ),
-            137 => 
+            137 =>
             array (
                 'orderNumber' => 10382,
                 'productCode' => 'S12_1108',
@@ -21133,7 +21134,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '166.24',
                 'orderLineNumber' => 10,
             ),
-            138 => 
+            138 =>
             array (
                 'orderNumber' => 10382,
                 'productCode' => 'S12_3148',
@@ -21141,7 +21142,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '145.04',
                 'orderLineNumber' => 11,
             ),
-            139 => 
+            139 =>
             array (
                 'orderNumber' => 10382,
                 'productCode' => 'S12_3891',
@@ -21149,7 +21150,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '143.61',
                 'orderLineNumber' => 12,
             ),
-            140 => 
+            140 =>
             array (
                 'orderNumber' => 10382,
                 'productCode' => 'S12_4473',
@@ -21157,7 +21158,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '103.10',
                 'orderLineNumber' => 13,
             ),
-            141 => 
+            141 =>
             array (
                 'orderNumber' => 10382,
                 'productCode' => 'S18_2238',
@@ -21165,7 +21166,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '160.46',
                 'orderLineNumber' => 5,
             ),
-            142 => 
+            142 =>
             array (
                 'orderNumber' => 10382,
                 'productCode' => 'S18_3320',
@@ -21173,7 +21174,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.33',
                 'orderLineNumber' => 7,
             ),
-            143 => 
+            143 =>
             array (
                 'orderNumber' => 10382,
                 'productCode' => 'S18_4600',
@@ -21181,7 +21182,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.03',
                 'orderLineNumber' => 1,
             ),
-            144 => 
+            144 =>
             array (
                 'orderNumber' => 10382,
                 'productCode' => 'S18_4668',
@@ -21189,7 +21190,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '46.29',
                 'orderLineNumber' => 2,
             ),
-            145 => 
+            145 =>
             array (
                 'orderNumber' => 10382,
                 'productCode' => 'S24_2300',
@@ -21197,7 +21198,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.12',
                 'orderLineNumber' => 3,
             ),
-            146 => 
+            146 =>
             array (
                 'orderNumber' => 10382,
                 'productCode' => 'S24_4258',
@@ -21205,7 +21206,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '97.39',
                 'orderLineNumber' => 4,
             ),
-            147 => 
+            147 =>
             array (
                 'orderNumber' => 10382,
                 'productCode' => 'S32_1268',
@@ -21213,7 +21214,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.72',
                 'orderLineNumber' => 6,
             ),
-            148 => 
+            148 =>
             array (
                 'orderNumber' => 10382,
                 'productCode' => 'S32_3522',
@@ -21221,7 +21222,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.53',
                 'orderLineNumber' => 8,
             ),
-            149 => 
+            149 =>
             array (
                 'orderNumber' => 10382,
                 'productCode' => 'S700_2824',
@@ -21229,7 +21230,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.15',
                 'orderLineNumber' => 9,
             ),
-            150 => 
+            150 =>
             array (
                 'orderNumber' => 10383,
                 'productCode' => 'S18_2319',
@@ -21237,7 +21238,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '119.05',
                 'orderLineNumber' => 11,
             ),
-            151 => 
+            151 =>
             array (
                 'orderNumber' => 10383,
                 'productCode' => 'S18_3140',
@@ -21245,7 +21246,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '125.66',
                 'orderLineNumber' => 9,
             ),
-            152 => 
+            152 =>
             array (
                 'orderNumber' => 10383,
                 'productCode' => 'S18_3232',
@@ -21253,7 +21254,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '155.79',
                 'orderLineNumber' => 6,
             ),
-            153 => 
+            153 =>
             array (
                 'orderNumber' => 10383,
                 'productCode' => 'S18_3259',
@@ -21261,7 +21262,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.70',
                 'orderLineNumber' => 12,
             ),
-            154 => 
+            154 =>
             array (
                 'orderNumber' => 10383,
                 'productCode' => 'S18_4027',
@@ -21269,7 +21270,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.88',
                 'orderLineNumber' => 1,
             ),
-            155 => 
+            155 =>
             array (
                 'orderNumber' => 10383,
                 'productCode' => 'S18_4522',
@@ -21277,7 +21278,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.24',
                 'orderLineNumber' => 7,
             ),
-            156 => 
+            156 =>
             array (
                 'orderNumber' => 10383,
                 'productCode' => 'S24_1444',
@@ -21285,7 +21286,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.60',
                 'orderLineNumber' => 2,
             ),
-            157 => 
+            157 =>
             array (
                 'orderNumber' => 10383,
                 'productCode' => 'S24_2840',
@@ -21293,7 +21294,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '33.24',
                 'orderLineNumber' => 3,
             ),
-            158 => 
+            158 =>
             array (
                 'orderNumber' => 10383,
                 'productCode' => 'S24_4048',
@@ -21301,7 +21302,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.10',
                 'orderLineNumber' => 4,
             ),
-            159 => 
+            159 =>
             array (
                 'orderNumber' => 10383,
                 'productCode' => 'S32_2509',
@@ -21309,7 +21310,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.57',
                 'orderLineNumber' => 5,
             ),
-            160 => 
+            160 =>
             array (
                 'orderNumber' => 10383,
                 'productCode' => 'S32_3207',
@@ -21317,7 +21318,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.93',
                 'orderLineNumber' => 8,
             ),
-            161 => 
+            161 =>
             array (
                 'orderNumber' => 10383,
                 'productCode' => 'S50_1392',
@@ -21325,7 +21326,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.92',
                 'orderLineNumber' => 13,
             ),
-            162 => 
+            162 =>
             array (
                 'orderNumber' => 10383,
                 'productCode' => 'S50_1514',
@@ -21333,7 +21334,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.62',
                 'orderLineNumber' => 10,
             ),
-            163 => 
+            163 =>
             array (
                 'orderNumber' => 10384,
                 'productCode' => 'S10_4757',
@@ -21341,7 +21342,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.20',
                 'orderLineNumber' => 4,
             ),
-            164 => 
+            164 =>
             array (
                 'orderNumber' => 10384,
                 'productCode' => 'S24_2011',
@@ -21349,7 +21350,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.29',
                 'orderLineNumber' => 3,
             ),
-            165 => 
+            165 =>
             array (
                 'orderNumber' => 10384,
                 'productCode' => 'S24_3151',
@@ -21357,7 +21358,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.69',
                 'orderLineNumber' => 2,
             ),
-            166 => 
+            166 =>
             array (
                 'orderNumber' => 10384,
                 'productCode' => 'S700_1938',
@@ -21365,7 +21366,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.02',
                 'orderLineNumber' => 1,
             ),
-            167 => 
+            167 =>
             array (
                 'orderNumber' => 10385,
                 'productCode' => 'S24_3816',
@@ -21373,7 +21374,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.83',
                 'orderLineNumber' => 2,
             ),
-            168 => 
+            168 =>
             array (
                 'orderNumber' => 10385,
                 'productCode' => 'S700_1138',
@@ -21381,7 +21382,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.00',
                 'orderLineNumber' => 1,
             ),
-            169 => 
+            169 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S18_1662',
@@ -21389,7 +21390,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '130.88',
                 'orderLineNumber' => 7,
             ),
-            170 => 
+            170 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S18_2581',
@@ -21397,7 +21398,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.65',
                 'orderLineNumber' => 18,
             ),
-            171 => 
+            171 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S18_3029',
@@ -21405,7 +21406,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.12',
                 'orderLineNumber' => 5,
             ),
-            172 => 
+            172 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S18_3856',
@@ -21413,7 +21414,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.58',
                 'orderLineNumber' => 6,
             ),
-            173 => 
+            173 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S24_1785',
@@ -21421,7 +21422,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.76',
                 'orderLineNumber' => 11,
             ),
-            174 => 
+            174 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S24_2841',
@@ -21429,7 +21430,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.86',
                 'orderLineNumber' => 1,
             ),
-            175 => 
+            175 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S24_3420',
@@ -21437,7 +21438,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.57',
                 'orderLineNumber' => 9,
             ),
-            176 => 
+            176 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S24_3949',
@@ -21445,7 +21446,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.96',
                 'orderLineNumber' => 12,
             ),
-            177 => 
+            177 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S24_4278',
@@ -21453,7 +21454,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '71.73',
                 'orderLineNumber' => 8,
             ),
-            178 => 
+            178 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S700_2047',
@@ -21461,7 +21462,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.09',
                 'orderLineNumber' => 13,
             ),
-            179 => 
+            179 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S700_2466',
@@ -21469,7 +21470,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.75',
                 'orderLineNumber' => 14,
             ),
-            180 => 
+            180 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S700_2610',
@@ -21477,7 +21478,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.22',
                 'orderLineNumber' => 10,
             ),
-            181 => 
+            181 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S700_3167',
@@ -21485,7 +21486,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.00',
                 'orderLineNumber' => 17,
             ),
-            182 => 
+            182 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S700_3505',
@@ -21493,7 +21494,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.14',
                 'orderLineNumber' => 2,
             ),
-            183 => 
+            183 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S700_3962',
@@ -21501,7 +21502,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.44',
                 'orderLineNumber' => 3,
             ),
-            184 => 
+            184 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S700_4002',
@@ -21509,7 +21510,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.22',
                 'orderLineNumber' => 15,
             ),
-            185 => 
+            185 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S72_1253',
@@ -21517,7 +21518,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.67',
                 'orderLineNumber' => 16,
             ),
-            186 => 
+            186 =>
             array (
                 'orderNumber' => 10386,
                 'productCode' => 'S72_3212',
@@ -21525,7 +21526,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.42',
                 'orderLineNumber' => 4,
             ),
-            187 => 
+            187 =>
             array (
                 'orderNumber' => 10387,
                 'productCode' => 'S32_1374',
@@ -21533,7 +21534,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.91',
                 'orderLineNumber' => 1,
             ),
-            188 => 
+            188 =>
             array (
                 'orderNumber' => 10388,
                 'productCode' => 'S10_1678',
@@ -21541,7 +21542,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.39',
                 'orderLineNumber' => 4,
             ),
-            189 => 
+            189 =>
             array (
                 'orderNumber' => 10388,
                 'productCode' => 'S10_2016',
@@ -21549,7 +21550,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.94',
                 'orderLineNumber' => 5,
             ),
-            190 => 
+            190 =>
             array (
                 'orderNumber' => 10388,
                 'productCode' => 'S10_4698',
@@ -21557,7 +21558,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '156.86',
                 'orderLineNumber' => 7,
             ),
-            191 => 
+            191 =>
             array (
                 'orderNumber' => 10388,
                 'productCode' => 'S12_2823',
@@ -21565,7 +21566,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '125.01',
                 'orderLineNumber' => 6,
             ),
-            192 => 
+            192 =>
             array (
                 'orderNumber' => 10388,
                 'productCode' => 'S32_4289',
@@ -21573,7 +21574,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.47',
                 'orderLineNumber' => 8,
             ),
-            193 => 
+            193 =>
             array (
                 'orderNumber' => 10388,
                 'productCode' => 'S50_1341',
@@ -21581,7 +21582,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '41.02',
                 'orderLineNumber' => 1,
             ),
-            194 => 
+            194 =>
             array (
                 'orderNumber' => 10388,
                 'productCode' => 'S700_1691',
@@ -21589,7 +21590,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.90',
                 'orderLineNumber' => 2,
             ),
-            195 => 
+            195 =>
             array (
                 'orderNumber' => 10388,
                 'productCode' => 'S700_2834',
@@ -21597,7 +21598,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.53',
                 'orderLineNumber' => 3,
             ),
-            196 => 
+            196 =>
             array (
                 'orderNumber' => 10389,
                 'productCode' => 'S12_1099',
@@ -21605,7 +21606,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '182.90',
                 'orderLineNumber' => 4,
             ),
-            197 => 
+            197 =>
             array (
                 'orderNumber' => 10389,
                 'productCode' => 'S12_3380',
@@ -21613,7 +21614,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.13',
                 'orderLineNumber' => 6,
             ),
-            198 => 
+            198 =>
             array (
                 'orderNumber' => 10389,
                 'productCode' => 'S12_3990',
@@ -21621,7 +21622,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.61',
                 'orderLineNumber' => 7,
             ),
-            199 => 
+            199 =>
             array (
                 'orderNumber' => 10389,
                 'productCode' => 'S12_4675',
@@ -21629,7 +21630,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.49',
                 'orderLineNumber' => 8,
             ),
-            200 => 
+            200 =>
             array (
                 'orderNumber' => 10389,
                 'productCode' => 'S18_1889',
@@ -21637,7 +21638,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.91',
                 'orderLineNumber' => 3,
             ),
-            201 => 
+            201 =>
             array (
                 'orderNumber' => 10389,
                 'productCode' => 'S18_2625',
@@ -21645,7 +21646,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.09',
                 'orderLineNumber' => 5,
             ),
-            202 => 
+            202 =>
             array (
                 'orderNumber' => 10389,
                 'productCode' => 'S24_1578',
@@ -21653,7 +21654,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.70',
                 'orderLineNumber' => 1,
             ),
-            203 => 
+            203 =>
             array (
                 'orderNumber' => 10389,
                 'productCode' => 'S24_2000',
@@ -21661,7 +21662,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.70',
                 'orderLineNumber' => 2,
             ),
-            204 => 
+            204 =>
             array (
                 'orderNumber' => 10390,
                 'productCode' => 'S18_1129',
@@ -21669,7 +21670,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.48',
                 'orderLineNumber' => 14,
             ),
-            205 => 
+            205 =>
             array (
                 'orderNumber' => 10390,
                 'productCode' => 'S18_1984',
@@ -21677,7 +21678,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '132.29',
                 'orderLineNumber' => 15,
             ),
-            206 => 
+            206 =>
             array (
                 'orderNumber' => 10390,
                 'productCode' => 'S18_2325',
@@ -21685,7 +21686,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.98',
                 'orderLineNumber' => 16,
             ),
-            207 => 
+            207 =>
             array (
                 'orderNumber' => 10390,
                 'productCode' => 'S18_2795',
@@ -21693,7 +21694,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '162.00',
                 'orderLineNumber' => 7,
             ),
-            208 => 
+            208 =>
             array (
                 'orderNumber' => 10390,
                 'productCode' => 'S18_3278',
@@ -21701,7 +21702,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.59',
                 'orderLineNumber' => 9,
             ),
-            209 => 
+            209 =>
             array (
                 'orderNumber' => 10390,
                 'productCode' => 'S18_3482',
@@ -21709,7 +21710,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.23',
                 'orderLineNumber' => 1,
             ),
-            210 => 
+            210 =>
             array (
                 'orderNumber' => 10390,
                 'productCode' => 'S18_3782',
@@ -21717,7 +21718,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.09',
                 'orderLineNumber' => 2,
             ),
-            211 => 
+            211 =>
             array (
                 'orderNumber' => 10390,
                 'productCode' => 'S18_4721',
@@ -21725,7 +21726,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.02',
                 'orderLineNumber' => 3,
             ),
-            212 => 
+            212 =>
             array (
                 'orderNumber' => 10390,
                 'productCode' => 'S24_2360',
@@ -21733,7 +21734,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.87',
                 'orderLineNumber' => 4,
             ),
-            213 => 
+            213 =>
             array (
                 'orderNumber' => 10390,
                 'productCode' => 'S24_2972',
@@ -21741,7 +21742,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.87',
                 'orderLineNumber' => 5,
             ),
-            214 => 
+            214 =>
             array (
                 'orderNumber' => 10390,
                 'productCode' => 'S24_3371',
@@ -21749,7 +21750,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.43',
                 'orderLineNumber' => 6,
             ),
-            215 => 
+            215 =>
             array (
                 'orderNumber' => 10390,
                 'productCode' => 'S24_3856',
@@ -21757,7 +21758,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '134.81',
                 'orderLineNumber' => 8,
             ),
-            216 => 
+            216 =>
             array (
                 'orderNumber' => 10390,
                 'productCode' => 'S24_4620',
@@ -21765,7 +21766,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.29',
                 'orderLineNumber' => 10,
             ),
-            217 => 
+            217 =>
             array (
                 'orderNumber' => 10390,
                 'productCode' => 'S32_2206',
@@ -21773,7 +21774,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '39.02',
                 'orderLineNumber' => 11,
             ),
-            218 => 
+            218 =>
             array (
                 'orderNumber' => 10390,
                 'productCode' => 'S32_4485',
@@ -21781,7 +21782,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.03',
                 'orderLineNumber' => 12,
             ),
-            219 => 
+            219 =>
             array (
                 'orderNumber' => 10390,
                 'productCode' => 'S50_4713',
@@ -21789,7 +21790,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.36',
                 'orderLineNumber' => 13,
             ),
-            220 => 
+            220 =>
             array (
                 'orderNumber' => 10391,
                 'productCode' => 'S10_1949',
@@ -21797,7 +21798,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '195.01',
                 'orderLineNumber' => 4,
             ),
-            221 => 
+            221 =>
             array (
                 'orderNumber' => 10391,
                 'productCode' => 'S10_4962',
@@ -21805,7 +21806,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '121.15',
                 'orderLineNumber' => 7,
             ),
-            222 => 
+            222 =>
             array (
                 'orderNumber' => 10391,
                 'productCode' => 'S12_1666',
@@ -21813,7 +21814,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.70',
                 'orderLineNumber' => 9,
             ),
-            223 => 
+            223 =>
             array (
                 'orderNumber' => 10391,
                 'productCode' => 'S18_1097',
@@ -21821,7 +21822,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.34',
                 'orderLineNumber' => 10,
             ),
-            224 => 
+            224 =>
             array (
                 'orderNumber' => 10391,
                 'productCode' => 'S18_1342',
@@ -21829,7 +21830,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.74',
                 'orderLineNumber' => 2,
             ),
-            225 => 
+            225 =>
             array (
                 'orderNumber' => 10391,
                 'productCode' => 'S18_1367',
@@ -21837,7 +21838,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.44',
                 'orderLineNumber' => 3,
             ),
-            226 => 
+            226 =>
             array (
                 'orderNumber' => 10391,
                 'productCode' => 'S18_2432',
@@ -21845,7 +21846,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.73',
                 'orderLineNumber' => 5,
             ),
-            227 => 
+            227 =>
             array (
                 'orderNumber' => 10391,
                 'productCode' => 'S18_2949',
@@ -21853,7 +21854,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.28',
                 'orderLineNumber' => 6,
             ),
-            228 => 
+            228 =>
             array (
                 'orderNumber' => 10391,
                 'productCode' => 'S24_1937',
@@ -21861,7 +21862,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '26.55',
                 'orderLineNumber' => 8,
             ),
-            229 => 
+            229 =>
             array (
                 'orderNumber' => 10391,
                 'productCode' => 'S24_2022',
@@ -21869,7 +21870,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '36.29',
                 'orderLineNumber' => 1,
             ),
-            230 => 
+            230 =>
             array (
                 'orderNumber' => 10392,
                 'productCode' => 'S18_2957',
@@ -21877,7 +21878,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.21',
                 'orderLineNumber' => 3,
             ),
-            231 => 
+            231 =>
             array (
                 'orderNumber' => 10392,
                 'productCode' => 'S18_3136',
@@ -21885,7 +21886,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '103.67',
                 'orderLineNumber' => 2,
             ),
-            232 => 
+            232 =>
             array (
                 'orderNumber' => 10392,
                 'productCode' => 'S18_3320',
@@ -21893,7 +21894,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.22',
                 'orderLineNumber' => 1,
             ),
-            233 => 
+            233 =>
             array (
                 'orderNumber' => 10393,
                 'productCode' => 'S12_3148',
@@ -21901,7 +21902,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '145.04',
                 'orderLineNumber' => 8,
             ),
-            234 => 
+            234 =>
             array (
                 'orderNumber' => 10393,
                 'productCode' => 'S12_4473',
@@ -21909,7 +21910,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.54',
                 'orderLineNumber' => 10,
             ),
-            235 => 
+            235 =>
             array (
                 'orderNumber' => 10393,
                 'productCode' => 'S18_2238',
@@ -21917,7 +21918,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '137.53',
                 'orderLineNumber' => 11,
             ),
-            236 => 
+            236 =>
             array (
                 'orderNumber' => 10393,
                 'productCode' => 'S18_2319',
@@ -21925,7 +21926,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.32',
                 'orderLineNumber' => 7,
             ),
-            237 => 
+            237 =>
             array (
                 'orderNumber' => 10393,
                 'productCode' => 'S18_4600',
@@ -21933,7 +21934,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '106.55',
                 'orderLineNumber' => 9,
             ),
-            238 => 
+            238 =>
             array (
                 'orderNumber' => 10393,
                 'productCode' => 'S18_4668',
@@ -21941,7 +21942,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '41.76',
                 'orderLineNumber' => 1,
             ),
-            239 => 
+            239 =>
             array (
                 'orderNumber' => 10393,
                 'productCode' => 'S24_2300',
@@ -21949,7 +21950,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.46',
                 'orderLineNumber' => 2,
             ),
-            240 => 
+            240 =>
             array (
                 'orderNumber' => 10393,
                 'productCode' => 'S24_4258',
@@ -21957,7 +21958,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.62',
                 'orderLineNumber' => 3,
             ),
-            241 => 
+            241 =>
             array (
                 'orderNumber' => 10393,
                 'productCode' => 'S32_1268',
@@ -21965,7 +21966,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.75',
                 'orderLineNumber' => 4,
             ),
-            242 => 
+            242 =>
             array (
                 'orderNumber' => 10393,
                 'productCode' => 'S32_3522',
@@ -21973,7 +21974,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.35',
                 'orderLineNumber' => 5,
             ),
-            243 => 
+            243 =>
             array (
                 'orderNumber' => 10393,
                 'productCode' => 'S700_2824',
@@ -21981,7 +21982,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.95',
                 'orderLineNumber' => 6,
             ),
-            244 => 
+            244 =>
             array (
                 'orderNumber' => 10394,
                 'productCode' => 'S18_3232',
@@ -21989,7 +21990,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '135.47',
                 'orderLineNumber' => 5,
             ),
-            245 => 
+            245 =>
             array (
                 'orderNumber' => 10394,
                 'productCode' => 'S18_4027',
@@ -21997,7 +21998,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '124.95',
                 'orderLineNumber' => 1,
             ),
-            246 => 
+            246 =>
             array (
                 'orderNumber' => 10394,
                 'productCode' => 'S24_1444',
@@ -22005,7 +22006,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.18',
                 'orderLineNumber' => 2,
             ),
-            247 => 
+            247 =>
             array (
                 'orderNumber' => 10394,
                 'productCode' => 'S24_2840',
@@ -22013,7 +22014,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.36',
                 'orderLineNumber' => 6,
             ),
-            248 => 
+            248 =>
             array (
                 'orderNumber' => 10394,
                 'productCode' => 'S24_4048',
@@ -22021,7 +22022,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.09',
                 'orderLineNumber' => 7,
             ),
-            249 => 
+            249 =>
             array (
                 'orderNumber' => 10394,
                 'productCode' => 'S32_2509',
@@ -22029,7 +22030,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.08',
                 'orderLineNumber' => 3,
             ),
-            250 => 
+            250 =>
             array (
                 'orderNumber' => 10394,
                 'productCode' => 'S32_3207',
@@ -22037,7 +22038,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.93',
                 'orderLineNumber' => 4,
             ),
-            251 => 
+            251 =>
             array (
                 'orderNumber' => 10395,
                 'productCode' => 'S10_4757',
@@ -22045,7 +22046,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '125.12',
                 'orderLineNumber' => 2,
             ),
-            252 => 
+            252 =>
             array (
                 'orderNumber' => 10395,
                 'productCode' => 'S12_1108',
@@ -22053,7 +22054,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '205.72',
                 'orderLineNumber' => 1,
             ),
-            253 => 
+            253 =>
             array (
                 'orderNumber' => 10395,
                 'productCode' => 'S50_1392',
@@ -22061,7 +22062,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.39',
                 'orderLineNumber' => 4,
             ),
-            254 => 
+            254 =>
             array (
                 'orderNumber' => 10395,
                 'productCode' => 'S50_1514',
@@ -22069,7 +22070,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.99',
                 'orderLineNumber' => 3,
             ),
-            255 => 
+            255 =>
             array (
                 'orderNumber' => 10396,
                 'productCode' => 'S12_3891',
@@ -22077,7 +22078,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '155.72',
                 'orderLineNumber' => 3,
             ),
-            256 => 
+            256 =>
             array (
                 'orderNumber' => 10396,
                 'productCode' => 'S18_3140',
@@ -22085,7 +22086,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.76',
                 'orderLineNumber' => 2,
             ),
-            257 => 
+            257 =>
             array (
                 'orderNumber' => 10396,
                 'productCode' => 'S18_3259',
@@ -22093,7 +22094,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.76',
                 'orderLineNumber' => 4,
             ),
-            258 => 
+            258 =>
             array (
                 'orderNumber' => 10396,
                 'productCode' => 'S18_4522',
@@ -22101,7 +22102,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.38',
                 'orderLineNumber' => 5,
             ),
-            259 => 
+            259 =>
             array (
                 'orderNumber' => 10396,
                 'productCode' => 'S24_2011',
@@ -22109,7 +22110,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.77',
                 'orderLineNumber' => 6,
             ),
-            260 => 
+            260 =>
             array (
                 'orderNumber' => 10396,
                 'productCode' => 'S24_3151',
@@ -22117,7 +22118,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.00',
                 'orderLineNumber' => 7,
             ),
-            261 => 
+            261 =>
             array (
                 'orderNumber' => 10396,
                 'productCode' => 'S24_3816',
@@ -22125,7 +22126,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.99',
                 'orderLineNumber' => 8,
             ),
-            262 => 
+            262 =>
             array (
                 'orderNumber' => 10396,
                 'productCode' => 'S700_1138',
@@ -22133,7 +22134,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.00',
                 'orderLineNumber' => 1,
             ),
-            263 => 
+            263 =>
             array (
                 'orderNumber' => 10397,
                 'productCode' => 'S700_1938',
@@ -22141,7 +22142,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '69.29',
                 'orderLineNumber' => 5,
             ),
-            264 => 
+            264 =>
             array (
                 'orderNumber' => 10397,
                 'productCode' => 'S700_2610',
@@ -22149,7 +22150,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.88',
                 'orderLineNumber' => 4,
             ),
-            265 => 
+            265 =>
             array (
                 'orderNumber' => 10397,
                 'productCode' => 'S700_3505',
@@ -22157,7 +22158,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.15',
                 'orderLineNumber' => 3,
             ),
-            266 => 
+            266 =>
             array (
                 'orderNumber' => 10397,
                 'productCode' => 'S700_3962',
@@ -22165,7 +22166,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.44',
                 'orderLineNumber' => 2,
             ),
-            267 => 
+            267 =>
             array (
                 'orderNumber' => 10397,
                 'productCode' => 'S72_3212',
@@ -22173,7 +22174,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.96',
                 'orderLineNumber' => 1,
             ),
-            268 => 
+            268 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S18_1662',
@@ -22181,7 +22182,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '130.88',
                 'orderLineNumber' => 11,
             ),
-            269 => 
+            269 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S18_2581',
@@ -22189,7 +22190,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.79',
                 'orderLineNumber' => 15,
             ),
-            270 => 
+            270 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S18_3029',
@@ -22197,7 +22198,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.54',
                 'orderLineNumber' => 18,
             ),
-            271 => 
+            271 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S18_3856',
@@ -22205,7 +22206,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '92.11',
                 'orderLineNumber' => 17,
             ),
-            272 => 
+            272 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S24_1785',
@@ -22213,7 +22214,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.67',
                 'orderLineNumber' => 16,
             ),
-            273 => 
+            273 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S24_2841',
@@ -22221,7 +22222,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.29',
                 'orderLineNumber' => 3,
             ),
-            274 => 
+            274 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S24_3420',
@@ -22229,7 +22230,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.15',
                 'orderLineNumber' => 13,
             ),
-            275 => 
+            275 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S24_3949',
@@ -22237,7 +22238,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.64',
                 'orderLineNumber' => 2,
             ),
-            276 => 
+            276 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S24_4278',
@@ -22245,7 +22246,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.93',
                 'orderLineNumber' => 14,
             ),
-            277 => 
+            277 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S32_4289',
@@ -22253,7 +22254,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.54',
                 'orderLineNumber' => 4,
             ),
-            278 => 
+            278 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S50_1341',
@@ -22261,7 +22262,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '38.84',
                 'orderLineNumber' => 5,
             ),
-            279 => 
+            279 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S700_1691',
@@ -22269,7 +22270,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.55',
                 'orderLineNumber' => 6,
             ),
-            280 => 
+            280 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S700_2047',
@@ -22277,7 +22278,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.13',
                 'orderLineNumber' => 7,
             ),
-            281 => 
+            281 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S700_2466',
@@ -22285,7 +22286,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.72',
                 'orderLineNumber' => 8,
             ),
-            282 => 
+            282 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S700_2834',
@@ -22293,7 +22294,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.04',
                 'orderLineNumber' => 9,
             ),
-            283 => 
+            283 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S700_3167',
@@ -22301,7 +22302,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.80',
                 'orderLineNumber' => 10,
             ),
-            284 => 
+            284 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S700_4002',
@@ -22309,7 +22310,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.19',
                 'orderLineNumber' => 12,
             ),
-            285 => 
+            285 =>
             array (
                 'orderNumber' => 10398,
                 'productCode' => 'S72_1253',
@@ -22317,7 +22318,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '41.22',
                 'orderLineNumber' => 1,
             ),
-            286 => 
+            286 =>
             array (
                 'orderNumber' => 10399,
                 'productCode' => 'S10_1678',
@@ -22325,7 +22326,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.52',
                 'orderLineNumber' => 8,
             ),
-            287 => 
+            287 =>
             array (
                 'orderNumber' => 10399,
                 'productCode' => 'S10_2016',
@@ -22333,7 +22334,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.91',
                 'orderLineNumber' => 7,
             ),
-            288 => 
+            288 =>
             array (
                 'orderNumber' => 10399,
                 'productCode' => 'S10_4698',
@@ -22341,7 +22342,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '156.86',
                 'orderLineNumber' => 6,
             ),
-            289 => 
+            289 =>
             array (
                 'orderNumber' => 10399,
                 'productCode' => 'S12_2823',
@@ -22349,7 +22350,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '123.51',
                 'orderLineNumber' => 5,
             ),
-            290 => 
+            290 =>
             array (
                 'orderNumber' => 10399,
                 'productCode' => 'S18_2625',
@@ -22357,7 +22358,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.48',
                 'orderLineNumber' => 4,
             ),
-            291 => 
+            291 =>
             array (
                 'orderNumber' => 10399,
                 'productCode' => 'S24_1578',
@@ -22365,7 +22366,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.81',
                 'orderLineNumber' => 3,
             ),
-            292 => 
+            292 =>
             array (
                 'orderNumber' => 10399,
                 'productCode' => 'S24_2000',
@@ -22373,7 +22374,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.41',
                 'orderLineNumber' => 2,
             ),
-            293 => 
+            293 =>
             array (
                 'orderNumber' => 10399,
                 'productCode' => 'S32_1374',
@@ -22381,7 +22382,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '97.89',
                 'orderLineNumber' => 1,
             ),
-            294 => 
+            294 =>
             array (
                 'orderNumber' => 10400,
                 'productCode' => 'S10_4757',
@@ -22389,7 +22390,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '134.64',
                 'orderLineNumber' => 9,
             ),
-            295 => 
+            295 =>
             array (
                 'orderNumber' => 10400,
                 'productCode' => 'S18_1662',
@@ -22397,7 +22398,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.31',
                 'orderLineNumber' => 1,
             ),
-            296 => 
+            296 =>
             array (
                 'orderNumber' => 10400,
                 'productCode' => 'S18_3029',
@@ -22405,7 +22406,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.84',
                 'orderLineNumber' => 7,
             ),
-            297 => 
+            297 =>
             array (
                 'orderNumber' => 10400,
                 'productCode' => 'S18_3856',
@@ -22413,7 +22414,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.93',
                 'orderLineNumber' => 6,
             ),
-            298 => 
+            298 =>
             array (
                 'orderNumber' => 10400,
                 'productCode' => 'S24_2841',
@@ -22421,7 +22422,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.49',
                 'orderLineNumber' => 2,
             ),
-            299 => 
+            299 =>
             array (
                 'orderNumber' => 10400,
                 'productCode' => 'S24_3420',
@@ -22429,7 +22430,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.18',
                 'orderLineNumber' => 3,
             ),
-            300 => 
+            300 =>
             array (
                 'orderNumber' => 10400,
                 'productCode' => 'S24_3816',
@@ -22437,7 +22438,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.64',
                 'orderLineNumber' => 8,
             ),
-            301 => 
+            301 =>
             array (
                 'orderNumber' => 10400,
                 'productCode' => 'S700_2047',
@@ -22445,7 +22446,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '82.37',
                 'orderLineNumber' => 5,
             ),
-            302 => 
+            302 =>
             array (
                 'orderNumber' => 10400,
                 'productCode' => 'S72_1253',
@@ -22453,7 +22454,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '41.71',
                 'orderLineNumber' => 4,
             ),
-            303 => 
+            303 =>
             array (
                 'orderNumber' => 10401,
                 'productCode' => 'S18_2581',
@@ -22461,7 +22462,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '75.19',
                 'orderLineNumber' => 3,
             ),
-            304 => 
+            304 =>
             array (
                 'orderNumber' => 10401,
                 'productCode' => 'S24_1785',
@@ -22469,7 +22470,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '87.54',
                 'orderLineNumber' => 5,
             ),
-            305 => 
+            305 =>
             array (
                 'orderNumber' => 10401,
                 'productCode' => 'S24_3949',
@@ -22477,7 +22478,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.37',
                 'orderLineNumber' => 12,
             ),
-            306 => 
+            306 =>
             array (
                 'orderNumber' => 10401,
                 'productCode' => 'S24_4278',
@@ -22485,7 +22486,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.93',
                 'orderLineNumber' => 4,
             ),
-            307 => 
+            307 =>
             array (
                 'orderNumber' => 10401,
                 'productCode' => 'S32_1374',
@@ -22493,7 +22494,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.91',
                 'orderLineNumber' => 1,
             ),
-            308 => 
+            308 =>
             array (
                 'orderNumber' => 10401,
                 'productCode' => 'S32_4289',
@@ -22501,7 +22502,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.60',
                 'orderLineNumber' => 6,
             ),
-            309 => 
+            309 =>
             array (
                 'orderNumber' => 10401,
                 'productCode' => 'S50_1341',
@@ -22509,7 +22510,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '41.46',
                 'orderLineNumber' => 7,
             ),
-            310 => 
+            310 =>
             array (
                 'orderNumber' => 10401,
                 'productCode' => 'S700_1691',
@@ -22517,7 +22518,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.64',
                 'orderLineNumber' => 8,
             ),
-            311 => 
+            311 =>
             array (
                 'orderNumber' => 10401,
                 'productCode' => 'S700_2466',
@@ -22525,7 +22526,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.72',
                 'orderLineNumber' => 10,
             ),
-            312 => 
+            312 =>
             array (
                 'orderNumber' => 10401,
                 'productCode' => 'S700_2834',
@@ -22533,7 +22534,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '96.11',
                 'orderLineNumber' => 2,
             ),
-            313 => 
+            313 =>
             array (
                 'orderNumber' => 10401,
                 'productCode' => 'S700_3167',
@@ -22541,7 +22542,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.60',
                 'orderLineNumber' => 9,
             ),
-            314 => 
+            314 =>
             array (
                 'orderNumber' => 10401,
                 'productCode' => 'S700_4002',
@@ -22549,7 +22550,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.63',
                 'orderLineNumber' => 11,
             ),
-            315 => 
+            315 =>
             array (
                 'orderNumber' => 10402,
                 'productCode' => 'S10_2016',
@@ -22557,7 +22558,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '118.94',
                 'orderLineNumber' => 1,
             ),
-            316 => 
+            316 =>
             array (
                 'orderNumber' => 10402,
                 'productCode' => 'S18_2625',
@@ -22565,7 +22566,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.15',
                 'orderLineNumber' => 2,
             ),
-            317 => 
+            317 =>
             array (
                 'orderNumber' => 10402,
                 'productCode' => 'S24_2000',
@@ -22573,7 +22574,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.70',
                 'orderLineNumber' => 3,
             ),
-            318 => 
+            318 =>
             array (
                 'orderNumber' => 10403,
                 'productCode' => 'S10_1678',
@@ -22581,7 +22582,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.17',
                 'orderLineNumber' => 7,
             ),
-            319 => 
+            319 =>
             array (
                 'orderNumber' => 10403,
                 'productCode' => 'S10_4698',
@@ -22589,7 +22590,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '174.29',
                 'orderLineNumber' => 9,
             ),
-            320 => 
+            320 =>
             array (
                 'orderNumber' => 10403,
                 'productCode' => 'S12_2823',
@@ -22597,7 +22598,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '122.00',
                 'orderLineNumber' => 6,
             ),
-            321 => 
+            321 =>
             array (
                 'orderNumber' => 10403,
                 'productCode' => 'S18_3782',
@@ -22605,7 +22606,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '55.33',
                 'orderLineNumber' => 1,
             ),
-            322 => 
+            322 =>
             array (
                 'orderNumber' => 10403,
                 'productCode' => 'S24_1578',
@@ -22613,7 +22614,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.32',
                 'orderLineNumber' => 8,
             ),
-            323 => 
+            323 =>
             array (
                 'orderNumber' => 10403,
                 'productCode' => 'S24_2360',
@@ -22621,7 +22622,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '57.49',
                 'orderLineNumber' => 4,
             ),
-            324 => 
+            324 =>
             array (
                 'orderNumber' => 10403,
                 'productCode' => 'S32_2206',
@@ -22629,7 +22630,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.80',
                 'orderLineNumber' => 2,
             ),
-            325 => 
+            325 =>
             array (
                 'orderNumber' => 10403,
                 'productCode' => 'S32_4485',
@@ -22637,7 +22638,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.78',
                 'orderLineNumber' => 5,
             ),
-            326 => 
+            326 =>
             array (
                 'orderNumber' => 10403,
                 'productCode' => 'S50_4713',
@@ -22645,7 +22646,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.09',
                 'orderLineNumber' => 3,
             ),
-            327 => 
+            327 =>
             array (
                 'orderNumber' => 10404,
                 'productCode' => 'S12_1099',
@@ -22653,7 +22654,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '163.44',
                 'orderLineNumber' => 3,
             ),
-            328 => 
+            328 =>
             array (
                 'orderNumber' => 10404,
                 'productCode' => 'S12_3380',
@@ -22661,7 +22662,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '102.17',
                 'orderLineNumber' => 1,
             ),
-            329 => 
+            329 =>
             array (
                 'orderNumber' => 10404,
                 'productCode' => 'S12_3990',
@@ -22669,7 +22670,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.03',
                 'orderLineNumber' => 4,
             ),
-            330 => 
+            330 =>
             array (
                 'orderNumber' => 10404,
                 'productCode' => 'S18_3278',
@@ -22677,7 +22678,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.54',
                 'orderLineNumber' => 6,
             ),
-            331 => 
+            331 =>
             array (
                 'orderNumber' => 10404,
                 'productCode' => 'S18_3482',
@@ -22685,7 +22686,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '127.88',
                 'orderLineNumber' => 5,
             ),
-            332 => 
+            332 =>
             array (
                 'orderNumber' => 10404,
                 'productCode' => 'S18_4721',
@@ -22693,7 +22694,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '124.99',
                 'orderLineNumber' => 8,
             ),
-            333 => 
+            333 =>
             array (
                 'orderNumber' => 10404,
                 'productCode' => 'S24_3371',
@@ -22701,7 +22702,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.27',
                 'orderLineNumber' => 2,
             ),
-            334 => 
+            334 =>
             array (
                 'orderNumber' => 10404,
                 'productCode' => 'S24_4620',
@@ -22709,7 +22710,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.48',
                 'orderLineNumber' => 7,
             ),
-            335 => 
+            335 =>
             array (
                 'orderNumber' => 10405,
                 'productCode' => 'S12_4675',
@@ -22717,7 +22718,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.16',
                 'orderLineNumber' => 5,
             ),
-            336 => 
+            336 =>
             array (
                 'orderNumber' => 10405,
                 'productCode' => 'S18_1889',
@@ -22725,7 +22726,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.38',
                 'orderLineNumber' => 4,
             ),
-            337 => 
+            337 =>
             array (
                 'orderNumber' => 10405,
                 'productCode' => 'S18_3232',
@@ -22733,7 +22734,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '147.33',
                 'orderLineNumber' => 1,
             ),
-            338 => 
+            338 =>
             array (
                 'orderNumber' => 10405,
                 'productCode' => 'S24_2972',
@@ -22741,7 +22742,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '37.38',
                 'orderLineNumber' => 2,
             ),
-            339 => 
+            339 =>
             array (
                 'orderNumber' => 10405,
                 'productCode' => 'S24_3856',
@@ -22749,7 +22750,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '127.79',
                 'orderLineNumber' => 3,
             ),
-            340 => 
+            340 =>
             array (
                 'orderNumber' => 10406,
                 'productCode' => 'S18_1129',
@@ -22757,7 +22758,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '124.56',
                 'orderLineNumber' => 3,
             ),
-            341 => 
+            341 =>
             array (
                 'orderNumber' => 10406,
                 'productCode' => 'S18_1984',
@@ -22765,7 +22766,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '133.72',
                 'orderLineNumber' => 2,
             ),
-            342 => 
+            342 =>
             array (
                 'orderNumber' => 10406,
                 'productCode' => 'S18_3685',
@@ -22773,7 +22774,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.26',
                 'orderLineNumber' => 1,
             ),
-            343 => 
+            343 =>
             array (
                 'orderNumber' => 10407,
                 'productCode' => 'S18_1589',
@@ -22781,7 +22782,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.48',
                 'orderLineNumber' => 11,
             ),
-            344 => 
+            344 =>
             array (
                 'orderNumber' => 10407,
                 'productCode' => 'S18_1749',
@@ -22789,7 +22790,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '141.10',
                 'orderLineNumber' => 2,
             ),
-            345 => 
+            345 =>
             array (
                 'orderNumber' => 10407,
                 'productCode' => 'S18_2248',
@@ -22797,7 +22798,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.12',
                 'orderLineNumber' => 1,
             ),
-            346 => 
+            346 =>
             array (
                 'orderNumber' => 10407,
                 'productCode' => 'S18_2870',
@@ -22805,7 +22806,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '132.00',
                 'orderLineNumber' => 12,
             ),
-            347 => 
+            347 =>
             array (
                 'orderNumber' => 10407,
                 'productCode' => 'S18_4409',
@@ -22813,7 +22814,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.11',
                 'orderLineNumber' => 3,
             ),
-            348 => 
+            348 =>
             array (
                 'orderNumber' => 10407,
                 'productCode' => 'S18_4933',
@@ -22821,7 +22822,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.14',
                 'orderLineNumber' => 4,
             ),
-            349 => 
+            349 =>
             array (
                 'orderNumber' => 10407,
                 'productCode' => 'S24_1046',
@@ -22829,7 +22830,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.35',
                 'orderLineNumber' => 8,
             ),
-            350 => 
+            350 =>
             array (
                 'orderNumber' => 10407,
                 'productCode' => 'S24_1628',
@@ -22837,7 +22838,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '45.78',
                 'orderLineNumber' => 10,
             ),
-            351 => 
+            351 =>
             array (
                 'orderNumber' => 10407,
                 'productCode' => 'S24_2766',
@@ -22845,7 +22846,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.78',
                 'orderLineNumber' => 6,
             ),
-            352 => 
+            352 =>
             array (
                 'orderNumber' => 10407,
                 'productCode' => 'S24_2887',
@@ -22853,7 +22854,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.65',
                 'orderLineNumber' => 5,
             ),
-            353 => 
+            353 =>
             array (
                 'orderNumber' => 10407,
                 'productCode' => 'S24_3191',
@@ -22861,7 +22862,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.05',
                 'orderLineNumber' => 7,
             ),
-            354 => 
+            354 =>
             array (
                 'orderNumber' => 10407,
                 'productCode' => 'S24_3432',
@@ -22869,7 +22870,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '101.73',
                 'orderLineNumber' => 9,
             ),
-            355 => 
+            355 =>
             array (
                 'orderNumber' => 10408,
                 'productCode' => 'S24_3969',
@@ -22877,7 +22878,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '41.03',
                 'orderLineNumber' => 1,
             ),
-            356 => 
+            356 =>
             array (
                 'orderNumber' => 10409,
                 'productCode' => 'S18_2325',
@@ -22885,7 +22886,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.25',
                 'orderLineNumber' => 2,
             ),
-            357 => 
+            357 =>
             array (
                 'orderNumber' => 10409,
                 'productCode' => 'S24_1937',
@@ -22893,7 +22894,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '27.88',
                 'orderLineNumber' => 1,
             ),
-            358 => 
+            358 =>
             array (
                 'orderNumber' => 10410,
                 'productCode' => 'S18_1342',
@@ -22901,7 +22902,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.66',
                 'orderLineNumber' => 7,
             ),
-            359 => 
+            359 =>
             array (
                 'orderNumber' => 10410,
                 'productCode' => 'S18_1367',
@@ -22909,7 +22910,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '51.21',
                 'orderLineNumber' => 6,
             ),
-            360 => 
+            360 =>
             array (
                 'orderNumber' => 10410,
                 'productCode' => 'S18_2795',
@@ -22917,7 +22918,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '145.13',
                 'orderLineNumber' => 8,
             ),
-            361 => 
+            361 =>
             array (
                 'orderNumber' => 10410,
                 'productCode' => 'S18_2949',
@@ -22925,7 +22926,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '93.21',
                 'orderLineNumber' => 1,
             ),
-            362 => 
+            362 =>
             array (
                 'orderNumber' => 10410,
                 'productCode' => 'S18_2957',
@@ -22933,7 +22934,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.97',
                 'orderLineNumber' => 3,
             ),
-            363 => 
+            363 =>
             array (
                 'orderNumber' => 10410,
                 'productCode' => 'S18_3136',
@@ -22941,7 +22942,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.82',
                 'orderLineNumber' => 2,
             ),
-            364 => 
+            364 =>
             array (
                 'orderNumber' => 10410,
                 'productCode' => 'S18_3320',
@@ -22949,7 +22950,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '81.35',
                 'orderLineNumber' => 5,
             ),
-            365 => 
+            365 =>
             array (
                 'orderNumber' => 10410,
                 'productCode' => 'S24_2022',
@@ -22957,7 +22958,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '42.56',
                 'orderLineNumber' => 9,
             ),
-            366 => 
+            366 =>
             array (
                 'orderNumber' => 10410,
                 'productCode' => 'S24_4258',
@@ -22965,7 +22966,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.44',
                 'orderLineNumber' => 4,
             ),
-            367 => 
+            367 =>
             array (
                 'orderNumber' => 10411,
                 'productCode' => 'S10_1949',
@@ -22973,7 +22974,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '205.73',
                 'orderLineNumber' => 9,
             ),
-            368 => 
+            368 =>
             array (
                 'orderNumber' => 10411,
                 'productCode' => 'S10_4962',
@@ -22981,7 +22982,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '144.79',
                 'orderLineNumber' => 2,
             ),
-            369 => 
+            369 =>
             array (
                 'orderNumber' => 10411,
                 'productCode' => 'S12_1666',
@@ -22989,7 +22990,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '110.70',
                 'orderLineNumber' => 6,
             ),
-            370 => 
+            370 =>
             array (
                 'orderNumber' => 10411,
                 'productCode' => 'S18_1097',
@@ -22997,7 +22998,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.67',
                 'orderLineNumber' => 8,
             ),
-            371 => 
+            371 =>
             array (
                 'orderNumber' => 10411,
                 'productCode' => 'S18_4600',
@@ -23005,7 +23006,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '106.55',
                 'orderLineNumber' => 3,
             ),
-            372 => 
+            372 =>
             array (
                 'orderNumber' => 10411,
                 'productCode' => 'S18_4668',
@@ -23013,7 +23014,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '41.25',
                 'orderLineNumber' => 7,
             ),
-            373 => 
+            373 =>
             array (
                 'orderNumber' => 10411,
                 'productCode' => 'S32_1268',
@@ -23021,7 +23022,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.01',
                 'orderLineNumber' => 1,
             ),
-            374 => 
+            374 =>
             array (
                 'orderNumber' => 10411,
                 'productCode' => 'S32_3522',
@@ -23029,7 +23030,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.76',
                 'orderLineNumber' => 5,
             ),
-            375 => 
+            375 =>
             array (
                 'orderNumber' => 10411,
                 'productCode' => 'S700_2824',
@@ -23037,7 +23038,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.01',
                 'orderLineNumber' => 4,
             ),
-            376 => 
+            376 =>
             array (
                 'orderNumber' => 10412,
                 'productCode' => 'S12_4473',
@@ -23045,7 +23046,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.73',
                 'orderLineNumber' => 5,
             ),
-            377 => 
+            377 =>
             array (
                 'orderNumber' => 10412,
                 'productCode' => 'S18_2238',
@@ -23053,7 +23054,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '150.63',
                 'orderLineNumber' => 4,
             ),
-            378 => 
+            378 =>
             array (
                 'orderNumber' => 10412,
                 'productCode' => 'S18_2319',
@@ -23061,7 +23062,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.28',
                 'orderLineNumber' => 8,
             ),
-            379 => 
+            379 =>
             array (
                 'orderNumber' => 10412,
                 'productCode' => 'S18_2432',
@@ -23069,7 +23070,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '49.83',
                 'orderLineNumber' => 11,
             ),
-            380 => 
+            380 =>
             array (
                 'orderNumber' => 10412,
                 'productCode' => 'S18_3232',
@@ -23077,7 +23078,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '157.49',
                 'orderLineNumber' => 9,
             ),
-            381 => 
+            381 =>
             array (
                 'orderNumber' => 10412,
                 'productCode' => 'S24_1444',
@@ -23085,7 +23086,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.40',
                 'orderLineNumber' => 2,
             ),
-            382 => 
+            382 =>
             array (
                 'orderNumber' => 10412,
                 'productCode' => 'S24_2300',
@@ -23093,7 +23094,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.90',
                 'orderLineNumber' => 10,
             ),
-            383 => 
+            383 =>
             array (
                 'orderNumber' => 10412,
                 'productCode' => 'S24_2840',
@@ -23101,7 +23102,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.88',
                 'orderLineNumber' => 6,
             ),
-            384 => 
+            384 =>
             array (
                 'orderNumber' => 10412,
                 'productCode' => 'S24_4048',
@@ -23109,7 +23110,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '108.82',
                 'orderLineNumber' => 1,
             ),
-            385 => 
+            385 =>
             array (
                 'orderNumber' => 10412,
                 'productCode' => 'S32_2509',
@@ -23117,7 +23118,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.86',
                 'orderLineNumber' => 7,
             ),
-            386 => 
+            386 =>
             array (
                 'orderNumber' => 10412,
                 'productCode' => 'S50_1392',
@@ -23125,7 +23126,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '105.33',
                 'orderLineNumber' => 3,
             ),
-            387 => 
+            387 =>
             array (
                 'orderNumber' => 10413,
                 'productCode' => 'S12_1108',
@@ -23133,7 +23134,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '201.57',
                 'orderLineNumber' => 2,
             ),
-            388 => 
+            388 =>
             array (
                 'orderNumber' => 10413,
                 'productCode' => 'S12_3148',
@@ -23141,7 +23142,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '145.04',
                 'orderLineNumber' => 3,
             ),
-            389 => 
+            389 =>
             array (
                 'orderNumber' => 10413,
                 'productCode' => 'S12_3891',
@@ -23149,7 +23150,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '173.02',
                 'orderLineNumber' => 1,
             ),
-            390 => 
+            390 =>
             array (
                 'orderNumber' => 10413,
                 'productCode' => 'S18_4027',
@@ -23157,7 +23158,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '133.57',
                 'orderLineNumber' => 5,
             ),
-            391 => 
+            391 =>
             array (
                 'orderNumber' => 10413,
                 'productCode' => 'S32_3207',
@@ -23165,7 +23166,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.55',
                 'orderLineNumber' => 6,
             ),
-            392 => 
+            392 =>
             array (
                 'orderNumber' => 10413,
                 'productCode' => 'S50_1514',
@@ -23173,7 +23174,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.31',
                 'orderLineNumber' => 4,
             ),
-            393 => 
+            393 =>
             array (
                 'orderNumber' => 10414,
                 'productCode' => 'S10_4757',
@@ -23181,7 +23182,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.24',
                 'orderLineNumber' => 3,
             ),
-            394 => 
+            394 =>
             array (
                 'orderNumber' => 10414,
                 'productCode' => 'S18_3029',
@@ -23189,7 +23190,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.42',
                 'orderLineNumber' => 1,
             ),
-            395 => 
+            395 =>
             array (
                 'orderNumber' => 10414,
                 'productCode' => 'S18_3140',
@@ -23197,7 +23198,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '128.39',
                 'orderLineNumber' => 12,
             ),
-            396 => 
+            396 =>
             array (
                 'orderNumber' => 10414,
                 'productCode' => 'S18_3259',
@@ -23205,7 +23206,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.71',
                 'orderLineNumber' => 14,
             ),
-            397 => 
+            397 =>
             array (
                 'orderNumber' => 10414,
                 'productCode' => 'S18_4522',
@@ -23213,7 +23214,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.38',
                 'orderLineNumber' => 11,
             ),
-            398 => 
+            398 =>
             array (
                 'orderNumber' => 10414,
                 'productCode' => 'S24_2011',
@@ -23221,7 +23222,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '108.14',
                 'orderLineNumber' => 10,
             ),
-            399 => 
+            399 =>
             array (
                 'orderNumber' => 10414,
                 'productCode' => 'S24_3151',
@@ -23229,7 +23230,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.58',
                 'orderLineNumber' => 5,
             ),
-            400 => 
+            400 =>
             array (
                 'orderNumber' => 10414,
                 'productCode' => 'S24_3816',
@@ -23237,7 +23238,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.96',
                 'orderLineNumber' => 2,
             ),
-            401 => 
+            401 =>
             array (
                 'orderNumber' => 10414,
                 'productCode' => 'S700_1138',
@@ -23245,7 +23246,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.00',
                 'orderLineNumber' => 6,
             ),
-            402 => 
+            402 =>
             array (
                 'orderNumber' => 10414,
                 'productCode' => 'S700_1938',
@@ -23253,7 +23254,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '74.48',
                 'orderLineNumber' => 13,
             ),
-            403 => 
+            403 =>
             array (
                 'orderNumber' => 10414,
                 'productCode' => 'S700_2610',
@@ -23261,7 +23262,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '61.44',
                 'orderLineNumber' => 4,
             ),
-            404 => 
+            404 =>
             array (
                 'orderNumber' => 10414,
                 'productCode' => 'S700_3505',
@@ -23269,7 +23270,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.14',
                 'orderLineNumber' => 7,
             ),
-            405 => 
+            405 =>
             array (
                 'orderNumber' => 10414,
                 'productCode' => 'S700_3962',
@@ -23277,7 +23278,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.41',
                 'orderLineNumber' => 8,
             ),
-            406 => 
+            406 =>
             array (
                 'orderNumber' => 10414,
                 'productCode' => 'S72_3212',
@@ -23285,7 +23286,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.60',
                 'orderLineNumber' => 9,
             ),
-            407 => 
+            407 =>
             array (
                 'orderNumber' => 10415,
                 'productCode' => 'S18_3856',
@@ -23293,7 +23294,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.81',
                 'orderLineNumber' => 5,
             ),
-            408 => 
+            408 =>
             array (
                 'orderNumber' => 10415,
                 'productCode' => 'S24_2841',
@@ -23301,7 +23302,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.97',
                 'orderLineNumber' => 1,
             ),
-            409 => 
+            409 =>
             array (
                 'orderNumber' => 10415,
                 'productCode' => 'S24_3420',
@@ -23309,7 +23310,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '59.83',
                 'orderLineNumber' => 2,
             ),
-            410 => 
+            410 =>
             array (
                 'orderNumber' => 10415,
                 'productCode' => 'S700_2047',
@@ -23317,7 +23318,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.32',
                 'orderLineNumber' => 4,
             ),
-            411 => 
+            411 =>
             array (
                 'orderNumber' => 10415,
                 'productCode' => 'S72_1253',
@@ -23325,7 +23326,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '43.20',
                 'orderLineNumber' => 3,
             ),
-            412 => 
+            412 =>
             array (
                 'orderNumber' => 10416,
                 'productCode' => 'S18_1662',
@@ -23333,7 +23334,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '129.31',
                 'orderLineNumber' => 14,
             ),
-            413 => 
+            413 =>
             array (
                 'orderNumber' => 10416,
                 'productCode' => 'S18_2581',
@@ -23341,7 +23342,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.96',
                 'orderLineNumber' => 4,
             ),
-            414 => 
+            414 =>
             array (
                 'orderNumber' => 10416,
                 'productCode' => 'S24_1785',
@@ -23349,7 +23350,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '90.82',
                 'orderLineNumber' => 6,
             ),
-            415 => 
+            415 =>
             array (
                 'orderNumber' => 10416,
                 'productCode' => 'S24_2000',
@@ -23357,7 +23358,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '62.46',
                 'orderLineNumber' => 1,
             ),
-            416 => 
+            416 =>
             array (
                 'orderNumber' => 10416,
                 'productCode' => 'S24_3949',
@@ -23365,7 +23366,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.83',
                 'orderLineNumber' => 13,
             ),
-            417 => 
+            417 =>
             array (
                 'orderNumber' => 10416,
                 'productCode' => 'S24_4278',
@@ -23373,7 +23374,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.28',
                 'orderLineNumber' => 5,
             ),
-            418 => 
+            418 =>
             array (
                 'orderNumber' => 10416,
                 'productCode' => 'S32_1374',
@@ -23381,7 +23382,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '86.90',
                 'orderLineNumber' => 2,
             ),
-            419 => 
+            419 =>
             array (
                 'orderNumber' => 10416,
                 'productCode' => 'S32_4289',
@@ -23389,7 +23390,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.10',
                 'orderLineNumber' => 7,
             ),
-            420 => 
+            420 =>
             array (
                 'orderNumber' => 10416,
                 'productCode' => 'S50_1341',
@@ -23397,7 +23398,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '39.71',
                 'orderLineNumber' => 8,
             ),
-            421 => 
+            421 =>
             array (
                 'orderNumber' => 10416,
                 'productCode' => 'S700_1691',
@@ -23405,7 +23406,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '88.60',
                 'orderLineNumber' => 9,
             ),
-            422 => 
+            422 =>
             array (
                 'orderNumber' => 10416,
                 'productCode' => 'S700_2466',
@@ -23413,7 +23414,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '84.76',
                 'orderLineNumber' => 11,
             ),
-            423 => 
+            423 =>
             array (
                 'orderNumber' => 10416,
                 'productCode' => 'S700_2834',
@@ -23421,7 +23422,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.48',
                 'orderLineNumber' => 3,
             ),
-            424 => 
+            424 =>
             array (
                 'orderNumber' => 10416,
                 'productCode' => 'S700_3167',
@@ -23429,7 +23430,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '65.60',
                 'orderLineNumber' => 10,
             ),
-            425 => 
+            425 =>
             array (
                 'orderNumber' => 10416,
                 'productCode' => 'S700_4002',
@@ -23437,7 +23438,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '63.67',
                 'orderLineNumber' => 12,
             ),
-            426 => 
+            426 =>
             array (
                 'orderNumber' => 10417,
                 'productCode' => 'S10_1678',
@@ -23445,7 +23446,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '79.43',
                 'orderLineNumber' => 2,
             ),
-            427 => 
+            427 =>
             array (
                 'orderNumber' => 10417,
                 'productCode' => 'S10_2016',
@@ -23453,7 +23454,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '116.56',
                 'orderLineNumber' => 5,
             ),
-            428 => 
+            428 =>
             array (
                 'orderNumber' => 10417,
                 'productCode' => 'S10_4698',
@@ -23461,7 +23462,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '162.67',
                 'orderLineNumber' => 4,
             ),
-            429 => 
+            429 =>
             array (
                 'orderNumber' => 10417,
                 'productCode' => 'S12_2823',
@@ -23469,7 +23470,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '144.60',
                 'orderLineNumber' => 1,
             ),
-            430 => 
+            430 =>
             array (
                 'orderNumber' => 10417,
                 'productCode' => 'S18_2625',
@@ -23477,7 +23478,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '58.75',
                 'orderLineNumber' => 6,
             ),
-            431 => 
+            431 =>
             array (
                 'orderNumber' => 10417,
                 'productCode' => 'S24_1578',
@@ -23485,7 +23486,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '109.32',
                 'orderLineNumber' => 3,
             ),
-            432 => 
+            432 =>
             array (
                 'orderNumber' => 10418,
                 'productCode' => 'S18_3278',
@@ -23493,7 +23494,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '70.76',
                 'orderLineNumber' => 2,
             ),
-            433 => 
+            433 =>
             array (
                 'orderNumber' => 10418,
                 'productCode' => 'S18_3482',
@@ -23501,7 +23502,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '139.64',
                 'orderLineNumber' => 1,
             ),
-            434 => 
+            434 =>
             array (
                 'orderNumber' => 10418,
                 'productCode' => 'S18_3782',
@@ -23509,7 +23510,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.57',
                 'orderLineNumber' => 5,
             ),
-            435 => 
+            435 =>
             array (
                 'orderNumber' => 10418,
                 'productCode' => 'S18_4721',
@@ -23517,7 +23518,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '120.53',
                 'orderLineNumber' => 4,
             ),
-            436 => 
+            436 =>
             array (
                 'orderNumber' => 10418,
                 'productCode' => 'S24_2360',
@@ -23525,7 +23526,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.41',
                 'orderLineNumber' => 8,
             ),
-            437 => 
+            437 =>
             array (
                 'orderNumber' => 10418,
                 'productCode' => 'S24_4620',
@@ -23533,7 +23534,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '66.29',
                 'orderLineNumber' => 3,
             ),
-            438 => 
+            438 =>
             array (
                 'orderNumber' => 10418,
                 'productCode' => 'S32_2206',
@@ -23541,7 +23542,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '36.61',
                 'orderLineNumber' => 6,
             ),
-            439 => 
+            439 =>
             array (
                 'orderNumber' => 10418,
                 'productCode' => 'S32_4485',
@@ -23549,7 +23550,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.01',
                 'orderLineNumber' => 9,
             ),
-            440 => 
+            440 =>
             array (
                 'orderNumber' => 10418,
                 'productCode' => 'S50_4713',
@@ -23557,7 +23558,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '72.41',
                 'orderLineNumber' => 7,
             ),
-            441 => 
+            441 =>
             array (
                 'orderNumber' => 10419,
                 'productCode' => 'S12_1099',
@@ -23565,7 +23566,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '182.90',
                 'orderLineNumber' => 13,
             ),
-            442 => 
+            442 =>
             array (
                 'orderNumber' => 10419,
                 'productCode' => 'S12_3380',
@@ -23573,7 +23574,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '111.57',
                 'orderLineNumber' => 11,
             ),
-            443 => 
+            443 =>
             array (
                 'orderNumber' => 10419,
                 'productCode' => 'S12_3990',
@@ -23581,7 +23582,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '64.64',
                 'orderLineNumber' => 14,
             ),
-            444 => 
+            444 =>
             array (
                 'orderNumber' => 10419,
                 'productCode' => 'S12_4675',
@@ -23589,7 +23590,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '99.04',
                 'orderLineNumber' => 10,
             ),
-            445 => 
+            445 =>
             array (
                 'orderNumber' => 10419,
                 'productCode' => 'S18_1129',
@@ -23597,7 +23598,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.48',
                 'orderLineNumber' => 5,
             ),
-            446 => 
+            446 =>
             array (
                 'orderNumber' => 10419,
                 'productCode' => 'S18_1589',
@@ -23605,7 +23606,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '100.80',
                 'orderLineNumber' => 1,
             ),
-            447 => 
+            447 =>
             array (
                 'orderNumber' => 10419,
                 'productCode' => 'S18_1889',
@@ -23613,7 +23614,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '67.76',
                 'orderLineNumber' => 9,
             ),
-            448 => 
+            448 =>
             array (
                 'orderNumber' => 10419,
                 'productCode' => 'S18_1984',
@@ -23621,7 +23622,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '133.72',
                 'orderLineNumber' => 4,
             ),
-            449 => 
+            449 =>
             array (
                 'orderNumber' => 10419,
                 'productCode' => 'S18_2870',
@@ -23629,7 +23630,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '116.16',
                 'orderLineNumber' => 2,
             ),
-            450 => 
+            450 =>
             array (
                 'orderNumber' => 10419,
                 'productCode' => 'S18_3232',
@@ -23637,7 +23638,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '165.95',
                 'orderLineNumber' => 6,
             ),
-            451 => 
+            451 =>
             array (
                 'orderNumber' => 10419,
                 'productCode' => 'S18_3685',
@@ -23645,7 +23646,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '114.44',
                 'orderLineNumber' => 3,
             ),
-            452 => 
+            452 =>
             array (
                 'orderNumber' => 10419,
                 'productCode' => 'S24_2972',
@@ -23653,7 +23654,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.10',
                 'orderLineNumber' => 7,
             ),
-            453 => 
+            453 =>
             array (
                 'orderNumber' => 10419,
                 'productCode' => 'S24_3371',
@@ -23661,7 +23662,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.66',
                 'orderLineNumber' => 12,
             ),
-            454 => 
+            454 =>
             array (
                 'orderNumber' => 10419,
                 'productCode' => 'S24_3856',
@@ -23669,7 +23670,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '112.34',
                 'orderLineNumber' => 8,
             ),
-            455 => 
+            455 =>
             array (
                 'orderNumber' => 10420,
                 'productCode' => 'S18_1749',
@@ -23677,7 +23678,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '153.00',
                 'orderLineNumber' => 5,
             ),
-            456 => 
+            456 =>
             array (
                 'orderNumber' => 10420,
                 'productCode' => 'S18_2248',
@@ -23685,7 +23686,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '52.06',
                 'orderLineNumber' => 4,
             ),
-            457 => 
+            457 =>
             array (
                 'orderNumber' => 10420,
                 'productCode' => 'S18_2325',
@@ -23693,7 +23694,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '116.96',
                 'orderLineNumber' => 2,
             ),
-            458 => 
+            458 =>
             array (
                 'orderNumber' => 10420,
                 'productCode' => 'S18_4409',
@@ -23701,7 +23702,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '73.62',
                 'orderLineNumber' => 6,
             ),
-            459 => 
+            459 =>
             array (
                 'orderNumber' => 10420,
                 'productCode' => 'S18_4933',
@@ -23709,7 +23710,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '68.42',
                 'orderLineNumber' => 7,
             ),
-            460 => 
+            460 =>
             array (
                 'orderNumber' => 10420,
                 'productCode' => 'S24_1046',
@@ -23717,7 +23718,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '60.26',
                 'orderLineNumber' => 11,
             ),
-            461 => 
+            461 =>
             array (
                 'orderNumber' => 10420,
                 'productCode' => 'S24_1628',
@@ -23725,7 +23726,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.80',
                 'orderLineNumber' => 13,
             ),
-            462 => 
+            462 =>
             array (
                 'orderNumber' => 10420,
                 'productCode' => 'S24_1937',
@@ -23733,7 +23734,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '32.19',
                 'orderLineNumber' => 1,
             ),
-            463 => 
+            463 =>
             array (
                 'orderNumber' => 10420,
                 'productCode' => 'S24_2766',
@@ -23741,7 +23742,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '76.33',
                 'orderLineNumber' => 9,
             ),
-            464 => 
+            464 =>
             array (
                 'orderNumber' => 10420,
                 'productCode' => 'S24_2887',
@@ -23749,7 +23750,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '115.09',
                 'orderLineNumber' => 8,
             ),
-            465 => 
+            465 =>
             array (
                 'orderNumber' => 10420,
                 'productCode' => 'S24_3191',
@@ -23757,7 +23758,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '77.05',
                 'orderLineNumber' => 10,
             ),
-            466 => 
+            466 =>
             array (
                 'orderNumber' => 10420,
                 'productCode' => 'S24_3432',
@@ -23765,7 +23766,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '104.94',
                 'orderLineNumber' => 12,
             ),
-            467 => 
+            467 =>
             array (
                 'orderNumber' => 10420,
                 'productCode' => 'S24_3969',
@@ -23773,7 +23774,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '35.29',
                 'orderLineNumber' => 3,
             ),
-            468 => 
+            468 =>
             array (
                 'orderNumber' => 10421,
                 'productCode' => 'S18_2795',
@@ -23781,7 +23782,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '167.06',
                 'orderLineNumber' => 1,
             ),
-            469 => 
+            469 =>
             array (
                 'orderNumber' => 10421,
                 'productCode' => 'S24_2022',
@@ -23789,7 +23790,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '44.80',
                 'orderLineNumber' => 2,
             ),
-            470 => 
+            470 =>
             array (
                 'orderNumber' => 10422,
                 'productCode' => 'S18_1342',
@@ -23797,7 +23798,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '91.44',
                 'orderLineNumber' => 2,
             ),
-            471 => 
+            471 =>
             array (
                 'orderNumber' => 10422,
                 'productCode' => 'S18_1367',
@@ -23805,7 +23806,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '47.44',
                 'orderLineNumber' => 1,
             ),
-            472 => 
+            472 =>
             array (
                 'orderNumber' => 10423,
                 'productCode' => 'S18_2949',
@@ -23813,7 +23814,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '89.15',
                 'orderLineNumber' => 1,
             ),
-            473 => 
+            473 =>
             array (
                 'orderNumber' => 10423,
                 'productCode' => 'S18_2957',
@@ -23821,7 +23822,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '56.21',
                 'orderLineNumber' => 3,
             ),
-            474 => 
+            474 =>
             array (
                 'orderNumber' => 10423,
                 'productCode' => 'S18_3136',
@@ -23829,7 +23830,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '98.44',
                 'orderLineNumber' => 2,
             ),
-            475 => 
+            475 =>
             array (
                 'orderNumber' => 10423,
                 'productCode' => 'S18_3320',
@@ -23837,7 +23838,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '80.36',
                 'orderLineNumber' => 5,
             ),
-            476 => 
+            476 =>
             array (
                 'orderNumber' => 10423,
                 'productCode' => 'S24_4258',
@@ -23845,7 +23846,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '78.89',
                 'orderLineNumber' => 4,
             ),
-            477 => 
+            477 =>
             array (
                 'orderNumber' => 10424,
                 'productCode' => 'S10_1949',
@@ -23853,7 +23854,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '201.44',
                 'orderLineNumber' => 6,
             ),
-            478 => 
+            478 =>
             array (
                 'orderNumber' => 10424,
                 'productCode' => 'S12_1666',
@@ -23861,7 +23862,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '121.64',
                 'orderLineNumber' => 3,
             ),
-            479 => 
+            479 =>
             array (
                 'orderNumber' => 10424,
                 'productCode' => 'S18_1097',
@@ -23869,7 +23870,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '108.50',
                 'orderLineNumber' => 5,
             ),
-            480 => 
+            480 =>
             array (
                 'orderNumber' => 10424,
                 'productCode' => 'S18_4668',
@@ -23877,7 +23878,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '40.25',
                 'orderLineNumber' => 4,
             ),
-            481 => 
+            481 =>
             array (
                 'orderNumber' => 10424,
                 'productCode' => 'S32_3522',
@@ -23885,7 +23886,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '54.94',
                 'orderLineNumber' => 2,
             ),
-            482 => 
+            482 =>
             array (
                 'orderNumber' => 10424,
                 'productCode' => 'S700_2824',
@@ -23893,7 +23894,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '85.98',
                 'orderLineNumber' => 1,
             ),
-            483 => 
+            483 =>
             array (
                 'orderNumber' => 10425,
                 'productCode' => 'S10_4962',
@@ -23901,7 +23902,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '131.49',
                 'orderLineNumber' => 12,
             ),
-            484 => 
+            484 =>
             array (
                 'orderNumber' => 10425,
                 'productCode' => 'S12_4473',
@@ -23909,7 +23910,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '95.99',
                 'orderLineNumber' => 4,
             ),
-            485 => 
+            485 =>
             array (
                 'orderNumber' => 10425,
                 'productCode' => 'S18_2238',
@@ -23917,7 +23918,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '147.36',
                 'orderLineNumber' => 3,
             ),
-            486 => 
+            486 =>
             array (
                 'orderNumber' => 10425,
                 'productCode' => 'S18_2319',
@@ -23925,7 +23926,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '117.82',
                 'orderLineNumber' => 7,
             ),
-            487 => 
+            487 =>
             array (
                 'orderNumber' => 10425,
                 'productCode' => 'S18_2432',
@@ -23933,7 +23934,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '48.62',
                 'orderLineNumber' => 10,
             ),
-            488 => 
+            488 =>
             array (
                 'orderNumber' => 10425,
                 'productCode' => 'S18_3232',
@@ -23941,7 +23942,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '140.55',
                 'orderLineNumber' => 8,
             ),
-            489 => 
+            489 =>
             array (
                 'orderNumber' => 10425,
                 'productCode' => 'S18_4600',
@@ -23949,7 +23950,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '107.76',
                 'orderLineNumber' => 13,
             ),
-            490 => 
+            490 =>
             array (
                 'orderNumber' => 10425,
                 'productCode' => 'S24_1444',
@@ -23957,7 +23958,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '53.75',
                 'orderLineNumber' => 1,
             ),
-            491 => 
+            491 =>
             array (
                 'orderNumber' => 10425,
                 'productCode' => 'S24_2300',
@@ -23965,7 +23966,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '127.79',
                 'orderLineNumber' => 9,
             ),
-            492 => 
+            492 =>
             array (
                 'orderNumber' => 10425,
                 'productCode' => 'S24_2840',
@@ -23973,7 +23974,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '31.82',
                 'orderLineNumber' => 5,
             ),
-            493 => 
+            493 =>
             array (
                 'orderNumber' => 10425,
                 'productCode' => 'S32_1268',
@@ -23981,7 +23982,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '83.79',
                 'orderLineNumber' => 11,
             ),
-            494 => 
+            494 =>
             array (
                 'orderNumber' => 10425,
                 'productCode' => 'S32_2509',
@@ -23989,7 +23990,7 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '50.32',
                 'orderLineNumber' => 6,
             ),
-            495 => 
+            495 =>
             array (
                 'orderNumber' => 10425,
                 'productCode' => 'S50_1392',
@@ -23997,8 +23998,12 @@ class OrderdetailsTableSeeder extends Seeder
                 'priceEach' => '94.92',
                 'orderLineNumber' => 2,
             ),
-        ));
-        
-        
+        );
+
+        $chunks = array_chunk($data_pertama, 5000);
+
+        foreach ($chunks as $chunk) {
+            DB::table('orderdetails')->insert($chunk);
+        }
     }
 }
