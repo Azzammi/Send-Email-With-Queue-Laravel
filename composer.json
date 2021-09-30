@@ -62,7 +62,13 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "config": {
+            "platform": {
+                "ext-pcntl": "7.4",
+                "ext-posix": "7.4"
+            }
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
