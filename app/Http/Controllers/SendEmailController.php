@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\SendEmailJob;
 use App\Mail\Mailtrap;
 use App\Models\User;
 use App\Notifications\VerifyEmailNotification;
@@ -15,13 +16,8 @@ class SendEmailController extends Controller
     public function sendEmail(){
         $user = auth()->user();
         //Notification::send($user, new VerifyEmailNotification($user));
-        $details = [
-            'title' => 'Thank you for subscribing to my newsletter',
-            'body'  => 'You will receice a reminder every Fourth Friday of the month'
-        ];
 
-        //$users = User::select('email')->get();
-        Mail::to('luthfi_azzammi@hotmail.com')->send(new Mailtrap($details));
+        SendEmailJob::dispatch()->delay(now()->addMinute());
 
         return redirect(RouteServiceProvider::HOME);
     }
