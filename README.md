@@ -20,8 +20,12 @@ touch database/database.sqlite
   * run `php artisan migrate:fresh --seed`
   * and just run `php artisan serve`
 
-
 That's all, 
+
+## Source Learn
+Some learning source :
+* [Using predis instead of phpredis](https://www.codecheef.org/article/laravel-queues-example-using-redis-and-horizon)
+* [Official Laravel Documentation](https://laravel.com/docs/8.x/horizon)
 
 ## Screenshot
 ### Main
